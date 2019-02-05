@@ -1,0 +1,18 @@
+.color_main {
+    background-color: #00147C;
+}
+.color_accent {
+    border-color: #2DABCF;
+}
+.color_link_hover a:hover{
+    color: #1033ED;
+}
+.color_fon_menu {
+    background-color: #EFEFEF;
+}
+.color_fon_content {
+    background-color: #F8F8F8;
+}
+.color_icons {
+    color: #00147C;
+}

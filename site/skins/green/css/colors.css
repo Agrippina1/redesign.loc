@@ -1,0 +1,35 @@
+.color_main {
+    background-color: #006a0b;
+}
+.color_main_fon {
+    background-color: #006a0b;
+}
+.color_accent {
+    border-color: #58cf46;
+}
+.color_link_hover a:hover{
+    color: #13831c;
+}
+.color_menu_fon {
+    background-color: #EFEFEF;
+}
+.color_content_fon {
+    background-color: #F8F8F8;
+}
+.color_icons {
+    color: #006a0b;
+}
+.color_font {
+  color: #006a0b;
+}
+.color_border {
+  border: 1px solid #006a0b;
+}
+.btn:hover{
+  background: #58cf46;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  background: #58cf46;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.2);
+}

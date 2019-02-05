@@ -1,0 +1,5 @@
+.logo {
+    background-image: url("../../../../site/skins/blue/pics/svg/logo.svg");
+    width: 270px; height: 60px;
+    display: inline-block;
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#008000">
+    <meta name="msapplication-TileColor" content="#008000">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="site/css/main.css">
+    <link rel="stylesheet" href="site/css/icon.css">
+    <link rel="stylesheet" href="site/skins/blue/css/colors.css">
+    <link rel="stylesheet" href="site/skins/blue/css/svg.css">
+
+  </head>
+  <body>
+    <div class="banner1">
+      <img src="site/pics/banner_1.png" alt="Реклама">
+    </div>
+    <header id="sticky" class="sticky-element">
+      <div class="sticky-anchor"></div>
+      <div class="sticky-content">
+        <div class="logo-header color_main_fon color_accent header main-nav--closed nav-user--closed">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <a href="index.html" class="logo-img">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="site/skins/blue/pics/svg/logo.svg">
+              <img src="site/skins/blue/pics/svg/logo_tablet.svg" alt="Логотип">
+            </picture>
+          </a>
+          <button class="nav-user__toggle" type="button">Открыть меню</button>
+          <!-- <div class="input-user__toggle">
+            <a class="input-user" href="#">
+              <span class="link-input" href="#">Войти</span>
+              <span class="link-registration" href="#">Регистрация</span>
+            </a>
+          </div> -->
+          <div class="mail__toggle">
+            <a class="mail-icon" href="#"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="all-content">
+        <div class="content-right">
+          <div class="content-right-wrapper">
+            <div class="banner4">
+              <img src="site/pics/banner_4.png" width="160" height="160" alt="Реклама">
+            </div>
+            <div class="nav-wrapper">
+              <div class="main-nav-wrap">
+                <nav class="main-nav nav-block color_border color_menu_fon">
+                  <div class="main-nav-wrapper">
+                    <h4 class="menu-title color_main_fon color_accent header">Разделы</h4>
+                    <ul class="main-nav-items nav">
+                      <div class="newyear">
+                        <img src="site/pics/menu_fon_ny.png" width="55" height="73" alt="С новым годом!">
+                      </div>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="news_bw icon"></i>
+                          <span class="nav_item">Новости</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="story_bw icon"></i>
+                          <span class="nav_item">Статьи</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="links_bw icon"></i>
+                          <span class="nav_item">Ссылки</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="org_bw icon"></i>
+                          <span class="nav_item">Организации</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="work_bw icon"></i>
+                          <span class="nav_item">Биржа труда</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="shopping_bw icon"></i>
+                          <span class="nav_item">Товары-услуги</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="agency_bw icon"></i>
+                          <span class="nav_item">Знакомства</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="blog_bw icon"></i>
+                          <span class="nav_item">Дневники</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="forum_bw icon nav_active_icon"></i>
+                          <span class="nav_item nav-active">Форум</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="chat_bw icon"></i>
+                          <span class="nav_item">Чат</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="humor_bw icon"></i>
+                          <span class="nav_item">Юмор</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="guest_bw icon"></i>
+                          <span class="nav_item">Гостевая книга</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="partners_bw icon"></i>
+                          <span class="nav_item">Наши партнеры</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="map_bw icon"></i>
+                          <span class="nav_item">Карта портала</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="faq_bw icon"></i>
+                          <span class="nav_item">Вопрос-ответ</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="write_admin_bw icon"></i>
+                          <span class="nav_item mail-admin">Написать админу</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+              <div class="banner5">
+                <img src="site/pics/banner_5.png" width="160" height="160" alt="Реклама">
+              </div>
+              <div class="nav-user-wrap nav-user--closed">
+                <!-- <button class="nav-user__toggle" type="button">Открыть меню</button>
+                <div class="input-user__toggle">
+                  <a class="input-user" href="#">
+                    <span class="link-input" href="#">Войти</span>
+                    <span class="link-registration" href="#">Регистрация</span>
+                  </a>
+                </div> -->
+                <nav class="nav-user nav-block color_border color_menu_fon">
+                  <div class="nav-user-wrapper">
+                    <h4 class="menu-title color_main_fon color_accent header">Пользователям</h4>
+                    <a href="#" class="user-name">NicUserUnick</a>
+                    <ul class="user-nav_items nav">
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="mail_bw icon"></i>
+                          <span class="nav_item">Почта</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="wall_bw icon"></i>
+                          <span class="nav_item">Отзывы</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="search_bw icon"></i>
+                          <span class="nav_item">Пользователи</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="dr_bw icon"></i>
+                          <span class="nav_item">Дни рождения</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="online_bw icon"></i>
+                          <span class="nav_item">На портале</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="show_new_bw icon"></i>
+                          <span class="nav_item">Новые</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="edit_bw icon"></i>
+                          <span class="nav_item">Настройки</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="rules_bw icon"></i>
+                          <span class="nav_item">Соглашение</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="politica_conf_bw icon"></i>
+                          <span class="nav_item">Политика</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <i class="exit_bw icon"></i>
+                          <span class="nav_item">Выход</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div class="nav-block registration-block color_border color_menu_fon">
+              <div class="registration-wrapper">
+                <h4 class="menu-title color_main_fon color_accent header">Пользователям</h4>
+                <div class="registration">
+                  <p class="registration-title"><i class="register_bw icon register-icon"></i>Регистрация</p>
+                  <form class="form-registration" action="index.html" method="post">
+                    <div class="form-group">
+                      <label class="form-label" for="login-field">Логин:</label>
+                      <input class="form-field" id="login-field" type="text" name="login" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="password-field">Пароль:</label>
+                      <input class="form-field" id="password-field" type="password" name="password-field" required>
+                    </div>
+                    <div class="form-group-checkbox">
+                      <div class="form-group form-group-blind">
+                        <input class="checkbox-field" id="blind-field" type="checkbox" name="blind">
+                        <label class="checkbox-label" for="blind-field">Для незрячих</label>
+                      </div>
+                      <div class="form-group">
+                        <input class="checkbox-field" id="memorize-field" type="checkbox" name="memorize">
+                        <label class="checkbox-label" for="memorize-field">Запомнить</label>
+                      </div>
+                    </div>
+                    <div class="btn-wrapper">
+                      <input class="btn btn-registration color_main_fon color_accent header" type="submit" name="button" value="Войти">
+                    </div>
+                  </form>
+                  <div class="registration-links">
+                    <a class="main-nav_item registration-link" href="#">Вспомнить пароль</a>
+                    <a class="main-nav_item registration-link" href="#">Соглашение</a>
+                    <a class="main-nav_item registration-link" href="#">Политика</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nav-block-wrapper">
+              <div class="nav-block color_border color_menu_fon">
+                <h4 class="menu-title color_main_fon color_accent header">Поиск на портале</h4>
+                <form class="form" action="index.html" method="post">
+                  <div class="form-group form-search">
+                    <input class="form-field" id="search-field" type="text" name="search-name">
+                    <label for="search-field"></label>
+                  </div>
+                  <div class="btn-wrapper">
+                    <input class="btn color_main_fon color_accent header" type="submit" name="button" value="Поиск">
+                  </div>
+                </form>
+              </div>
+              <div class="nav-block color_border color_menu_fon">
+                <h4 class="menu-title color_main_fon color_accent header">Статистика</h4>
+                <p class="statistics">Друзей <span>8963</span></p>
+                <p class="statistics-online">Сейчас на портале</p>
+                <p class="statistics">Друзей <span>32</span></p>
+                <p class="statistics">В чате <span>9</span></p>
+                <p class="statistics">Гостей <span>36</span></p>
+              </div>
+            </div>
+            <div class="banner6">
+              <img src="site/pics/banner_6.png" width="160" height="600" alt="Реклама">
+            </div>
+          </div>
+          <div class="qr-code">
+            <script type="text/javascript">
+              document.write("<img class='qr-code-img' src='https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl="+location.href+"&choe=UTF-8' title='QR Barcode - адрес страницы для мобильных устройств'>");
+            </script>
+            <img class="qr-code-img" src="site/pics/barcode.png" width="89" height="122" alt="Статистика">
+          </div>
+        </div>
+        <div class="content-left">
+          <div class="breadcrumbs color_link_hover">
+            <a class="breadcrumbs-item" href="https://www.disability.ru"><img src="site/icons/navigator.svg" alt="disability.ru" width="10" height="7"></a>
+            <a class="breadcrumbs-item color_font" href="#">/ Товары и услуги</a>
+          </div>
+          <div class="banner2-3 banner2">
+            <img src="site/pics/banner_2.png" width="730" height="90" alt="Реклама">
+          </div>
+          <div class="main-content color_content_fon">Контент раздела</div>
+          <div class="banner2-3 banner3">
+            <img src="site/pics/banner_3.png" alt="Реклама">
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="color_main_fon color_accent">
+        <p class="copyright">Copyright &copy; 2002</p>
+      </div>
+      <nav class="nav-footer color_menu_fon">
+        <ul class="nav-footer_items">
+          <li class="nav-footer_item">
+            <a href="#">Новости</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Статьи</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Ссылки</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Организации</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Биржа труда</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Товары-услуги</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Знакомства</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Дневники</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Форум</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Чат</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Юмор</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Гостевая книга</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Наши партнеры</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Карта портала</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Вопрос-ответ</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Написать админу</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Соглашение</a>
+          </li>
+          <li class="nav-footer_item">
+            <a href="#">Политика</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <div class="modal-overlay"></div>
+    <script src="site/js/js-redesign.js"></script>
+
+  </body>
+</html>
