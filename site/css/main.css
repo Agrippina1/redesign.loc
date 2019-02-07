@@ -315,6 +315,9 @@ input[type="checkbox"] + label::after {
   .newyear {
     display: none;
   }
+  header .header {
+    border-bottom: 5px solid #2dabcf;
+  }
   .header-wrapper {
     display: block;
   }
@@ -327,6 +330,7 @@ input[type="checkbox"] + label::after {
     display: block;
   }
   .logo-header {
+    position: relative;
     text-align: center;
   }
   .breadcrumbs-item {
@@ -430,7 +434,7 @@ input[type="checkbox"] + label::after {
   .main-nav__toggle {
     display: block;
     position: absolute;
-    top: 100px;
+    top: 11px;
     left: 10px;
     z-index: 2;
     width: 32px;
@@ -470,8 +474,8 @@ input[type="checkbox"] + label::after {
   .nav-user__toggle {
     display: block;
     position: absolute;
-    top: 100px;
-    right: 34px;
+    top: 11px;
+    right: 37px;
     z-index: 2;
     width: 32px;
     height: 32px;
@@ -500,16 +504,20 @@ input[type="checkbox"] + label::after {
     background: url("../icons/menu_user.svg") no-repeat;
     background-size: cover;
   }
-  .input-user__toggle {
+
+  .input-user {
     display: block;
-    position: relative;
-    top: -47px;
-    left: -79px;
+    position: absolute;
+    width: 100px;
+    top: 11px;
+    right: 17px;
     text-align: right;
   }
-  .input-user__toggle a {
+  .input-links {
+    display: flex;
+    justify-content: space-between;
     color: #ffffff;
-    line-height: 18px;
+    line-height: 16px;
   }
   .input-user span {
     display: block;
@@ -517,17 +525,24 @@ input[type="checkbox"] + label::after {
   .link-input {
     font-size: 13px;
   }
+  .input-user-icon {
+    width: 32px;
+    height: 32px;
+    background: url("../icons/login.svg") no-repeat;
+    background-size: 100%;
+  }
   .link-registration {
     font-size: 10px;
   }
-  .mail-icon::after {
+  .mail-icon::before {
     content: "";
     position: absolute;
-    top: 110px;
-    right: 55px;
+    top: 14px;
+    right: 75px;
     width: 32px;
-    height: 24px;
+    height: 32px;
     background: url("../icons/mail_bw.svg") no-repeat;
+    background-size: 100%;
   }
 
 /*Форма регистрации (модальная)*/
@@ -577,12 +592,7 @@ input[type="checkbox"] + label::after {
     width: 227px;
     height: 38px;
   }
-  .link-input {
-    font-size: 10px;
-  }
-  .link-registration {
-    font-size: 9px;
-  }
+
   .modal-overlay {
     position: fixed;
     display: none;
@@ -621,11 +631,56 @@ input[type="checkbox"] + label::after {
 }
 
 @media (max-width: 768px) {
+  header .header {
+    border-bottom: 3px solid #2dabcf;
+  }
+  .logo-header {
+    text-align: left;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+  }
+  .logo-img {
+    margin-left: 9%;
+  }
+  .main-nav__toggle {
+    left: 0;
+  }
+  .main-nav--opened .main-nav__toggle::before {
+    left: 11px;
+  }
+  .nav-user__toggle {
+    right: 15px;
+  }
+  .nav-user--closed .nav-user__toggle::before,
+  .nav-user--opened .nav-user__toggle::before {
+    right: 0;
+  }
+  .input-user {
+    width: 86px;
+    right: 15px;
+  }
+  .input-links {
+    line-height: 12px;
+  }
+  .link-input {
+    font-size: 10px;
+  }
+  .link-registration {
+    font-size: 9px;
+  }
+  .input-user-icon {
+    width: 24px;
+    height: 24px;
+  }
   .nav-user--closed .main-nav__toggle::before,
   .nav-user--closed .nav-user__toggle::before,
   .nav-user--opened .nav-user__toggle::before {
     width: 24px;
     height: 24px;
+  }
+  .mail-icon::before {
+    width: 24px;
+    height: 24px;
+    right: 57px;
   }
   .registration-block {
     min-width: 300px;
