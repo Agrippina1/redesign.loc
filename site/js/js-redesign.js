@@ -3,7 +3,7 @@
 var navMain = document.querySelector('.main-nav-wrap');
 var navToggle = document.querySelector('.main-nav__toggle');
 
-navMain.classList.remove('main-nav--nojs');
+navMain.classList.remove('main-nav--nojs'); //нет класса
 
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {
@@ -20,7 +20,7 @@ navToggle.addEventListener('click', function() {
 var navUser = document.querySelector('.nav-user-wrap');
 var navUserToggle = document.querySelector('.nav-user__toggle');
 
-navUser.classList.remove('nav-user--nojs');
+navUser.classList.remove('nav-user--nojs'); //нет класса
 
 navUserToggle.addEventListener('click', function() {
   if (navUser.classList.contains('nav-user--closed')) {
