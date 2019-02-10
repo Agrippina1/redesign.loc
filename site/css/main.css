@@ -37,7 +37,6 @@ ul {
   list-style: none;
 }
 a {
-  display: block;
   text-decoration: none;
 }
 .btn {
@@ -640,6 +639,10 @@ input[type="checkbox"] + label::after {
   }
   .logo-img {
     margin-left: 9%;
+  }
+  .main-nav,
+  .nav-user {
+    top: 163px;
   }
   .main-nav__toggle {
     left: 0;
