@@ -33,7 +33,6 @@ var demo = new StickyElement($('#sticky'));
 
 
 // Форма регистрации
-
 var link = document.querySelector(".input-user");
 var popup = document.querySelector(".registration-block");
 var overlay = document.querySelector(".modal-overlay");
