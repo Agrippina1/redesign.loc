@@ -1,9 +1,31 @@
+.icon-svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+/*иконки можно модифицировать так:*/
+.icon-agency_bw {
+  width: 300px;
+  height: 300px;
+  fill: #009900;
+}
+.icon-forum_color {
+  width: 64px;
+  height: 64px;
+  fill: #009900;
+}
+
+
 .icon {
   width: 16px;
   height: 16px;
   background-size: 100%;
   display: inline-block;
 }
+
 .news_bw {
   background-image: url("../../site/icons/news_bw.svg");
 }

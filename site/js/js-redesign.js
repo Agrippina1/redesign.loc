@@ -33,57 +33,58 @@ var demo = new StickyElement($('#sticky'));
 
 
 // Форма регистрации
-
 var link = document.querySelector(".input-user");
-var popup = document.querySelector(".registration-block");
-var overlay = document.querySelector(".modal-overlay");
-var close = popup.querySelector(".modal-content-close");
-var storage = localStorage.getItem("login");
-  link.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.add("modal-content-show");
-    overlay.classList.add("modal-overlay-show");
-  });
-  close.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.remove("modal-content-show");
-    overlay.classList.remove("modal-overlay-show");
-  });
- window.addEventListener("keydown", function(event) {
-  if (event.keyCode === 27) {
-    if (popup.classList.contains("modal-content-show")) {
-      popup.classList.remove("modal-content-show");
-      overlay.classList.remove("modal-overlay-show");
-    }
-  }
-});
+if (link != null) {
+    var popup = document.querySelector(".registration-block");
+    var overlay = document.querySelector(".modal-overlay");
+    var close = popup.querySelector(".modal-content-close");
+    var storage = localStorage.getItem("login");
+    link.addEventListener("click", function (event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+        overlay.classList.add("modal-overlay-show");
+    });
+    close.addEventListener("click", function (event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        overlay.classList.remove("modal-overlay-show");
+    });
+    window.addEventListener("keydown", function (event) {
+        if (event.keyCode === 27) {
+            if (popup.classList.contains("modal-content-show")) {
+                popup.classList.remove("modal-content-show");
+                overlay.classList.remove("modal-overlay-show");
+            }
+        }
+    });
+}
 
 // main-menu
-
-var navMain = document.querySelector('.main-nav-wrap');
 var navToggle = document.querySelector('.main-nav__toggle');
-
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-  }
-});
+if (navToggle != null) {
+    var navMain = document.querySelector('.main-nav-wrap');
+    navToggle.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+        } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+        }
+    });
+}
 
 // Меню user
-
-var navUser = document.querySelector('.nav-user-wrap');
 var navUserToggle = document.querySelector('.nav-user__toggle');
-
-navUserToggle.addEventListener('click', function() {
-  if (navUser.classList.contains('nav-user--closed')) {
-    navUser.classList.remove('nav-user--closed');
-    navUser.classList.add('nav-user--opened');
-  } else {
-    navUser.classList.add('nav-user--closed');
-    navUser.classList.remove('nav-user--opened');
-  }
-});
+if (navUserToggle != null) {
+    var navUser = document.querySelector('.nav-user-wrap');
+    navUserToggle.addEventListener('click', function () {
+        if (navUser.classList.contains('nav-user--closed')) {
+            navUser.classList.remove('nav-user--closed');
+            navUser.classList.add('nav-user--opened');
+        } else {
+            navUser.classList.add('nav-user--closed');
+            navUser.classList.remove('nav-user--opened');
+        }
+    });
+}
