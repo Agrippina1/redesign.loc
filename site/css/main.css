@@ -49,8 +49,7 @@ a {
 .logo-header {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-.logo-img {
-  padding-top: 5px;
+.logo-link-wrapper {
   margin-left: 17px;
 }
 .breadcrumbs {
@@ -143,7 +142,7 @@ a {
 }
 .nav_item {
   color: #000000;
-  vertical-align: text-bottom;
+  vertical-align: baseline;
   padding-left: 8px;
 }
 .nav_item:hover {
@@ -163,6 +162,7 @@ a {
   margin-bottom: 12px;
 }
 .user-name {
+  display: block;
   font-size: 12px;
   font-weight: bold;
   color: #000000;
@@ -255,6 +255,7 @@ input[type="checkbox"] + label::after {
   margin-bottom: 10px;
 }
 .registration-link {
+  display: block;
   color: #000000;
   text-align: center;
 }
@@ -314,11 +315,18 @@ input[type="checkbox"] + label::after {
   .newyear {
     display: none;
   }
+  header {
+    position: relative;
+    z-index: 15;
+  }
   header .header {
     border-bottom: 5px solid #2dabcf;
   }
   .header-wrapper {
     display: block;
+  }
+  .logo-link-wrapper {
+    padding-top: 5px;
   }
   .banner3 {
     width: 100%;
@@ -401,8 +409,8 @@ input[type="checkbox"] + label::after {
     border: 1px solid #000000;
   }
   .nav_item {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 40px;
   }
   .user-name {
     font-size: 16px;
@@ -434,7 +442,7 @@ input[type="checkbox"] + label::after {
     display: block;
     position: absolute;
     top: 11px;
-    left: 10px;
+    left: 20px;
     z-index: 2;
     width: 32px;
     height: 32px;
@@ -448,7 +456,7 @@ input[type="checkbox"] + label::after {
     content: "";
     position: absolute;
     top: 0;
-    right: -8px;
+    right: 0;
     width: 32px;
     height: 32px;
     background: url("../icons/menu_item.svg") no-repeat;
@@ -474,7 +482,7 @@ input[type="checkbox"] + label::after {
     display: block;
     position: absolute;
     top: 11px;
-    right: 37px;
+    right: 17px;
     z-index: 2;
     width: 32px;
     height: 32px;
@@ -488,6 +496,7 @@ input[type="checkbox"] + label::after {
     content: "";
     position: absolute;
     top: 0;
+    right: 1px;
     width: 32px;
     height: 32px;
     background: url("../icons/menu_user.svg") no-repeat;
@@ -533,11 +542,21 @@ input[type="checkbox"] + label::after {
   .link-registration {
     font-size: 10px;
   }
+  .mail-icon {
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 75px;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+  }
   .mail-icon::before {
     content: "";
     position: absolute;
-    top: 14px;
-    right: 75px;
+    top: 0;
+    right: 0;
     width: 32px;
     height: 32px;
     background: url("../icons/mail_bw.svg") no-repeat;
@@ -546,21 +565,57 @@ input[type="checkbox"] + label::after {
 
 /*Форма регистрации (модальная)*/
 
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+  .modal-content {
+    display: flex;
+    justify-content: center;
+  }
   .registration-block {
-    position: fixed;
+    position: relative;
     display: none;
     min-width: 495px;
-    left: 50%;
-    top: 54px;
-    z-index: 10;
-    margin: auto;
-    margin-bottom: 50px;
-    margin-left: -247px;
+    z-index: 16;
+    box-sizing: border-box;
+  }
+  .popap-close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    background: red;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+  }
+  .modal-content-close {
+    top: 0;
+    right: 0;
+  }
+  .popap-close::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: url("../icons/menu_close.svg") no-repeat;
+    background-size: 100%
   }
   .modal-content-show {
     display: block;
-    -webkit-animation: bounce 0.6s;
-            animation: bounce 0.6s;
+    -webkit-animation: bounce 0.9s;
+            animation: bounce 0.9s;
   }
   .registration-title {
     font-size: 20px;
@@ -629,7 +684,7 @@ input[type="checkbox"] + label::after {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header .header {
     border-bottom: 3px solid #2dabcf;
   }
@@ -637,15 +692,25 @@ input[type="checkbox"] + label::after {
     text-align: left;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
   }
-  .logo-img {
-    margin-left: 9%;
+  .logo-link-wrapper {
+    margin-left: 16%;
+  }
+  .content-right {
+    padding-left: 0;
+    margin-right: 0;
   }
   .main-nav,
   .nav-user {
     top: 163px;
   }
-  .main-nav__toggle {
+  .main-nav {
     left: 0;
+  }
+  .nav-user {
+    right: 0;
+  }
+  .main-nav__toggle {
+    left: 7px;
   }
   .main-nav--opened .main-nav__toggle::before {
     left: 11px;
@@ -680,10 +745,15 @@ input[type="checkbox"] + label::after {
     width: 24px;
     height: 24px;
   }
+  .mail-icon {
+    top: 6px;
+    right: 56px;
+  }
   .mail-icon::before {
     width: 24px;
     height: 24px;
-    right: 57px;
+    top: 4px;
+    right: 4px;
   }
   .registration-block {
     min-width: 300px;
