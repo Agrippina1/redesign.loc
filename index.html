@@ -30,18 +30,20 @@
       <div class="sticky-content">
         <div class="logo-header color_main_fon color_accent header main-nav--closed nav-user--closed">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <a href="index.html" class="logo-img">
-            <picture>
-              <source media="(min-width: 1024px)" srcset="site/skins/blue/pics/svg/logo.svg">
-              <source media="(min-width: 768px)" srcset="site/skins/blue/pics/svg/logo_tablet.svg">
-              <img class="logo-img" src="site/skins/blue/pics/svg/logo_mobile.svg" alt="Логотип">
-            </picture>
-          </a>
-          <div class="mail-input">
+          <div class="logo-link-wrapper">
+            <a href="index.html" class="logo-img">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="site/skins/blue/pics/svg/logo.svg">
+                <source media="(min-width: 768px)" srcset="site/skins/blue/pics/svg/logo_tablet.svg">
+                <img class="logo-img" src="site/skins/blue/pics/svg/logo_mobile.svg" alt="Логотип">
+              </picture>
+            </a>
+          </div>
+          <!-- <div class="mail-input">
             <a class="mail-icon" href="#"></a>
           </div>
-          <button class="nav-user__toggle" type="button">Открыть меню</button>
-          <!-- <div class="input-user">
+          <button class="nav-user__toggle" type="button">Открыть меню</button> -->
+          <div class="input-user">
             <a href="#" class="input-links">
               <div class="input-only">
                 <span class="link-input" href="#">Войти</span>
@@ -49,7 +51,7 @@
               </div>
               <span class="input-user-icon"></span>
             </a>
-          </div> -->
+          </div>
         </div>
       </div>
     </header>
@@ -244,38 +246,42 @@
                 </nav>
               </div>
             </div>
-            <div class="nav-block registration-block color_border color_menu_fon">
-              <div class="registration-wrapper">
-                <h4 class="menu-title color_main_fon color_accent header">Пользователям</h4>
-                <div class="registration">
-                  <p class="registration-title"><i class="register_bw icon register-icon"></i>Регистрация</p>
-                  <form class="form-registration" action="index.html" method="post">
-                    <div class="form-group">
-                      <label class="form-label" for="login-field">Логин:</label>
-                      <input class="form-field" id="login-field" type="text" name="login" required>
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label" for="password-field">Пароль:</label>
-                      <input class="form-field" id="password-field" type="password" name="password-field" required>
-                    </div>
-                    <div class="form-group-checkbox">
-                      <div class="form-group form-group-blind">
-                        <input class="checkbox-field" id="blind-field" type="checkbox" name="blind">
-                        <label class="checkbox-label" for="blind-field">Для незрячих</label>
+            <div class="modal-content">
+              <div class="nav-block registration-block color_border color_menu_fon">
+                <button class="popap-close modal-content-close" type="button" title="Закрыть">
+                  Закрыть</button>
+                <div class="registration-wrapper">
+                  <h4 class="menu-title color_main_fon color_accent header">Пользователям</h4>
+                  <div class="registration">
+                    <p class="registration-title"><i class="register_bw icon register-icon"></i>Регистрация</p>
+                    <form class="form-registration" action="index.html" method="post">
+                      <div class="form-group">
+                        <label class="form-label" for="login-field">Логин:</label>
+                        <input class="form-field" id="login-field" type="text" name="login" required>
                       </div>
                       <div class="form-group">
-                        <input class="checkbox-field" id="memorize-field" type="checkbox" name="memorize">
-                        <label class="checkbox-label" for="memorize-field">Запомнить</label>
+                        <label class="form-label" for="password-field">Пароль:</label>
+                        <input class="form-field" id="password-field" type="password" name="password-field" required>
                       </div>
+                      <div class="form-group-checkbox">
+                        <div class="form-group form-group-blind">
+                          <input class="checkbox-field" id="blind-field" type="checkbox" name="blind">
+                          <label class="checkbox-label" for="blind-field">Для незрячих</label>
+                        </div>
+                        <div class="form-group">
+                          <input class="checkbox-field" id="memorize-field" type="checkbox" name="memorize">
+                          <label class="checkbox-label" for="memorize-field">Запомнить</label>
+                        </div>
+                      </div>
+                      <div class="btn-wrapper">
+                        <input class="btn btn-registration color_main_fon color_accent header" type="submit" name="button" value="Войти">
+                      </div>
+                    </form>
+                    <div class="registration-links">
+                      <a class="main-nav_item registration-link" href="#">Вспомнить пароль</a>
+                      <a class="main-nav_item registration-link" href="#">Соглашение</a>
+                      <a class="main-nav_item registration-link" href="#">Политика</a>
                     </div>
-                    <div class="btn-wrapper">
-                      <input class="btn btn-registration color_main_fon color_accent header" type="submit" name="button" value="Войти">
-                    </div>
-                  </form>
-                  <div class="registration-links">
-                    <a class="main-nav_item registration-link" href="#">Вспомнить пароль</a>
-                    <a class="main-nav_item registration-link" href="#">Соглашение</a>
-                    <a class="main-nav_item registration-link" href="#">Политика</a>
                   </div>
                 </div>
               </div>
