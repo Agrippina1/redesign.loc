@@ -403,6 +403,10 @@ input[type="checkbox"] + label::after {
     padding-bottom: 4px;
     padding-left: 0;
   }
+  main .icon-svg-menu {
+    width: 24px;
+    height: 24px;
+  }
   .main-nav .color_main_fon,
   .nav-user .color_main_fon,
   .registration-wrapper .color_main_fon {
@@ -574,7 +578,7 @@ input[type="checkbox"] + label::after {
   }
   .form-label {
     display: block;
-    font-family: "Tahoma";
+    font-family: "Tahoma", "Helvetica", "Arial", sans-serif;
     font-size: 16px;
   }
   .form-field {
@@ -595,7 +599,10 @@ input[type="checkbox"] + label::after {
     height: 38px;
   }
 
-  .modal-overlay {
+  /*overlay*/
+
+  .modal-overlay,
+  .menu-overlay {
     position: fixed;
     display: none;
     top: 0;
@@ -605,7 +612,8 @@ input[type="checkbox"] + label::after {
     height: 100%;
     background: rgba(0, 0, 0, 0.25);
   }
-  .modal-overlay-show {
+  .modal-overlay-show,
+  .menu-overlay-show {
     display: block;
   }
   .copyright {
