@@ -143,7 +143,7 @@ a {
 }
 .nav_item {
   color: #000000;
-  vertical-align: baseline;
+  vertical-align: text-bottom;
   padding-left: 8px;
 }
 .nav_item:hover {
@@ -191,12 +191,11 @@ a {
 .register-icon {
   margin-right: 10px;
 }
-.form-group {
-  width: 90%;
-  margin: auto;
+.form-group-wrapper {
+  margin-left: 10px;
 }
 .form-field {
-  width: 145px;
+  width: 141px;
   height: 25px;
   background: #ffffff;
   border: 1px solid #000000;
@@ -270,6 +269,8 @@ input[type="checkbox"] + label::after {
   color: #1033ed;
 }
 .form-search {
+  width: 90%;
+  margin: auto;
   margin-top: 11px;
 }
 .statistics {
@@ -423,6 +424,7 @@ input[type="checkbox"] + label::after {
   .nav_item {
     font-size: 20px;
     line-height: 40px;
+    vertical-align: bottom;
   }
   .user-name {
     font-size: 16px;
@@ -574,7 +576,11 @@ input[type="checkbox"] + label::after {
     text-align: center;
     bottom: 40px;
     padding-top: 15px;
+    padding-left: 0;
     margin-bottom: 30px;
+  }
+  .form-group-wrapper {
+    margin-left: 50px;
   }
   .form-label {
     display: block;
@@ -584,9 +590,6 @@ input[type="checkbox"] + label::after {
   .form-field {
     width: 392px;
     height: 40px;
-  }
-  .form-group {
-    width: 80%;
   }
   .form-group-checkbox {
     margin-top: 20px;
@@ -710,8 +713,8 @@ input[type="checkbox"] + label::after {
   .registration-block {
     min-width: 300px;
   }
-  .form-group {
-    width: 84%;
+  .form-group-wrapper {
+    margin-left: 24px;
   }
   .form-field {
     width: 250px;
