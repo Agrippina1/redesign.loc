@@ -33,12 +33,12 @@ var demo = new StickyElement($('#sticky'));
 
 
 // Форма регистрации
+
 var link = document.querySelector(".input-user");
 if (link != null) {
     var popup = document.querySelector(".registration-block");
     var overlay = document.querySelector(".modal-overlay");
     var close = popup.querySelector(".modal-content-close");
-    var storage = localStorage.getItem("login");
     link.addEventListener("click", function (event) {
         event.preventDefault();
         popup.classList.add("modal-content-show");
@@ -60,6 +60,7 @@ if (link != null) {
 }
 
 // main-menu
+
 var navToggle = document.querySelector('.main-nav__toggle');
 if (navToggle != null) {
     var navMain = document.querySelector('.main-nav-wrap');
@@ -75,6 +76,7 @@ if (navToggle != null) {
 }
 
 // Меню user
+
 var navUserToggle = document.querySelector('.nav-user__toggle');
 if (navUserToggle != null) {
     var navUser = document.querySelector('.nav-user-wrap');

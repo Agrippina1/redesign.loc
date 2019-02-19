@@ -51,6 +51,7 @@ a {
 }
 .logo-link-wrapper {
   margin-left: 17px;
+  padding-top: 5px;
 }
 .breadcrumbs {
   margin-top: 17px;
@@ -142,7 +143,7 @@ a {
 }
 .nav_item {
   color: #000000;
-  vertical-align: baseline;
+  vertical-align: text-bottom;
   padding-left: 8px;
 }
 .nav_item:hover {
@@ -161,6 +162,9 @@ a {
 .main-nav {
   margin-bottom: 12px;
 }
+.input-user {
+  display: none;
+}
 .user-name {
   display: block;
   font-size: 12px;
@@ -171,6 +175,9 @@ a {
   padding-top: 4px;
   margin-left: 7px;
   margin-right: 8px;
+}
+.popup-close {
+  display: none;
 }
 .registration {
   margin-top: 6px;
@@ -184,12 +191,11 @@ a {
 .register-icon {
   margin-right: 10px;
 }
-.form-group {
-  width: 90%;
-  margin: auto;
+.form-group-wrapper {
+  margin-left: 10px;
 }
 .form-field {
-  width: 145px;
+  width: 141px;
   height: 25px;
   background: #ffffff;
   border: 1px solid #000000;
@@ -263,6 +269,8 @@ input[type="checkbox"] + label::after {
   color: #1033ed;
 }
 .form-search {
+  width: 90%;
+  margin: auto;
   margin-top: 11px;
 }
 .statistics {
@@ -325,9 +333,6 @@ input[type="checkbox"] + label::after {
   .header-wrapper {
     display: block;
   }
-  .logo-link-wrapper {
-    padding-top: 5px;
-  }
   .banner3 {
     width: 100%;
     height: 90px;
@@ -340,6 +345,9 @@ input[type="checkbox"] + label::after {
     position: relative;
     text-align: center;
   }
+  .breadcrumbs {
+    margin-top: 15px;
+  }
   .breadcrumbs-item {
     font-size: 14px;
   }
@@ -348,6 +356,7 @@ input[type="checkbox"] + label::after {
   }
   .content-right {
     border-left: none;
+    padding-top: 0;
   }
   .banner2-3 {
     margin-top: 20px;
@@ -395,6 +404,10 @@ input[type="checkbox"] + label::after {
     padding-bottom: 4px;
     padding-left: 0;
   }
+  main .icon-svg-menu {
+    width: 24px;
+    height: 24px;
+  }
   .main-nav .color_main_fon,
   .nav-user .color_main_fon,
   .registration-wrapper .color_main_fon {
@@ -411,6 +424,7 @@ input[type="checkbox"] + label::after {
   .nav_item {
     font-size: 20px;
     line-height: 40px;
+    vertical-align: bottom;
   }
   .user-name {
     font-size: 16px;
@@ -437,12 +451,12 @@ input[type="checkbox"] + label::after {
     left: 193px;
   }
 
-  /*Переключение навигации  main-nav*/
-  .main-nav__toggle {
+  .main-nav__toggle,
+  .nav-user__toggle,
+  .mail-input {
     display: block;
     position: absolute;
     top: 11px;
-    left: 20px;
     z-index: 2;
     width: 32px;
     height: 32px;
@@ -451,67 +465,28 @@ input[type="checkbox"] + label::after {
     outline: none;
     cursor: pointer;
     background: transparent;
+    padding: 0;
   }
-  .main-nav--closed .main-nav__toggle::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
+  .main-nav__toggle {
+    left: 20px;
+  }
+  .main-nav__toggle .icon-menu_item,
+  .nav-user__toggle .icon-menu_user,
+  .input-links .icon-login,
+  .mail-input .icon-mail_bw {
     width: 32px;
     height: 32px;
-    background: url("../icons/menu_item.svg") no-repeat;
-    background-size: 100%;
-  }
-  .main-nav--opened .main-nav__toggle::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 15px;
-    width: 32px;
-    height: 32px;
-    background: url("../icons/menu_close.svg") no-repeat;
-    background-size: 100%;
+    fill: #ffffff;
   }
   .main-nav--closed .main-nav,
   .nav-user--closed .nav-user {
     display: none;
   }
-
-  /*Переключение навигации  nav-user*/
   .nav-user__toggle {
-    display: block;
-    position: absolute;
-    top: 11px;
-    right: 17px;
-    z-index: 2;
-    width: 32px;
-    height: 32px;
-    font-size: 0;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: transparent;
+    right: 20px;
   }
-  .nav-user--closed .nav-user__toggle::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 1px;
-    width: 32px;
-    height: 32px;
-    background: url("../icons/menu_user.svg") no-repeat;
-    background-size: cover;
-  }
-  .nav-user--opened .nav-user__toggle::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 16px;
-    width: 32px;
-    height: 32px;
-    background: url("../icons/menu_user.svg") no-repeat;
-    background-size: cover;
-  }
+
+  /*Вход. Регистрация*/
 
   .input-user {
     display: block;
@@ -533,34 +508,11 @@ input[type="checkbox"] + label::after {
   .link-input {
     font-size: 13px;
   }
-  .input-user-icon {
-    width: 32px;
-    height: 32px;
-    background: url("../icons/login.svg") no-repeat;
-    background-size: 100%;
-  }
   .link-registration {
     font-size: 10px;
   }
-  .mail-icon {
-    display: block;
-    position: absolute;
-    top: 11px;
-    right: 75px;
-    z-index: 2;
-    width: 32px;
-    height: 32px;
-    font-size: 0;
-  }
-  .mail-icon::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 32px;
-    height: 32px;
-    background: url("../icons/mail_bw.svg") no-repeat;
-    background-size: 100%;
+  .mail-input {
+    right: 74px;
   }
 
 /*Форма регистрации (модальная)*/
@@ -579,15 +531,17 @@ input[type="checkbox"] + label::after {
   .modal-content {
     display: flex;
     justify-content: center;
+    align-content: center;
   }
   .registration-block {
-    position: relative;
+    position: absolute;
     display: none;
     min-width: 495px;
     z-index: 16;
     box-sizing: border-box;
   }
-  .popap-close {
+  .popup-close {
+    display: block;
     position: absolute;
     width: 30px;
     height: 30px;
@@ -602,7 +556,7 @@ input[type="checkbox"] + label::after {
     top: 0;
     right: 0;
   }
-  .popap-close::before {
+  .popup-close::before {
     content: "";
     position: absolute;
     top: 0;
@@ -622,19 +576,20 @@ input[type="checkbox"] + label::after {
     text-align: center;
     bottom: 40px;
     padding-top: 15px;
+    padding-left: 0;
     margin-bottom: 30px;
+  }
+  .form-group-wrapper {
+    margin-left: 50px;
   }
   .form-label {
     display: block;
-    font-family: "Tahoma";
+    font-family: "Tahoma", "Helvetica", "Arial", sans-serif;
     font-size: 16px;
   }
   .form-field {
     width: 392px;
     height: 40px;
-  }
-  .form-group {
-    width: 80%;
   }
   .form-group-checkbox {
     margin-top: 20px;
@@ -647,7 +602,10 @@ input[type="checkbox"] + label::after {
     height: 38px;
   }
 
-  .modal-overlay {
+  /*overlay*/
+
+  .modal-overlay,
+  .menu-overlay {
     position: fixed;
     display: none;
     top: 0;
@@ -657,7 +615,8 @@ input[type="checkbox"] + label::after {
     height: 100%;
     background: rgba(0, 0, 0, 0.25);
   }
-  .modal-overlay-show {
+  .modal-overlay-show,
+  .menu-overlay-show {
     display: block;
   }
   .copyright {
@@ -699,28 +658,41 @@ input[type="checkbox"] + label::after {
     padding-left: 0;
     margin-right: 0;
   }
+  .breadcrumbs {
+    margin-top: 7px;
+  }
+  .breadcrumbs-item {
+    font-size: 7px;
+  }
   .main-nav,
   .nav-user {
     top: 163px;
   }
   .main-nav {
-    left: 0;
+    left: 4px;
   }
   .nav-user {
-    right: 0;
+    right: 4px;
+  }
+  .main-nav__toggle,
+  .nav-user__toggle,
+  .mail-input {
+    width: 24px;
+    height: 24px;
+    top: 9px;
   }
   .main-nav__toggle {
-    left: 7px;
+    left: 15px;
   }
-  .main-nav--opened .main-nav__toggle::before {
-    left: 11px;
+  .main-nav__toggle .icon-menu_item,
+  .nav-user__toggle .icon-menu_user,
+  .input-links .icon-login,
+  .mail-input .icon-mail_bw {
+    width: 24px;
+    height: 24px;
   }
   .nav-user__toggle {
     right: 15px;
-  }
-  .nav-user--closed .nav-user__toggle::before,
-  .nav-user--opened .nav-user__toggle::before {
-    right: 0;
   }
   .input-user {
     width: 86px;
@@ -735,31 +707,14 @@ input[type="checkbox"] + label::after {
   .link-registration {
     font-size: 9px;
   }
-  .input-user-icon {
-    width: 24px;
-    height: 24px;
-  }
-  .nav-user--closed .main-nav__toggle::before,
-  .nav-user--closed .nav-user__toggle::before,
-  .nav-user--opened .nav-user__toggle::before {
-    width: 24px;
-    height: 24px;
-  }
-  .mail-icon {
-    top: 6px;
-    right: 56px;
-  }
-  .mail-icon::before {
-    width: 24px;
-    height: 24px;
-    top: 4px;
-    right: 4px;
+  .mail-input {
+    right: 66px;
   }
   .registration-block {
     min-width: 300px;
   }
-  .form-group {
-    width: 84%;
+  .form-group-wrapper {
+    margin-left: 24px;
   }
   .form-field {
     width: 250px;
