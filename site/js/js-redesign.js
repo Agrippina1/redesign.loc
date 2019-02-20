@@ -1,5 +1,4 @@
 // Фиксированный header
-
 var StickyElement = function(node){
   var doc = $(document),
       fixed = false,
@@ -10,7 +9,7 @@ var StickyElement = function(node){
     var docTop = doc.scrollTop(),
         anchorTop = anchor.offset().top;
 
-    console.log('scroll', docTop, anchorTop);
+    // console.log('scroll', docTop, anchorTop);
     if(docTop > anchorTop){
       if(!fixed){
         anchor.height(content.outerHeight());
@@ -59,34 +58,32 @@ if (link != null) {
     });
 }
 
-// main-menu
 
-var navToggle = document.querySelector('.main-nav__toggle');
-if (navToggle != null) {
-    var navMain = document.querySelector('.main-nav-wrap');
-    navToggle.addEventListener('click', function () {
-        if (navMain.classList.contains('main-nav--closed')) {
-            navMain.classList.remove('main-nav--closed');
-            navMain.classList.add('main-nav--opened');
-        } else {
-            navMain.classList.add('main-nav--closed');
-            navMain.classList.remove('main-nav--opened');
-        }
+// Модальные окна
+$(document).ready(function() {
+    var overlay = $('#overlay');
+    var open_modal = $('.open_modal'); // все ссылки oткрывaющие oкнa
+    var close = $('.modal_close, #overlay'); // чтo зaкрывaет мoдaльнoе oкнo
+    var modal = $('.modal_div'); // скрытые мoдaльные oкнa
+
+    close.click( function() {
+        modal.animate({opacity: 0, top: '45%'}, 0,
+                function() {
+                    $(this).css('display', 'none');
+                    overlay.fadeOut(0);
+                }
+            );
     });
-}
-
-// Меню user
-
-var navUserToggle = document.querySelector('.nav-user__toggle');
-if (navUserToggle != null) {
-    var navUser = document.querySelector('.nav-user-wrap');
-    navUserToggle.addEventListener('click', function () {
-        if (navUser.classList.contains('nav-user--closed')) {
-            navUser.classList.remove('nav-user--closed');
-            navUser.classList.add('nav-user--opened');
-        } else {
-            navUser.classList.add('nav-user--closed');
-            navUser.classList.remove('nav-user--opened');
-        }
+    open_modal.click( function(event){ // лoвим клик пo ссылке с клaссoм open_modal
+        event.preventDefault(); // вырубaем стaндaртнoе пoведение
+        var div = $(this).attr('href'); // вoзьмем стрoку с селектoрoм у кликнутoй ссылки
+        overlay.fadeIn(0, //пoкaзывaем oверлэй
+            function(){ // пoсле oкoнчaния пoкaзывaния oверлэя
+                $(div) // берем стрoку с селектoрoм и делaем из нее jquery oбъект
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '50%'}, 200); // плaвнo пoкaзывaем
+            });
     });
-}
+
+
+});

@@ -156,7 +156,7 @@ a {
   background: #e0e0e0;
 }
 .nav-active {
-  font-family: "Tahoma";
+  font-family: "Tahoma", "Helvetica", "Arial", sans-serif;
   font-weight: bold;
 }
 .main-nav {
@@ -477,6 +477,10 @@ input[type="checkbox"] + label::after {
     width: 32px;
     height: 32px;
     fill: #ffffff;
+  }
+  .modal_div {
+    display: none;
+    z-index: 7;
   }
   .main-nav--closed .main-nav,
   .nav-user--closed .nav-user {
