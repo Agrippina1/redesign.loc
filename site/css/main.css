@@ -216,7 +216,8 @@ a {
 }
 .form-registration-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .form-group-wrapper {
   width: 145px;
@@ -614,8 +615,14 @@ input[type="checkbox"] + label::after {
     font-size: 16px;
   }
   .form-field {
-    width: 392px;
-    height: 40px;
+    width: 374px;
+    height: 34px;
+    font-size: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .form-group {
+    margin-bottom: 15px;
   }
   .form-group-checkbox {
     margin-top: 20px;
@@ -752,8 +759,11 @@ input[type="checkbox"] + label::after {
   .form-group-wrapper {
     width: 252px;
   }
+  .form-group {
+    margin-bottom: 10px;
+  }
   .form-field {
-    width: 250px;
+    width: 234px;
   }
   .nav-footer_items {
     height: 255px;
