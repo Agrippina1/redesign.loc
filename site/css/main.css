@@ -646,8 +646,6 @@ input[type="checkbox"] + label::after {
   }
 
   /*overlay*/
-
-  .modal-overlay,
   .menu-overlay {
     position: fixed;
     display: none;
@@ -656,7 +654,7 @@ input[type="checkbox"] + label::after {
     z-index: 5;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.35);
   }
   .modal-overlay-show,
   .menu-overlay-show {
