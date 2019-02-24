@@ -36,18 +36,31 @@ $(document).ready(function() {
     var close = $('.modal_close, #overlay');// чтo зaкрывaет мoдaльнoе oкнo
     var modal = $('.modal_div');            // скрытые мoдaльные oкнa
 
-    close.click( function() {
+    function closeMyModal() {
+        $('.modal_is_open').removeClass('modal_is_open');
         $(modal).css('display', 'none');
         overlay.fadeOut(0);
+    }
+    close.click( function() {
+        closeMyModal();
     });
     open_modal.click( function(event) {
         event.preventDefault();
         var div = $(this).attr('href');
-        overlay.fadeIn(0,
-            function () {
-                $(div).css('display', 'block').animate({opacity: 1}, 200);
-                $("html,body").animate({scrollTop: $("header").offset().top}, "slow");
-            });
+
+        $(modal).css('display', 'none');
+
+
+        if (!$(div).hasClass('modal_is_open')) {
+            $('.modal_is_open').removeClass('modal_is_open');
+            overlay.fadeIn(0);
+            $(div).css('display', 'block').animate({opacity: 1}, 200);
+        } else {
+            overlay.fadeOut(0);
+        }
+        $(div).toggleClass('modal_is_open');
+        $("html,body").animate({scrollTop: $("header").offset().top}, "slow");
+
 
     });
 });
