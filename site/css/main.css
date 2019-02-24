@@ -131,7 +131,8 @@ a {
 }
 .nav-user__toggle,
 .main-nav__toggle,
-.input-user__toggle {
+.input-user__toggle,
+.mail-input {
   display: none;
 }
 .menu-title {
@@ -355,9 +356,10 @@ input[type="checkbox"] + label::after {
   }
   .all-content {
     display: block;
+    flex-direction: column;
   }
   .logo-header {
-    position: relative;
+    min-height: 55px;
     text-align: center;
   }
   .breadcrumbs {
@@ -369,9 +371,6 @@ input[type="checkbox"] + label::after {
   .breadcrumbs .icon-svg-breadcrumbs {
     width: 12px;
     height: 12px;
-  }
-  .all-content {
-    flex-direction: column;
   }
   .content-right {
     border-left: none;
@@ -392,13 +391,14 @@ input[type="checkbox"] + label::after {
   }
 
   .nav-wrapper {
+    position: relative;
+    top: 23px;
     display: flex;
     justify-content: space-between;
   }
   .main-nav,
   .nav-user {
     position: absolute;
-    top: 177px;
     min-width: 270px;
     background: #efefef;
     border: 1px solid #000000;
@@ -419,14 +419,14 @@ input[type="checkbox"] + label::after {
     color: #000000;
     text-align: center;
     border-radius: 5px 5px 0 0;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-left: 0;
   }
   main .icon-svg-menu {
     width: 24px;
     height: 24px;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
   }
   .main-nav .color_main_fon,
   .nav-user .color_main_fon,
@@ -469,7 +469,7 @@ input[type="checkbox"] + label::after {
     left: 10px;
   }
   .nav-user-wrapper::before {
-    left: 193px;
+    left: 224px;
   }
 
   .main-nav__toggle,
@@ -487,6 +487,7 @@ input[type="checkbox"] + label::after {
     cursor: pointer;
     background: transparent;
     padding: 0;
+    -webkit-appearance: none;
   }
   .main-nav__toggle {
     left: 20px;
@@ -502,10 +503,6 @@ input[type="checkbox"] + label::after {
   .modal_div {
     display: none;
     z-index: 7;
-  }
-  .main-nav--closed .main-nav,
-  .nav-user--closed .nav-user {
-    display: none;
   }
   .nav-user__toggle {
     right: 20px;
@@ -553,43 +550,47 @@ input[type="checkbox"] + label::after {
   }
 }
 
+  .registration-block {
+    position: absolute;
+    display: none;
+    min-width: 495px;
+    box-sizing: border-box;
+    left: 50%;
+    margin-left: -245px;
+  }
   .modal-content {
     display: flex;
     justify-content: center;
     align-content: center;
   }
-  .registration-block {
-    position: absolute;
-    display: none;
-    min-width: 495px;
-    z-index: 16;
-    box-sizing: border-box;
-  }
   .popup-close {
     display: block;
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     font-size: 0;
-    background: red;
+    background: #c4c4c4;
     border-radius: 50%;
     border: 0;
     outline: 0;
     cursor: pointer;
   }
   .modal-content-close {
-    top: 0;
-    right: 0;
+    top: 3px;
+    right: 10px;
   }
   .popup-close::before {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 30px;
-    height: 30px;
+    top: 2px;
+    right: 2px;
+    width: 24px;
+    height: 24px;
     background: url("../icons/menu_close.svg") no-repeat;
     background-size: 100%
+  }
+  .popup-close:hover {
+    background: #eb1e1e;
   }
   .modal-content-show {
     display: block;
@@ -689,6 +690,7 @@ input[type="checkbox"] + label::after {
     border-bottom: 3px solid #2dabcf;
   }
   .logo-header {
+    min-height: 40px;
     text-align: left;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
   }
@@ -711,7 +713,7 @@ input[type="checkbox"] + label::after {
   }
   .main-nav,
   .nav-user {
-    top: 163px;
+    top: 0;
   }
   .main-nav {
     left: 4px;
@@ -757,6 +759,7 @@ input[type="checkbox"] + label::after {
   }
   .registration-block {
     min-width: 300px;
+    margin-left: -150px;
   }
   .form-group-wrapper {
     width: 252px;
