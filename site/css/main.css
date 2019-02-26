@@ -1,6 +1,9 @@
 .header {
   border-bottom: 8px solid;
 }
+.footer {
+  border-top: 8px solid;
+}
 .content {
   margin: 25px 10px;
   padding: 25px 10px;
@@ -18,7 +21,7 @@ body {
   font-size: 14px;
   line-height: 22px;
   color: #000000;
-  margin: 0 auto;
+  margin: 0;
 }
 h1, h2, h3, h4 {
   margin: 0;
@@ -38,6 +41,10 @@ ul {
 }
 a {
   text-decoration: none;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
 }
 .btn {
   display: inline-block;
@@ -98,6 +105,10 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.content-left {
+  width: 83%;
+  margin: 0 auto;
+}
 .content-right {
   display: flex;
   flex-direction: column;
@@ -107,9 +118,6 @@ a {
   padding-left: 10px;
   padding-top: 25px;
   margin-right: 8px;
-}
-.content-left {
-  width: 100%;
 }
 .icon-svg-menu {
   margin-top: 6px;
@@ -301,21 +309,20 @@ input[type="checkbox"] + label::after {
   font-weight: bold;
   text-align: center;
 }
+.qr-code {
+  display: flex;
+  flex-direction: column;
+}
 .qr-code-img {
-  display: block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  align-self: center;
   margin-bottom: 12px;
 }
 .main-content {
   padding-left: 10px;
   padding-right: 10px;
 }
-.footer {
+.footer-content {
   box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.25);
-  border-top: 5px solid #2dabcf;
-  border-bottom: none;
 }
 .copyright {
   font-family: "Tahoma";
@@ -343,9 +350,6 @@ input[type="checkbox"] + label::after {
     position: relative;
     z-index: 15;
   }
-  header .header {
-    border-bottom: 5px solid #2dabcf;
-  }
   .header-wrapper {
     display: block;
   }
@@ -358,9 +362,13 @@ input[type="checkbox"] + label::after {
     display: block;
     flex-direction: column;
   }
+  .content-left {
+    width: 100%;
+  }
   .logo-header {
     min-height: 55px;
     text-align: center;
+    border-bottom: 5px solid;
   }
   .breadcrumbs {
     margin-top: 15px;
@@ -555,10 +563,12 @@ input[type="checkbox"] + label::after {
     display: none;
     min-width: 495px;
     box-sizing: border-box;
+    top: 22px;
     left: 50%;
     margin-left: -245px;
   }
   .modal-content {
+    position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -632,9 +642,6 @@ input[type="checkbox"] + label::after {
   .form-group-checkbox {
     margin-top: 20px;
   }
-  .form-registration .color_main_fon {
-    background: #00297C;
-  }
   .btn-registration {
     width: 227px;
     height: 38px;
@@ -683,15 +690,16 @@ input[type="checkbox"] + label::after {
   .nav-footer_item a {
     color: #000000;
   }
+  .footer-top {
+    border-top: 5px solid;
+  }
 }
 
 @media (max-width: 767px) {
-  header .header {
-    border-bottom: 3px solid #2dabcf;
-  }
   .logo-header {
     min-height: 40px;
     text-align: left;
+    border-bottom: 3px solid;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
   }
   .logo-link-wrapper {
@@ -776,9 +784,11 @@ input[type="checkbox"] + label::after {
   .nav-footer_item {
     font-size: 13px;
   }
-  .footer {
-    border-top: 3px solid #2dabcf;
+  .footer-content {
     box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.25);
+  }
+  .footer-top {
+    border-top: 3px solid;
   }
   .copyright {
     font-size: 8px;
