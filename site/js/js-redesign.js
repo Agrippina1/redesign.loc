@@ -39,19 +39,19 @@ $(document).ready(function() {
     close.click( function() {
         $('.modal_is_open').removeClass('modal_is_open');
         $(modal).css('display', 'none');
-        overlay.fadeOut(400);
+        overlay.fadeOut(0);
     });
     open_modal.click( function(event) {
         event.preventDefault();
         var div = $(this).attr('href');
         $(modal).css('display', 'none');
-
+console.log(div);
         if (!$(div).hasClass('modal_is_open')) {
-            overlay.fadeIn(400);
+            overlay.fadeIn(0);
             $('.modal_is_open').removeClass('modal_is_open');
             $(modal).css('display', 'none');
             $(div).css('display', 'block').animate({opacity: 1}, 200);
-        } else overlay.fadeOut(400);
+        } else overlay.fadeOut(0);
 
         $(div).toggleClass('modal_is_open');
         $("html,body").animate({scrollTop: $("header").offset().top}, "slow");
