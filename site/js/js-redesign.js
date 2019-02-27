@@ -5,11 +5,11 @@ var StickyElement = function(node){
       anchor = node.find('.sticky-anchor'),
       content = node.find('.sticky-content');
 
-  var onScroll = function(e){
+  var onScroll = function(){
     var docTop = doc.scrollTop(),
         anchorTop = anchor.offset().top;
 
-    // console.log('scroll', docTop, anchorTop);
+     //console.log('scroll', docTop, anchorTop);
     if(docTop > anchorTop){
       if(!fixed){
         anchor.height(content.outerHeight());
@@ -24,7 +24,6 @@ var StickyElement = function(node){
       }
     }
   };
-
   $(window).on('scroll', onScroll);
 };
 var demo = new StickyElement($('#sticky'));
@@ -37,17 +36,23 @@ $(document).ready(function() {
     var modal = $('.modal_div');            // скрытые мoдaльные oкнa
 
     close.click( function() {
+        $('.modal_is_open').removeClass('modal_is_open');
         $(modal).css('display', 'none');
-        overlay.fadeOut(0);
+        overlay.fadeOut(300);
     });
     open_modal.click( function(event) {
         event.preventDefault();
-        var div = $(this).attr('href');
-        overlay.fadeIn(0,
-            function () {
-                $(div).css('display', 'block').animate({opacity: 1}, 200);
-                $("html,body").animate({scrollTop: $("header").offset().top}, "slow");
-            });
+        var div_id = $(this).attr('href');
+        $(modal).css('display', 'none');
 
+        if (!$(div_id).hasClass('modal_is_open')) {
+            overlay.fadeIn(300);
+            $('.modal_is_open').removeClass('modal_is_open');
+            $(modal).css('display', 'none');
+            $(div_id).css('display', 'block').animate({opacity: 1}, 300);
+        } else overlay.fadeOut(300);
+
+        $(div_id).toggleClass('modal_is_open');
+        $("html,body").animate({scrollTop: $("header").offset().top}, "slow");
     });
 });
