@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta http-equiv="Pragma" CONTENT="no-cache">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <link rel="stylesheet" href="site/css/normalize.css">
@@ -22,56 +23,57 @@
 
   </head>
   <body>
-    <div class="banner1">
-      <img src="site/pics/banner_1.png" alt="Реклама">
-    </div>
-    <header id="sticky" class="sticky-element">
-      <div class="sticky-anchor"></div>
-      <div class="sticky-content">
-        <div class="logo-header color_main_fon color_accent header main-nav--closed nav-user--closed">
-          <a href="#menu_main" class="main-nav__toggle modal_open modal_close" type="button">
-            <svg class="icon-svg color_icons icon-menu_item"><use xlink:href="site/icons/id_icons.svg#icon-menu_item"></use></svg>
-            Открыть меню</a>
-          <div class="logo-link-wrapper">
-            <a href="index.html" class="logo-img">
-              <picture>
-                <source media="(min-width: 1024px)" srcset="site/skins/blue/pics/svg/logo.svg">
-                <source media="(min-width: 768px)" srcset="site/skins/blue/pics/svg/logo_tablet.svg">
-                <img class="logo-img" src="site/skins/blue/pics/svg/logo_mobile.svg" alt="Логотип">
-              </picture>
-            </a>
-          </div>
-          <!--<button class="mail-input " type="button">-->
-            <!--<svg class="icon-svg color_icons icon-mail_bw"><use xlink:href="site/icons/id_icons.svg#icon-mail_bw"></use></svg>-->
-            <!--Войти в почту</button>-->
-          <!--<a href="#menu_user" class="nav-user__toggle modal_open modal_close" type="button">-->
-            <!--<svg class="icon-svg color_icons icon-menu_user"><use xlink:href="site/icons/id_icons.svg#icon-menu_user"></use></svg>-->
-            <!--Открыть меню</a>-->
-          <div class="input-user">
-            <a href="#menu_enter" class="input-links modal_open modal_close">
-              <div class="input-only">
-                <span class="link-input" href="#">Войти</span>
-                <span class="link-registration" href="#">Регистрация</span>
-              </div>
-              <svg class="icon-svg color_icons icon-login"><use xlink:href="site/icons/id_icons.svg#icon-login"></use></svg>
-            </a>
+    <div class="container">
+      <div class="banner1">
+        <img src="site/pics/banner_1.png" alt="Реклама">
+      </div>
+      <header id="sticky" class="sticky-element">
+        <div class="sticky-anchor"></div>
+        <div class="sticky-content">
+          <div class="logo-header color_main_fon color_accent header">
+            <a href="#menu_main" class="main-nav__toggle modal_open modal_close" type="button">
+              <svg class="icon-svg color_icons icon-menu_item"><use xlink:href="site/icons/id_icons.svg#icon-menu_item"></use></svg>
+              Открыть меню</a>
+            <div class="logo-link-wrapper">
+              <a href="index.html" class="logo-img">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="site/skins/blue/pics/svg/logo.svg">
+                  <source media="(min-width: 768px)" srcset="site/skins/blue/pics/svg/logo_tablet.svg">
+                  <source media="(min-width: 320px)" srcset="site/skins/blue/pics/svg/logo_mobile.svg">
+                  <img class="logo-img" src="site/skins/blue/pics/svg/logo.svg" alt="Логотип">
+                </picture>
+              </a>
+            </div>
+            <button class="mail-input " type="button">
+              <svg class="icon-svg color_icons icon-mail_bw"><use xlink:href="site/icons/id_icons.svg#icon-mail_bw"></use></svg>
+              Войти в почту</button>
+            <a href="#menu_user" class="nav-user__toggle modal_open modal_close" type="button">
+              <svg class="icon-svg color_icons icon-menu_user"><use xlink:href="site/icons/id_icons.svg#icon-menu_user"></use></svg>
+              Открыть меню</a>
+            <!-- <div class="input-user">
+              <a href="#menu_enter" class="input-links modal_open modal_close">
+                <div class="input-only">
+                  <span class="link-input" href="#">Войти</span>
+                  <span class="link-registration" href="#">Регистрация</span>
+                </div>
+                <svg class="icon-svg color_icons icon-login"><use xlink:href="site/icons/id_icons.svg#icon-login"></use></svg>
+              </a>
+            </div> -->
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <main>
-      <div class="all-content">
-        <div class="content-right">
-          <div class="content-right-wrapper">
-            <div class="banner4">
-              <img src="site/pics/banner_4.png" width="160" height="160" alt="Реклама">
-            </div>
-            <div class="nav-wrapper">
-              <div id="menu_main" class="main-nav-wrap modal_div">
-                <nav class="main-nav nav-block color_border color_menu_fon">
+      <main>
+        <div class="all-content">
+          <div class="content-right">
+            <div class="content-right-wrapper">
+              <div class="banner4">
+                <img src="site/pics/banner_4.png" width="160" height="160" alt="Реклама">
+              </div>
+              <div class="nav-wrapper">
+                <nav id="menu_main" class="main-nav nav-block color_border color_menu_fon modal_div">
                   <div class="main-nav-wrapper">
-                    <h4 class="menu-title color_main_fon color_accent header">Разделы</h4>
+                    <h4 class="menu-title color_main_fon color_accent nav_border">Разделы</h4>
                     <ul class="main-nav-items nav">
                       <div class="newyear">
                         <img src="site/pics/menu_fon_ny.png" width="55" height="73" alt="С новым годом!">
@@ -175,15 +177,13 @@
                     </ul>
                   </div>
                 </nav>
-              </div>
-              <div class="banner5">
-                <img src="site/pics/banner_5.png" width="160" height="160" alt="Реклама">
-              </div>
-              <div id="menu_user" class="nav-user-wrap modal_div">
-                <nav class="nav-user nav-block color_border color_menu_fon">
+                <div class="banner5">
+                  <img src="site/pics/banner_5.png" width="160" height="160" alt="Реклама">
+                </div>
+                <nav id="menu_user" class="nav-user nav-block color_border color_menu_fon modal_div">
                   <div class="nav-user-wrapper">
-                    <h4 class="menu-title color_main_fon color_accent header">Пользователям</h4>
-                    <a href="#" class="user-name">NicUserUnick</a>
+                    <h4 class="menu-title color_main_fon color_accent nav_border">Пользователям</h4>
+                    <a href="#" class="user-name color_font">NicUserUnick</a>
                     <ul class="user-nav_items nav">
                       <li class="main-nav_item">
                         <a class="nav-icon" href="#">
@@ -247,173 +247,225 @@
                       </li>
                     </ul>
                   </div>
+                  <div class="decor"></div>
+                  <div class="nav-admin-wrapper">
+                    <h4 class="menu-title color_main_fon color_accent nav_border">Администрация</h4>
+                    <ul class="admin-nav_items nav">
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
+                          <span class="nav_item">Новые данные</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
+                          <span class="nav_item">Почта админа</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
+                          <span class="nav_item">Юзеры</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
+                          <span class="nav_item">Online</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
+                          <span class="nav_item">Модераторы</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
+                          <span class="nav_item">Новости</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
+                          <span class="nav_item">Реклама</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </nav>
               </div>
-            </div>
-            <div class="modal-content">
-              <div id="menu_enter" class="nav-block registration-block color_border color_menu_fon modal_div">
-                <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
-                  Закрыть</button>
-                <div class="registration-wrapper">
-                  <h4 class="menu-title color_main_fon color_accent header">Пользователям</h4>
-                  <div class="registration">
-                    <p class="registration-title">
-                      <svg class="icon-svg icon-svg-menu icon-svg-registration color_icons"><use xlink:href="site/icons/id_icons.svg#icon-register_bw"></use></svg>
-                      <span class="registration-text">Регистрация</span>
-                    </p>
-                    <form class="form-registration" action="index.html" method="post">
-                      <div class="form-registration-wrapper">
-                        <div class="form-group-wrapper">
-                          <div class="form-group">
-                            <label class="form-label" for="login-field">Логин:</label>
-                            <input class="form-field" id="login-field" type="text" name="login" required>
-                          </div>
-                          <div class="form-group">
-                            <label class="form-label" for="password-field">Пароль:</label>
-                            <input class="form-field" id="password-field" type="password" name="password-field" required>
-                          </div>
-                          <div class="form-group-checkbox">
-                            <div class="form-group form-group-blind">
-                              <input class="checkbox-field" id="blind-field" type="checkbox" name="blind">
-                              <label class="checkbox-label" for="blind-field">Для незрячих</label>
+              <div class="modal-content">
+                <div id="menu_enter" class="nav-block registration-block color_border color_menu_fon modal_div">
+                  <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
+                    Закрыть</button>
+                  <div class="registration-wrapper">
+                    <h4 class="menu-title color_main_fon color_accent nav_border">Пользователям</h4>
+                    <div class="registration">
+                      <p class="registration-title">
+                        <svg class="icon-svg icon-svg-menu icon-svg-registration color_icons"><use xlink:href="site/icons/id_icons.svg#icon-register_bw"></use></svg>
+                        <span class="registration-text">Регистрация</span>
+                      </p>
+                      <form class="form-registration" action="index.html" method="post">
+                        <div class="form-registration-wrapper">
+                          <div class="form-group-wrapper">
+                            <div class="form-group">
+                              <label class="form-label" for="login-field">Логин:</label>
+                              <input class="form-field" id="login-field" type="text" name="login" required>
                             </div>
                             <div class="form-group">
-                              <input class="checkbox-field" id="memorize-field" type="checkbox" name="memorize">
-                              <label class="checkbox-label" for="memorize-field">Запомнить</label>
+                              <label class="form-label" for="password-field">Пароль:</label>
+                              <input class="form-field" id="password-field" type="password" name="password-field" required>
+                            </div>
+                            <div class="form-group-checkbox">
+                              <div class="form-group form-group-blind">
+                                <input class="checkbox-field" id="blind-field" type="checkbox" name="blind">
+                                <label class="checkbox-label" for="blind-field">Для незрячих</label>
+                              </div>
+                              <div class="form-group">
+                                <input class="checkbox-field" id="memorize-field" type="checkbox" name="memorize">
+                                <label class="checkbox-label" for="memorize-field">Запомнить</label>
+                              </div>
                             </div>
                           </div>
                         </div>
+                        <div class="btn-wrapper">
+                          <input class="btn btn-registration color_main_fon color_accent header" type="submit" name="button" value="Войти">
+                        </div>
+                      </form>
+                      <div class="registration-links">
+                        <a class="main-nav_item registration-link" href="#">Вспомнить пароль</a>
+                        <a class="main-nav_item registration-link" href="#">Соглашение</a>
+                        <a class="main-nav_item registration-link" href="#">Политика</a>
                       </div>
-                      <div class="btn-wrapper">
-                        <input class="btn btn-registration color_main_fon color_accent header" type="submit" name="button" value="Войти">
-                      </div>
-                    </form>
-                    <div class="registration-links">
-                      <a class="main-nav_item registration-link" href="#">Вспомнить пароль</a>
-                      <a class="main-nav_item registration-link" href="#">Соглашение</a>
-                      <a class="main-nav_item registration-link" href="#">Политика</a>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="nav-block-wrapper">
-              <div class="nav-block color_border color_menu_fon">
-                <h4 class="menu-title color_main_fon color_accent header">Поиск на портале</h4>
-                <form class="form" action="index.html" method="post">
-                  <div class="form-group form-search">
-                    <input class="form-field" id="search-field" type="text" name="search-name">
-                    <label for="search-field"></label>
-                  </div>
-                  <div class="btn-wrapper">
-                    <input class="btn color_main_fon color_accent header" type="submit" name="button" value="Поиск">
-                  </div>
-                </form>
+              <div class="nav-block-wrapper">
+                <div class="nav-block color_border color_menu_fon">
+                  <h4 class="menu-title color_main_fon color_accent nav_border">Поиск на портале</h4>
+                  <form class="form" action="index.html" method="post">
+                    <div class="form-group form-search">
+                      <input class="form-field" id="search-field" type="text" name="search-name">
+                      <label for="search-field"></label>
+                    </div>
+                    <div class="btn-wrapper">
+                      <input class="btn color_main_fon color_accent header" type="submit" name="button" value="Поиск">
+                    </div>
+                  </form>
+                </div>
+                <div class="nav-block color_border color_menu_fon">
+                  <h4 class="menu-title color_main_fon color_accent nav_border">Статистика</h4>
+                  <p class="statistics">Друзей <span>8963</span></p>
+                  <p class="statistics-online">Сейчас на портале</p>
+                  <p class="statistics">Друзей <span>32</span></p>
+                  <p class="statistics">В чате <span>9</span></p>
+                  <p class="statistics">Гостей <span>36</span></p>
+                </div>
               </div>
-              <div class="nav-block color_border color_menu_fon">
-                <h4 class="menu-title color_main_fon color_accent header">Статистика</h4>
-                <p class="statistics">Друзей <span>8963</span></p>
-                <p class="statistics-online">Сейчас на портале</p>
-                <p class="statistics">Друзей <span>32</span></p>
-                <p class="statistics">В чате <span>9</span></p>
-                <p class="statistics">Гостей <span>36</span></p>
+              <div class="banner6">
+                <img src="site/pics/banner_6.png" width="160" height="600" alt="Реклама">
               </div>
             </div>
-            <div class="banner6">
-              <img src="site/pics/banner_6.png" width="160" height="600" alt="Реклама">
+            <div class="qr-code">
+              <script type="text/javascript">
+                document.write("<img class='qr-code-img' src='https://chart.googleapis.com/chart?cht=qr&chs=150x150&choe=UTF-8&chl="+location.href+"' title='QR Barcode - адрес страницы для мобильных устройств' alt='QR Barcode - адрес страницы для мобильных устройств'>");
+              </script>
+              <img class="qr-code-img" src="site/pics/barcode.png" width="89" height="122" alt="Статистика">
             </div>
           </div>
-          <div class="qr-code">
-            <script type="text/javascript">
-              document.write("<img class='qr-code-img' src='https://chart.googleapis.com/chart?cht=qr&chs=150x150&choe=UTF-8&chl="+location.href+"' title='QR Barcode - адрес страницы для мобильных устройств' alt='QR Barcode - адрес страницы для мобильных устройств'>");
-            </script>
-            <img class="qr-code-img" src="site/pics/barcode.png" width="89" height="122" alt="Статистика">
+          <div class="content-left">
+            <div class="breadcrumbs color_link_hover">
+              <a class="breadcrumbs-item" href="https://www.disability.ru">
+                <svg class="icon-svg icon-svg-breadcrumbs color_icons"><use xlink:href="site/icons/id_icons.svg#icon-navigator"></use></svg>
+              </a>
+              <a class="breadcrumbs-item color_font" href="#">/ Товары и услуги</a>
+            </div>
+            <div class="banner2-3 banner2">
+              <img src="site/pics/banner_2.png" width="730" height="90" alt="Реклама">
+            </div>
+            <div class="main-content color_content_fon">
+              <div class="m-c-w">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+            <div class="banner2-3 banner3">
+              <img src="site/pics/banner_3.png" alt="Реклама">
+            </div>
           </div>
         </div>
-        <div class="content-left">
-          <div class="breadcrumbs color_link_hover">
-            <a class="breadcrumbs-item" href="https://www.disability.ru">
-              <svg class="icon-svg icon-svg-breadcrumbs color_icons"><use xlink:href="site/icons/id_icons.svg#icon-navigator"></use></svg>
-            </a>
-            <a class="breadcrumbs-item color_font" href="#">/ Товары и услуги</a>
-          </div>
-          <div class="banner2-3 banner2">
-            <img src="site/pics/banner_2.png" width="730" height="90" alt="Реклама">
-          </div>
-          <div class="main-content color_content_fon">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at atque aut corporis debitis dolore dolorem, earum eligendi eum expedita illo impedit inventore ipsam labore laboriosam molestiae nesciunt placeat quaerat, quas qui quia quisquam rem sint sit ut! Accusamus beatae consequatur deserunt dolorum, excepturi magni maiores molestiae officiis quis ut. Ab asperiores cum dolores, earum fugit id itaque laudantium magni minima molestiae mollitia neque, nobis odio provident quas qui repellendus tempore voluptate. Architecto ducimus eos illum maxime numquam odit placeat recusandae veritatis! Accusamus, adipisci aliquam, beatae ipsam iste iusto molestiae nemo officiis omnis perspiciatis placeat quas quasi, quia sed soluta suscipit vitae? Ad aliquid architecto atque aut beatae consequatur cupiditate debitis delectus distinctio doloremque doloribus ex exercitationem expedita facere, fuga fugit id illum ipsum iusto labore laudantium minus molestias nesciunt nisi officiis optio provident quas quasi quidem quisquam sequi, sunt, tempore tenetur ut vero voluptatem voluptatum! Aliquam cumque deserunt dolorum ea excepturi hic inventore odio possimus quasi rem. Accusamus accusantium aliquam aspernatur aut autem culpa cum cumque dignissimos dolore dolorem doloremque dolores eius enim eos eum ex fuga incidunt iure iusto laborum magnam nam nisi obcaecati placeat quibusdam, quis quisquam similique sit suscipit totam unde ut, velit veniam. Aperiam commodi corporis cupiditate deleniti deserunt doloremque eius facilis id incidunt magnam neque omnis optio placeat, porro quasi quo quos repellendus repudiandae sequi tenetur! Commodi consequatur nostrum possimus quo voluptates. Eligendi eos fugiat harum illo laborum maxime natus porro qui rem reprehenderit? Adipisci asperiores blanditiis, dolores eveniet excepturi ipsam nostrum. Consectetur eum exercitationem, impedit laborum modi mollitia nobis odio officia repellat unde? Corporis dignissimos dolorem dolores excepturi impedit laboriosam quae quod velit vitae voluptates. Assumenda, atque beatae cumque cupiditate delectus id iusto minima modi ratione repellendus tenetur ullam veritatis. Accusamus aut, culpa cupiditate dolore id maiores non omnis quae quo repellendus, tempore totam vel vitae! Accusamus culpa eius eligendi facere in ipsa iste iure, iusto laboriosam minima nisi saepe tempora velit voluptatem voluptates? Consequatur cumque, est facilis in laborum optio unde veritatis. Aperiam asperiores at blanditiis cum cupiditate distinctio dolore eligendi esse explicabo facere facilis fugiat hic iusto laborum minus molestiae mollitia nam natus nostrum odio officia placeat, quae qui saepe sed, sequi sit tempora, temporibus unde ut velit veniam vero voluptas. Aspernatur autem explicabo id ipsam nobis nostrum similique totam, ut! Aliquid consequatur dignissimos esse incidunt maxime non officia provident soluta veniam voluptas! Accusamus debitis facere facilis laboriosam numquam pariatur quo recusandae tempore. Asperiores, dignissimos doloribus eum quia saepe sit suscipit totam! Accusamus ad amet, aperiam architecto atque cum cumque, dolorem eum incidunt inventore, iure magnam maxime necessitatibus nobis quae quaerat quasi qui quod ratione rerum sit totam unde vel velit voluptatem. Aliquid blanditiis hic maiores modi, nihil nobis provident quaerat tempora totam. Alias aperiam doloribus dolorum, eligendi eos error exercitationem expedita fuga fugit in incidunt ipsum iure laboriosam minima minus mollitia numquam obcaecati placeat quasi qui ratione sed sunt totam unde veritatis! At dignissimos dolore nostrum omnis rerum! Architecto asperiores dolorum esse hic ipsum maxime nam nobis qui recusandae vel.
-          </div>
-          <div class="banner2-3 banner3">
-            <img src="site/pics/banner_3.png" alt="Реклама">
-          </div>
+      </main>
+      <footer class="footer-content">
+        <div class="footer-top color_main_fon color_accent footer">
+          <p class="copyright">Copyright &copy; 2002</p>
         </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="color_main_fon color_accent">
-        <p class="copyright">Copyright &copy; 2002</p>
-      </div>
-      <nav class="nav-footer color_menu_fon">
-        <ul class="nav-footer_items">
-          <li class="nav-footer_item">
-            <a href="#">Новости</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Статьи</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Ссылки</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Организации</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Биржа труда</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Товары-услуги</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Знакомства</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Дневники</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Форум</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Чат</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Юмор</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Гостевая книга</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Наши партнеры</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Карта портала</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Вопрос-ответ</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Написать админу</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Соглашение</a>
-          </li>
-          <li class="nav-footer_item">
-            <a href="#">Политика</a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
+        <nav class="nav-footer color_menu_fon">
+          <ul class="nav-footer_items">
+            <li class="nav-footer_item">
+              <a href="#">Новости</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Статьи</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Ссылки</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Организации</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Биржа труда</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Товары-услуги</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Знакомства</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Дневники</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Форум</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Чат</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Юмор</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Гостевая книга</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Наши партнеры</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Карта портала</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Вопрос-ответ</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Написать админу</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Соглашение</a>
+            </li>
+            <li class="nav-footer_item">
+              <a href="#">Политика</a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
     <div id="overlay" class="modal-overlay menu-overlay"></div>
+
     <script src="site/js/js-redesign.js"></script>
+    <script src="site/js/svgxuse.js"></script>
 
   </body>
 </html>

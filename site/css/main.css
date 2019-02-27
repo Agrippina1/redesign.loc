@@ -1,6 +1,12 @@
 .header {
   border-bottom: 8px solid;
 }
+.footer {
+  border-top: 8px solid;
+}
+.nav_border {
+  border-bottom: 3px solid;
+}
 .content {
   margin: 25px 10px;
   padding: 25px 10px;
@@ -18,7 +24,7 @@ body {
   font-size: 14px;
   line-height: 22px;
   color: #000000;
-  margin: 0 auto;
+  margin: 0;
 }
 h1, h2, h3, h4 {
   margin: 0;
@@ -39,6 +45,10 @@ ul {
 a {
   text-decoration: none;
 }
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
 .btn {
   display: inline-block;
   border: none;
@@ -47,7 +57,8 @@ a {
   }
 
 .logo-header {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .logo-link-wrapper {
   margin-left: 17px;
@@ -95,21 +106,37 @@ a {
   margin-bottom: 12px;
 }
 .all-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-}
-.content-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  order: 1;
-  border-left: 2px dotted #dbdbdb;
-  padding-left: 10px;
-  padding-top: 25px;
-  margin-right: 8px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .content-left {
-  width: 100%;
+  width: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.content-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  border-left: 2px dotted #dbdbdb;
+  padding-left: 10px;
+  margin-top: 36px;
+  margin-right: 8px;
 }
 .icon-svg-menu {
   margin-top: 6px;
@@ -131,7 +158,8 @@ a {
 }
 .nav-user__toggle,
 .main-nav__toggle,
-.input-user__toggle {
+.input-user__toggle,
+.mail-input {
   display: none;
 }
 .menu-title {
@@ -176,12 +204,18 @@ a {
   display: block;
   font-size: 12px;
   font-weight: bold;
-  color: #000000;
   text-align: center;
   border-bottom: 1px solid #bdbdbd;
   padding-top: 4px;
   margin-left: 7px;
   margin-right: 8px;
+}
+.decor {
+  width: 165px;
+  height: 12px;
+  background: #ffffff;
+  border-top: 1px solid;
+  margin-left: -1px;
 }
 .popup-close {
   display: none;
@@ -215,9 +249,16 @@ a {
   margin-top: 12px;
 }
 .form-registration-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .form-group-wrapper {
   width: 145px;
@@ -267,7 +308,8 @@ input[type="checkbox"] + label::after {
   height: 25px;
   color: #ffffff;
   background: #00297c;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   margin-top: 14px;
   margin-bottom: 15px;
@@ -289,8 +331,12 @@ input[type="checkbox"] + label::after {
   margin-top: 11px;
 }
 .statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 10px;
   color: #000000;
   margin: 2px 10px 2px 10px;
@@ -300,21 +346,28 @@ input[type="checkbox"] + label::after {
   font-weight: bold;
   text-align: center;
 }
+.qr-code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .qr-code-img {
-  display: block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-bottom: 12px;
 }
 .main-content {
   padding-left: 10px;
   padding-right: 10px;
 }
-.footer {
-  box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.25);
-  border-top: 5px solid #2dabcf;
-  border-bottom: none;
+.footer-content {
+  -webkit-box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.25);
 }
 .copyright {
   font-family: "Tahoma";
@@ -342,9 +395,6 @@ input[type="checkbox"] + label::after {
     position: relative;
     z-index: 15;
   }
-  header .header {
-    border-bottom: 5px solid #2dabcf;
-  }
   .header-wrapper {
     display: block;
   }
@@ -355,10 +405,14 @@ input[type="checkbox"] + label::after {
   }
   .all-content {
     display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .logo-header {
-    position: relative;
     text-align: center;
+    border-bottom: 5px solid;
   }
   .breadcrumbs {
     margin-top: 15px;
@@ -370,12 +424,9 @@ input[type="checkbox"] + label::after {
     width: 12px;
     height: 12px;
   }
-  .all-content {
-    flex-direction: column;
-  }
   .content-right {
     border-left: none;
-    padding-top: 0;
+    margin-top: 0;
   }
   .banner2-3 {
     margin-top: 20px;
@@ -392,18 +443,24 @@ input[type="checkbox"] + label::after {
   }
 
   .nav-wrapper {
+    position: relative;
+    top: 23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .main-nav,
   .nav-user {
     position: absolute;
-    top: 177px;
     min-width: 270px;
     background: #efefef;
     border: 1px solid #000000;
     border-radius: 5px;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   }
   .main-nav {
     min-height: 525px;
@@ -419,14 +476,18 @@ input[type="checkbox"] + label::after {
     color: #000000;
     text-align: center;
     border-radius: 5px 5px 0 0;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-left: 0;
+  }
+  .nav_border {
+    border-bottom: none;
   }
   main .icon-svg-menu {
     width: 24px;
     height: 24px;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
   }
   .main-nav .color_main_fon,
   .nav-user .color_main_fon,
@@ -450,7 +511,6 @@ input[type="checkbox"] + label::after {
   .user-name {
     font-size: 16px;
     line-height: 24px;
-    color: #00147c;
   }
   .main-nav-wrapper,
   .nav-user-wrapper {
@@ -469,7 +529,7 @@ input[type="checkbox"] + label::after {
     left: 10px;
   }
   .nav-user-wrapper::before {
-    left: 193px;
+    left: 224px;
   }
 
   .main-nav__toggle,
@@ -477,7 +537,7 @@ input[type="checkbox"] + label::after {
   .mail-input {
     display: block;
     position: absolute;
-    top: 11px;
+    top: 20%;
     z-index: 2;
     width: 32px;
     height: 32px;
@@ -487,6 +547,7 @@ input[type="checkbox"] + label::after {
     cursor: pointer;
     background: transparent;
     padding: 0;
+    -webkit-appearance: none;
   }
   .main-nav__toggle {
     left: 20px;
@@ -503,12 +564,11 @@ input[type="checkbox"] + label::after {
     display: none;
     z-index: 7;
   }
-  .main-nav--closed .main-nav,
-  .nav-user--closed .nav-user {
-    display: none;
-  }
   .nav-user__toggle {
     right: 20px;
+  }
+  .decor {
+    display: none;
   }
 
   /*Вход. Регистрация*/
@@ -522,8 +582,12 @@ input[type="checkbox"] + label::after {
     text-align: right;
   }
   .input-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     color: #ffffff;
     line-height: 16px;
   }
@@ -542,6 +606,17 @@ input[type="checkbox"] + label::after {
 
 /*Форма регистрации (модальная)*/
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 @keyframes bounce {
   0% {
     -webkit-transform: scale(0);
@@ -553,43 +628,55 @@ input[type="checkbox"] + label::after {
   }
 }
 
-  .modal-content {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
   .registration-block {
     position: absolute;
     display: none;
     min-width: 495px;
-    z-index: 16;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    top: 22px;
+    left: 50%;
+    margin-left: -245px;
+  }
+  .modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .popup-close {
     display: block;
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     font-size: 0;
-    background: red;
+    background: #c4c4c4;
     border-radius: 50%;
     border: 0;
     outline: 0;
     cursor: pointer;
   }
   .modal-content-close {
-    top: 0;
-    right: 0;
+    top: 3px;
+    right: 10px;
   }
   .popup-close::before {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 30px;
-    height: 30px;
+    top: 2px;
+    right: 2px;
+    width: 24px;
+    height: 24px;
     background: url("../icons/menu_close.svg") no-repeat;
     background-size: 100%
+  }
+  .popup-close:hover {
+    background: #eb1e1e;
   }
   .modal-content-show {
     display: block;
@@ -631,9 +718,6 @@ input[type="checkbox"] + label::after {
   .form-group-checkbox {
     margin-top: 20px;
   }
-  .form-registration .color_main_fon {
-    background: #00297C;
-  }
   .btn-registration {
     width: 227px;
     height: 38px;
@@ -669,10 +753,17 @@ input[type="checkbox"] + label::after {
     padding-top: 10px;
   }
   .nav-footer_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
     height: 170px;
   }
   .nav-footer_item {
@@ -682,15 +773,18 @@ input[type="checkbox"] + label::after {
   .nav-footer_item a {
     color: #000000;
   }
+  .footer-top {
+    border-top: 5px solid;
+  }
 }
 
 @media (max-width: 767px) {
-  header .header {
-    border-bottom: 3px solid #2dabcf;
-  }
   .logo-header {
+    min-height: 40px;
     text-align: left;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+    border-bottom: 3px solid;
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
   }
   .logo-link-wrapper {
     margin-left: 16%;
@@ -711,7 +805,7 @@ input[type="checkbox"] + label::after {
   }
   .main-nav,
   .nav-user {
-    top: 163px;
+    top: 0;
   }
   .main-nav {
     left: 4px;
@@ -724,7 +818,7 @@ input[type="checkbox"] + label::after {
   .mail-input {
     width: 24px;
     height: 24px;
-    top: 9px;
+    top: 22%;
   }
   .main-nav__toggle {
     left: 15px;
@@ -757,6 +851,7 @@ input[type="checkbox"] + label::after {
   }
   .registration-block {
     min-width: 300px;
+    margin-left: -150px;
   }
   .form-group-wrapper {
     width: 252px;
@@ -773,9 +868,12 @@ input[type="checkbox"] + label::after {
   .nav-footer_item {
     font-size: 13px;
   }
-  .footer {
-    border-top: 3px solid #2dabcf;
-    box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.25);
+  .footer-content {
+    -webkit-box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.25);
+  }
+  .footer-top {
+    border-top: 3px solid;
   }
   .copyright {
     font-size: 8px;
