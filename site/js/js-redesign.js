@@ -9,7 +9,7 @@ var StickyElement = function(node){
     var docTop = doc.scrollTop(),
         anchorTop = anchor.offset().top;
 
-    // console.log('scroll', docTop, anchorTop);
+     //console.log('scroll', docTop, anchorTop);
     if(docTop > anchorTop){
       if(!fixed){
         anchor.height(content.outerHeight());
@@ -24,7 +24,6 @@ var StickyElement = function(node){
       }
     }
   };
-
   $(window).on('scroll', onScroll);
 };
 var demo = new StickyElement($('#sticky'));
@@ -39,21 +38,21 @@ $(document).ready(function() {
     close.click( function() {
         $('.modal_is_open').removeClass('modal_is_open');
         $(modal).css('display', 'none');
-        overlay.fadeOut(0);
+        overlay.fadeOut(300);
     });
     open_modal.click( function(event) {
         event.preventDefault();
-        var div = $(this).attr('href');
+        var div_id = $(this).attr('href');
         $(modal).css('display', 'none');
-console.log(div);
-        if (!$(div).hasClass('modal_is_open')) {
-            overlay.fadeIn(0);
+
+        if (!$(div_id).hasClass('modal_is_open')) {
+            overlay.fadeIn(300);
             $('.modal_is_open').removeClass('modal_is_open');
             $(modal).css('display', 'none');
-            $(div).css('display', 'block').animate({opacity: 1}, 200);
-        } else overlay.fadeOut(0);
+            $(div_id).css('display', 'block').animate({opacity: 1}, 300);
+        } else overlay.fadeOut(300);
 
-        $(div).toggleClass('modal_is_open');
+        $(div_id).toggleClass('modal_is_open');
         $("html,body").animate({scrollTop: $("header").offset().top}, "slow");
     });
 });
