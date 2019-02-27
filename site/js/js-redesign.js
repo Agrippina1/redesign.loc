@@ -5,7 +5,7 @@ var StickyElement = function(node){
       anchor = node.find('.sticky-anchor'),
       content = node.find('.sticky-content');
 
-  var onScroll = function(e){
+  var onScroll = function(){
     var docTop = doc.scrollTop(),
         anchorTop = anchor.offset().top;
 
@@ -37,17 +37,23 @@ $(document).ready(function() {
     var modal = $('.modal_div');            // скрытые мoдaльные oкнa
 
     close.click( function() {
+        $('.modal_is_open').removeClass('modal_is_open');
         $(modal).css('display', 'none');
-        overlay.fadeOut(0);
+        overlay.fadeOut(400);
     });
     open_modal.click( function(event) {
         event.preventDefault();
         var div = $(this).attr('href');
-        overlay.fadeIn(0,
-            function () {
-                $(div).css('display', 'block').animate({opacity: 1}, 200);
-                $("html,body").animate({scrollTop: $("header").offset().top}, "slow");
-            });
+        $(modal).css('display', 'none');
 
+        if (!$(div).hasClass('modal_is_open')) {
+            overlay.fadeIn(400);
+            $('.modal_is_open').removeClass('modal_is_open');
+            $(modal).css('display', 'none');
+            $(div).css('display', 'block').animate({opacity: 1}, 200);
+        } else overlay.fadeOut(400);
+
+        $(div).toggleClass('modal_is_open');
+        $("html,body").animate({scrollTop: $("header").offset().top}, "slow");
     });
 });
