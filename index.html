@@ -39,17 +39,18 @@
                 <picture>
                   <source media="(min-width: 1024px)" srcset="site/skins/blue/pics/svg/logo.svg">
                   <source media="(min-width: 768px)" srcset="site/skins/blue/pics/svg/logo_tablet.svg">
-                  <img class="logo-img" src="site/skins/blue/pics/svg/logo_mobile.svg" alt="Логотип">
+                  <source media="(min-width: 320px)" srcset="site/skins/blue/pics/svg/logo_mobile.svg">
+                  <img class="logo-img" src="site/skins/blue/pics/svg/logo.svg" alt="Логотип">
                 </picture>
               </a>
             </div>
-            <!-- <button class="mail-input " type="button">
+            <button class="mail-input " type="button">
               <svg class="icon-svg color_icons icon-mail_bw"><use xlink:href="site/icons/id_icons.svg#icon-mail_bw"></use></svg>
               Войти в почту</button>
             <a href="#menu_user" class="nav-user__toggle modal_open modal_close" type="button">
               <svg class="icon-svg color_icons icon-menu_user"><use xlink:href="site/icons/id_icons.svg#icon-menu_user"></use></svg>
-              Открыть меню</a> -->
-            <div class="input-user">
+              Открыть меню</a>
+            <!-- <div class="input-user">
               <a href="#menu_enter" class="input-links modal_open modal_close">
                 <div class="input-only">
                   <span class="link-input" href="#">Войти</span>
@@ -57,7 +58,7 @@
                 </div>
                 <svg class="icon-svg color_icons icon-login"><use xlink:href="site/icons/id_icons.svg#icon-login"></use></svg>
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </header>
@@ -72,7 +73,7 @@
               <div class="nav-wrapper">
                 <nav id="menu_main" class="main-nav nav-block color_border color_menu_fon modal_div">
                   <div class="main-nav-wrapper">
-                    <h4 class="menu-title color_main_fon color_accent header">Разделы</h4>
+                    <h4 class="menu-title color_main_fon color_accent nav_border">Разделы</h4>
                     <ul class="main-nav-items nav">
                       <div class="newyear">
                         <img src="site/pics/menu_fon_ny.png" width="55" height="73" alt="С новым годом!">
@@ -181,8 +182,8 @@
                 </div>
                 <nav id="menu_user" class="nav-user nav-block color_border color_menu_fon modal_div">
                   <div class="nav-user-wrapper">
-                    <h4 class="menu-title color_main_fon color_accent header">Пользователям</h4>
-                    <a href="#" class="user-name">NicUserUnick</a>
+                    <h4 class="menu-title color_main_fon color_accent nav_border">Пользователям</h4>
+                    <a href="#" class="user-name color_font">NicUserUnick</a>
                     <ul class="user-nav_items nav">
                       <li class="main-nav_item">
                         <a class="nav-icon" href="#">
@@ -246,6 +247,54 @@
                       </li>
                     </ul>
                   </div>
+                  <div class="decor"></div>
+                  <div class="nav-admin-wrapper">
+                    <h4 class="menu-title color_main_fon color_accent nav_border">Администрация</h4>
+                    <ul class="admin-nav_items nav">
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
+                          <span class="nav_item">Новые данные</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
+                          <span class="nav_item">Почта админа</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
+                          <span class="nav_item">Юзеры</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
+                          <span class="nav_item">Online</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
+                          <span class="nav_item">Модераторы</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
+                          <span class="nav_item">Новости</span>
+                        </a>
+                      </li>
+                      <li class="main-nav_item">
+                        <a class="nav-icon" href="#">
+                          <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
+                          <span class="nav_item">Реклама</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </nav>
               </div>
               <div class="modal-content">
@@ -253,7 +302,7 @@
                   <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
                     Закрыть</button>
                   <div class="registration-wrapper">
-                    <h4 class="menu-title color_main_fon color_accent header">Пользователям</h4>
+                    <h4 class="menu-title color_main_fon color_accent nav_border">Пользователям</h4>
                     <div class="registration">
                       <p class="registration-title">
                         <svg class="icon-svg icon-svg-menu icon-svg-registration color_icons"><use xlink:href="site/icons/id_icons.svg#icon-register_bw"></use></svg>
@@ -297,7 +346,7 @@
               </div>
               <div class="nav-block-wrapper">
                 <div class="nav-block color_border color_menu_fon">
-                  <h4 class="menu-title color_main_fon color_accent header">Поиск на портале</h4>
+                  <h4 class="menu-title color_main_fon color_accent nav_border">Поиск на портале</h4>
                   <form class="form" action="index.html" method="post">
                     <div class="form-group form-search">
                       <input class="form-field" id="search-field" type="text" name="search-name">
@@ -309,7 +358,7 @@
                   </form>
                 </div>
                 <div class="nav-block color_border color_menu_fon">
-                  <h4 class="menu-title color_main_fon color_accent header">Статистика</h4>
+                  <h4 class="menu-title color_main_fon color_accent nav_border">Статистика</h4>
                   <p class="statistics">Друзей <span>8963</span></p>
                   <p class="statistics-online">Сейчас на портале</p>
                   <p class="statistics">Друзей <span>32</span></p>
@@ -339,7 +388,9 @@
               <img src="site/pics/banner_2.png" width="730" height="90" alt="Реклама">
             </div>
             <div class="main-content color_content_fon">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="m-c-w">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
             </div>
             <div class="banner2-3 banner3">
               <img src="site/pics/banner_3.png" alt="Реклама">

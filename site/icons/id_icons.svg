@@ -276,6 +276,11 @@
 <path fill="#000" style="fill: var(--color5, #000)" d="M17 21h-1v1h1v-1zM28 21h-10v1h10v-1zM28 23h-10v1h10v-1zM17 23h-1v1h1v-1zM17 25h-1v1h1v-1zM28 25h-10v1h10v-1z"></path>
 <path fill="#f0bc5e" style="fill: var(--color66, #f0bc5e)" d="M8 17.63l-7.32-5.63 7.32-5.632 7.32 5.632-7.32 5.63zM12 24.5h-8v-5h8v5z"></path>
 </symbol>
+<symbol id="icon-marker" viewBox="0 0 32 32">
+<title>marker</title>
+<path d="M5.2 8.572h3.086v3.086h-3.086zM8.286 11.658h3.086v3.086h-3.086zM11.372 14.744h3.086v3.086h-3.086zM8.286 17.828h3.086v3.086h-3.086zM5.2 20.914h3.086v3.086h-3.086zM11.372 8.572h3.086v3.086h-3.086zM14.458 11.658h3.086v3.086h-3.086zM17.542 14.744h3.086v3.086h-3.086z"></path>
+<path d="M14.458 17.828h3.086v3.086h-3.086zM11.372 20.914h3.086v3.086h-3.086zM17.542 8.572h3.086v3.086h-3.086zM20.628 11.658h3.086v3.086h-3.086zM23.714 14.744h3.086v3.086h-3.086zM20.628 17.828h3.086v3.086h-3.086zM17.542 20.914h3.086v3.086h-3.086z"></path>
+</symbol>
 <symbol id="icon-menu_close" viewBox="0 0 32 32">
 <title>menu_close</title>
 <path d="M7.748 6l18.252 17.73-1.712 1.662-18.252-17.73z"></path>
