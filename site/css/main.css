@@ -491,7 +491,7 @@ input[type="checkbox"] + label::after {
   }
   .main-nav .color_main_fon,
   .nav-user .color_main_fon,
-  .registration-wrapper .color_main_fon {
+  .menu-title-wrap .color_main_fon {
     background: #ffffff;
   }
   .main-nav .header,
