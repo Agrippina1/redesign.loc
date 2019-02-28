@@ -616,7 +616,6 @@ input[type="checkbox"] + label::after {
             transform: scale(1);
   }
 }
-
 @keyframes bounce {
   0% {
     -webkit-transform: scale(0);
@@ -627,7 +626,18 @@ input[type="checkbox"] + label::after {
             transform: scale(1);
   }
 }
-
+@-webkit-keyframes fly-left {
+  0%   { left: -200px; }
+}
+@keyframes fly-left {
+  0%   { left: -200px; }
+}
+@-webkit-keyframes fly-right {
+  0%   { right: -200px; }
+}
+@keyframes fly-right {
+  0%   { right: -200px; }
+}
   .registration-block {
     position: absolute;
     display: none;
@@ -679,10 +689,18 @@ input[type="checkbox"] + label::after {
     background: #eb1e1e;
   }
   .modal-content-show {
-    display: block;
     -webkit-animation: bounce 0.9s;
             animation: bounce 0.9s;
   }
+  .modal-main-show {
+    -webkit-animation: fly-left 0.5s;
+    animation: fly-left 0.5s;
+  }
+  .modal-user-show {
+    -webkit-animation: fly-right 0.5s;
+    animation: fly-right 0.5s;
+  }
+
   .registration-title {
     font-size: 20px;
     text-align: center;
