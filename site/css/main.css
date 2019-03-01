@@ -106,7 +106,6 @@ a {
   margin-bottom: 12px;
 }
 .all-content {
-  -js-display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,7 +120,6 @@ a {
           flex: 1 1 auto;
 }
 .content-right {
-  -js-display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,7 +246,6 @@ a {
   margin-top: 12px;
 }
 .form-registration-wrapper {
-  -js-display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,7 +328,6 @@ input[type="checkbox"] + label::after {
   margin-top: 11px;
 }
 .statistics {
-  -js-display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,7 +344,6 @@ input[type="checkbox"] + label::after {
   text-align: center;
 }
 .qr-code {
-  -js-display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -447,7 +442,6 @@ input[type="checkbox"] + label::after {
   .nav-wrapper {
     position: relative;
     top: 23px;
-    -js-display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -585,7 +579,6 @@ input[type="checkbox"] + label::after {
     text-align: right;
   }
   .input-links {
-    -js-display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -657,7 +650,6 @@ input[type="checkbox"] + label::after {
   }
   .modal-content {
     position: relative;
-    -js-display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -779,7 +771,6 @@ input[type="checkbox"] + label::after {
     padding-top: 10px;
   }
   .nav-footer_items {
-    -js-display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

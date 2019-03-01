@@ -56,5 +56,3 @@ $(document).ready(function() {
         $("html,body").animate({scrollTop: $("header").offset().top}, "slow");
     });
 });
-if (Modernizr.flexbox && Modernizr.flexwrap) {
-} else { flexibility(document.documentElement); }
