@@ -173,16 +173,13 @@ a {
   padding-top: 10px;
   padding-bottom: 5px;
 }
-.nav-icon {
-  padding-left: 12px;
-}
 .nav_item {
   color: #000000;
+  padding-left: 12px;
+}
+.nav_item-caption {
   vertical-align: text-bottom;
   padding-left: 6px;
-}
-.nav_item:hover {
-  color: #1033ed;
 }
 .mail-admin {
   font-size: 12px;
@@ -502,7 +499,7 @@ input[type="checkbox"] + label::after {
   .content-right-wrapper .color_border {
     border: 1px solid #000000;
   }
-  .nav_item {
+  .nav_item-caption {
     font-size: 20px;
     line-height: 40px;
     vertical-align: bottom;
@@ -590,6 +587,9 @@ input[type="checkbox"] + label::after {
             justify-content: space-between;
     color: #ffffff;
     line-height: 16px;
+  }
+  .input-user .input-links:hover {
+    color: #ffffff;
   }
   .input-user span {
     display: block;
