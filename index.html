@@ -5,7 +5,7 @@
     <title>Title</title>
     <meta http-equiv="Pragma" CONTENT="no-cache">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="site/css/normalize.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -44,13 +44,13 @@
                 </picture>
               </a>
             </div>
-            <button class="mail-input " type="button">
-              <svg class="icon-svg color_icons icon-mail_bw"><use xlink:href="site/icons/id_icons.svg#icon-mail_bw"></use></svg>
-              Войти в почту</button>
-            <a href="#menu_user" class="nav-user__toggle modal_open" type="button">
-              <svg class="icon-svg color_icons icon-menu_user"><use xlink:href="site/icons/id_icons.svg#icon-menu_user"></use></svg>
-              Открыть меню</a>
-            <!-- <div class="input-user">
+            <!--<button class="mail-input " type="button">-->
+              <!--<svg class="icon-svg color_icons icon-mail_bw"><use xlink:href="site/icons/id_icons.svg#icon-mail_bw"></use></svg>-->
+              <!--Войти в почту</button>-->
+            <!--<a href="#menu_user" class="nav-user__toggle modal_open" type="button">-->
+              <!--<svg class="icon-svg color_icons icon-menu_user"><use xlink:href="site/icons/id_icons.svg#icon-menu_user"></use></svg>-->
+              <!--Открыть меню</a>-->
+            <div class="input-user">
               <a href="#menu_enter" class="input-links modal_open">
                 <div class="input-only">
                   <span class="link-input" href="#">Войти</span>
@@ -58,7 +58,7 @@
                 </div>
                 <svg class="icon-svg color_icons icon-login"><use xlink:href="site/icons/id_icons.svg#icon-login"></use></svg>
               </a>
-            </div> -->
+            </div>
           </div>
         </div>
       </header>
@@ -278,7 +278,7 @@
                       <li class="main-nav_item">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
-                          <span class="nav_item"-caption>Модераторы</span>
+                          <span class="nav_item-caption">Модераторы</span>
                         </a>
                       </li>
                       <li class="main-nav_item">
@@ -466,6 +466,8 @@
     </div>
     <div id="overlay" class="modal-overlay menu-overlay"></div>
 
+    <script src="site/js/modernizr.js"></script>
+    <script src="site/js/flexibility.js"></script>
     <script src="site/js/js-redesign.js"></script>
     <script src="site/js/svgxuse.js"></script>
 
