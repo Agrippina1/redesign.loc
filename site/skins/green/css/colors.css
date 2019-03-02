@@ -1,23 +1,27 @@
 .color_main {
-    background-color: #006a0b;
+  background-color: #006a0b;
 }
 .color_main_fon {
-    background-color: #006a0b;
+  background-color: #006a0b;
 }
 .color_accent {
-    border-color: #58cf46;
+  border-color: #58cf46;
 }
 .color_link_hover a:hover{
-    color: #13831c;
+  color: #13831c;
 }
 .color_menu_fon {
-    background-color: #EFEFEF;
+  background-color: #EFEFEF;
 }
 .color_content_fon {
-    background-color: #F8F8F8;
+  background-color: #F8F8F8;
+}
+.color_main_content a {
+  color: #006a0b;
+  text-decoration: underline;
 }
 .color_icons {
-    color: #006a0b;
+  color: #006a0b;
 }
 .color_font {
   color: #006a0b;
