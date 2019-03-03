@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <meta http-equiv="Pragma" CONTENT="no-cache">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="site/css/normalize.css">
@@ -24,18 +23,28 @@
   </head>
   <body>
     <div class="container color_link_hover">
-      <div class="banner1">
+      <div hidden aria-label="Disability.ru" role="directory" >
+        <h2>Disability.ru</h2>
+        <h4>первый российский интернет портал для инвалидов</h4>
+        <ul>
+          <li><a href='#menu_items' accesskey='r'>Разделы</a></li>
+          <li><a href='#menu_users' accesskey='m'>Пользователям</a></li>
+          <li><a href='#navigator' accesskey='n'>Навигатор</a></li>
+          <li><a href='#content' accesskey='s'>Содержание</a></li>
+        </ul>
+      </div>
+      <div class="banner1" aria-label="Реклама" role="complementary">
         <img src="site/pics/banner_1.png" alt="Реклама">
       </div>
       <header id="sticky" class="sticky-element">
         <div class="sticky-anchor"></div>
         <div class="sticky-content">
           <div class="logo-header color_main_fon color_accent header">
-            <a href="#menu_main" class="main-nav__toggle modal_open">
+            <a href="#menu_main" class="main-nav__toggle modal_open" role="button">
               <svg class="icon-svg color_icons icon-menu_item"><use xlink:href="site/icons/id_icons.svg#icon-menu_item"></use></svg>
               Открыть меню</a>
             <div class="logo-link-wrapper">
-              <a href="index.html" class="logo-img">
+              <a href="index.html" class="logo-img" title="Disability.ru">
                 <picture>
                   <source media="(min-width: 1024px)" srcset="site/skins/blue/pics/svg/logo.svg">
                   <source media="(min-width: 768px)" srcset="site/skins/blue/pics/svg/logo_tablet.svg">
@@ -51,7 +60,7 @@
               <!--<svg class="icon-svg color_icons icon-menu_user"><use xlink:href="site/icons/id_icons.svg#icon-menu_user"></use></svg>-->
               <!--Открыть меню</a>-->
             <div class="input-user">
-              <a href="#menu_enter" class="input-links modal_open">
+              <a href="#menu_enter" class="input-links modal_open" role="button">
                 <div class="input-only">
                   <span class="link-input">Войти</span>
                   <span class="link-registration">Регистрация</span>
@@ -67,108 +76,108 @@
         <div class="all-content">
           <div class="content-right">
             <div class="content-right-wrapper">
-              <div class="banner4">
+              <div class="banner4" aria-label="Реклама" role="complementary">
                 <img src="site/pics/banner_4.png" width="160" height="160" alt="Реклама">
               </div>
               <div class="nav-wrapper">
-                <nav id="menu_main" class="main-nav nav-block color_border color_menu_fon modal-main-show modal_div">
-                  <div class="main-nav-wrapper">
-                    <h4 class="menu-title color_main_fon color_accent nav_border">Разделы</h4>
-                    <ul class="main-nav-items nav">
+                <div id="menu_main" class="main-nav nav-block color_border color_menu_fon modal-main-show modal_div">
+                  <div class="main-nav-wrapper" aria-label="Разделы" role="navigation">
+                    <a name="menu_items"></a><h4 id="group_menu_main" class="menu-title color_main_fon color_accent nav_border">Разделы</h4>
+                    <ul class="main-nav-items nav" role="menu" aria-labelledby="group_menu_main">
                       <li class="newyear">
                         <img src="site/pics/menu_fon_ny.png" width="55" height="73" alt="С новым годом!">
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-news_bw"></use></svg>
                           <span class="nav_item-caption">Новости</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-story_bw"></use></svg>
                           <span class="nav_item-caption">Статьи</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-links_bw"></use></svg>
                           <span class="nav_item-caption">Ссылки</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-org_bw"></use></svg>
                           <span class="nav_item-caption">Организации</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-work_bw"></use></svg>
                           <span class="nav_item-caption">Биржа труда</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-shopping_bw"></use></svg>
                           <span class="nav_item-caption">Товары-услуги</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-agency_bw"></use></svg>
                           <span class="nav_item-caption">Знакомства</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-blog_bw"></use></svg>
                           <span class="nav_item-caption">Дневники</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-forum_color"></use></svg>
                           <span class="nav_item-caption nav-active">Форум</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-chat_bw"></use></svg>
                           <span class="nav_item-caption">Чат</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-humor_bw"></use></svg>
                           <span class="nav_item-caption">Юмор</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-guest_bw"></use></svg>
                           <span class="nav_item-caption">Гостевая книга</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-partners_bw"></use></svg>
                           <span class="nav_item-caption">Наши партнеры</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-map_bw"></use></svg>
                           <span class="nav_item-caption">Карта портала</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-faq_bw"></use></svg>
                           <span class="nav_item-caption">Вопрос-ответ</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-write_admin_bw"></use></svg>
                           <span class="nav_item-caption mail-admin">Написать админу</span>
@@ -176,70 +185,70 @@
                       </li>
                     </ul>
                   </div>
-                </nav>
-                <div class="banner5">
+                </div>
+                <div class="banner5" aria-label="Реклама" role="complementary">
                   <img src="site/pics/banner_5.png" width="160" height="160" alt="Реклама">
                 </div>
-                <nav id="menu_user" class="nav-user nav-block color_border color_menu_fon modal-user-show modal_div">
-                  <div class="nav-user-wrapper">
-                    <h4 class="menu-title color_main_fon color_accent nav_border">Пользователям</h4>
+                <div id="menu_user" class="nav-user nav-block color_border color_menu_fon modal-user-show modal_div">
+                  <div class="nav-user-wrapper" aria-label="Пользователям" role="navigation">
+                    <a name="menu_users"></a><h4 id="group_menu_user" class="menu-title color_main_fon color_accent nav_border">Пользователям</h4>
                     <a href="#" class="user-name color_font">NicUserUnick</a>
-                    <ul class="user-nav_items nav">
-                      <li class="main-nav_item">
+                    <ul class="user-nav_items nav" role="menu" aria-labelledby="group_menu_user">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-mail_bw"></use></svg>
                           <span class="nav_item-caption">Почта</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-wall_bw"></use></svg>
                           <span class="nav_item-caption">Отзывы</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-search_bw"></use></svg>
                           <span class="nav_item-caption">Пользователи</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-dr_bw"></use></svg>
                           <span class="nav_item-caption">Дни рождения</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-online_bw"></use></svg>
                           <span class="nav_item-caption">На портале</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-show_new_bw"></use></svg>
                           <span class="nav_item-caption">Новые</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-edit_bw"></use></svg>
                           <span class="nav_item-caption">Настройки</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-rules_bw"></use></svg>
                           <span class="nav_item-caption">Соглашение</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-politica_conf_bw"></use></svg>
                           <span class="nav_item-caption">Политика</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-exit_bw"></use></svg>
                           <span class="nav_item-caption">Выход</span>
@@ -248,46 +257,46 @@
                     </ul>
                   </div>
                   <div class="decor"></div>
-                  <div class="nav-admin-wrapper">
-                    <h4 class="menu-title color_main_fon color_accent nav_border">Администрация</h4>
-                    <ul class="admin-nav_items nav">
-                      <li class="main-nav_item">
+                  <div class="nav-admin-wrapper" aria-label="Администрация" role="navigation">
+                    <a name="menu_admin"></a><h4 id="group_menu_admin" class="menu-title color_main_fon color_accent nav_border">Администрация</h4>
+                    <ul class="admin-nav_items nav" role="menu" aria-labelledby="group_menu_admin">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
                           <span class="nav_item-caption">Новые данные</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
                           <span class="nav_item-caption">Почта админа</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
                           <span class="nav_item-caption">Юзеры</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
                           <span class="nav_item-caption">Online</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
                           <span class="nav_item-caption">Модераторы</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
                           <span class="nav_item-caption">Новости</span>
                         </a>
                       </li>
-                      <li class="main-nav_item">
+                      <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
                           <span class="nav_item-caption">Реклама</span>
@@ -295,15 +304,15 @@
                       </li>
                     </ul>
                   </div>
-                </nav>
+                </div>
               </div>
               <div class="modal-content">
                 <div id="menu_enter" class="nav-block registration-block color_border color_menu_fon modal-content-show modal_div">
                   <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
                     Закрыть</button>
-                  <div class="registration-wrapper">
+                  <div class="registration-wrapper" aria-label="Вход/регистрация" role="navigation">
                     <div class="menu-title-wrap">
-                      <h4 class="menu-title color_main_fon color_accent nav_border">Пользователям</h4>
+                      <a name="menu_registration"></a><h4 class="menu-title color_main_fon color_accent nav_border">Пользователям</h4>
                     </div>
                     <div class="registration">
                       <p class="registration-title">
@@ -347,8 +356,8 @@
                 </div>
               </div>
               <div class="nav-block-wrapper">
-                <div class="nav-block color_border color_menu_fon">
-                  <h4 class="menu-title color_main_fon color_accent nav_border">Поиск на портале</h4>
+                <div class="nav-block color_border color_menu_fon" aria-label="Поиск" role="complementary">
+                  <a name="menu_search"></a><h4 class="menu-title color_main_fon color_accent nav_border">Поиск на портале</h4>
                   <form class="form" action="index.html" method="post">
                     <div class="form-group form-search">
                       <input class="form-field" id="search-field" type="text" name="search-name">
@@ -359,8 +368,8 @@
                     </div>
                   </form>
                 </div>
-                <div class="nav-block color_border color_menu_fon">
-                  <h4 class="menu-title color_main_fon color_accent nav_border">Статистика</h4>
+                <div class="nav-block color_border color_menu_fon" aria-label="Статистика" role="complementary">
+                  <a name="menu_statistic"></a><h4 class="menu-title color_main_fon color_accent nav_border">Статистика</h4>
                   <p class="statistics">Друзей <span>8963</span></p>
                   <p class="statistics-online">Сейчас на портале</p>
                   <p class="statistics">Друзей <span>32</span></p>
@@ -368,11 +377,11 @@
                   <p class="statistics">Гостей <span>36</span></p>
                 </div>
               </div>
-              <div class="banner6">
+              <div class="banner6" aria-label="реклама" role="complementary">
                 <img src="site/pics/banner_6.png" width="160" height="600" alt="Реклама">
               </div>
             </div>
-            <div class="qr-code">
+            <div class="qr-code" aria-label="Счетчики" role="contentinfo">
               <script type="text/javascript">
                 document.write("<img class='qr-code-img' src='https://chart.googleapis.com/chart?cht=qr&chs=150x150&choe=UTF-8&chl="+location.href+"' title='QR Barcode - адрес страницы для мобильных устройств' alt='QR Barcode - адрес страницы для мобильных устройств'>");
               </script>
@@ -381,20 +390,22 @@
           </div>
           <div class="content-left">
             <div class="breadcrumbs color_link_hover">
-              <a class="breadcrumbs-item" href="https://www.disability.ru">
+              <h1>
+              <a class="breadcrumbs-item" href="https://www.disability.ru" aria-label="Disability.ru">
                 <svg class="icon-svg icon-svg-breadcrumbs color_icons"><use xlink:href="site/icons/id_icons.svg#icon-navigator"></use></svg>
               </a>
-              <a class="breadcrumbs-item color_font" href="#">/ Товары и услуги</a>
+              <a name="navigator" class="breadcrumbs-item color_font" href="#">/ Товары и услуги</a>
+              </h1>
             </div>
-            <div class="banner2-3 banner2">
+            <div class="banner2-3 banner2" aria-label="Реклама" role="complementary">
               <img src="site/pics/banner_2.png" width="730" height="90" alt="Реклама">
             </div>
-            <div class="main-content color_content_fon color_main_content">
-              <div class="m-c-w">
+            <div class="main-content color_content_fon color_main_content" aria-label="содержание" role="main">
+              <a name="content"></a><div class="m-c-w">
                 <p>Lorem <a href="#">ipsum dolor sit amet,</a> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
             </div>
-            <div class="banner2-3 banner3">
+            <div class="banner2-3 banner3" aria-label="Реклама" role="complementary">
               <img src="site/pics/banner_3.png" alt="Реклама">
             </div>
           </div>
@@ -404,7 +415,7 @@
         <div class="footer-top color_main_fon color_accent footer">
           <p class="copyright">Copyright &copy; 2002</p>
         </div>
-        <nav class="nav-footer color_menu_fon">
+        <a name="menu_alt"></a><nav class="nav-footer color_menu_fon" aria-label="Дополнительное меню" role="complementary">
           <ul class="nav-footer_items">
             <li class="nav-footer_item">
               <a href="#">Новости</a>
