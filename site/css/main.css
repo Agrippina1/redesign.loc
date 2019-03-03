@@ -80,6 +80,7 @@ a {
   display: inline-block;
   font-size: 11px;
   font-weight: bold;
+  color: #000000;
 }
 .breadcrumbs .icon-svg-breadcrumbs {
   width: 10px;
@@ -156,13 +157,11 @@ a {
   width: 163px;
   margin-bottom: 12px;
 }
-.newyear {
+.main-nav-items {
   position: relative;
-}
-.newyear img {
-  position: absolute;
-  top: -10px;
-  right: 0;
+  background-image: url("../pics/menu_fon_ny.png");
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 .nav-user__toggle,
 .main-nav__toggle,
@@ -171,7 +170,7 @@ a {
   display: none;
 }
 .menu-title {
-  font-family: "Arial";
+  font-family: "Arial" "Helvetica", sans-serif;
   font-size: 13px;
   font-weight: bold;
   color: #ffffff;
@@ -375,7 +374,7 @@ input[type="checkbox"] + label::after {
           box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.25);
 }
 .copyright {
-  font-family: "Tahoma";
+  font-family: "Tahoma", "Helvetica", "Arial", sans-serif;
   font-weight: bold;
   color: #ffffff;
   text-align: center;
@@ -392,8 +391,7 @@ input[type="checkbox"] + label::after {
   .banner6,
   .nav-block-wrapper,
   .form-group-blind,
-  .qr-code,
-  .newyear {
+  .qr-code {
     display: none;
   }
   header {
