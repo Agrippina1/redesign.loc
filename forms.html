@@ -7,11 +7,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="site/css/normalize.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#008000">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#008000">
     <meta name="msapplication-TileColor" content="#008000">
     <meta name="theme-color" content="#ffffff">
 
@@ -53,10 +53,10 @@
                 </picture>
               </a>
             </div>
-            <!--<button class="mail-input " type="button">-->
+            <!--<button class="mail-input " type="button" role="button">-->
               <!--<svg class="icon-svg color_icons icon-mail_bw"><use xlink:href="site/icons/id_icons.svg#icon-mail_bw"></use></svg>-->
               <!--Войти в почту</button>-->
-            <!--<a href="#menu_user" class="nav-user__toggle modal_open" type="button">-->
+            <!--<a href="#menu_user" class="nav-user__toggle modal_open" type="button" role="button">-->
               <!--<svg class="icon-svg color_icons icon-menu_user"><use xlink:href="site/icons/id_icons.svg#icon-menu_user"></use></svg>-->
               <!--Открыть меню</a>-->
             <div class="input-user">
@@ -398,18 +398,19 @@
               <img src="site/pics/banner_2.png" width="730" height="90" alt="Реклама">
             </div>
             <div class="main-content color_content_fon color_main_content" aria-label="содержание" role="main">
-              <a name="content"></a><div class="m-c-w">
+              <a name="content"></a>
+              <div class="m-c-w">
                 <p style="text-align: center; margin-bottom: 50px;">Контент раздела</p>
                 <div class="test">
                 <form class="form-template" action="index.html" method="post">
                   <div class="form-group-template-wrapper">
                     <div class="form-group-template">
                       <label class="form-label-template font-form-template" for="login-field">Наименование:</label>
-                      <input class="form-field-template" id="login-field" type="text" name="login" value="Самовар с поющим краником">
+                      <input class="form-field-template" id="item_name" type="text" name="login" value="Самовар с поющим краником">
                     </div>
                     <div class="form-group-template">
                       <label class="form-label-template font-form-template" for="login-field">Владелец:</label>
-                      <input class="form-field-template" id="login-field" type="text" name="login" value="Ферапонт Гаврилович">
+                      <input class="form-field-template" id="owner_name" type="text" name="login" value="Ферапонт Гаврилович">
                       <span class="input-refinement">указывайте имя полностью, без сокращений - Александр, а не Саша</span>
                     </div>
                   </div>
@@ -465,12 +466,12 @@
                     <div class="form-group-template-radio">
                       <p class="font-form-template group-title">Тип:</p>
                       <div class="group-radio">
-                        <input class="checkbox-field" id="option3-field" type="radio" name="radio">
-                        <label class="checkbox-label" for="option3-field">Угольный</label>
+                        <input class="checkbox-field" id="option5-field" type="radio" name="radio">
+                        <label class="checkbox-label" for="option5-field">Угольный</label>
                       </div>
                       <div class="group-radio">
-                        <input class="checkbox-field" id="option4-field" type="radio" name="radio">
-                        <label class="checkbox-label" for="option4-field">Электро</label>
+                        <input class="checkbox-field" id="option6-field" type="radio" name="radio">
+                        <label class="checkbox-label" for="option6-field">Электро</label>
                       </div>
                     </div>
                   </div>
