@@ -37,3 +37,13 @@
   background: #58cf46;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
+.btn_main_fon {
+  background-color: #16830c;
+}
+.btn_main_fon:hover {
+  background-color: #1eb310;
+}
+.btn_main_fon:active {
+  background-color: #16830c;
+  box-shadow: inset 0 6px 4px rgba(0, 0, 0, 0.25);
+}
