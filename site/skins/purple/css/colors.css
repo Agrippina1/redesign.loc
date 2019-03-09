@@ -1,0 +1,10 @@
+.btn_main_fon {
+  background-color: #9e009e;
+}
+.btn_main_fon:hover {
+  background-color: #cc00cc;
+}
+.btn_main_fon:active {
+  background-color: #9e009e;
+  box-shadow: inset 0 6px 4px rgba(0, 0, 0, 0.25);
+}
