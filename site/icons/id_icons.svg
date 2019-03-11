@@ -409,14 +409,12 @@
 </symbol>
 <symbol id="icon-radiobtn_off" viewBox="0 0 32 32">
 <title>radiobtn_off</title>
-<path fill="#fff" style="fill: var(--color4, #fff)" d="M31 16c0 8.284-6.716 15-15 15s-15-6.716-15-15c0-8.284 6.716-15 15-15s15 6.716 15 15z"></path>
-<path fill="none" stroke="#979797" stroke-width="2" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color5, #979797)" d="M31 16c0 8.284-6.716 15-15 15s-15-6.716-15-15c0-8.284 6.716-15 15-15s15 6.716 15 15z"></path>
+<path fill="#fff" stroke="#9c9898" stroke-width="1.4545" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color4, #9c9898)" style="fill: var(--color2, #fff)" d="M1.455 16c0 8.033 6.512 14.545 14.545 14.545s14.545-6.512 14.545-14.545-6.512-14.545-14.545-14.545-14.545 6.512-14.545 14.545z"></path>
 </symbol>
 <symbol id="icon-radiobtn_on" viewBox="0 0 32 32">
 <title>radiobtn_on</title>
-<path fill="#fff" style="fill: var(--color4, #fff)" d="M31 16c0 8.284-6.716 15-15 15s-15-6.716-15-15c0-8.284 6.716-15 15-15s15 6.716 15 15z"></path>
-<path fill="none" stroke="#979797" stroke-width="2" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color5, #979797)" d="M31 16c0 8.284-6.716 15-15 15s-15-6.716-15-15c0-8.284 6.716-15 15-15s15 6.716 15 15z"></path>
-<path fill="#000" style="fill: var(--color3, #000)" d="M25.6 16c0 5.302-4.298 9.6-9.6 9.6s-9.6-4.298-9.6-9.6c0-5.302 4.298-9.6 9.6-9.6s9.6 4.298 9.6 9.6z"></path>
+<path fill="#fff" stroke="#9c9898" stroke-width="1.4545" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color4, #9c9898)" style="fill: var(--color2, #fff)" d="M1.455 16c0 8.033 6.512 14.545 14.545 14.545s14.545-6.512 14.545-14.545-6.512-14.545-14.545-14.545-14.545 6.512-14.545 14.545z"></path>
+<path fill="#000" stroke="#000" stroke-width="1.4545" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color5, #000)" style="fill: var(--color5, #000)" d="M7.273 16c0 4.82 3.907 8.727 8.727 8.727s8.727-3.907 8.727-8.727v0c0-4.82-3.907-8.727-8.727-8.727s-8.727 3.907-8.727 8.727v0z"></path>
 </symbol>
 <symbol id="icon-register_bw" viewBox="0 0 32 32">
 <title>register_bw</title>
@@ -510,9 +508,12 @@
 </symbol>
 <symbol id="icon-select_btn" viewBox="0 0 32 32">
 <title>select_btn</title>
-<path fill="#e5e5e5" style="fill: var(--color1, #e5e5e5)" d="M6 0h20c3.314 0 6 2.686 6 6v20c0 3.314-2.686 6-6 6h-20c-3.314 0-6-2.686-6-6v-20c0-3.314 2.686-6 6-6z"></path>
-<path fill="none" stroke="#9c9898" stroke-width="2" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color2, #9c9898)" d="M6 1h20c2.761 0 5 2.239 5 5v20c0 2.761-2.239 5-5 5h-20c-2.761 0-5-2.239-5-5v-20c0-2.761 2.239-5 5-5z"></path>
-<path fill="#000" style="fill: var(--color3, #000)" d="M16 22.4l-7.39-9.6h14.78l-7.39 9.6z"></path>
+<path fill="#e5e5e5" style="fill: var(--color1, #e5e5e5)" d="M1.455 26.182v-20.364c0-2.41 1.954-4.364 4.364-4.364v0h20.185c0 0 0 0 0 0 2.399 0 4.345 1.935 4.363 4.33v0.002l0.147 20.364c0 0.009 0 0.021 0 0.032 0 2.41-1.954 4.364-4.364 4.364-0 0-0 0-0 0h-20.332c-2.41 0-4.364-1.954-4.364-4.364v0z"></path>
+<path fill="#fff" style="fill: var(--color2, #fff)" d="M4.364 1.455h23.273c1.607 0 2.909 1.302 2.909 2.909v0h-29.091c0-1.607 1.302-2.909 2.909-2.909v0z"></path>
+<path fill="#fff" style="fill: var(--color2, #fff)" d="M1.455 27.636v-23.273c0-1.607 1.302-2.909 2.909-2.909v0 29.091c-1.607 0-2.909-1.302-2.909-2.909v0z"></path>
+<path fill="#f3f3f3" style="fill: var(--color3, #f3f3f3)" d="M29.818 5.091c0.402 0 0.727-0.326 0.727-0.727s-0.326-0.727-0.727-0.727v0 1.455zM3.636 29.818c0 0.402 0.326 0.727 0.727 0.727s0.727-0.326 0.727-0.727v0h-1.455zM29.818 3.636h-24v1.455h24v-1.455zM3.636 5.818v24h1.455v-24h-1.455zM5.818 3.636c-1.205 0-2.182 0.977-2.182 2.182v0h1.455c0-0.402 0.326-0.727 0.727-0.727v0-1.455z"></path>
+<path fill="none" stroke="#9c9898" stroke-width="1.4545" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color4, #9c9898)" d="M26.182 1.455h-20.364c-2.41 0-4.364 1.954-4.364 4.364v0 20.364c0 2.41 1.954 4.364 4.364 4.364v0h20.364c2.41 0 4.364-1.954 4.364-4.364v0-20.364c0-2.41-1.954-4.364-4.364-4.364v0z"></path>
+<path fill="#000" stroke="#000" stroke-width="1.4545" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color5, #000)" style="fill: var(--color5, #000)" d="M21.455 14.182h-10.909l5.455 6.364 5.455-6.364z"></path>
 </symbol>
 <symbol id="icon-shopping_bw" viewBox="0 0 32 32">
 <title>shopping_bw</title>
