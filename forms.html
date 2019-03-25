@@ -23,10 +23,8 @@
   </head>
   <body>
     <div class="container color_link_hover">
-      <div class="visually-hidden" aria-label="Disability.ru" role="directory">
-        <h2>Disability.ru</h2>
-        <h4>первый российский интернет портал для инвалидов</h4>
-        <ul>
+      <div class="visually-hidden">
+        <ul aria-label="Disability.ru" role="directory">
           <li><a href='#menu_items' accesskey='r'>Разделы</a></li>
           <li><a href='#menu_users' accesskey='m'>Пользователям</a></li>
           <li><a href='#navigator' accesskey='n'>Навигатор</a></li>
@@ -72,7 +70,7 @@
         </div>
       </header>
 
-      <main>
+
         <div class="all-content">
           <div class="content-right">
             <div class="content-right-wrapper">
@@ -415,7 +413,7 @@
                 <div class="selects-template-wrapper">
                   <div class="select-group-template">
                     <p class="select-name font-form-template">Оформление:</p>
-                    <select class="select-template" name="teme">
+                    <select class="select-template" name="teme_1">
                       <option value="">Золотой с изумрудом</option>
                       <option value="">Чисто золотой</option>
                       <option value="">Платиновый</option>
@@ -423,7 +421,7 @@
                   </div>
                   <div class="select-group-template">
                     <p class="select-name font-form-template">Оформление:</p>
-                    <select class="select-template" name="teme">
+                    <select class="select-template" name="teme_2">
                       <option value="">Золотой с изумрудом</option>
                       <option value="">Чисто золотой</option>
                       <option value="">Платиновый</option>
@@ -431,7 +429,7 @@
                   </div>
                   <div class="select-group-template">
                     <p class="select-name font-form-template">Оформление:</p>
-                    <select class="select-template" name="teme">
+                    <select class="select-template" name="teme_3">
                       <option value="">Золотой с изумрудом</option>
                       <option value="">Чисто золотой</option>
                       <option value="">Платиновый</option>
@@ -488,12 +486,12 @@
             </div>
           </div>
         </div>
-      </main>
+
       <footer class="footer-content">
         <div class="footer-top color_main_fon color_accent footer">
           <p class="copyright">Copyright &copy; 2002</p>
         </div>
-        <a name="menu_alt"></a><nav class="nav-footer color_menu_fon" aria-label="Дополнительное меню" role="complementary">
+        <a name="menu_alt"></a><div class="nav-footer color_menu_fon" aria-label="Дополнительное меню" role="complementary">
           <ul class="nav-footer_items">
             <li class="nav-footer_item">
               <a href="#">Новости</a>
@@ -550,7 +548,7 @@
               <a href="#">Политика</a>
             </li>
           </ul>
-        </nav>
+        </div>
       </footer>
     </div>
     <div id="overlay" class="modal-overlay menu-overlay"></div>

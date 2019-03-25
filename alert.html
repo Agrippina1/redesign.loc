@@ -23,10 +23,8 @@
   </head>
   <body>
     <div class="container color_link_hover">
-      <div class="visually-hidden" aria-label="Disability.ru" role="directory">
-        <h2>Disability.ru</h2>
-        <h4>первый российский интернет портал для инвалидов</h4>
-        <ul>
+      <div class="visually-hidden">
+        <ul aria-label="Disability.ru" role="directory">
           <li><a href='#menu_items' accesskey='r'>Разделы</a></li>
           <li><a href='#menu_users' accesskey='m'>Пользователям</a></li>
           <li><a href='#navigator' accesskey='n'>Навигатор</a></li>
@@ -72,7 +70,7 @@
         </div>
       </header>
 
-      <main>
+
         <div class="all-content">
           <div class="content-right">
             <div class="content-right-wrapper">
@@ -399,17 +397,17 @@
             </div>
             <div class="main-content color_content_fon color_main_content" aria-label="содержание" role="main">
               <a name="content"></a>
-              <div class="alert alert-warning">
-                <span>Lorem <a href="#">ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+              <div class="alert alert-warning" role="alert" aria-label="информационное сообщение">
+                <span>Предупреждающее Lorem <a href="#">ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
               </div>
-              <div class="alert alert-success">
-                <span>Lorem <a href="#">ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+              <div class="alert alert-success" role="alert" aria-label="информационное сообщение">
+                <span>Успешное Lorem <a href="#">ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
               </div>
-              <div class="alert alert-error">
-                <span>Lorem <a href="#">ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+              <div class="alert alert-error" role="alert" aria-label="информационное сообщение">
+                <span>Ошибка Lorem <a href="#">ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
               </div>
-              <div class="alert alert-info">
-                <span>Lorem <a href="#">ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+              <div class="alert alert-info" role="alert" aria-label="информационное сообщение">
+                <span>Информация Lorem <a href="#">ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
               </div>
               <div class="m-c-w">
                 <p>Lorem <a href="#">ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -420,12 +418,12 @@
             </div>
           </div>
         </div>
-      </main>
+
       <footer class="footer-content">
         <div class="footer-top color_main_fon color_accent footer">
           <p class="copyright">Copyright &copy; 2002</p>
         </div>
-        <a name="menu_alt"></a><nav class="nav-footer color_menu_fon" aria-label="Дополнительное меню" role="complementary">
+        <a name="menu_alt"></a><div class="nav-footer color_menu_fon" aria-label="Дополнительное меню" role="complementary">
           <ul class="nav-footer_items">
             <li class="nav-footer_item">
               <a href="#">Новости</a>
@@ -482,7 +480,7 @@
               <a href="#">Политика</a>
             </li>
           </ul>
-        </nav>
+        </div>
       </footer>
     </div>
     <div id="overlay" class="modal-overlay menu-overlay"></div>
