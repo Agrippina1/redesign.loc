@@ -8,3 +8,15 @@
   background-color: #9e009e;
   box-shadow: inset 0 6px 4px rgba(0, 0, 0, 0.25);
 }
+.color_pagination_active {
+  color: #b812b8;
+  background: #eee4ef;
+}
+.color_pagination:hover {
+  background: #f9f1fa;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+.color_pagination_border {
+  color: #b812b8;
+  border: 1px solid #b812b8;
+}

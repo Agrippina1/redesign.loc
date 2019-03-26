@@ -47,3 +47,15 @@
   background-color: #16830c;
   box-shadow: inset 0 6px 4px rgba(0, 0, 0, 0.25);
 }
+.color_pagination_active {
+  color: #006e00;
+  background: #e3ffdf;
+}
+.color_pagination:hover {
+  background: #e4ffe0;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+.color_pagination_border {
+  color: #006e00;
+  border: 1px solid #006e00;
+}

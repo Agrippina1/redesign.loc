@@ -7,11 +7,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="site/css/normalize.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#008000">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#008000">
     <meta name="msapplication-TileColor" content="#008000">
     <meta name="theme-color" content="#ffffff">
 
@@ -23,8 +23,10 @@
   </head>
   <body>
     <div class="container color_link_hover">
-      <div class="visually-hidden">
-        <ul aria-label="Disability.ru" role="directory">
+      <div class="visually-hidden" aria-label="Disability.ru" role="directory">
+        <h2>Disability.ru</h2>
+        <h4>первый российский интернет портал для инвалидов</h4>
+        <ul>
           <li><a href='#menu_items' accesskey='r'>Разделы</a></li>
           <li><a href='#menu_users' accesskey='m'>Пользователям</a></li>
           <li><a href='#navigator' accesskey='n'>Навигатор</a></li>
@@ -70,7 +72,7 @@
         </div>
       </header>
 
-
+      <main>
         <div class="all-content">
           <div class="content-right">
             <div class="content-right-wrapper">
@@ -395,22 +397,35 @@
             <div class="banner2-3 banner2" aria-label="Реклама" role="complementary">
               <img src="site/pics/banner_2.png" width="730" height="90" alt="Реклама">
             </div>
+
+            <div class="pagination-desktop">
+              <span class="pagination-item">Страницы:</span>
+              <a class="pagination-item pagination-item_active color_pagination_active" href="#">1</a>
+              <a class="pagination-item color_pagination" href="#">2</a>
+              <a class="pagination-item color_pagination" href="#">3</a>
+              <a class="pagination-item color_pagination" href="#">4</a>
+              <a class="pagination-item color_pagination" href="#">5</a>
+              <a class="pagination-item color_pagination" href="#">6</a>
+              <a class="pagination-item color_pagination" href="#">7</a>
+              <a class="pagination-item color_pagination" href="#">8</a>
+              <a class="pagination-item color_pagination" href="#">9</a>
+              <a class="pagination-item color_pagination" href="#">10</a>
+              <a class="pagination-item color_pagination" href="#">></a>
+              <a class="pagination-item color_pagination" href="#">>></a>
+              <a class="pagination-item">Всего: 13</a>
+            </div>
+
+            <div class="pagination-mobile">
+              <a class="page-previous color_pagination_border" href="#"><</a>
+              <a class="page-current" href="#">1/13</a>
+              <a class="page-next color_pagination_border" href="#">></a>
+              <input class="page-enter" type="text" name="page">
+              <a class="page-last color_pagination_border" href="#">>></a>
+            </div>
+
             <div class="main-content color_content_fon color_main_content" aria-label="содержание" role="main">
-              <a name="content"></a>
-              <div class="alert alert-warning" role="alert" aria-label="информационное сообщение">
-                <span>Предупреждающее Lorem <a href="#">ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
-              </div>
-              <div class="alert alert-success" role="alert" aria-label="информационное сообщение">
-                <span>Успешное Lorem <a href="#">ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
-              </div>
-              <div class="alert alert-error" role="alert" aria-label="информационное сообщение">
-                <span>Ошибка Lorem <a href="#">ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
-              </div>
-              <div class="alert alert-info" role="alert" aria-label="информационное сообщение">
-                <span>Информация Lorem <a href="#">ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
-              </div>
-              <div class="m-c-w">
-                <p>Lorem <a href="#">ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a name="content"></a><div class="m-c-w">
+                <p>Lorem <a href="#">ipsum dolor sit amet,</a> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
             </div>
             <div class="banner2-3 banner3" aria-label="Реклама" role="complementary">
@@ -418,12 +433,12 @@
             </div>
           </div>
         </div>
-
+      </main>
       <footer class="footer-content">
         <div class="footer-top color_main_fon color_accent footer">
           <p class="copyright">Copyright &copy; 2002</p>
         </div>
-        <a name="menu_alt"></a><div class="nav-footer color_menu_fon" aria-label="Дополнительное меню" role="complementary">
+        <a name="menu_alt"></a><nav class="nav-footer color_menu_fon" aria-label="Дополнительное меню" role="complementary">
           <ul class="nav-footer_items">
             <li class="nav-footer_item">
               <a href="#">Новости</a>
@@ -480,7 +495,7 @@
               <a href="#">Политика</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </footer>
     </div>
     <div id="overlay" class="modal-overlay menu-overlay"></div>

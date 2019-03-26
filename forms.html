@@ -7,11 +7,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="site/css/normalize.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#008000">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#008000">
     <meta name="msapplication-TileColor" content="#008000">
     <meta name="theme-color" content="#ffffff">
 
@@ -23,10 +23,8 @@
   </head>
   <body>
     <div class="container color_link_hover">
-      <div class="visually-hidden" aria-label="Disability.ru" role="directory">
-        <h2>Disability.ru</h2>
-        <h4>первый российский интернет портал для инвалидов</h4>
-        <ul>
+      <div class="visually-hidden">
+        <ul aria-label="Disability.ru" role="directory">
           <li><a href='#menu_items' accesskey='r'>Разделы</a></li>
           <li><a href='#menu_users' accesskey='m'>Пользователям</a></li>
           <li><a href='#navigator' accesskey='n'>Навигатор</a></li>
@@ -49,14 +47,14 @@
                   <source media="(min-width: 1024px)" srcset="site/skins/blue/pics/svg/logo.svg">
                   <source media="(min-width: 768px)" srcset="site/skins/blue/pics/svg/logo_tablet.svg">
                   <source media="(max-width: 767px)" srcset="site/skins/blue/pics/svg/logo_mobile.svg">
-                  <img class="logo-img" src="site/skins/blue/pics/svg/logo.svg" alt="Логотип">
+                  <img src="site/skins/blue/pics/svg/logo.svg" alt="Логотип">
                 </picture>
               </a>
             </div>
-            <!--<button class="mail-input " type="button" role="button">-->
+            <!--<button class="mail-input " type="button">-->
               <!--<svg class="icon-svg color_icons icon-mail_bw"><use xlink:href="site/icons/id_icons.svg#icon-mail_bw"></use></svg>-->
               <!--Войти в почту</button>-->
-            <!--<a href="#menu_user" class="nav-user__toggle modal_open" type="button" role="button">-->
+            <!--<a href="#menu_user" class="nav-user__toggle modal_open" type="button">-->
               <!--<svg class="icon-svg color_icons icon-menu_user"><use xlink:href="site/icons/id_icons.svg#icon-menu_user"></use></svg>-->
               <!--Открыть меню</a>-->
             <div class="input-user">
@@ -72,7 +70,7 @@
         </div>
       </header>
 
-      <main>
+
         <div class="all-content">
           <div class="content-right">
             <div class="content-right-wrapper">
@@ -398,105 +396,102 @@
               <img src="site/pics/banner_2.png" width="730" height="90" alt="Реклама">
             </div>
             <div class="main-content color_content_fon color_main_content" aria-label="содержание" role="main">
-              <a name="content"></a>
-              <div class="m-c-w">
-                <p style="text-align: center; margin-bottom: 50px;">Контент раздела</p>
-                <div class="test">
-                <form class="form-template" action="index.html" method="post">
-                  <div class="form-group-template-wrapper">
-                    <div class="form-group-template">
-                      <label class="form-label-template font-form-template" for="login-field">Наименование:</label>
-                      <input class="form-field-template" id="item_name" type="text" name="login" value="Самовар с поющим краником">
+              <a name="content"></a><div class="m-c-w">
+              <p style="text-align: center; margin-bottom: 50px;">Контент раздела</p>
+              <form class="form-template" action="index.html" method="post">
+                <div class="form-group-template-wrapper">
+                  <div class="form-group-template">
+                    <label class="form-label-template font-form-template" for="formfirst-field">Наименование:</label>
+                    <input class="form-field-template" id="formfirst-field" type="text" name="login" value="Самовар с поющим краником">
+                  </div>
+                  <div class="form-group-template">
+                    <label class="form-label-template font-form-template" for="formsecond-field">Владелец:</label>
+                    <input class="form-field-template" id="formsecond-field" type="text" name="login" value="Ферапонт Гаврилович">
+                    <span class="input-refinement">указывайте имя полностью, без сокращений - Александр, а не Саша</span>
+                  </div>
+                </div>
+                <div class="selects-template-wrapper">
+                  <div class="select-group-template">
+                    <p class="select-name font-form-template">Оформление:</p>
+                    <select class="select-template" name="teme_1">
+                      <option value="">Золотой с изумрудом</option>
+                      <option value="">Чисто золотой</option>
+                      <option value="">Платиновый</option>
+                    </select>
+                  </div>
+                  <div class="select-group-template">
+                    <p class="select-name font-form-template">Оформление:</p>
+                    <select class="select-template" name="teme_2">
+                      <option value="">Золотой с изумрудом</option>
+                      <option value="">Чисто золотой</option>
+                      <option value="">Платиновый</option>
+                    </select>
+                  </div>
+                  <div class="select-group-template">
+                    <p class="select-name font-form-template">Оформление:</p>
+                    <select class="select-template" name="teme_3">
+                      <option value="">Золотой с изумрудом</option>
+                      <option value="">Чисто золотой</option>
+                      <option value="">Платиновый</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="group-checkbox-radio-wrapper">
+                  <div class="form-group-template-checkbox">
+                    <p class="font-form-template group-title">Комплект:</p>
+                    <div class="group-checkbox">
+                      <input class="checkbox-field-mainform" id="option1-field" type="checkbox" name="option1">
+                      <label class="checkbox-label-mainform" for="option1-field">Чайник</label>
                     </div>
-                    <div class="form-group-template">
-                      <label class="form-label-template font-form-template" for="login-field">Владелец:</label>
-                      <input class="form-field-template" id="owner_name" type="text" name="login" value="Ферапонт Гаврилович">
-                      <span class="input-refinement">указывайте имя полностью, без сокращений - Александр, а не Саша</span>
+                    <div class="group-checkbox">
+                      <input class="checkbox-field-mainform" id="option2-field" type="checkbox" name="option2">
+                      <label class="checkbox-label-mainform" for="option2-field">Поднос</label>
                     </div>
                   </div>
-                  <div class="selects-template-wrapper">
-                    <div class="select-group-template">
-                      <p class="select-name font-form-template">Оформление:</p>
-                      <select class="select-template" name="teme">
-                        <option value="">Золотой с изумрудом</option>
-                        <option value="">Чисто золотой</option>
-                        <option value="">Платиновый</option>
-                      </select>
+                  <div class="form-group-template-radio">
+                    <p class="font-form-template group-title">Тип:</p>
+                    <div class="group-radio">
+                      <input class="radio-field" id="option3-field" type="radio" name="radio">
+                      <label class="radio-label" for="option3-field">Угольный</label>
                     </div>
-                    <div class="select-group-template">
-                      <p class="select-name font-form-template">Оформление:</p>
-                      <select class="select-template" name="teme">
-                        <option value="">Золотой с изумрудом</option>
-                        <option value="">Чисто золотой</option>
-                        <option value="">Платиновый</option>
-                      </select>
-                    </div>
-                    <div class="select-group-template">
-                      <p class="select-name font-form-template">Оформление:</p>
-                      <select class="select-template" name="teme">
-                        <option value="">Золотой с изумрудом</option>
-                        <option value="">Чисто золотой</option>
-                        <option value="">Платиновый</option>
-                      </select>
+                    <div class="group-radio">
+                      <input class="radio-field" id="option4-field" type="radio" name="radio">
+                      <label class="radio-label" for="option4-field">Электро</label>
                     </div>
                   </div>
-                  <div class="group-checkbox-radio-wrapper">
-                    <div class="form-group-template-checkbox">
-                      <p class="font-form-template group-title">Комплект:</p>
-                      <div class="group-checkbox">
-                        <input class="checkbox-field" id="option1-field" type="checkbox" name="option1">
-                        <label class="checkbox-label" for="option1-field">Чайник</label>
-                      </div>
-                      <div class="group-checkbox">
-                        <input class="checkbox-field" id="option2-field" type="checkbox" name="option2">
-                        <label class="checkbox-label" for="option2-field">Поднос</label>
-                      </div>
+                  <div class="form-group-template-radio">
+                    <p class="font-form-template group-title">Тип:</p>
+                    <div class="group-radio">
+                      <input class="radio-field" id="option5-field" type="radio" name="radio2">
+                      <label class="radio-label" for="option5-field">Угольный</label>
                     </div>
-                    <div class="form-group-template-radio">
-                      <p class="font-form-template group-title">Тип:</p>
-                      <div class="group-radio">
-                        <input class="checkbox-field" id="option3-field" type="radio" name="radio">
-                        <label class="checkbox-label" for="option3-field">Угольный</label>
-                      </div>
-                      <div class="group-radio">
-                        <input class="checkbox-field" id="option4-field" type="radio" name="radio">
-                        <label class="checkbox-label" for="option4-field">Электро</label>
-                      </div>
-                    </div>
-                    <div class="form-group-template-radio">
-                      <p class="font-form-template group-title">Тип:</p>
-                      <div class="group-radio">
-                        <input class="checkbox-field" id="option5-field" type="radio" name="radio">
-                        <label class="checkbox-label" for="option5-field">Угольный</label>
-                      </div>
-                      <div class="group-radio">
-                        <input class="checkbox-field" id="option6-field" type="radio" name="radio">
-                        <label class="checkbox-label" for="option6-field">Электро</label>
-                      </div>
+                    <div class="group-radio">
+                      <input class="radio-field" id="option6-field" type="radio" name="radio2">
+                      <label class="radio-label" for="option6-field">Электро</label>
                     </div>
                   </div>
-                  <div class="message">
-                    <label class="font-form-template" for="message-template-field">Описание:</label>
-                    <textarea class="message-field-template" id="message-template-field" name="message-template" rows="5">При наполнении исполняет рапсодию Брамса, закипание и необходимость долития сопровождается произведениями Моцарта.</textarea>
-                  </div>
-                  <div class="btn-wrapper">
-                    <input class="btn-template btn_main_fon" type="submit" name="button" value="Сохранить">
-                  </div>
-                </form>
-              </div>
-              </div>
+                </div>
+                <div class="message">
+                  <label class="font-form-template" for="message-template-field">Описание:</label>
+                  <textarea class="message-field-template" id="message-template-field" name="message-template" rows="5">При наполнении исполняет рапсодию Брамса, закипание и необходимость долития сопровождается произведениями Моцарта.</textarea>
+                </div>
+                <div class="btn-wrapper">
+                  <input class="btn-template btn_main_fon" type="submit" name="button" value="Сохранить">
+                </div>
+              </form>
+            </div>
             </div>
             <div class="banner2-3 banner3" aria-label="Реклама" role="complementary">
               <img src="site/pics/banner_3.png" alt="Реклама">
             </div>
           </div>
         </div>
-      </main>
+
       <footer class="footer-content">
         <div class="footer-top color_main_fon color_accent footer">
           <p class="copyright">Copyright &copy; 2002</p>
         </div>
-        <a name="menu_alt"></a><nav class="nav-footer color_menu_fon" aria-label="Дополнительное меню" role="complementary">
+        <a name="menu_alt"></a><div class="nav-footer color_menu_fon" aria-label="Дополнительное меню" role="complementary">
           <ul class="nav-footer_items">
             <li class="nav-footer_item">
               <a href="#">Новости</a>
@@ -553,7 +548,7 @@
               <a href="#">Политика</a>
             </li>
           </ul>
-        </nav>
+        </div>
       </footer>
     </div>
     <div id="overlay" class="modal-overlay menu-overlay"></div>
