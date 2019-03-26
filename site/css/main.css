@@ -269,7 +269,9 @@ a {
   width: 145px;
 }
 input[type="checkbox"] {
-  display: none;
+  /*display: none;*/
+  opacity: 0;
+  position: absolute;
 }
 input[type="checkbox"] + label {
   display: block;
@@ -473,7 +475,9 @@ select {
   margin-bottom: 8px;
 }
 input[type="radio"] {
-  display: none;
+  /*display: none;*/
+  opacity: 0;
+  position: absolute;
 }
 input[type="radio"] + label {
   display: block;
