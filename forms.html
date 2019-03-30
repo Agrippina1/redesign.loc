@@ -190,7 +190,7 @@
                   <div class="nav-user-wrapper" aria-label="Пользователям" role="navigation">
                     <a name="menu_users"></a><h4 id="group_menu_user" class="menu-title color_main_fon color_accent nav_border">Пользователям</h4>
                     <a href="#" class="user-name color_font">NicUserUnick</a>
-                    <ul class="user-nav_items nav" role="menu" aria-labelledby="group_menu_user">
+                    <ul class="nav" role="menu" aria-labelledby="group_menu_user">
                       <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-mail_bw"></use></svg>
@@ -256,7 +256,7 @@
                   <div class="decor"></div>
                   <div class="nav-admin-wrapper" aria-label="Администрация" role="navigation">
                     <a name="menu_admin"></a><h4 id="group_menu_admin" class="menu-title color_main_fon color_accent nav_border">Администрация</h4>
-                    <ul class="admin-nav_items nav" role="menu" aria-labelledby="group_menu_admin">
+                    <ul class="nav" role="menu" aria-labelledby="group_menu_admin">
                       <li class="main-nav_item" role="menuitem">
                         <a class="nav_item" href="#">
                           <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="site/icons/id_icons.svg#icon-marker"></use></svg>
@@ -316,7 +316,7 @@
                         <svg class="icon-svg icon-svg-menu icon-svg-registration color_icons"><use xlink:href="site/icons/id_icons.svg#icon-register_bw"></use></svg>
                         <span class="registration-text">Регистрация</span>
                       </p>
-                      <form class="form-registration" action="index.html" method="post">
+                      <form action="index.html" method="post">
                         <div class="form-registration-wrapper">
                           <div class="form-group-wrapper">
                             <div class="form-group">
@@ -329,12 +329,12 @@
                             </div>
                             <div class="form-group-checkbox">
                               <div class="form-group form-group-blind">
-                                <input class="checkbox-field" id="blind-field" type="checkbox" name="blind">
-                                <label class="checkbox-label" for="blind-field">Для незрячих</label>
+                                <input id="blind-field" type="checkbox" name="blind">
+                                <label for="blind-field">Для незрячих</label>
                               </div>
                               <div class="form-group">
-                                <input class="checkbox-field" id="memorize-field" type="checkbox" name="memorize">
-                                <label class="checkbox-label" for="memorize-field">Запомнить</label>
+                                <input id="memorize-field" type="checkbox" name="memorize">
+                                <label for="memorize-field">Запомнить</label>
                               </div>
                             </div>
                           </div>
@@ -399,7 +399,7 @@
             </div>
             <div class="main-content color_content_fon color_main_content" aria-label="содержание" role="main">
               <a name="content"></a><div class="m-c-w">
-                <p style="text-align: center; margin-bottom: 50px;">Контент раздела</p>
+                <p>Контент раздела</p>
                 <form class="form-template" action="index.html" method="post">
                   <div class="form-group-template-wrapper">
                     <div class="form-group-template">
@@ -414,24 +414,24 @@
                   </div>
                   <div class="selects-template-wrapper">
                     <div class="select-group-template">
-                      <p class="select-name font-form-template">Оформление:</p>
-                      <select class="select-template" name="teme">
+                      <p class="font-form-template">Оформление:</p>
+                      <select name="teme">
                         <option value="">Золотой с изумрудом</option>
                         <option value="">Чисто золотой</option>
                         <option value="">Платиновый</option>
                       </select>
                     </div>
                     <div class="select-group-template">
-                      <p class="select-name font-form-template">Оформление:</p>
-                      <select class="select-template" name="teme">
+                      <p class="font-form-template">Оформление:</p>
+                      <select name="teme">
                         <option value="">Золотой с изумрудом</option>
                         <option value="">Чисто золотой</option>
                         <option value="">Платиновый</option>
                       </select>
                     </div>
                     <div class="select-group-template">
-                      <p class="select-name font-form-template">Оформление:</p>
-                      <select class="select-template" name="teme">
+                      <p class="font-form-template">Оформление:</p>
+                      <select name="teme">
                         <option value="">Золотой с изумрудом</option>
                         <option value="">Чисто золотой</option>
                         <option value="">Платиновый</option>
@@ -442,34 +442,34 @@
                     <div class="form-group-template-checkbox">
                       <p class="font-form-template group-title">Комплект:</p>
                       <div class="group-checkbox">
-                        <input class="checkbox-field-mainform" id="option1-field" type="checkbox" name="option1">
-                        <label class="checkbox-label-mainform" for="option1-field">Чайник</label>
+                        <input id="option1-field" type="checkbox" name="option1">
+                        <label for="option1-field">Чайник</label>
                       </div>
                       <div class="group-checkbox">
-                        <input class="checkbox-field-mainform" id="option2-field" type="checkbox" name="option2">
-                        <label class="checkbox-label-mainform" for="option2-field">Поднос</label>
+                        <input id="option2-field" type="checkbox" name="option2">
+                        <label for="option2-field">Поднос</label>
                       </div>
                     </div>
                     <div class="form-group-template-radio">
                       <p class="font-form-template group-title">Тип:</p>
                       <div class="group-radio">
-                        <input class="radio-field" id="option3-field" type="radio" name="radio">
-                        <label class="radio-label" for="option3-field">Угольный</label>
+                        <input id="option3-field" type="radio" name="radio">
+                        <label for="option3-field">Угольный</label>
                       </div>
                       <div class="group-radio">
-                        <input class="radio-field" id="option4-field" type="radio" name="radio">
-                        <label class="radio-label" for="option4-field">Электро</label>
+                        <input id="option4-field" type="radio" name="radio">
+                        <label for="option4-field">Электро</label>
                       </div>
                     </div>
                     <div class="form-group-template-radio">
                       <p class="font-form-template group-title">Тип:</p>
                       <div class="group-radio">
-                        <input class="radio-field" id="option5-field" type="radio" name="radio2">
-                        <label class="radio-label" for="option5-field">Угольный</label>
+                        <input id="option5-field" type="radio" name="radio2">
+                        <label for="option5-field">Угольный</label>
                       </div>
                       <div class="group-radio">
-                        <input class="radio-field" id="option6-field" type="radio" name="radio2">
-                        <label class="radio-label" for="option6-field">Электро</label>
+                        <input id="option6-field" type="radio" name="radio2">
+                        <label for="option6-field">Электро</label>
                       </div>
                     </div>
                   </div>
