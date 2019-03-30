@@ -461,6 +461,10 @@ select {
   outline: 0;
   background-size: 33px 33px;
   padding-left: 7px;
+  padding-right: 32px;
+}
+select::-ms-expand {
+  display: none;
 }
 .group-checkbox-radio-wrapper {
   display: -webkit-box;
