@@ -1113,6 +1113,8 @@ input[type="radio"] + label::after {
     height: 24px;
     border: 1px solid #9c9898;
     border-radius: 3px;
+    padding: 0;
+    padding-top: 3px;
     padding-left: 5px;
     margin-right: 18px;
   }
