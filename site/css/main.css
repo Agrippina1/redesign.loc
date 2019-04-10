@@ -557,6 +557,7 @@ input[type="radio"] + label::after {
 .main-content .link-faq {
   display: block;
   color: #f20000;
+  text-decoration: underline;
 }
 .content-text {
   max-width: 669px;
@@ -596,6 +597,65 @@ input[type="radio"] + label::after {
 }
 .pagination-mobile {
   display: none;
+}
+/*Гостевая книга*/
+
+.content-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+.btn-wrapper-guest {
+  text-align: left;
+  margin-left: 20px;
+}
+.btn-white {
+  font-size: 16px;
+  font-weight: bold;
+}
+.content-block {
+  background: #f8f8f8;
+  box-shadow: -1px 1px 1px #cfcfcf;
+  padding: 16px 20px;
+  margin-bottom: 10px;
+}
+.content-block-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.content-block-text {
+  text-align: justify;
+}
+.icon-breadcrumbs {
+  display: block;
+  text-align: right;
+}
+.guest-answer {
+  display: block;
+  font-style: italic;
+  text-align: justify;
+  border-top: 1px solid #c9c9c9;
+  padding-top: 5px;
+  margin-top: 8px;
+}
+.admin-line {
+  text-align: right;
+}
+.all-content .icon-svg-btn {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+.all-content .icon-svg-delete,
+.all-content .icon-svg-edit{
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+.btn-admin-line {
+  margin-left: 20px;
 }
 
 @media (max-width: 1023px) {
@@ -1120,6 +1180,19 @@ input[type="radio"] + label::after {
     border-radius: 3px;
     padding: 2px 4px;
   }
+
+  /*Гостевая книга*/
+
+  .content-block {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .admin-line-text {
+    display: none;
+  }
+  .icon-svg-edit {
+    margin-left: 25px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1265,5 +1338,20 @@ input[type="radio"] + label::after {
   .pagination-mobile {
     text-align: center;
     margin: 15px 0;
+  }
+  .content-block {
+    padding: 16px 10px;
+  }
+  .btn-wrapper-guest {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .pagination-mobile-guest {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .content-block-text,
+  .guest-answer {
+    text-align: left;
   }
 }
