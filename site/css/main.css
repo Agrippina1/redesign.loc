@@ -634,6 +634,10 @@ input[type="radio"] + label::after {
 .content-block-text {
   text-align: justify;
 }
+.content-block-date {
+  font-size: 12px;
+  margin-top: 5px;
+}
 .icon-breadcrumbs {
   display: block;
   text-align: right;
@@ -1212,6 +1216,9 @@ input[type="radio"] + label::after {
   .content-block {
     font-size: 17px;
     line-height: 26px;
+  }
+  .content-block-date {
+    font-size: 14px;
   }
   .admin-line-text {
     display: none;
