@@ -53,6 +53,6 @@ $(document).ready(function() {
         } else overlay.fadeOut(300);
 
         $(div_id).toggleClass('modal_is_open');
-        $("html,body").animate({scrollTop: $("header").offset().top}, "slow");
+        $("html,body").animate({scrollTop: $("#sticky").offset().top}, "slow");
     });
 });

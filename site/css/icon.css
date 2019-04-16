@@ -192,10 +192,10 @@
   background-image: url("../../site/icons/work_color.svg");
 }
 .write_admin_bw {
-  background-image: url("../../site/icons/write_admin_bw.svg");
+  background-image: url("../icons/write_adm_bw.svg");
 }
 .write_admin_color {
-  background-image: url("../../site/icons/write_admin_color.svg");
+  background-image: url("../icons/write_adm_color.svg");
 }
 
 .nav_active_icon {
