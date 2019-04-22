@@ -55,4 +55,20 @@ $(document).ready(function() {
         $(div_id).toggleClass('modal_is_open');
         $("html,body").animate({scrollTop: $("#sticky").offset().top}, "slow");
     });
+
+    $( window ).resize(function() {
+        if ($(window).width() > 1023) {
+            $('.modal_is_open').removeClass('modal_is_open');
+            $(modal).css('display', 'block');
+            overlay.fadeOut(0);
+            // console.log("<--> " + $(window).width());
+        }
+        else {
+            $(modal).css('display', 'none');
+            overlay.fadeOut(0);
+            // console.log("-><- " + $(window).width());
+        }
+
+    });
 });
+
