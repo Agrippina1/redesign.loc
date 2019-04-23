@@ -1071,16 +1071,24 @@ input[type="radio"] + label::after {
     color: #000000;
     margin-right: 10px;
   }
+  .form-pagination {
+    display: inline-block;
+  }
   .page-enter {
     width: 33px;
     height: 24px;
+    text-align: center;
     border: 1px solid #9c9898;
     border-radius: 3px;
-    padding-left: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
     margin-right: 18px;
   }
   .page-last {
+    width: 39px;
+    height: 27px;
     border-radius: 3px;
+    background: #ffffff;
     padding: 2px 4px;
   }
 }
