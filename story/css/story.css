@@ -1,0 +1,25 @@
+.tmb_pic {
+    float: left;
+    margin-right: 1.25rem;
+    width: 13rem;
+    height: 6.25rem;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #000000;
+}
+.button_bb {
+    width: 32px;
+    height: 32px;
+    padding-top: 5px;
+    margin: 5px;
+    border: 1px solid #858787;
+    border-radius: 5px;
+    background-color: #eff2f2;
+    -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+}
+.button_bb:hover {
+    background-color: #cccccc;
+}
