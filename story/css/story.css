@@ -1,4 +1,4 @@
-  /*index*/
+/*index*/
 
 .story-main {
   text-align: center;
@@ -31,13 +31,13 @@
   padding-bottom: 60px;
 }
 
-   /*list*/
+/*list*/
 
 .tmb_pic {
   float: left;
   margin-right: 1.25rem;
-  width: 17rem;
-  height: 9rem;
+  width: 9rem;
+  height: 6rem;
   overflow: hidden;
   background-position: 50% 50%;
   background-size: cover;
@@ -54,7 +54,7 @@
 .content-block-text {
   min-height: 9rem;
 }
-  .story-read {
+.story-read {
   font-size: 16px;
   font-weight: bold;
   text-align: right;
@@ -85,19 +85,23 @@
   .section-links-regulation {
     line-height: 40px;
   }
+
+  /*list*/
+
+  .tmb_pic {
+    width: 17rem;
+    height: 9.5rem;
+  }
   .content-block-text {
+    max-height: 8.5em;
     overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
   }
 }
 
 
 @media (max-width: 767px) {
 
-    /*index*/
+  /*index*/
 
   .section-item {
     width: 280px;
@@ -116,7 +120,7 @@
     margin-bottom: 20px;
   }
 
-    /*list*/
+  /*list*/
   .btn-wrapper-guest {
     margin-bottom: 40px;
   }
