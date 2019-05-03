@@ -1,0 +1,133 @@
+.container_title {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 800px;
+    margin: 50px auto;
+}
+.collage_title {
+  border: 1px solid;
+  border-radius: 5px;
+  width: 610px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 54px;
+}
+.collage-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.left,
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 290px;
+  font-size: 0;
+}
+.collage-wrapper img {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.left {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.right {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.menu-item {
+  display: inline-block;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  padding: 11px 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.men-women {
+  margin-left: 220px;
+  margin-bottom: 13px;
+}
+.men-women .men {
+  margin-right: 83px;
+}
+.total {
+  border: none;
+  font-weight: normal;
+  margin-left: 338px;
+  margin-bottom: 20px;
+}
+.items {
+  margin-left: 282px;
+}
+.items .menu-item {
+  width: 210px;
+  margin-right: 200px;
+  margin-bottom: 10px;
+}
+.menu-item:hover:not(.total) {
+  box-shadow: 0 3px 5px 0 rgba(41, 52, 73, 0.5);
+}
+.bc_blind {
+  border-color: #000000;
+}
+.bc_blue {
+  border-color: #466dee;
+}
+.bc_green {
+  border-color: #00b400;
+}
+.bc_magenta {
+  border-color: #a900a9;
+}
+.bc_red {
+  border-color: #b72004;
+}
+
+a:hover.bc_blind {
+  color: #ffffff;
+  background-color: #000000;
+}
+a:hover.bc_blue {
+  color: #ffffff;
+  background-color: #466dee;
+}
+a:hover.bc_green {
+  color: #ffffff;
+  background-color: #00b400;
+}
+a:hover.bc_magenta {
+  color: #ffffff;
+  background-color: #a900a9;
+}
+a:hover.bc_red {
+  color: #ffffff;
+  background-color: #b10000;
+}
+
+.fc_blind {
+  background-color: #ffffff;
+}
+.fc_blue {
+  background: #ffffff url("../pics/fon_blue.jpg") repeat-y;
+}
+.fc_green {
+  background: #ffffff url("../pics/fon_green.jpg") repeat-y;
+}
+.fc_magenta {
+  background: #ffffff url("../pics/fon_magenta.jpg") repeat-y;
+}
+.fc_red {
+  background: #ffffff url("../pics/fon_red.jpg") repeat-y;
+}
