@@ -547,11 +547,6 @@ input[type="radio"] + label::after {
 .accent-text {
   text-align: center;
 }
-.content-title {
-  font-size: 16px;
-  line-height: 24px;
-  margin: 20px;
-}
 .accent-text {
   color: #f20000;
   font-weight: bold;
@@ -606,9 +601,8 @@ input[type="radio"] + label::after {
 .content-title {
   font-size: 18px;
   font-weight: bold;
-  text-align: center;
-  margin-top: 45px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 35px;
 }
 .btn-wrapper-guest {
   text-align: left;
@@ -629,9 +623,12 @@ input[type="radio"] + label::after {
   margin-bottom: 5px;
 }
 .content-block-text {
+  font-size: 16px;
+  line-height: 26px;
   text-align: justify;
 }
-.content-block-date {
+.content-block-date,
+.content-block-views {
   font-size: 12px;
   margin-top: 5px;
 }
@@ -683,6 +680,24 @@ input[type="radio"] + label::after {
   border: 1px solid #9c9898;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
+.btn_in_item {
+  display: block;
+  width: 298px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #858787;
+  border-radius: 5px;
+  background-color: #eff2f2;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin: auto;
+}
+.btn_in_item:hover {
+  background-color: #cccccc;
+}
+
 
 @media (max-width: 1023px) {
   .banner4,
@@ -1049,6 +1064,9 @@ input[type="radio"] + label::after {
   .registration-links {
     margin-top: 10px;
   }
+  .main-content {
+    padding: 20px;
+  }
 
   /*overlay*/
   .menu-overlay {
@@ -1219,14 +1237,22 @@ input[type="radio"] + label::after {
     font-size: 17px;
     line-height: 26px;
   }
+  .content-block-text {
+    font-size: 18px;
+    line-height: 26px;
+  }
   .content-block-date {
     font-size: 14px;
   }
   .admin-line-text {
     display: none;
   }
-  .icon-svg-edit {
+  .icon-svg-edit-guest {
     margin-left: 25px;
+  }
+  .content-title {
+    font-size: 20px;
+    margin-bottom: 25px;
   }
 }
 
@@ -1314,6 +1340,9 @@ input[type="radio"] + label::after {
   .form-field {
     width: 234px;
   }
+  .main-content {
+    padding: 10px;
+  }
   .alert {
     padding: 15px 20px;
     margin: 0 0 20px;
@@ -1375,7 +1404,10 @@ input[type="radio"] + label::after {
     margin: 15px 0;
   }
   .content-block {
-    padding: 16px 10px;
+    padding: 10px;
+  }
+  .content-title {
+    margin-bottom: 40px;
   }
   .btn-wrapper-guest {
     text-align: center;
@@ -1388,5 +1420,8 @@ input[type="radio"] + label::after {
   .content-block-text,
   .guest-answer {
     text-align: left;
+  }
+  .btn_in_item {
+    width: 252px;
   }
 }
