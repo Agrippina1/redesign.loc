@@ -52,7 +52,7 @@
   margin-bottom: 20px;
 }
 .content-block-text {
-  min-height: 9rem;
+  min-height: 5rem;
 }
 .story-read {
   font-size: 16px;
@@ -95,6 +95,16 @@
   .content-block-text {
     max-height: 8.5em;
     overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
   }
 }
 
