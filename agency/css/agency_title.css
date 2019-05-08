@@ -1,16 +1,12 @@
 .container_title {
     font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
     font-size: 14px;
-    width: 800px;
-    margin: 50px auto;
 }
 .collage_title {
   border: 1px solid;
   border-radius: 5px;
   width: 610px;
-  margin: 0 auto;
-  margin-top: 60px;
-  margin-bottom: 54px;
+  margin: 60px auto 54px;
 }
 .collage-wrapper {
   display: -webkit-box;
@@ -56,25 +52,22 @@
   text-decoration: none;
 }
 .men-women {
-  margin-left: 220px;
-  margin-bottom: 13px;
-}
-.men-women .men {
-  margin-right: 83px;
+  display: flex;
+  justify-content: space-between;
+  width: 368px;
+  margin: 0 auto 13px;
 }
 .total {
-  border: none;
+  display: block;
+  width: 110px;
   font-weight: normal;
-  margin-left: 338px;
-  margin-bottom: 20px;
-}
-.items {
-  margin-left: 282px;
+  border: none;
+  margin: 0 auto 20px;
 }
 .items .menu-item {
+  display: block;
   width: 210px;
-  margin-right: 200px;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
 }
 .menu-item:hover:not(.total) {
   box-shadow: 0 3px 5px 0 rgba(41, 52, 73, 0.5);
@@ -130,4 +123,20 @@ a:hover.bc_red {
 }
 .fc_red {
   background: #ffffff url("../pics/fon_red.jpg") repeat-y;
+}
+
+@media (max-width: 767px) {
+  .right {
+    display: none;
+  }
+  .collage_title {
+    width: 298px;
+  }
+  .left {
+    margin-right: 9px;
+    margin-left: 9px;
+  }
+  .men-women {
+    width: 300px;
+  }
 }
