@@ -1,13 +1,10 @@
-
 .container_title {
   width: 924px;
   margin: 0 auto;
 }
 .about-person {
-  padding-top: 15px;
-  padding-left: 100px;
-  padding-right: 123px;
-  margin-bottom: 30px;
+  width: 800px;
+  margin: 0 auto 30px;
 }
  .title {
   display: block;
@@ -20,10 +17,9 @@
   margin: 0;
 }
 .block-small p {
-  font-size: 15px;
-  margin: 0;
   padding-top: 19px;
   padding-left: 80px;
+  margin: 0;
 }
 .image {
   text-align: center;
@@ -35,17 +31,11 @@
   margin: 4px;
 }
 .wrapper-block {
-  /*display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;*/
-  width: 800px;
-  font-size: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .block-small {
-  display: inline-block;
-  vertical-align: top;
   position: relative;
   width: 400px;
   margin-bottom: 20px;
@@ -58,16 +48,16 @@
   position: relative;
   margin-bottom: 30px;
 }
+.about-person-text {
+  font-size: 16px;
+  line-height: 30px;
+}
 .about-me p,
 .about-partner p {
-  width: 692px;
-  font-size: 14px;
-  line-height: 30px;
   padding-top: 14px;
-  margin-left: 80px;
+  padding-left: 80px;
 }
-.about-person p::before,
-.about-person ul::before {
+.about-person p::before {
   content: "";
   position: absolute;
   width: 200px;
@@ -76,8 +66,7 @@
   top: 27px;
   left: 0;
 }
-.about-person p::after,
-.about-person ul::after {
+.about-person p::after {
   content: "";
   position: absolute;
   width: 170px;
@@ -176,4 +165,68 @@ a:hover.bc_magenta {
 a:hover.bc_red {
   color: #ffffff;
   background-color: #b10000;
+}
+.agency-statistics span {
+  display: block;
+  font-size: 10px;
+}
+
+@media (max-width: 1023px) {
+  .container_title {
+    width: 100%;
+    font-size: 18px;
+  }
+  .about-person {
+    width: 100%;
+  }
+  .about-person-text {
+    font-size: 18px;
+  }
+  .block-small {
+    width: 50%;
+  }
+  .title {
+    width: 190px;
+    line-height: 22px;
+  }
+  .about-person a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-person p::before {
+    width: 170px;
+  }
+  .about-person p::after {
+    width: 150px;
+    left: 169px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper-block {
+    flex-direction: column;
+    align-content: center;
+  }
+  .block-small {
+    width: 100%;
+  }
+  .about-me p,
+  .about-partner p,
+  .block-small p {
+    padding-left: 25px;
+  }
+  .about-person p::before {
+    width: 50%;
+  }
+  .about-person p::after {
+    width: 100%;
+    left: 0;
+  }
+  .about-person a {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .about-person .icon {
+    margin-left: 0;
+  }
 }
