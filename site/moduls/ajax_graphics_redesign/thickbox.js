@@ -5,7 +5,7 @@
  * Licensed under the MIT License: http://www.opensource.org/licenses/mit-license.php
 */
 		  
-var tb_pathToImage = "../site/moduls/ajax_graphics/loadingAnimation.gif";
+var tb_pathToImage = "../site/moduls/ajax_graphics_redesign/loadingAnimation.gif";
 
 /*!!!!!!!!!!!!!!!!! edit below this line at your own risk !!!!!!!!!!!!!!!!!!!!!!!*/
 
@@ -102,8 +102,8 @@ function tb_show(caption, url, imageGroup) {//function called when the user clic
 				
 			// Resizing large images - orginal by Christian Montoya edited by me.
 			var pagesize = tb_getPageSize();
-			var x = pagesize[0] - 150;
-			var y = pagesize[1] - 150;
+			var x = pagesize[0] - 40;
+			var y = pagesize[1] - 40;
 			var imageWidth = imgPreloader.width;
 			var imageHeight = imgPreloader.height;
 			if (imageWidth > x) {
@@ -123,9 +123,9 @@ function tb_show(caption, url, imageGroup) {//function called when the user clic
 			}
 			// End Resizing
 			
-			TB_WIDTH = imageWidth + 30;
+			TB_WIDTH = imageWidth + 6;
 			TB_HEIGHT = imageHeight + 60;
-			$("#TB_window").append("<a href='' id='TB_ImageOff' title='Закрыть'><img id='TB_Image' src='"+url+"' width='"+imageWidth+"' height='"+imageHeight+"' alt='"+caption+"'/></a>" + "<div id='TB_caption'>"+caption+"<div id='TB_secondLine'>" + TB_imageCount + TB_PrevHTML + TB_NextHTML + "</div></div><div id='TB_closeWindow'><a href='#' id='TB_closeWindowButton' title='Закрыть' style='text-decoration: none; font-weight: bold;'>[&nbsp;X&nbsp;]</a></div>"); 		
+			$("#TB_window").append("<a href='' id='TB_ImageOff' alt='Close'><img id='TB_Image' src='"+url+"' width='"+imageWidth+"' height='"+imageHeight+"' alt='"+caption+"'/></a>" + "<div id='TB_caption'>"+caption+"<div id='TB_secondLine'>" + TB_imageCount + TB_PrevHTML + TB_NextHTML + "</div></div>");
 			
 			$("#TB_closeWindowButton").click(tb_remove);
 			
@@ -193,7 +193,7 @@ function tb_show(caption, url, imageGroup) {//function called when the user clic
 					urlNoQuery = url.split('TB_');
 					$("#TB_iframeContent").remove();
 					if(params['modal'] != "true"){//iframe no modal
-						$("#TB_window").append("<div id='TB_title'><div id='TB_ajaxWindowTitle'>"+caption+"</div><div id='TB_closeAjaxWindow'><a href='#' id='TB_closeWindowButton' title='Закрыть' style='text-decoration: none; font-weight: bold;'>[&nbsp;X&nbsp;]</a></div></div><iframe frameborder='0' hspace='0' src='"+urlNoQuery[0]+"' id='TB_iframeContent' name='TB_iframeContent"+Math.round(Math.random()*1000)+"' onload='tb_showIframe()' style='width:"+(ajaxContentW + 29)+"px;height:"+(ajaxContentH + 17)+"px;' > </iframe>");
+						$("#TB_window").append("<div id='TB_title'><div id='TB_ajaxWindowTitle'>"+caption+"</div><div id='TB_closeAjaxWindow'><a href='#' id='TB_closeWindowButton' alt='Close' style='text-decoration: none; font-weight: bold;'>[&nbsp;X&nbsp;]</a></div></div><iframe frameborder='0' hspace='0' src='"+urlNoQuery[0]+"' id='TB_iframeContent' name='TB_iframeContent"+Math.round(Math.random()*1000)+"' onload='tb_showIframe()' style='width:"+(ajaxContentW + 29)+"px;height:"+(ajaxContentH + 17)+"px;' > </iframe>");
 					}else{//iframe modal
 					$("#TB_overlay").unbind();
 						$("#TB_window").append("<iframe frameborder='0' hspace='0' src='"+urlNoQuery[0]+"' id='TB_iframeContent' name='TB_iframeContent"+Math.round(Math.random()*1000)+"' onload='tb_showIframe()' style='width:"+(ajaxContentW + 29)+"px;height:"+(ajaxContentH + 17)+"px;'> </iframe>");
@@ -281,7 +281,7 @@ function tb_remove() {
 
 function tb_position() {
 $("#TB_window").css({marginLeft: '-' + parseInt((TB_WIDTH / 2),10) + 'px', width: TB_WIDTH + 'px'});
-	if ( !(jQuery.browser.msie && jQuery.browser.version < 7)) { // take away IE6
+	if ( !(navigator.userAgent.match ("MSIE") && jQuery.browser.version < 7)) { // take away IE6
 		$("#TB_window").css({marginTop: '-' + parseInt((TB_HEIGHT / 2),10) + 'px'});
 	}
 }
