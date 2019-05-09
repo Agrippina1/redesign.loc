@@ -13,7 +13,6 @@
   line-height: 20px;
   font-weight: bold;
   font-style: italic;
-  /*color: #0b24fb;*/
   margin: 0;
 }
 .block-small p {
@@ -77,16 +76,8 @@
   width: 572px;
 }
 .block-small ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   margin-left: 80px;
   margin-top: 19px;
-}
-.block-small i {
-  font-size: 15px;
-  line-height: 17px;
-  margin-top: 15px;
 }
 .about-person .button {
   text-align: center;
