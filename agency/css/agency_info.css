@@ -40,9 +40,6 @@
   width: 400px;
   margin-bottom: 20px;
 }
-.block-small:nth-child(2n) {
-  margin-right: 0;
-}
 .about-me,
 .about-partner {
   position: relative;
