@@ -8,7 +8,9 @@
 .another_wrapper_new {
   width: 393px;
   background: #f8f8f8;
-  border: 1px solid #d0d0d0;
+  border: 1px solid #c3c3c3;
+  border-top-left-radius: 78px;
+  border-bottom-left-radius: 78px;
   margin-bottom: 10px;
 }
 .agency_block_new {
@@ -17,13 +19,21 @@
 .foto_new {
   display: flex;
   width: 162px;
-  height: 122px;
 }
 .foto_center_new {
   margin: auto;
 }
 .foto_center_new img {
   display: block;
+  border-radius: 50%;
+  margin: 7px;
+}
+.info_item_new-text {
+  font-size: 16px;
+  line-height: 26px;
+  padding-left: 10px;
+  padding-top: 27px;
+  padding-right: 10px;
 }
 .info_item_new {
   width: 231px;
@@ -32,6 +42,10 @@
 }
 .another_wrapper_new:hover {
   box-shadow: 0 5px 12px 0 rgba(41, 52, 73, 0.5);
+}
+.agency_date_new {
+  display: block;
+  font-size: 14px;
 }
 
 @media (max-width: 1023px) {
@@ -60,12 +74,12 @@
 }
 
 @media (max-width: 767px) {
-  .container_new {
-    flex-direction: column;
-  }
   .another_wrapper_new {
-    width: 298px;
-    margin: 0 auto 10px;
+    width: 140px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 0;
+    margin-left: 0;
   }
   .agency_block_new {
     flex-direction: column;
@@ -73,14 +87,29 @@
   .foto_new {
     width: 100%;
   }
-  .info_item_new {
-    width: 100%;
+  .foto_center_new img {
+    width: 140px;
+    height: 140px;
+    border-radius: 5px 5px 0 0;
     margin: 0;
   }
-  .info_item_new p {
-    width: 278px;
-    text-align: center;
-    padding: 0 10px 10px 10px;
+  .info_item_new {
+    width: 138px;
+    border: 1px solid #c3c3c3;
+    border-radius: 0 0 5px 5px;
+    margin: 0;
+  }
+  .info_item_new-text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 5px 10px 6px 10px;
+  }
+  .agency_date_new {
+    font-size: 10px;
   }
 }
 
