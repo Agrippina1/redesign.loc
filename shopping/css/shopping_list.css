@@ -1,9 +1,3 @@
-.contentainer-products_all {
-  margin: 30px auto;
-}
-.contentainer-products_all a {
-  text-decoration: none;
-}
 .headers {
   position: relative;
   text-align: center;
@@ -167,4 +161,10 @@ a:hover.bc_red {
 }
 .skin_red {
   border: 1px solid #b72004;
+}
+
+@media (max-width: 767px) {
+  .headers::after {
+    width: 90%;
+  }
 }
