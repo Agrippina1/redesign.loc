@@ -1,10 +1,11 @@
-h1, h4 {
+.shopping-title, h4 {
   font-weight: bold;
   text-align: center;
-  margin: 10px 0;
+  margin-bottom: 20px;
 }
-h1 {
+.shopping-title {
   font-size: 18px;
+  padding-left: 15px;
 }
 h4 {
   font-size: 16px;
@@ -16,14 +17,17 @@ h4 {
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
-.seller {
-  display: flex;
-  flex-direction: column;
+.count {
+  font-size: 18px;
+  font-weight: bold;
+}
+.seller img {
+  height: 100px;
 }
 .link-name {
+  display: block;
   font-weight: bold;
   text-align: center;
-  padding-top: 5px;
   padding-bottom: 5px;
 }
 .what-is-it {
@@ -45,6 +49,8 @@ h4 {
   padding: 5px 10px 5px 0;
 }
 .term {
+  font-size: 14px;
+  line-height: 20px;
   text-align: right;
 }
 .product-description-text {
@@ -65,4 +71,37 @@ h4 {
 }
 .btn-wrapper-guest {
   margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .shopping-show-header {
+    display: block;
+  }
+  .seller {
+    text-align: center;
+  }
+  .what-is-it {
+    width: 100%;
+  }
+  .link-name {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .product-description-text {
+    font-size: 17px;
+    line-height: 26px;
+    text-align: justify;
+    padding-top: 20px;
+  }
+  .btn-wrapper-guest {
+    margin-left: 0;
+  }
+  .content-block {
+    margin-bottom: 30px;
+  }
 }

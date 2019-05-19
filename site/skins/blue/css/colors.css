@@ -19,6 +19,9 @@
 .color_font {
   color: #00147c;
 }
+.color_font a {
+  color: #00147c;
+}
 .color_border {
   border: 1px solid #00147c;
 }
