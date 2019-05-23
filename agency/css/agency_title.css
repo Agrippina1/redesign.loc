@@ -43,13 +43,16 @@
 }
 .menu-item {
   display: inline-block;
-  text-align: center;
   color: #000000;
   font-weight: bold;
+  white-space: nowrap;
   padding: 11px 15px;
   border: 1px solid;
   border-radius: 5px;
   text-decoration: none;
+}
+.menu-item_text {
+  padding-left: 7px;
 }
 .men-women {
   display: flex;
