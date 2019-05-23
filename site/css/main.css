@@ -622,7 +622,8 @@ input[type="radio"] + label::after {
 }
 .content-block {
   background: #f8f8f8;
-  box-shadow: -1px 1px 1px #cfcfcf;
+  box-shadow: -1px 1px 1px #cfcfcf,
+              1px 0 1px #cfcfcf;
   padding: 16px 20px;
   margin-bottom: 10px;
 }

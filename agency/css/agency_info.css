@@ -103,6 +103,10 @@
 .about-person .icon {
   margin-left: 15px;
 }
+.button_power {
+  width: 210px;
+  margin: 10px;
+}
 .tc_blind {
   color: #000000;
 }
