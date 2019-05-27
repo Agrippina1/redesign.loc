@@ -403,50 +403,57 @@
         <a name="content"></a>
         <div class="m-c-w">
 
-          <table width='100%' align='center' border='0' cellspacing='0' cellpadding='0' align='center'>
-            <tr>
-              <td><a href='rules.php'>правила форума</a></td>
-              <td align='right'>
-                <form name='newmsg' class='form_search'>
-                  <input type='button' name='button' value='Поиск по форуму' class='form_button' onClick="drop('search')">
-                </form>
-              </td>
-            </tr>
-          </table>
+          <div class="law-search">
+            <a class="law" href="rules.php">Правила форума</a>
+            <div class="forum-search">
+              <form class="form_search" name="newmsg">
+                <a class="btn-white" href="#" onClick="drop('search')">
+                  <svg class="icon-svg icon-svg-loupe color_icons"><use
+                      xlink:href="../site/icons/id_icons.svg#icon-loupe"></use></svg> Поиск <span class="gap">по
+                  форуму</span>
+                </a>
+              </form>
+            </div>
+          </div>
 
-          <div id='search' style='display: none'>
-            <div class='block_content'>
+          <div class="search-block" id='search'>
+            <div class="block_content">
               <form method='post' name='jumpboxx' action='search.php' onSubmit="if(document.jumpboxx.items.value != -1){jumpboxx.Submitt.disabled='true';jumpboxx.Submitt.value=' Ждите! ';} else {return false;}">
-                <table border='0' cellspacing='1' cellpadding='3' style='margin: auto;'>
-                  <tr>
-                    <td align='right' valign='top' class='table_line_1'>
-                      <strong>ключевое слово или фраза</strong>
-                    </td>
-                    <td class='table_line_1'>
-                      <input type='text' name='word' value='' size='50' maxlength='50' class='form_field'>
-                      <br><i><b>инвалид человек</b></i> находит строки, содержащие по меньшей мере одно из этих слов.
-                      <br><i><b>&quot;инвалид человек&quot;</b></i> ... <i>инвалид человек как и все люди</i>, но не <i>инвалид тоже человек</i>.
-                      <br><i><b>+инвалид +человек</b></i> ... оба слова.
-                      <br><i><b>+инвалид человек</b></i> ... слово <i>инвалид</i>, но ранг текста выше, если он также содержит слово <i>человек</i>.
-                      <br><i><b>+инвалид -человек</b></i> ... слово <i>инвалид</i>, но не <i>человек</i>.
-                      <br><i><b>+инвалид +(&gt;спортсмен &lt;лодырь)</b></i> ... <i>инвалид</i> и <i>спортсмен</i>,
-                      или <i>инвалид</i> и <i>лодырь</i> (в любом порядке), но ранг <i>инвалид спортсмен</i> выше, чем <i>инвалид лодырь</i>.
-                      <br><i><b>инвалид*</b></i> ... <i>инвалид</i>, <i>инвалиды</i>, <i>инвалидная</i>, <i>инвалидов</i> и т.д..
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class='table_line_0' align='right'><strong>поиск</strong></td>
-                    <td class='table_line_0'>
-                      <input type='radio' name='into' value='mess' checked>в сообщениях
-                      <input type='radio' name='into' value='tems'>по названию темы</td>
-                  <tr>
-                    <td class='table_line_1' align='right'><strong>по автору</strong></td>
-                    <td class='table_line_1'><input type='text' name='autor' value='' size='27' maxlength='27' class='form_field'></td>
-                  </tr>
-                  <tr>
-                    <td class='table_line_0' align='right'><strong>в разделе форума</strong></td>
-                    <td class='table_line_0'>
-                      <select name='items' class='form_field'>
+
+                <form class="form-template" action="index.html" method="post">
+                  <div class="form-group-template-wrapper">
+                    <div class="form-group-template">
+                      <label class="form-label-template font-form-template" for="formfirst-field">Ключевое слово или фраза:</label>
+                      <input class="form-field-template" id="formfirst-field" type="text" name="login">
+                      <div class="search-help">
+                        <br><i><b>инвалид человек</b></i> находит строки, содержащие по меньшей мере одно из этих слов.
+                        <br><i><b>&quot;инвалид человек&quot;</b></i> ... <i>инвалид человек как и все люди</i>, но не <i>инвалид тоже человек</i>.
+                        <br><i><b>+инвалид +человек</b></i> ... оба слова.
+                        <br><i><b>+инвалид человек</b></i> ... слово <i>инвалид</i>, но ранг текста выше, если он также содержит слово <i>человек</i>.
+                        <br><i><b>+инвалид -человек</b></i> ... слово <i>инвалид</i>, но не <i>человек</i>.
+                        <br><i><b>+инвалид +(&gt;спортсмен &lt;лодырь)</b></i> ... <i>инвалид</i> и <i>спортсмен</i>,
+                        или <i>инвалид</i> и <i>лодырь</i> (в любом порядке), но ранг <i>инвалид спортсмен</i> выше, чем <i>инвалид лодырь</i>.
+                        <br><i><b>инвалид*</b></i> ... <i>инвалид</i>, <i>инвалиды</i>, <i>инвалидная</i>, <i>инвалидов</i> и т.д..
+                      </div>
+                    </div>
+                    <div class="form-group-template-radio">
+                      <p class="font-form-template group-title">Поиск:</p>
+                      <div class="group-radio">
+                        <input id="option1-field" type="radio" name="radio1">
+                        <label for="option1-field">В сообщениях</label>
+                      </div>
+                      <div class="group-radio">
+                        <input id="option2-field" type="radio" name="radio1">
+                        <label for="option2-field">По названию темы</label>
+                      </div>
+                    </div>
+                    <div class="form-group-template">
+                      <label class="form-label-template font-form-template" for="formsecond-field">По автору:</label>
+                      <input class="form-field-template" id="formsecond-field" type="text" name="login">
+                    </div>
+                    <div class="select-group-template">
+                      <p class="font-form-template">В разделе форума</p>
+                      <select name="teme">
                         <option value='all' selected=selected>По всем разделам</option>
                         <option value='-1'>&nbsp;</option>
                         <option value='forum_12'>* * * Закон и право * * *</option>
@@ -470,583 +477,717 @@
                         <option value='72'>Законодательство и общие вопросы</option>
                         <option value='-1'>&nbsp;</option>
                       </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class='table_line_1' align='right'><strong>сортировать по</strong></td>
-                    <td class='table_line_1'>
-                      <input type='radio' name='sort' value='date' checked>дате
-                      <input type='radio' name='sort' value='rel' >релевантности
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class='form_subj'></td>
-                    <td class='form_cont'><input name='Submitt' type='submit' value='Найти' class='form_button'/></td>
-                  </tr>
-                </table>
+                    </div>
+                    <div class="form-group-template-radio">
+                      <p class="font-form-template group-title">Сортировать по:</p>
+                      <div class="group-radio">
+                        <input id="option3-field" type="radio" name="radio2">
+                        <label for="option3-field">Дате</label>
+                      </div>
+                      <div class="group-radio">
+                        <input id="option4-field" type="radio" name="radio2">
+                        <label for="option4-field">Релевантности</label>
+                      </div>
+                    </div>
+                    <a class="btn_in_item" href="edit_forum.php?type=fn">
+                      <svg class="icon-svg icon-svg-edit color_icons"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-loupe"></use></svg> Найти
+                    </a>
+                  </div>
+                </form>
 
-                <input type='hidden' name='goto' value=''>
               </form>
             </div>
           </div>
 
-          <p>
-            <ul type='square' >
-              <li><a href='edit_forum.php?type=fn'><b>Добавить форум</b></a></li>
-              <li><a href='edit_forum.php?type=rn'><b>Добавить раздел</b></a></li>
-            </ul>
-          </p>
+          <a class="btn_in_item btn-forum-desktop" href="edit_forum.php?type=fn">
+            <svg class="icon-svg icon-svg-btn color_icons"><use
+                xlink:href="../site/icons/id_icons.svg#icon-page_answer"></use></svg> Добавить форум
+          </a>
+          <a class="btn_in_item btn-forum-desktop" href="edit_forum.php?type=fn">
+            <svg class="icon-svg icon-svg-btn color_icons"><use
+                xlink:href="../site/icons/id_icons.svg#icon-page_answer"></use></svg> Добавить раздел
+          </a>
 
-          <div style="display: none">
-            <form method='get' name='jumpbox1' action='index.php' onSubmit="if(document.jumpbox1.item.value == -1){return false;}">
-              Перейти:&nbsp;
-              <select name='item' class='form_field' style="width: 250px">
-                <option value='-1'>Выберите форум</option>
-                <option value='-1'>&nbsp;</option>
-                <option value='-1'>* * * Закон и право * * *</option>
-                <option value='49'>Установление инвалидности и реабилитация</option>
-                <option value='50'>Пенсионное обеспечение</option>
-                <option value='51'>Социальное обслуживание</option>
-                <option value='62'>Жилищное право</option>
-                <option value='16'>Прочее законодательство</option>
-                <option value='53'>Правоприменительная и судебная практика</option>
-                <option value='74'>Инвалидность, полученная на военной службе</option>
-                <option value='68'>Страны</option>
-                <option value='-1'>&nbsp;</option>
-                <option value='-1'>* * * Общество * * *</option>
-                <option value='24'>Общественные организации и движения инвалидов</option>
-                <option value='79'>Официальные мероприятия</option>
-                <option value='17'>СМИ</option>
-                <option value='7'>Взаимоотношения в обществе</option>
-                <option value='1'>Личные взаимоотношения</option>
-                <option value='-1'>&nbsp;</option>
-                <option value='-1'>* * * Доступная среда * * *</option>
-                <option value='70'>Регионы России</option>
-                <option value='71'>Москва</option>
-                <option value='78'>Страны</option>
-                <option value='73'>Оборудование и техническое обеспечение</option>
-                <option value='72'>Законодательство и общие вопросы</option>
-                <option value='-1'>&nbsp;</option>
-                <option value='-1'>* * * Образование и работа * * *</option>
-                <option value='15'>Образование</option>
-                <option value='14'>Работа</option>
-                <option value='-1'>&nbsp;</option>
-                <option value='-1'>* * * Инва-обеспечение * * *</option>
-                <option value='20'>Компьютеры и софт</option>
-                <option value='29'>Протезы</option>
-                <option value='21'>Все остальное</option>
-                <option value='-1'>&nbsp;</option>
-                <option value='-1'>* * * Коляски * * *</option>
-                <option value='63'>Электроколяски</option>
-                <option value='65'>Коляски с ручным приводом</option>
-                <option value='66'>Коляски специального назначения и общие вопросы</option>
-                <option value='80'>Скутеры</option>
-                <option value='-1'>&nbsp;</option>
-                <option value='-1'>* * * Авто * * *</option>
-                <option value='76'>Технический раздел</option>
-                <option value='77'>Информационно-правовой раздел</option>
-                <option value='-1'>&nbsp;</option>
-                <option value='-1'>* * * Учреждения * * *</option>
-                <option value='4'>Санатории</option>
-                <option value='55'>Научно-исследовательские институты, больницы, поликлиники</option>
-                <option value='56'>Реабилитационные центры</option>
-                <option value='57'>Дома инвалидов и пр.</option>
-                <option value='-1'>&nbsp;</option>
-                <option value='-1'>* * * Здоровье * * *</option>
-                <option value='58'>Травмы</option>
-                <option value='59'>Заболевания</option>
-                <option value='60'>Адаптация при травмах и заболеваниях</option>
-                <option value='61'>Аппаратное и медикаментозное лечение</option>
-                <option value='13'>Прочие вопросы здоровья</option>
-                <option value='-1'>&nbsp;</option>
-                <option value='-1'>* * * Встречи и общение * * *</option>
-                <option value='8'>Поиск</option>
-                <option value='39'>Лечились, учились, служили, отдыхали</option>
-                <option value='35'>Санкт-Петербург</option>
-                <option value='34'>Москва и Подмосковье</option>
-                <option value='38'>Города России</option>
-                <option value='37'>Другие страны</option>
-                <option value='-1'>&nbsp;</option>
-                <option value='-1'>* * * Досуг * * *</option>
-                <option value='69'>Культурные мероприятия</option>
-                <option value='2'>Путешествия</option>
-                <option value='6'>Спорт</option>
-                <option value='11'>Разное</option>
-                <option value='-1'>&nbsp;</option>
-                <option value='-1'>* * * YouTube про инвалидов * * *</option>
-                <option value='40'>Официальное</option>
-                <option value='41'>Техника и медицина</option>
-                <option value='42'>Обучение</option>
-                <option value='43'>Судьбы</option>
-                <option value='44'>Неформальное видео</option>
-                <option value='45'>Разное видео</option>
-                <option value='-1'>&nbsp;</option>
-                <option value='-1'>* * * Наш Портал * * *</option>
-                <option value='25'>Статьи</option>
-                <option value='30'>Вы были с нами</option>
-                <option value='33'>Disability.ru</option>
-                <option value='12'>О портале</option>
-                <option value='-1'>&nbsp;</option>
-                <option value='-1'>* * * Архив * * *</option>
-                <option value='9'>Творчество</option>
-                <option value='10'>Увлечения</option>
-                <option value='26'>Поздравления</option>
-                <option value='27'>Интервью</option>
-                <option value='22'>Странности любви</option>
-                <option value='23'>Мысли о жизни</option>
-                <option value='-1'>&nbsp;</option>
-              </select>
-              <input type='submit' value='Перейти' class='form_button' />
-            </form>
-          </div>
-
-          <table width='100%' align='center' border='0' cellspacing='1' cellpadding='2' class='table_design' role='grid' aria-label='темы с новыми ответами'>
-            <tr role='row'>
-              <th class='table_head_center' role='columnheader'>Раздел&nbsp;форума</th>
-              <th class='table_head_center' width='50%' role='columnheader'>темы с новыми ответами</th>
-              <th class='table_head_center' role='columnheader'>Ответов</th>
-              <th class='table_head_center' role='columnheader'>Просм.</th>
-              <th class='table_head_center' role='columnheader'>Рейт.</th>
-              <th class='table_head_center' role='columnheader'>Ответил</th>
-            </tr>
-            <tr role='row'>
-              <td role='gridcell' class='table_line_center_0'>
-                <a href='index.php?item=29' class='table_link_item'>
-                  Инва-обеспечение<br />Протезы
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <span title="прикрепленная тема"><svg class="icon-svg icon-svg-menu color_icons" ><use
-                        xlink:href="../site/icons/id_icons.svg#icon-page_top" ></use></svg></span>
-                <a href='index.php?id=6373' class='table_link_item'>
-                  Первичное протезирование
-                </a><br />
-                <svg class="icon-svg icon-svg-menu color_icons" aria-label="страницы"><use xlink:href="../site/icons/id_icons.svg#icon-pages"></use></svg>
-                <span class='line_link_in'>
-                  <a href='index.php?id=6373&page=1'>1</a>
-                  <a href='index.php?id=6373&page=2'>2</a>
-                  <a href='index.php?id=6373&page=3'>3</a>
+          <div class="forum-top-desktop">
+            <table class="table_design forum-table-top" role='grid' aria-label='темы с новыми ответами'>
+              <tr role='row'>
+                <th class='table_head_center' role='columnheader'>Раздел&nbsp;форума</th>
+                <th class='table_head_center' role='columnheader'>Темы с новыми ответами</th>
+                <th class="table_head_center" role="columnheader">Ответов</th>
+                <th class="table_head_center" role="columnheader">Просм.</th>
+                <th class="table_head_center" role="columnheader">Рейт.</th>
+                <th class="table_head_center" role="columnheader">Ответил</th>
+              </tr>
+              <tr role="row">
+                <td role="gridcell" class="table_line_center_0">
+                  <a href="index.php?item=29" class="table_link_item">
+                    Инва-обеспечение<br />Протезы
+                  </a>
+                </td>
+                <td role="gridcell" class="table_line_0">
+                <span title="прикрепленная тема">
+                  <svg class="icon-svg icon-svg-menu color_icons icon-attached" ><use
+                      xlink:href="../site/icons/id_icons.svg#icon-page_top" ></use></svg></span>
+                  <a href="index.php?id=6373" class="table_link_item">
+                    Первичное протезирование
+                  </a><br />
+                  <svg class="icon-svg icon-svg-menu color_icons" aria-label="страницы"><use
+                      xlink:href="../site/icons/id_icons.svg#icon-pages"></use></svg>
+                  <span class="line_link_in">
+                  <a href="index.php?id=6373&page=1">1</a>
+                  <a href="index.php?id=6373&page=2">2</a>
+                  <a href="index.php?id=6373&page=3">3</a>
                   ...
-                  <a href='index.php?id=6373&page=32'>32</a>
-                  <a href='index.php?id=6373&page=33'>33</a>
-                  <a href='index.php?id=6373&page=34'>34</a>
+                  <a href="index.php?id=6373&page=32">32</a>
+                  <a href="index.php?id=6373&page=33">33</a>
+                  <a href="index.php?id=6373&page=34">34</a>
                 </span>
-              </td>
-                <td role='gridcell' class='table_line_center_0'>667</td>
-                <td role='gridcell' class='table_line_center_0'>60867</td>
-                <td role='gridcell' class='table_line_center_0'> </td>
-                <td role='gridcell' class='table_line_center_0'>Dimanich<br />
-                  <span class='small'>22&nbsp;май&nbsp;2019 13:04</span>
+                </td>
+                <td role="gridcell" class="table_line_center_0">667</td>
+                <td role="gridcell" class="table_line_center_0">60867</td>
+                <td role="gridcell" class="table_line_center_0"> </td>
+                <td role="gridcell" class="table_line_center_0">Dimanich<br />
+                  <span class="small">22&nbsp;май&nbsp;2019 13:04</span>
                 </td>
               </tr>
-              <tr role='row'>
-                <td role='gridcell' class='table_line_center_1'>
-                  <a href='index.php?item=74' class='table_link_item'>
+              <tr role="row">
+                <td role="gridcell" class="table_line_center_1">
+                  <a href="index.php?item=74" class="table_link_item">
                     Закон и право<br />Инвалидность, полученная на военной службе
                   </a>
                 </td>
-                <td role='gridcell' class='table_line_1'>
-                <span title="прикрепленная тема"><svg class="icon-svg icon-svg-menu color_icons" ><use
-                        xlink:href="../site/icons/id_icons.svg#icon-page_top" ></use></svg></span>
-                  <a href='index.php?id=27397' class='table_link_item'>
+                <td role="gridcell" class="table_line_1">
+                <span title="прикрепленная тема">
+                  <svg class="icon-svg icon-svg-menu color_icons icon-attached" ><use
+                      xlink:href="../site/icons/id_icons.svg#icon-page_top" ></use></svg></span>
+                  <a href="index.php?id=27397" class="table_link_item">
                     С 1 января 2012 года инвалиды вследствие военной травмы - 01
                   </a><br />
-                  <svg class="icon-svg icon-svg-menu color_icons" aria-label="страницы"><use xlink:href="../site/icons/id_icons.svg#icon-pages"></use></svg>
-                  <span class='line_link_in'>
-                    <a href='index.php?id=27397&page=1'>1</a>
-                    <a href='index.php?id=27397&page=2'>2</a>
-                    <a href='index.php?id=27397&page=3'>3</a>
+                  <svg class="icon-svg icon-svg-menu color_icons" aria-label="страницы"><use
+                      xlink:href="../site/icons/id_icons.svg#icon-pages"></use></svg>
+                  <span class="line_link_in">
+                    <a href="index.php?id=27397&page=1">1</a>
+                    <a href="index.php?id=27397&page=2">2</a>
+                    <a href="index.php?id=27397&page=3">3</a>
                     ...
-                    <a href='index.php?id=27397&page=228'>228</a>
-                    <a href='index.php?id=27397&page=229'>229</a>
-                    <a href='index.php?id=27397&page=230'>230</a>
+                    <a href="index.php?id=27397&page=228">228</a>
+                    <a href="index.php?id=27397&page=229">229</a>
+                    <a href="index.php?id=27397&page=230">230</a>
                   </span>
                 </td>
-                <td role='gridcell' class='table_line_center_1'>4587</td>
-                <td role='gridcell' class='table_line_center_1'>565654</td>
-                <td role='gridcell' class='table_line_center_1'> </td>
-                <td role='gridcell' class='table_line_center_1'>metallurg<br />
-                  <span class='small'>22&nbsp;май&nbsp;2019 11:31</span></td>
+                <td role="gridcell" class="table_line_center_1">4587</td>
+                <td role="gridcell" class="table_line_center_1">565654</td>
+                <td role="gridcell" class="table_line_center_1"> </td>
+                <td role="gridcell" class="table_line_center_1">metallurg<br />
+                  <span class="small">22&nbsp;май&nbsp;2019 11:31</span></td>
               </tr>
-              <tr role='row'>
-                <td role='gridcell' class='table_line_center_0'>
-                  <a href='index.php?item=63' class='table_link_item'>
+              <tr role="row">
+                <td role="gridcell" class="table_line_center_0">
+                  <a href="index.php?item=63" class="table_link_item">
                     Коляски<br />Электроколяски
                   </a>
                 </td>
-              <td role='gridcell' class='table_line_0'>
-                <span title="прикрепленная тема"><svg class="icon-svg icon-svg-menu color_icons" ><use
-                        xlink:href="../site/icons/id_icons.svg#icon-page_top" ></use></svg></span>
-                <a href='index.php?id=34574' class='table_link_item'>
-                  Обзор,  подбор и ремонт зарядных устройств для инвалидных колясок
-                </a><br />
-                <svg class="icon-svg icon-svg-menu color_icons" aria-label="страницы"><use xlink:href="../site/icons/id_icons.svg#icon-pages"></use></svg>
-                <span class='line_link_in'>
-                  <a href='index.php?id=34574&page=1'>1</a>
-                  <a href='index.php?id=34574&page=2'>2</a>
-                  <a href='index.php?id=34574&page=3'>3</a>
+                <td role="gridcell" class="table_line_0">
+                <span title="прикрепленная тема"><svg class="icon-svg icon-svg-menu color_icons icon-attached" ><use
+                    xlink:href="../site/icons/id_icons.svg#icon-page_top" ></use></svg></span>
+                  <a href="index.php?id=34574" class="table_link_item">
+                    Обзор,  подбор и ремонт зарядных устройств для инвалидных колясок
+                  </a><br />
+                  <svg class="icon-svg icon-svg-menu color_icons" aria-label="страницы"><use xlink:href="../site/icons/id_icons.svg#icon-pages"></use></svg>
+                  <span class="line_link_in">
+                  <a href="index.php?id=34574&page=1">1</a>
+                  <a href="index.php?id=34574&page=2">2</a>
+                  <a href="index.php?id=34574&page=3">3</a>
                   ...
-                  <a href='index.php?id=34574&page=22'>22</a>
-                  <a href='index.php?id=34574&page=23'>23</a>
-                  <a href='index.php?id=34574&page=24'>24</a>
+                  <a href="index.php?id=34574&page=22">22</a>
+                  <a href="index.php?id=34574&page=23">23</a>
+                  <a href="index.php?id=34574&page=24">24</a>
                 </span>
-              </td>
-              <td role='gridcell' class='table_line_center_0'>471</td>
-              <td role='gridcell' class='table_line_center_0'>26163</td>
-              <td role='gridcell' class='table_line_center_0'> </td>
-              <td role='gridcell' class='table_line_center_0'>Ets<br />
-                <span class='small'>22&nbsp;май&nbsp;2019 10:48</span>
-              </td>
-            </tr>
-            <tr role='row'>
-              <td role='gridcell' class='table_line_center_1'>
-                <a href='index.php?item=7' class='table_link_item'>
-                  Общество<br />Взаимоотношения в обществе
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_1'>
-                <a href='index.php?id=26320' class='table_link_item'>
-                  Как живётся инвалиду - колясочнику в Канаде.
-                </a><br />
-                <svg class="icon-svg icon-svg-menu color_icons" aria-label="страницы"><use xlink:href="../site/icons/id_icons.svg#icon-pages"></use></svg>
-                <span class='line_link_in'>
-                  <a href='index.php?id=26320&page=1'>1</a>
-                  <a href='index.php?id=26320&page=2'>2</a>
-                  <a href='index.php?id=26320&page=3'>3</a>
+                </td>
+                <td role="gridcell" class="table_line_center_0">471</td>
+                <td role="gridcell" class="table_line_center_0">26163</td>
+                <td role="gridcell" class="table_line_center_0"> </td>
+                <td role="gridcell" class="table_line_center_0">Ets<br />
+                  <span class="small">22&nbsp;май&nbsp;2019 10:48</span>
+                </td>
+              </tr>
+              <tr role="row">
+                <td role="gridcell" class="table_line_center_1">
+                  <a href="index.php?item=7" class="table_link_item">
+                    Общество<br />Взаимоотношения в обществе
+                  </a>
+                </td>
+                <td role="gridcell" class="table_line_1">
+                  <a href="index.php?id=26320" class="table_link_item">
+                    Как живётся инвалиду - колясочнику в Канаде.
+                  </a><br />
+                  <svg class="icon-svg icon-svg-menu color_icons" aria-label="страницы"><use xlink:href="../site/icons/id_icons.svg#icon-pages"></use></svg>
+                  <span class="line_link_in">
+                  <a href="index.php?id=26320&page=1">1</a>
+                  <a href="index.php?id=26320&page=2">2</a>
+                  <a href="index.php?id=26320&page=3">3</a>
                   ...
-                  <a href='index.php?id=26320&page=138'>138</a>
-                  <a href='index.php?id=26320&page=139'>139</a>
-                  <a href='index.php?id=26320&page=140'>140</a>
+                  <a href="index.php?id=26320&page=138">138</a>
+                  <a href="index.php?id=26320&page=139">139</a>
+                  <a href="index.php?id=26320&page=140">140</a>
                 </span>
-              </td>
-              <td role='gridcell' class='table_line_center_1'>2780</td>
-              <td role='gridcell' class='table_line_center_1'>184796</td>
-              <td role='gridcell' class='table_line_center_1'>80</td>
-              <td role='gridcell' class='table_line_center_1'>marival<br />
-                <span class='small'>22&nbsp;май&nbsp;2019 05:07</span>
-              </td>
-            </tr>
-            <tr role='row'>
-              <td role='gridcell' class='table_line_center_0'>
-                <a href='index.php?item=21' class='table_link_item'>
-                  Инва-обеспечение<br />Все остальное
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='index.php?id=38414' class='table_link_item'>
-                  Кто пользуется такой подушкой ROHO
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_center_0'>1</td>
-              <td role='gridcell' class='table_line_center_0'>116</td>
-              <td role='gridcell' class='table_line_center_0'>0</td>
-              <td role='gridcell' class='table_line_center_0'>Mordvinenok<br />
-                <span class='small'>22&nbsp;май&nbsp;2019 00:01</span>
-              </td>
-            </tr>
-            <tr role='row'>
-              <td role='gridcell' class='table_line_center_1'>
-                <a href='index.php?item=63' class='table_link_item'>
-                  Коляски<br />Электроколяски
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_1'>
-                <a href='index.php?id=38395' class='table_link_item'>
-                  Замена свинцово-кислотных аккумуляторов на литиевые.
-                </a><br />
-                <svg class="icon-svg icon-svg-menu color_icons" aria-label="страницы"><use xlink:href="../site/icons/id_icons.svg#icon-pages"></use></svg>
-                <span class='line_link_in'>
-                  <a href='index.php?id=38395&page=1'>1</a>
-                  <a href='index.php?id=38395&page=2'>2</a>
-                  <a href='index.php?id=38395&page=3'>3</a>
-                  <a href='index.php?id=38395&page=4'>4</a>
-                  <a href='index.php?id=38395&page=5'>5</a>
+                </td>
+                <td role="gridcell" class="table_line_center_1">2780</td>
+                <td role="gridcell" class="table_line_center_1">184796</td>
+                <td role="gridcell" class="table_line_center_1">80</td>
+                <td role="gridcell" class="table_line_center_1">marival<br />
+                  <span class="small">22&nbsp;май&nbsp;2019 05:07</span>
+                </td>
+              </tr>
+              <tr role="row">
+                <td role="gridcell" class="table_line_center_0">
+                  <a href="index.php?item=21" class="table_link_item">
+                    Инва-обеспечение<br />Все остальное
+                  </a>
+                </td>
+                <td role="gridcell" class="table_line_0">
+                  <a href="index.php?id=38414" class="table_link_item">
+                    Кто пользуется такой подушкой ROHO
+                  </a>
+                </td>
+                <td role="gridcell" class="table_line_center_0">1</td>
+                <td role="gridcell" class="table_line_center_0">116</td>
+                <td role="gridcell" class="table_line_center_0">0</td>
+                <td role="gridcell" class="table_line_center_0">Mordvinenok<br />
+                  <span class="small">22&nbsp;май&nbsp;2019 00:01</span>
+                </td>
+              </tr>
+              <tr role="row">
+                <td role="gridcell" class="table_line_center_1">
+                  <a href="index.php?item=63" class="table_link_item">
+                    Коляски<br />Электроколяски
+                  </a>
+                </td>
+                <td role="gridcell" class="table_line_1">
+                  <a href="index.php?id=38395" class="table_link_item">
+                    Замена свинцово-кислотных аккумуляторов на литиевые.
+                  </a><br />
+                  <svg class="icon-svg icon-svg-menu color_icons" aria-label="страницы"><use xlink:href="../site/icons/id_icons.svg#icon-pages"></use></svg>
+                  <span class="line_link_in">
+                  <a href="index.php?id=38395&page=1">1</a>
+                  <a href="index.php?id=38395&page=2">2</a>
+                  <a href="index.php?id=38395&page=3">3</a>
+                  <a href="index.php?id=38395&page=4">4</a>
+                  <a href="index.php?id=38395&page=5">5</a>
                 </span>
-              </td>
-              <td role='gridcell' class='table_line_center_1'>83</td>
-              <td role='gridcell' class='table_line_center_1'>1406</td>
-              <td role='gridcell' class='table_line_center_1'>0</td>
-              <td role='gridcell' class='table_line_center_1'>Okolov<br />
-                <span class='small'>21&nbsp;май&nbsp;2019 17:19</span>
-              </td>
-            </tr>
-          </table>
+                </td>
+                <td role="gridcell" class="table_line_center_1">83</td>
+                <td role="gridcell" class="table_line_center_1">1406</td>
+                <td role="gridcell" class="table_line_center_1">0</td>
+                <td role="gridcell" class="table_line_center_1">Okolov<br />
+                  <span class="small">21&nbsp;май&nbsp;2019 17:19</span>
+                </td>
+              </tr>
+            </table>
 
-          <div align='center'><h4 style='font-size: 15px;'>разделы форума</h4></div>
+            <h4 class="forum-section-title">Разделы форума</h4>
 
-          <table width='100%' align='center' border='0' cellspacing='1' cellpadding='2' class='table_design' role='grid' aria-label='Закон и право'>
-            <tr role='row'>
-              <th width='70%' class='table_head' role='columnheader'><a name='12'></a>Закон и право</th>
-              <th class='table_head_center' role='columnheader'>Тем</th>
-              <th class='table_head_center' role='columnheader'>Сообщ.</th>
-              <th class='table_head_center' role='columnheader'>Последнее&nbsp;сообщение</th>
-              <th class='table_head_center' role='columnheader'>
-                <a href='edit_forum.php?type=fe&id=12' title='редактировать форум'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
-                </a>
-              </th>
-              <th class='table_head_center' role='columnheader'>
-                <a href='delete.php?type=fd&id=12' title='удалить форум'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
-                </a>
-              </th>
-              <th class='table_head_center' role='columnheader'>
-                <a href='save_forum.php?type=ft&id=12' title='вверх на форум'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
-                </a>
-              </th>
-              <th class='table_head_center' role='columnheader'>
-                <a href='save_forum.php?type=fb&id=12' title='вниз на форум'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
-                </a>
-              </th>
-            </tr>
-            <tr role='row'>
-              <td role='gridcell' class='table_line_0'>
-                <a href='index.php?item=49' class='table_link_name'>Установление инвалидности и реабилитация</a>
-                <span style='font-size: 10px; font-style: italic;'></span><br />
-                Медико-социальная экспертиза, реабилитационные программы
-              </td>
-              <td role='gridcell' class='table_line_center_0'>521</td>
-              <td role='gridcell' class='table_line_center_0'>16097</td>
-              <td role='gridcell' class='table_line_center_0'>
-                <a href='index.php?id=34003&page=end#852133' class='table_link_item'>Новости МСЭ</a><br />
-                <span class='small'>21&nbsp;май&nbsp;2019 10:48</span><br />
-                Mihailusenko
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='edit_forum.php?type=re&id=49' title='редактировать раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='delete.php?type=rd&id=49' title='удалить раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='save_forum.php?type=rt&id=49' title='вверх на раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='save_forum.php?type=rb&id=49' title='вниз на раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
-                </a>
-              </td>
-            </tr>
-            <tr role='row'>
-              <td role='gridcell' class='table_line_0'>
-                <a href='index.php?item=50' class='table_link_name'>Пенсионное обеспечение</a>
-                <span style='font-size: 10px; font-style: italic;'></span><br />
-                Порядок назначения и выплаты пенсий, пенсионные льготы, компенсационные выплаты
-              </td>
-              <td role='gridcell' class='table_line_center_0'>205</td>
-              <td role='gridcell' class='table_line_center_0'>6971</td>
-              <td role='gridcell' class='table_line_center_0'>
-                <a href='index.php?id=9714&page=end#851458' class='table_link_item'>Доплата по уходу за инвалидом 1гр.неработающе...</a><br />
-                <span class='small'>30&nbsp;апр.&nbsp;2019 14:31</span><br />
-                фарик
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='edit_forum.php?type=re&id=50' title='редактировать раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='delete.php?type=rd&id=50' title='удалить раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='save_forum.php?type=rt&id=50' title='вверх на раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='save_forum.php?type=rb&id=50' title='вниз на раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
-                </a>
-              </td>
-            </tr>
-            <tr role='row'>
-              <td role='gridcell' class='table_line_0'>
-                <a href='index.php?item=51' class='table_link_name'>Социальное обслуживание</a>
-                <span style='font-size: 10px; font-style: italic;'></span><br />
-                Право на социальное обслуживание, виды, формы, учреждения социального обслуживания
-              </td>
-              <td role='gridcell' class='table_line_center_0'>537</td>
-              <td role='gridcell' class='table_line_center_0'>20436</td>
-              <td role='gridcell' class='table_line_center_0'>
-                <a href='index.php?id=38407&page=end#852091' class='table_link_item'>
-                  Сроки обеспечения ТСР вписаных в ИПРА
-                </a><br />
-                <span class='small'>19&nbsp;май&nbsp;2019 07:07</span><br />
-                Омутинец
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='edit_forum.php?type=re&id=51' title='редактировать раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='delete.php?type=rd&id=51' title='удалить раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='save_forum.php?type=rt&id=51' title='вверх на раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='save_forum.php?type=rb&id=51' title='вниз на раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
-                </a>
-              </td>
-            </tr>
-          </table>
+            <table class="table_design forum-table-section" role='grid' aria-label='Закон и право'>
+              <tr role='row'>
+                <th class='table_head' role='columnheader'>
+                  <a name='12'></a>Закон и право
+                </th>
+                <th class='table_head_center' role='columnheader'>Тем</th>
+                <th class='table_head_center' role='columnheader'>Сообщ.</th>
+                <th class='table_head_center' role='columnheader'>Последнее&nbsp;сообщение</th>
+                <th class='table_head_center' role='columnheader'>
+                  <a href='edit_forum.php?type=fe&id=12' title='редактировать форум'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
+                  </a>
+                </th>
+                <th class='table_head_center' role='columnheader'>
+                  <a href='delete.php?type=fd&id=12' title='удалить форум'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
+                  </a>
+                </th>
+                <th class='table_head_center' role='columnheader'>
+                  <a href='save_forum.php?type=ft&id=12' title='вверх на форум'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
+                  </a>
+                </th>
+                <th class='table_head_center' role='columnheader'>
+                  <a href='save_forum.php?type=fb&id=12' title='вниз на форум'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
+                  </a>
+                </th>
+              </tr>
+              <tr role='row'>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='index.php?item=49' class="table_link_name">Установление инвалидности и реабилитация</a>
+                  <p>Медико-социальная экспертиза, реабилитационные программы</p><br />
+                </td>
+                <td role='gridcell' class='table_line_center_0'>521</td>
+                <td role='gridcell' class='table_line_center_0'>16097</td>
+                <td role='gridcell' class='table_line_center_0'>
+                  <a href='index.php?id=34003&page=end#852133' class='table_link_item'>Новости МСЭ</a><br />
+                  <span class='small'>21&nbsp;май&nbsp;2019 10:48</span><br />
+                  Mihailusenko
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='edit_forum.php?type=re&id=49' title='редактировать раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='delete.php?type=rd&id=49' title='удалить раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='save_forum.php?type=rt&id=49' title='вверх на раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='save_forum.php?type=rb&id=49' title='вниз на раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
+                  </a>
+                </td>
+              </tr>
+              <tr role='row'>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='index.php?item=50' class='table_link_name'>Пенсионное обеспечение</a>
+                  <p>Порядок назначения и выплаты пенсий, пенсионные льготы, компенсационные выплаты</p><br />
+                </td>
+                <td role='gridcell' class='table_line_center_0'>205</td>
+                <td role='gridcell' class='table_line_center_0'>6971</td>
+                <td role='gridcell' class='table_line_center_0'>
+                  <a href='index.php?id=9714&page=end#851458' class='table_link_item'>Доплата по уходу за инвалидом 1гр.неработающе...</a><br />
+                  <span class='small'>30&nbsp;апр.&nbsp;2019 14:31</span><br />
+                  фарик
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='edit_forum.php?type=re&id=50' title='редактировать раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='delete.php?type=rd&id=50' title='удалить раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='save_forum.php?type=rt&id=50' title='вверх на раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='save_forum.php?type=rb&id=50' title='вниз на раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
+                  </a>
+                </td>
+              </tr>
+              <tr role='row'>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='index.php?item=51' class='table_link_name'>Социальное обслуживание</a>
+                  <p>Право на социальное обслуживание, виды, формы, учреждения социального обслуживания</p><br />
+                </td>
+                <td role='gridcell' class='table_line_center_0'>537</td>
+                <td role='gridcell' class='table_line_center_0'>20436</td>
+                <td role='gridcell' class='table_line_center_0'>
+                  <a href='index.php?id=38407&page=end#852091' class='table_link_item'>
+                    Сроки обеспечения ТСР вписаных в ИПРА
+                  </a><br />
+                  <span class='small'>19&nbsp;май&nbsp;2019 07:07</span><br />
+                  Омутинец
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='edit_forum.php?type=re&id=51' title='редактировать раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='delete.php?type=rd&id=51' title='удалить раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='save_forum.php?type=rt&id=51' title='вверх на раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='save_forum.php?type=rb&id=51' title='вниз на раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
+                  </a>
+                </td>
+              </tr>
+            </table>
 
-          <table width='100%' align='center' border='0' cellspacing='1' cellpadding='2' class='table_design' role='grid' aria-label='Общество'>
-            <tr role='row'>
-              <th width='70%' class='table_head' role='columnheader'><a name='1'></a>Общество</th>
-              <th class='table_head_center' role='columnheader'>Тем</th>
-              <th class='table_head_center' role='columnheader'>Сообщ.</th>
-              <th class='table_head_center' role='columnheader'>Последнее&nbsp;сообщение</th>
-              <th class='table_head_center' role='columnheader'>
-                <a href='edit_forum.php?type=fe&id=1' title='редактировать форум'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use
-                  xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
-                </a>
-              </th>
-              <th class='table_head_center' role='columnheader'>
-                <a href='delete.php?type=fd&id=1' title='удалить форум'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
-                </a>
-              </th>
-              <th class='table_head_center' role='columnheader'>
-                <a href='save_forum.php?type=ft&id=1' title='вверх на форум'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
-                </a>
-              </th>
-              <th class='table_head_center' role='columnheader'>
-                <a href='save_forum.php?type=fb&id=1' title='вниз на форум'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
-                </a>
-              </th>
-            </tr>
-            <tr role='row'>
-              <td role='gridcell' class='table_line_0'>
-                <a href='index.php?item=24' class='table_link_name'>Общественные организации и движения инвалидов</a>
-                <span style='font-size: 10px; font-style: italic;'></span><br />
-                Обсуждение деятельности общественных организаций, советов, комитетов и пр.
-              </td>
-              <td role='gridcell' class='table_line_center_0'>178</td>
-              <td role='gridcell' class='table_line_center_0'>9979</td>
-              <td role='gridcell' class='table_line_center_0'>
-                <a href='index.php?id=38382&page=end#851805' class='table_link_item'>Во Всероссийском обществе инвалидов пропали п...</a><br />
-                <span class='small'>10&nbsp;май&nbsp;2019 02:29</span><br />
-                Ariya
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='edit_forum.php?type=re&id=24' title='редактировать раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='delete.php?type=rd&id=24' title='удалить раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='save_forum.php?type=rt&id=24' title='вверх на раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='save_forum.php?type=rb&id=24' title='вниз на раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
-                </a>
-              </td>
-            </tr>
-            <tr role='row'>
-              <td role='gridcell' class='table_line_0'>
-                <a href='index.php?item=79' class='table_link_name'>Официальные мероприятия</a>
-                <span style='font-size: 10px; font-style: italic;'></span><br />
-                Конференции, совещания, заседания, круглые столы и пр
-              </td>
-              <td role='gridcell' class='table_line_center_0'>52</td>
-              <td role='gridcell' class='table_line_center_0'>999</td>
-              <td role='gridcell' class='table_line_center_0'>
-                <a href='index.php?id=38406&page=end#852020' class='table_link_item'>
-                  Международный конкурс "Инклюзивные практики б...
-                </a><br />
-                <span class='small'>16&nbsp;май&nbsp;2019 15:11</span><br />
-                mixolga
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='edit_forum.php?type=re&id=79' title='редактировать раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='delete.php?type=rd&id=79' title='удалить раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='save_forum.php?type=rt&id=79' title='вверх на раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='save_forum.php?type=rb&id=79' title='вниз на раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
-                </a>
-              </td>
-            </tr>
-            <tr role='row'>
-              <td role='gridcell' class='table_line_0'>
-                <a href='index.php?item=17' class='table_link_name'>СМИ</a>
-                <span style='font-size: 10px; font-style: italic;'></span><br />
-                Пресса, радио, телевидение, интернет об инвалидах
-              </td>
-              <td role='gridcell' class='table_line_center_0'>466</td>
-              <td role='gridcell' class='table_line_center_0'>16525</td>
-              <td role='gridcell' class='table_line_center_0'>
-                <a href='index.php?id=38351&page=end#850943' class='table_link_item'>
-                  Туризм с белой тростью: незрячий житель Екате...
-                </a><br />
-                <span class='small'>15&nbsp;апр.&nbsp;2019 18:46</span><br />
-                Ольга
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='edit_forum.php?type=re&id=17' title='редактировать раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='delete.php?type=rd&id=17' title='удалить раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='save_forum.php?type=rt&id=17' title='вверх на раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
-                </a>
-              </td>
-              <td role='gridcell' class='table_line_0'>
-                <a href='save_forum.php?type=rb&id=17' title='вниз на раздел'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
-                </a>
-              </td>
-            </tr>
-          </table>
-          <div style="display: none">
+            <table class="table_design forum-table-section" role='grid' aria-label='Общество'>
+              <tr role='row'>
+                <th class='table_head' role='columnheader'><a name='1'></a>Общество</th>
+                <th class='table_head_center' role='columnheader'>Тем</th>
+                <th class='table_head_center' role='columnheader'>Сообщ.</th>
+                <th class='table_head_center' role='columnheader'>Последнее&nbsp;сообщение</th>
+                <th class='table_head_center' role='columnheader'>
+                  <a href='edit_forum.php?type=fe&id=1' title='редактировать форум'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use
+                        xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
+                  </a>
+                </th>
+                <th class='table_head_center' role='columnheader'>
+                  <a href='delete.php?type=fd&id=1' title='удалить форум'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
+                  </a>
+                </th>
+                <th class='table_head_center' role='columnheader'>
+                  <a href='save_forum.php?type=ft&id=1' title='вверх на форум'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
+                  </a>
+                </th>
+                <th class='table_head_center' role='columnheader'>
+                  <a href='save_forum.php?type=fb&id=1' title='вниз на форум'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
+                  </a>
+                </th>
+              </tr>
+              <tr role='row'>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='index.php?item=24' class='table_link_name'>Общественные организации и движения инвалидов</a>
+                  <p>Обсуждение деятельности общественных организаций, советов, комитетов и пр.</p><br />
+                </td>
+                <td role='gridcell' class='table_line_center_0'>178</td>
+                <td role='gridcell' class='table_line_center_0'>9979</td>
+                <td role='gridcell' class='table_line_center_0'>
+                  <a href='index.php?id=38382&page=end#851805' class='table_link_item'>Во Всероссийском обществе инвалидов пропали п...</a><br />
+                  <span class='small'>10&nbsp;май&nbsp;2019 02:29</span><br />
+                  Ariya
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='edit_forum.php?type=re&id=24' title='редактировать раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='delete.php?type=rd&id=24' title='удалить раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='save_forum.php?type=rt&id=24' title='вверх на раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='save_forum.php?type=rb&id=24' title='вниз на раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
+                  </a>
+                </td>
+              </tr>
+              <tr role='row'>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='index.php?item=79' class='table_link_name'>Официальные мероприятия</a>
+                  <p>Конференции, совещания, заседания, круглые столы и пр.</p><br />
+                </td>
+                <td role='gridcell' class='table_line_center_0'>52</td>
+                <td role='gridcell' class='table_line_center_0'>999</td>
+                <td role='gridcell' class='table_line_center_0'>
+                  <a href='index.php?id=38406&page=end#852020' class='table_link_item'>
+                    Международный конкурс "Инклюзивные практики б...
+                  </a><br />
+                  <span class='small'>16&nbsp;май&nbsp;2019 15:11</span><br />
+                  mixolga
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='edit_forum.php?type=re&id=79' title='редактировать раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='delete.php?type=rd&id=79' title='удалить раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='save_forum.php?type=rt&id=79' title='вверх на раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='save_forum.php?type=rb&id=79' title='вниз на раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
+                  </a>
+                </td>
+              </tr>
+              <tr role='row'>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='index.php?item=17' class='table_link_name'>СМИ</a>
+                  <p>Пресса, радио, телевидение, интернет об инвалидах</p><br />
+                </td>
+                <td role='gridcell' class='table_line_center_0'>466</td>
+                <td role='gridcell' class='table_line_center_0'>16525</td>
+                <td role='gridcell' class='table_line_center_0'>
+                  <a href='index.php?id=38351&page=end#850943' class='table_link_item'>
+                    Туризм с белой тростью: незрячий житель Екате...
+                  </a><br />
+                  <span class='small'>15&nbsp;апр.&nbsp;2019 18:46</span><br />
+                  Ольга
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='edit_forum.php?type=re&id=17' title='редактировать раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='delete.php?type=rd&id=17' title='удалить раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_delete"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='save_forum.php?type=rt&id=17' title='вверх на раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_up"></use></svg>
+                  </a>
+                </td>
+                <td role='gridcell' class='table_line_0'>
+                  <a href='save_forum.php?type=rb&id=17' title='вниз на раздел'>
+                    <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_down"></use></svg>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <!--Мобильная версия-->
+
+          <div class="forum-top-mobile">
             <form method='get' name='jumpbox' action='index.php' onSubmit="if(document.jumpbox.item.value == -1){return false;}">
-              Перейти:&nbsp;
+
+              <div class="forum-mobile-select">
+                <select name='item' class='form_field'>
+                  <option value='-1' selected=selected>Перейти в раздел форума</option>
+                  <option value='-1'>&nbsp;</option>
+                  <option value='-1'>* * * Закон и право * * *</option>
+                  <option value='49'>Установление инвалидности и реабилитация</option>
+                  <option value='50'>Пенсионное обеспечение</option>
+                  <option value='51'>Социальное обслуживание</option>
+                  <option value='62'>Жилищное право</option>
+                  <option value='16'>Прочее законодательство</option>
+                  <option value='53'>Правоприменительная и судебная практика</option>
+                  <option value='74'>Инвалидность, полученная на военной службе</option>
+                  <option value='68'>Страны</option>
+                  <option value='-1'>&nbsp;</option>
+                  <option value='-1'>* * * Общество * * *</option>
+                  <option value='24'>Общественные организации и движения инвалидов</option>
+                  <option value='79'>Официальные мероприятия</option>
+                  <option value='17'>СМИ</option>
+                  <option value='7'>Взаимоотношения в обществе</option>
+                  <option value='1'>Личные взаимоотношения</option>
+                  <option value='-1'>&nbsp;</option>
+                  <option value='-1'>* * * Доступная среда * * *</option>
+                  <option value='70'>Регионы России</option>
+                  <option value='71'>Москва</option>
+                  <option value='78'>Страны</option>
+                  <option value='73'>Оборудование и техническое обеспечение</option>
+                  <option value='72'>Законодательство и общие вопросы</option>
+                  <option value='-1'>&nbsp;</option>
+                  <option value='-1'>* * * Образование и работа * * *</option>
+                  <option value='15'>Образование</option>
+                  <option value='14'>Работа</option>
+                  <option value='-1'>&nbsp;</option>
+                  <option value='-1'>* * * Инва-обеспечение * * *</option>
+                  <option value='20'>Компьютеры и софт</option>
+                  <option value='29'>Протезы</option>
+                  <option value='21'>Все остальное</option>
+                  <option value='-1'>&nbsp;</option>
+                  <option value='-1'>* * * Коляски * * *</option>
+                  <option value='63'>Электроколяски</option>
+                  <option value='65'>Коляски с ручным приводом</option>
+                  <option value='66'>Коляски специального назначения и общие вопросы</option>
+                  <option value='80'>Скутеры</option>
+                  <option value='-1'>&nbsp;</option>
+                  <option value='-1'>* * * Авто * * *</option>
+                  <option value='76'>Технический раздел</option>
+                  <option value='77'>Информационно-правовой раздел</option>
+                  <option value='-1'>&nbsp;</option>
+                  <option value='-1'>* * * Учреждения * * *</option>
+                  <option value='4'>Санатории</option>
+                  <option value='55'>Научно-исследовательские институты, больницы, поликлиники</option>
+                  <option value='56'>Реабилитационные центры</option>
+                  <option value='57'>Дома инвалидов и пр.</option>
+                  <option value='-1'>&nbsp;</option>
+                  <option value='-1'>* * * Здоровье * * *</option>
+                  <option value='58'>Травмы</option>
+                  <option value='59'>Заболевания</option>
+                  <option value='60'>Адаптация при травмах и заболеваниях</option>
+                  <option value='61'>Аппаратное и медикаментозное лечение</option>
+                  <option value='13'>Прочие вопросы здоровья</option>
+                  <option value='-1'>&nbsp;</option>
+                  <option value='-1'>* * * Встречи и общение * * *</option>
+                  <option value='8'>Поиск</option>
+                  <option value='39'>Лечились, учились, служили, отдыхали</option>
+                  <option value='35'>Санкт-Петербург</option>
+                  <option value='34'>Москва и Подмосковье</option>
+                  <option value='38'>Города России</option>
+                  <option value='37'>Другие страны</option>
+                  <option value='-1'>&nbsp;</option>
+                  <option value='-1'>* * * Досуг * * *</option>
+                  <option value='69'>Культурные мероприятия</option>
+                  <option value='2'>Путешествия</option>
+                  <option value='6'>Спорт</option>
+                  <option value='11'>Разное</option>
+                  <option value='-1'>&nbsp;</option>
+                  <option value='-1'>* * * YouTube про инвалидов * * *</option>
+                  <option value='40'>Официальное</option>
+                  <option value='41'>Техника и медицина</option>
+                  <option value='42'>Обучение</option>
+                  <option value='43'>Судьбы</option>
+                  <option value='44'>Неформальное видео</option>
+                  <option value='45'>Разное видео</option>
+                  <option value='-1'>&nbsp;</option>
+                  <option value='-1'>* * * Наш Портал * * *</option>
+                  <option value='25'>Статьи</option>
+                  <option value='30'>Вы были с нами</option>
+                  <option value='33'>Disability.ru</option>
+                  <option value='12'>О портале</option>
+                  <option value='-1'>&nbsp;</option>
+                  <option value='-1'>* * * Архив * * *</option>
+                  <option value='9'>Творчество</option>
+                  <option value='10'>Увлечения</option>
+                  <option value='26'>Поздравления</option>
+                  <option value='27'>Интервью</option>
+                  <option value='22'>Странности любви</option>
+                  <option value='23'>Мысли о жизни</option>
+                  <option value='-1'>&nbsp;</option>
+                </select>
+              </div>
+            </form>
+
+            <h1 class="forum-top-title">Топ форума</h1>
+
+            <div class="forum-mobile-topics">
+
+              <div class="forum-topic">
+                <div class="forum-topic-name">
+                  <span>
+                    <span title="прикрепленная тема">
+                    <svg class="icon-svg color_icons icon-attached"><use
+                        xlink:href="../site/icons/id_icons.svg#icon-page_top"></use></svg></span>
+                    <a href="index.php?id=6373" class="table_link_item">Первичное протезирование</a>
+                  </span>
+                  <span class="icon-disclose">
+                    <svg class="icon-svg color_icons icon-topic"><use
+                        xlink:href="../site/icons/id_icons.svg#icon-topic_close"></use></svg>
+                  </span>
+                </div>
+              </div>
+
+              <div class="forum-topic">
+                <div class="forum-topic-name">
+                  <span>
+                    <span title="прикрепленная тема">
+                    <svg class="icon-svg color_icons icon-attached"><use
+                        xlink:href="../site/icons/id_icons.svg#icon-page_top"></use></svg></span>
+                    <a href="index.php?id=6373" class="table_link_item">С 1 января 2012 года инвалиды вследствие
+                      военной травмы - 01</a>
+                  </span>
+                  <span class="icon-disclose">
+                    <svg class="icon-svg color_icons icon-topic"><use
+                        xlink:href="../site/icons/id_icons.svg#icon-topic_close"></use></svg>
+                  </span>
+                </div>
+              </div>
+
+              <div class="forum-topic">
+                <div class="forum-topic-name">
+                  <span>
+                    <a href="index.php?id=6373" class="table_link_item">Обзор, подбор и ремонт зарядных устройств для инвалидных колясок</a>
+                  </span>
+                  <span class="icon-disclose">
+                    <svg class="icon-svg color_icons icon-topic"><use
+                        xlink:href="../site/icons/id_icons.svg#icon-topic_open"></use></svg>
+                  </span>
+                </div>
+                <div class="forum-topic-disclose">
+                  <div class="pagination-mobile">
+                    <span class="pagination-mobile-pages">Страниц:</span>
+                    <a class="page-previous color_pagination_border" href="#"><</a>
+                    <a class="page-current" href="#">24</a>
+                    <a class="page-next color_pagination_border" href="#">></a>
+                  </div>
+                  <div class="about-topic">
+                    <h4 class="topic-section-title">Раздел:</h4>
+                    <p class="topic-section">Коляски</p>
+                    <p class="topic-section">Электроколяски</p>
+                  </div>
+                  <div class="topic-statistics">
+                    <div class="statistics-item">
+                      <p>Ответов:</p>
+                      <span>471</span>
+                    </div>
+                    <div class="statistics-item">
+                      <p>Просм.:</p>
+                      <span>26163</span>
+                    </div>
+                    <div class="statistics-item">
+                      <p>Рейт.:</p>
+                      <span>34</span>
+                    </div>
+                  </div>
+                  <div class="last-comment">
+                    <p>Ответил:</p>
+                    <span>Mordvinenok</span>
+                    <span>22 май 2019 00:01</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="forum-topic">
+                <div class="forum-topic-name">
+                  <span>
+                    <span title="прикрепленная тема">
+                    <svg class="icon-svg color_icons icon-attached"><use
+                        xlink:href="../site/icons/id_icons.svg#icon-page_top"></use></svg></span>
+                    <a href="index.php?id=6373" class="table_link_item">Как живется инвалиду-колясочнику в Канаде.</a>
+                  </span>
+                  <span class="icon-disclose">
+                    <svg class="icon-svg color_icons icon-topic"><use
+                        xlink:href="../site/icons/id_icons.svg#icon-topic_close"></use></svg>
+                  </span>
+                </div>
+              </div>
+
+              <div class="forum-topic">
+                <div class="forum-topic-name">
+                  <span>
+                    <span title="прикрепленная тема">
+                    <svg class="icon-svg color_icons icon-attached"><use
+                        xlink:href="../site/icons/id_icons.svg#icon-page_top"></use></svg></span>
+                    <a href="index.php?id=6373" class="table_link_item">Кто пользуется такой подушкой ROHO</a>
+                  </span>
+                  <span class="icon-disclose">
+                    <svg class="icon-svg color_icons icon-topic"><use
+                        xlink:href="../site/icons/id_icons.svg#icon-topic_close"></use></svg>
+                  </span>
+                </div>
+              </div>
+
+              <div class="forum-topic">
+                <div class="forum-topic-name">
+                  <span>
+                    <span title="прикрепленная тема">
+                    <svg class="icon-svg color_icons icon-attached"><use
+                        xlink:href="../site/icons/id_icons.svg#icon-page_top"></use></svg></span>
+                    <a href="index.php?id=6373" class="table_link_item">Замена свинцово-кислотных аккумуляторов на
+                      литиевые.</a>
+                  </span>
+                  <span class="icon-disclose">
+                    <svg class="icon-svg color_icons icon-topic"><use
+                        xlink:href="../site/icons/id_icons.svg#icon-topic_close"></use></svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="forum-mobile-select">
               <select name='item' class='form_field'>
-                <option value='-1' selected=selected>Выберите форум</option>
+                <option value='-1' selected=selected>Перейти в раздел форума</option>
                 <option value='-1'>&nbsp;</option>
                 <option value='-1'>* * * Закон и право * * *</option>
                 <option value='49'>Установление инвалидности и реабилитация</option>
@@ -1141,9 +1282,13 @@
                 <option value='23'>Мысли о жизни</option>
                 <option value='-1'>&nbsp;</option>
               </select>
-              <input type='submit' value='Перейти' class='form_button' />
-            </form>
-          </div>
+            </div>
+
+            <a class="btn_in_item" href="#">
+              <svg class="icon-svg icon-svg-btn color_icons"><use
+                  xlink:href="../site/icons/id_icons.svg#icon-page_answer"></use></svg> Новая тема
+            </a>
+          </div> <!--Конец мобильной версии-->
 
         </div>
       </div>
