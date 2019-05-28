@@ -416,7 +416,7 @@
             </div>
           </div>
 
-          <div class="search-block" id='search'>
+          <div id='search' style="display: none">
             <div class="block_content">
               <form method='post' name='jumpboxx' action='search.php' onSubmit="if(document.jumpboxx.items.value != -1){jumpboxx.Submitt.disabled='true';jumpboxx.Submitt.value=' Ждите! ';} else {return false;}">
 
@@ -960,7 +960,7 @@
             <form method='get' name='jumpbox' action='index.php' onSubmit="if(document.jumpbox.item.value == -1){return false;}">
 
               <div class="forum-mobile-select">
-                <select name='item' class='form_field'>
+                <select name='item2' class='form_field'>
                   <option value='-1' selected=selected>Перейти в раздел форума</option>
                   <option value='-1'>&nbsp;</option>
                   <option value='-1'>* * * Закон и право * * *</option>
@@ -1099,12 +1099,18 @@
                   <span>
                     <a href="index.php?id=6373" class="table_link_item">Обзор, подбор и ремонт зарядных устройств для инвалидных колясок</a>
                   </span>
-                  <span class="icon-disclose">
-                    <svg class="icon-svg color_icons icon-topic"><use
-                        xlink:href="../site/icons/id_icons.svg#icon-topic_open"></use></svg>
+                  <span id="topic_6373" class="forum_topic_toggle">
+                    <span class="icon-disclose" style="display: block" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                              xlink:href="../site/icons/id_icons.svg#icon-topic_close"></use></svg>
+                    </span>
+                    <span class="icon-disclose" style="display: none" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-topic_open"></use></svg>
+                    </span>
                   </span>
                 </div>
-                <div class="forum-topic-disclose">
+                <div id="disclose_topic_6373" class="forum-topic-disclose">
                   <div class="pagination-mobile">
                     <span class="pagination-mobile-pages">Страниц:</span>
                     <a class="page-previous color_pagination_border" href="#"><</a>
@@ -1186,7 +1192,7 @@
             </div>
 
             <div class="forum-mobile-select">
-              <select name='item' class='form_field'>
+              <select name='item1' class='form_field'>
                 <option value='-1' selected=selected>Перейти в раздел форума</option>
                 <option value='-1'>&nbsp;</option>
                 <option value='-1'>* * * Закон и право * * *</option>
@@ -1366,13 +1372,7 @@
 
 <script src="../site/js/js-redesign.js"></script>
 <script src="../site/js/svgxuse.js"></script>
-
-<script>
-  function drop(name) {
-    if(document.getElementById(name).style.display=='none') document.getElementById(name).style.display='block';
-    else document.getElementById(name).style.display='none';
-  }
-</script>
+<script src="js/forum.js"></script>
 
 </body>
 </html>
