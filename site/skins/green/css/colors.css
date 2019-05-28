@@ -1,4 +1,5 @@
-.color_main {
+.color_main,
+.table_design th {
   background-color: #006a0b;
 }
 .color_main_fon {
@@ -54,4 +55,11 @@
 .color_pagination_border {
   color: #006e00;
   border: 1px solid #006e00;
+}
+.table_design {
+  border: 1px solid #006a0b;
+  border-collapse: collapse;
+}
+.table_design td {
+  border: 1px solid #006a0b;
 }

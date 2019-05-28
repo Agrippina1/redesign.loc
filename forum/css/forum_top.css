@@ -1,0 +1,229 @@
+.forum-top-mobile {
+  display: none;
+}
+.main-content {
+  font-size: 16px;
+}
+table {
+  width: 100%;
+}
+td {
+  padding: 5px 10px;
+}
+.law-search {
+  margin-bottom: 20px;
+}
+.law {
+  text-decoration: underline;
+}
+.law-search {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group-template {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.select-group-template {
+  margin-bottom: 15px;
+}
+.group-radio {
+  display: inline-block;
+  margin-right: 20px;
+}
+.forum-search {
+  text-align: right;
+  cursor: pointer;
+}
+.form_button {
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+.btn_in_item {
+  text-align: center;
+  margin: 15px 0;
+}
+.block_content {
+  background: #f8f8f8;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 5px 15px;
+  margin-bottom: 7px;
+}
+.table-search td:nth-child(1) {
+  text-align: right;
+  vertical-align: top;
+}
+.forum-table-top td:not(:nth-child(2)) {
+  text-align: center;
+}
+.line_link_in a {
+  font-size: 14px;
+  text-decoration: underline;
+}
+.icon-attached {
+  width: 16px;
+  height: 16px;
+}
+th {
+  color: #ffffff;
+  padding: 5px;
+}
+.forum-table-section th:first-child {
+  width: 70%;
+}
+.forum-table-section td:not(:first-child) {
+  text-align: center;
+}
+.forum-section-title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.table_link_name {
+  font-weight: bold;
+}
+.table_design {
+  margin-bottom: 15px;
+}
+.table_design .icon-svg-btn {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    padding: 0;
+  }
+  .forum-top-desktop,
+  .law,
+  .gap,
+  .btn-forum-desktop {
+    display: none;
+  }
+  .forum-top-mobile {
+    display: block;
+  }
+  .law-search {
+    justify-content: flex-end;
+    margin-bottom: 50px;
+  }
+  .btn-white {
+    display: block;
+    font-size: 18px;
+    margin-top: 50px;
+  }
+  .icon-svg-loupe {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+  }
+  .forum-mobile-topics {
+    font-family: "Arial", "Helvetica", sans-serif;
+    margin-bottom: 20px;
+  }
+  .forum-mobile-select {
+    padding: 10px;
+  }
+  .form_search {
+    margin-right: 20px;
+  }
+  .forum-top-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 18px;
+  }
+  .forum-topic:nth-child(odd) {
+    background: #d9e2e3;
+  }
+  .forum-topic:nth-child(even) {
+    background: #c8d6da;
+  }
+  .forum-topic-name {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    border: 1px solid #00297c;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .icon-attached {
+    width: 24px;
+    height: 24px;
+    vertical-align: text-bottom;
+  }
+  .icon-topic {
+    width: 32px;
+    height: 32px;
+  }
+  .forum_topic_toggle {
+    align-self: center;
+  }
+  .forum-topic-disclose {
+    display: none;
+    font-size: 18px;
+    background: #efefef;
+    border-radius: 5px;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .forum-topic-name span:first-child {
+    width: 85%;
+  }
+  .pagination-mobile {
+    text-align: right;
+    padding-top: 15px;
+    margin: 0;
+  }
+  .pagination-mobile-pages,
+  .topic-section-title,
+  .last-comment p {
+    line-height: 30px;
+    font-weight: bold;
+  }
+  .page-next {
+    margin-right: 10px;
+  }
+  .about-topic {
+    padding-left: 10px;
+  }
+  .topic-section {
+    line-height: 25px;
+    padding-left: 50px;
+  }
+  .topic-statistics {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .statistics-item {
+    text-align: center;
+  }
+  .statistics-item p {
+    font-weight: bold;
+  }
+  .statistics-item span {
+    line-height: 25px;
+  }
+  .last-comment {
+    padding: 10px;
+  }
+  .last-comment p {
+    line-height: 25px;
+  }
+  .last-comment span {
+    display: block;
+    text-align: center;
+  }
+  .btn_in_item {
+    background: #efefef;
+    border: 1px solid #0020c8;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+    margin: 40px auto;
+  }
+}
+
