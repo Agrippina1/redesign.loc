@@ -403,162 +403,108 @@
         <a name="content"></a>
         <div class="m-c-w">
 
-          <table width='100%' align='center' border='0' cellspacing='2' cellpadding='2' align='center'>
-            <tr>
-              <td>
-              </td>
-              <td align='right'>
+          <div class="law-search">
+            <a class="law" href="rules.php">Правила форума</a>
+            <div class="forum-search">
+              <form class="form_search" name="newmsg">
+                <a class="btn-white" href="#" onClick="drop('search')">
+                  <svg class="icon-svg icon-svg-loupe color_icons"><use
+                      xlink:href="../site/icons/id_icons.svg#icon-loupe"></use></svg> Поиск <span class="gap">по
+                  форуму</span>
+                </a>
+              </form>
+            </div>
+          </div>
 
-                <table width='100%' align='center' border='0' cellspacing='0' cellpadding='0' align='center'>
-                  <tr>
-                    <td>
-                      <a href='rules.php'>правила форума</a>
-                    </td> <td align='right'>
-                    <form name='newmsg' class='form_search'>
-                      <input type='button' name='button' value='Поиск по форуму' class='form_button' onClick="drop('search')">
-                    </form>
-                  </td>
-                  </tr>
-                </table>
+          <div id='search' style="display: none">
+            <div class="block_content">
+              <form method='post' name='jumpboxx' action='search.php' onSubmit="if(document.jumpboxx.items.value != -1){jumpboxx.Submitt.disabled='true';jumpboxx.Submitt.value=' Ждите! ';} else {return false;}">
 
-                <div id='search' style='display: none'>
-                  <div class='block_content'>
-                    <form method='post' name='jumpboxx' action='search.php' onSubmit="if(document.jumpboxx.items.value != -1){jumpboxx.Submitt.disabled='true';jumpboxx.Submitt.value=' Ждите! ';} else {return false;}">
-                      <table border='0' cellspacing='1' cellpadding='3' style='margin: auto;'>
-                        <tr>
-                          <td align='right' valign='top' class='table_line_1'><strong>ключевое слово или фраза</strong></td>
-                          <td class='table_line_1'><input type='text' name='word' value='' size='50' maxlength='50' class='form_field'><br><i><b>инвалид человек</b></i> находит строки, содержащие по меньшей мере одно из этих слов.<br><i><b>&quot;инвалид человек&quot;</b></i> ... <i>инвалид человек как и все люди</i>, но не <i>инвалид тоже человек</i>. <br><i><b>+инвалид +человек</b></i> ... оба слова.<br><i><b>+инвалид человек</b></i> ... слово <i>инвалид</i>, но ранг текста выше, если он также содержит слово <i>человек</i>. <br><i><b>+инвалид -человек</b></i> ... слово <i>инвалид</i>, но не <i>человек</i>.<br><i><b>+инвалид +(&gt;спортсмен &lt;лодырь)</b></i> ... <i>инвалид</i> и <i>спортсмен</i>, или <i>инвалид</i> и <i>лодырь</i> (в любом порядке), но ранг <i>инвалид спортсмен</i> выше, чем <i>инвалид лодырь</i>. <br><i><b>инвалид*</b></i> ... <i>инвалид</i>, <i>инвалиды</i>, <i>инвалидная</i>, <i>инвалидов</i> и т.д..   </td>
-                        </tr>
-                        <tr>
-                          <td class='table_line_0' align='right'><strong>поиск</strong></td>
-                          <td class='table_line_0'><input type='radio' name='into' value='mess' checked>в сообщениях<input type='radio' name='into' value='tems'>по названию темы</td>
-                        <tr>
-                          <td class='table_line_1' align='right'><strong>по автору</strong></td>
-                          <td class='table_line_1'><input type='text' name='autor' value='' size='27' maxlength='27' class='form_field'></td>
-                        </tr>
-                        <tr>
-                          <td class='table_line_0' align='right'><strong>в разделе форума</strong></td>
-                          <td class='table_line_0'> <select name='items' class='form_field'>
-                            <option value='all' selected=selected>По всем разделам</option>
-                            <option value='-1'>&nbsp;</option>
-                            <option value='forum_12'>* * * Закон и право * * *</option>
-                            <option value='49'>Установление инвалидности и реабилитация</option>
-                            <option value='50'>Пенсионное обеспечение</option>
-                            <option value='51'>Социальное обслуживание</option>
-                            <option value='62'>Жилищное право</option>
-                            <option value='16'>Прочее законодательство</option>
-                            <option value='53'>Правоприменительная и судебная практика</option>
-                            <option value='74'>Инвалидность, полученная на военной службе</option>
-                            <option value='68'>Страны</option>
-                            <option value='-1'>&nbsp;</option>
-                            <option value='forum_1'>* * * Общество * * *</option>
-                            <option value='24'>Общественные организации и движения инвалидов</option>
-                            <option value='79'>Официальные мероприятия</option>
-                            <option value='17'>СМИ</option>
-                            <option value='7'>Взаимоотношения в обществе</option>
-                            <option value='1'>Личные взаимоотношения</option>
-                            <option value='-1'>&nbsp;</option>
-                            <option value='forum_15'>* * * Доступная среда * * *</option>
-                            <option value='70'>Регионы России</option>
-                            <option value='71'>Москва</option>
-                            <option value='78'>Страны</option>
-                            <option value='73'>Оборудование и техническое обеспечение</option>
-                            <option value='72'>Законодательство и общие вопросы</option>
-                            <option value='-1'>&nbsp;</option>
-                            <option value='forum_16'>* * * Образование и работа * * *</option>
-                            <option value='15'>Образование</option>
-                            <option value='14'>Работа</option>
-                            <option value='-1'>&nbsp;</option>
-                            <option value='forum_5'>* * * Инва-обеспечение * * *</option>
-                            <option value='20'>Компьютеры и софт</option>
-                            <option value='29'>Протезы</option>
-                            <option value='21'>Все остальное</option>
-                            <option value='-1'>&nbsp;</option>
-                            <option value='forum_14'>* * * Коляски * * *</option>
-                            <option value='63'>Электроколяски</option>
-                            <option value='65'>Коляски с ручным приводом</option>
-                            <option value='66'>Коляски специального назначения и общие вопросы</option>
-                            <option value='80'>Скутеры</option>
-                            <option value='-1'>&nbsp;</option>
-                            <option value='forum_17'>* * * Авто * * *</option>
-                            <option value='76'>Технический раздел</option>
-                            <option value='77'>Информационно-правовой раздел</option>
-                            <option value='-1'>&nbsp;</option>
-                            <option value='forum_13'>* * * Учреждения * * *</option>
-                            <option value='4'>Санатории</option>
-                            <option value='55'>Научно-исследовательские институты, больницы, поликлиники</option>
-                            <option value='56'>Реабилитационные центры</option>
-                            <option value='57'>Дома инвалидов и пр.</option>
-                            <option value='-1'>&nbsp;</option>
-                            <option value='forum_4'>* * * Здоровье * * *</option>
-                            <option value='58'>Травмы</option>
-                            <option value='59'>Заболевания</option>
-                            <option value='60'>Адаптация при травмах и заболеваниях</option>
-                            <option value='61'>Аппаратное и медикаментозное лечение</option>
-                            <option value='13'>Прочие вопросы здоровья</option>
-                            <option value='-1'>&nbsp;</option>
-                            <option value='forum_9'>* * * Встречи и общение * * *</option>
-                            <option value='8'>Поиск</option>
-                            <option value='39'>Лечились, учились, служили, отдыхали</option>
-                            <option value='35'>Санкт-Петербург</option>
-                            <option value='34'>Москва и Подмосковье</option>
-                            <option value='38'>Города России</option>
-                            <option value='37'>Другие страны</option>
-                            <option value='-1'>&nbsp;</option>
-                            <option value='forum_3'>* * * Досуг * * *</option>
-                            <option value='69'>Культурные мероприятия</option>
-                            <option value='2'>Путешествия</option>
-                            <option value='6'>Спорт</option>
-                            <option value='11'>Разное</option>
-                            <option value='-1'>&nbsp;</option>
-                            <option value='forum_10'>* * * YouTube про инвалидов * * *</option>
-                            <option value='40'>Официальное</option>
-                            <option value='41'>Техника и медицина</option>
-                            <option value='42'>Обучение</option>
-                            <option value='43'>Судьбы</option>
-                            <option value='44'>Неформальное видео</option>
-                            <option value='45'>Разное видео</option>
-                            <option value='-1'>&nbsp;</option>
-                            <option value='forum_8'>* * * Наш Портал * * *</option>
-                            <option value='25'>Статьи</option>
-                            <option value='30'>Вы были с нами</option>
-                            <option value='33'>Disability.ru</option>
-                            <option value='12'>О портале</option>
-                            <option value='-1'>&nbsp;</option>
-                            <option value='forum_11'>* * * Архив * * *</option>
-                            <option value='9'>Творчество</option>
-                            <option value='10'>Увлечения</option>
-                            <option value='26'>Поздравления</option>
-                            <option value='27'>Интервью</option>
-                            <option value='22'>Странности любви</option>
-                            <option value='23'>Мысли о жизни</option>
-                            <option value='-1'>&nbsp;</option>
-                          </select>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class='table_line_1' align='right'><strong>сортировать по</strong></td>
-                          <td class='table_line_1'><input type='radio' name='sort' value='date' checked>дате<input type='radio' name='sort' value='rel' >релевантности</td>
-                        </tr>
-                        <tr>
-                          <td class='form_subj'></td>
-                          <td class='form_cont'><input name='Submitt' type='submit' value='Найти' class='form_button'/>
-                          </td>
-                        </tr>
-                      </table>
-                      <input type='hidden' name='goto' value=''>
-                    </form>
+                <form class="form-template" action="index.html" method="post">
+                  <div class="form-group-template-wrapper">
+                    <div class="form-group-template">
+                      <label class="form-label-template font-form-template" for="formfirst-field">Ключевое слово или фраза:</label>
+                      <input class="form-field-template" id="formfirst-field" type="text" name="login">
+                      <div class="search-help">
+                        <br><i><b>инвалид человек</b></i> находит строки, содержащие по меньшей мере одно из этих слов.
+                        <br><i><b>&quot;инвалид человек&quot;</b></i> ... <i>инвалид человек как и все люди</i>, но не <i>инвалид тоже человек</i>.
+                        <br><i><b>+инвалид +человек</b></i> ... оба слова.
+                        <br><i><b>+инвалид человек</b></i> ... слово <i>инвалид</i>, но ранг текста выше, если он также содержит слово <i>человек</i>.
+                        <br><i><b>+инвалид -человек</b></i> ... слово <i>инвалид</i>, но не <i>человек</i>.
+                        <br><i><b>+инвалид +(&gt;спортсмен &lt;лодырь)</b></i> ... <i>инвалид</i> и <i>спортсмен</i>,
+                        или <i>инвалид</i> и <i>лодырь</i> (в любом порядке), но ранг <i>инвалид спортсмен</i> выше, чем <i>инвалид лодырь</i>.
+                        <br><i><b>инвалид*</b></i> ... <i>инвалид</i>, <i>инвалиды</i>, <i>инвалидная</i>, <i>инвалидов</i> и т.д..
+                      </div>
+                    </div>
+                    <div class="form-group-template-radio">
+                      <p class="font-form-template group-title">Поиск:</p>
+                      <div class="group-radio">
+                        <input id="option1-field" type="radio" name="radio1">
+                        <label for="option1-field">В сообщениях</label>
+                      </div>
+                      <div class="group-radio">
+                        <input id="option2-field" type="radio" name="radio1">
+                        <label for="option2-field">По названию темы</label>
+                      </div>
+                    </div>
+                    <div class="form-group-template">
+                      <label class="form-label-template font-form-template" for="formsecond-field">По автору:</label>
+                      <input class="form-field-template" id="formsecond-field" type="text" name="login">
+                    </div>
+                    <div class="select-group-template">
+                      <p class="font-form-template">В разделе форума</p>
+                      <select name="teme">
+                        <option value='all' selected=selected>По всем разделам</option>
+                        <option value='-1'>&nbsp;</option>
+                        <option value='forum_12'>* * * Закон и право * * *</option>
+                        <option value='49'>Установление инвалидности и реабилитация</option>
+                        <option value='50'>Пенсионное обеспечение</option>
+                        <option value='51'>Социальное обслуживание</option>
+                        <option value='68'>Страны</option>
+                        <option value='-1'>&nbsp;</option>
+                        <option value='forum_1'>* * * Общество * * *</option>
+                        <option value='24'>Общественные организации и движения инвалидов</option>
+                        <option value='79'>Официальные мероприятия</option>
+                        <option value='17'>СМИ</option>
+                        <option value='7'>Взаимоотношения в обществе</option>
+                        <option value='1'>Личные взаимоотношения</option>
+                        <option value='-1'>&nbsp;</option>
+                        <option value='forum_15'>* * * Доступная среда * * *</option>
+                        <option value='70'>Регионы России</option>
+                        <option value='71'>Москва</option>
+                        <option value='78'>Страны</option>
+                        <option value='73'>Оборудование и техническое обеспечение</option>
+                        <option value='72'>Законодательство и общие вопросы</option>
+                        <option value='-1'>&nbsp;</option>
+                      </select>
+                    </div>
+                    <div class="form-group-template-radio">
+                      <p class="font-form-template group-title">Сортировать по:</p>
+                      <div class="group-radio">
+                        <input id="option3-field" type="radio" name="radio2">
+                        <label for="option3-field">Дате</label>
+                      </div>
+                      <div class="group-radio">
+                        <input id="option4-field" type="radio" name="radio2">
+                        <label for="option4-field">Релевантности</label>
+                      </div>
+                    </div>
+                    <a class="btn_in_item" href="edit_forum.php?type=fn">
+                      <svg class="icon-svg icon-svg-edit color_icons"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-loupe"></use></svg> Найти
+                    </a>
                   </div>
-                </div>
-              </td>
-            </tr>
-          </table>
+                </form>
 
-          <a href='add.php?item=11' class='add_link'>
-            <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_answer"></use></svg>
-            новая тема</a>
+              </form>
+            </div>
+          </div>
 
-          <table  width='100%' align='center' border='0' cellspacing='1' cellpadding='2' class='table_design' role='grid'>
+          <a class="btn-white btn-white-section" href="#" onClick="drop('search')">
+            <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_answer"></use></svg>Hовая тема</span>
+          </a>
+
+          <table class="table_design forum-table-sections" role='grid'>
             <tr role='row'>
               <th class='table_head_center' width='50%' role='columnheader'>Тема</th>
               <th class='table_head_center' role='columnheader'>Ответов</th>
@@ -573,14 +519,16 @@
                 <span title="прикрепленная тема"><svg class="icon-svg icon-svg-menu color_icons" ><use
                         xlink:href="../site/icons/id_icons.svg#icon-page_top" ></use></svg></span>
                 <a href='index.php?id=18165' class='table_link_item'>Колясочник и самостоятельная жизнь.  Возможно?</a><br />
-                <img src='../site/skins/blue/pics/pages.gif' width='10' height='12' border='0' alt='страницы' /><span class='line_link_in'>
+                <svg class="icon-svg icon-svg-menu color_icons" aria-label="страницы"><use
+                    xlink:href="../site/icons/id_icons.svg#icon-pages"></use></svg>
+                <span class="line_link_in">
                   <a href='index.php?id=18165&page=1'>1</a>
                   <a href='index.php?id=18165&page=2'>2</a>
                   <a href='index.php?id=18165&page=3'>3</a>
                    ... <a href='index.php?id=18165&page=18'>18</a>
                   <a href='index.php?id=18165&page=19'>19</a>
                   <a href='index.php?id=18165&page=20'>20</a>
-                  </span>
+                </span>
               </td>
               <td role='gridcell' class='table_line_center_0'>385</td>
               <td role='gridcell' class='table_line_center_0'>36729</td>
@@ -618,11 +566,13 @@
             </tr>
             <tr role='row'>
               <td role='gridcell' class='table_line_0'><a href='index.php?id=38399' class='table_link_item'>переезд в другую страну.</a><br />
-                <img src='../site/skins/blue/pics/pages.gif' width='10' height='12' border='0' alt='страницы' /><span class='line_link_in'>
+                <svg class="icon-svg icon-svg-menu color_icons" aria-label="страницы"><use
+                    xlink:href="../site/icons/id_icons.svg#icon-pages"></use></svg>
+                <span class="line_link_in">
                   <a href='index.php?id=38399&page=1'>1</a>
                   <a href='index.php?id=38399&page=2'>2</a>
                   <a href='index.php?id=38399&page=3'>3</a>
-                  </span>
+                </span>
               </td>
               <td role='gridcell' class='table_line_center_0'>40</td>
               <td role='gridcell' class='table_line_center_0'>885</td>
@@ -642,10 +592,12 @@
             </tr>
             <tr role='row'>
               <td role='gridcell' class='table_line_1'><a href='index.php?id=38274' class='table_link_item'>Дистанционное открывание двери</a><br />
-                <img src='../site/skins/blue/pics/pages.gif' width='10' height='12' border='0' alt='страницы' /><span class='line_link_in'>
+                <svg class="icon-svg icon-svg-menu color_icons" aria-label="страницы"><use
+                    xlink:href="../site/icons/id_icons.svg#icon-pages"></use></svg>
+                <span class="line_link_in">
                   <a href='index.php?id=38274&page=1'>1</a>
                   <a href='index.php?id=38274&page=2'>2</a>
-                  </span>
+                </span>
               </td>
               <td role='gridcell' class='table_line_center_1'>28</td>
               <td role='gridcell' class='table_line_center_1'>726</td>
@@ -665,11 +617,13 @@
             </tr>
             <tr role='row'>
               <td role='gridcell' class='table_line_0'><a href='index.php?id=36995' class='table_link_item'>Как молодой маме-инвалиду адаптироваться для ухода за ребёнком одной?</a><br />
-                <img src='../site/skins/blue/pics/pages.gif' width='10' height='12' border='0' alt='страницы' /><span class='line_link_in'>
+                <svg class="icon-svg icon-svg-menu color_icons" aria-label="страницы"><use
+                    xlink:href="../site/icons/id_icons.svg#icon-pages"></use></svg>
+                <span class="line_link_in">
                   <a href='index.php?id=36995&page=1'>1</a>
                   <a href='index.php?id=36995&page=2'>2</a>
                   <a href='index.php?id=36995&page=3'>3</a>
-                  </span>
+                </span>
               </td>
               <td role='gridcell' class='table_line_center_0'>51</td>
               <td role='gridcell' class='table_line_center_0'>1970</td>
@@ -707,127 +661,303 @@
             </tr>
           </table>
 
-          <div class='line_link'>Страницы: <b>1</b>
-            <a href='index.php?item=11&page=2'>2</a>
-            <a href='index.php?item=11&page=3'>3</a>
-            <a href='index.php?item=11&page=4'>4</a>
-            <a href='index.php?item=11&page=5'>5</a>
-          </div><br />
+          <!--Мобильная версия-->
 
-          <table width='100%' align='center' border='0' cellspacing='2' cellpadding='2' align='center'>
-            <tr>
-              <td>
-                <a href='add.php?item=11' class='add_link'>
-                  <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_answer"></use></svg>
-                  новая тема
-                </a>
+          <div class="forum-sections-mobile">
+            <div class="forum-mobile-topics">
+              <div class="forum-topic">
+                <div class="forum-topic-name">
+                  <span>
+                    <span title="прикрепленная тема">
+                    <svg class="icon-svg color_icons icon-attached"><use
+                        xlink:href="../site/icons/id_icons.svg#icon-page_top"></use></svg></span>
+                    <a href="index.php?id=6373" class="table_link_item">Колясочник и самостоятельная жизнь.
+                      Возможно?</a>
+                  </span>
+                  <span id="topic_6374" class="forum_topic_toggle">
+                    <span class="icon-disclose" style="display: block" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-topic_close"></use></svg>
+                    </span>
+                    <span class="icon-disclose" style="display: none" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-topic_open"></use></svg>
+                    </span>
+                  </span>
+                </div>
+              </div>
 
-              </td>
-              <td align='right'>
-                <form method='get' name='jumpbox' action='index.php' onSubmit="if(document.jumpbox.item.value == -1){return false;}">
-                  Перейти:&nbsp; <select name='item' class='form_field'>
-                  <option value='-1'>Выберите форум</option>
-                  <option value='-1'>&nbsp;</option>
-                  <option value='-1'>* * * Закон и право * * *</option>
-                  <option value='49'>Установление инвалидности и реабилитация</option>
-                  <option value='50'>Пенсионное обеспечение</option>
-                  <option value='51'>Социальное обслуживание</option>
-                  <option value='62'>Жилищное право</option>
-                  <option value='16'>Прочее законодательство</option>
-                  <option value='53'>Правоприменительная и судебная практика</option>
-                  <option value='74'>Инвалидность, полученная на военной службе</option>
-                  <option value='68'>Страны</option>
-                  <option value='-1'>&nbsp;</option>
-                  <option value='-1'>* * * Общество * * *</option>
-                  <option value='24'>Общественные организации и движения инвалидов</option>
-                  <option value='79'>Официальные мероприятия</option>
-                  <option value='17'>СМИ</option>
-                  <option value='7'>Взаимоотношения в обществе</option>
-                  <option value='1'>Личные взаимоотношения</option>
-                  <option value='-1'>&nbsp;</option>
-                  <option value='-1'>* * * Доступная среда * * *</option>
-                  <option value='70'>Регионы России</option>
-                  <option value='71'>Москва</option>
-                  <option value='78'>Страны</option>
-                  <option value='73'>Оборудование и техническое обеспечение</option>
-                  <option value='72'>Законодательство и общие вопросы</option>
-                  <option value='-1'>&nbsp;</option>
-                  <option value='-1'>* * * Образование и работа * * *</option>
-                  <option value='15'>Образование</option>
-                  <option value='14'>Работа</option>
-                  <option value='-1'>&nbsp;</option>
-                  <option value='-1'>* * * Инва-обеспечение * * *</option>
-                  <option value='20'>Компьютеры и софт</option>
-                  <option value='29'>Протезы</option>
-                  <option value='21'>Все остальное</option>
-                  <option value='-1'>&nbsp;</option>
-                  <option value='-1'>* * * Коляски * * *</option>
-                  <option value='63'>Электроколяски</option>
-                  <option value='65'>Коляски с ручным приводом</option>
-                  <option value='66'>Коляски специального назначения и общие вопросы</option>
-                  <option value='80'>Скутеры</option>
-                  <option value='-1'>&nbsp;</option>
-                  <option value='-1'>* * * Авто * * *</option>
-                  <option value='76'>Технический раздел</option>
-                  <option value='77'>Информационно-правовой раздел</option>
-                  <option value='-1'>&nbsp;</option>
-                  <option value='-1'>* * * Учреждения * * *</option>
-                  <option value='4'>Санатории</option>
-                  <option value='55'>Научно-исследовательские институты, больницы, поликлиники</option>
-                  <option value='56'>Реабилитационные центры</option>
-                  <option value='57'>Дома инвалидов и пр.</option>
-                  <option value='-1'>&nbsp;</option>
-                  <option value='-1'>* * * Здоровье * * *</option>
-                  <option value='58'>Травмы</option>
-                  <option value='59'>Заболевания</option>
-                  <option value='60'>Адаптация при травмах и заболеваниях</option>
-                  <option value='61'>Аппаратное и медикаментозное лечение</option>
-                  <option value='13'>Прочие вопросы здоровья</option>
-                  <option value='-1'>&nbsp;</option>
-                  <option value='-1'>* * * Встречи и общение * * *</option>
-                  <option value='8'>Поиск</option>
-                  <option value='39'>Лечились, учились, служили, отдыхали</option>
-                  <option value='35'>Санкт-Петербург</option>
-                  <option value='34'>Москва и Подмосковье</option>
-                  <option value='38'>Города России</option>
-                  <option value='37'>Другие страны</option>
-                  <option value='-1'>&nbsp;</option>
-                  <option value='-1'>* * * Досуг * * *</option>
-                  <option value='69'>Культурные мероприятия</option>
-                  <option value='2'>Путешествия</option>
-                  <option value='6'>Спорт</option>
-                  <option value='11' selected=selected>Разное</option>
-                  <option value='-1'>&nbsp;</option>
-                  <option value='-1'>* * * YouTube про инвалидов * * *</option>
-                  <option value='40'>Официальное</option>
-                  <option value='41'>Техника и медицина</option>
-                  <option value='42'>Обучение</option>
-                  <option value='43'>Судьбы</option>
-                  <option value='44'>Неформальное видео</option>
-                  <option value='45'>Разное видео</option>
-                  <option value='-1'>&nbsp;</option>
-                  <option value='-1'>* * * Наш Портал * * *</option>
-                  <option value='25'>Статьи</option>
-                  <option value='30'>Вы были с нами</option>
-                  <option value='33'>Disability.ru</option>
-                  <option value='12'>О портале</option>
-                  <option value='-1'>&nbsp;</option>
-                  <option value='-1'>* * * Архив * * *</option>
-                  <option value='9'>Творчество</option>
-                  <option value='10'>Увлечения</option>
-                  <option value='26'>Поздравления</option>
-                  <option value='27'>Интервью</option>
-                  <option value='22'>Странности любви</option>
-                  <option value='23'>Мысли о жизни</option>
-                  <option value='-1'>&nbsp;</option>
-                </select>
-                  <input type='submit' value='Перейти' class='form_button' />
-                </form>
-              </td>
-            </tr>
-          </table>
-          <strong>Модерируют</strong>: <a href='../member/info_id.php?id=3'>Эльмир</a>
+              <div class="forum-topic">
+                <div class="forum-topic-name">
+                  <span>
+                    <a href="index.php?id=6373" class="table_link_item">Собака для колясочника</a>
+                  </span>
+                  <span id="topic_6374" class="forum_topic_toggle">
+                    <span class="icon-disclose" style="display: block" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-topic_close"></use></svg>
+                    </span>
+                    <span class="icon-disclose" style="display: none" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-topic_open"></use></svg>
+                    </span>
+                  </span>
+                </div>
+              </div>
 
+              <div class="forum-topic">
+                <div class="forum-topic-name">
+                  <span>
+                    <a href="index.php?id=6373" class="table_link_item">Переезд в другую страну.</a>
+                  </span>
+                  <span id="topic_6374" class="forum_topic_toggle">
+                    <span class="icon-disclose" style="display: block" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-topic_close"></use></svg>
+                    </span>
+                    <span class="icon-disclose" style="display: none" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-topic_open"></use></svg>
+                    </span>
+                  </span>
+                </div>
+              </div>
+
+              <div class="forum-topic">
+                <div class="forum-topic-name">
+                  <span>
+                    <a href="index.php?id=6373" class="table_link_item">Дистанционное открывание двери</a>
+                  </span>
+                  <span id="topic_6374" class="forum_topic_toggle">
+                    <span class="icon-disclose" style="display: block" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-topic_close"></use></svg>
+                    </span>
+                    <span class="icon-disclose" style="display: none" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-topic_open"></use></svg>
+                    </span>
+                  </span>
+                </div>
+              </div>
+
+              <div class="forum-topic">
+                <div class="forum-topic-name">
+                  <span>
+                    <a href="index.php?id=6375" class="table_link_item">Как молодой маме-инвалиду адаптироваться для
+                    ухода за ребенком одной?</a>
+                  </span>
+                  <span id="topic_6375" class="forum_topic_toggle">
+                    <span class="icon-disclose" style="display: block" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-topic_close"></use></svg>
+                    </span>
+                    <span class="icon-disclose" style="display: none" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-topic_open"></use></svg>
+                    </span>
+                  </span>
+                </div>
+                <div id="disclose_topic_6375" class="forum-topic-disclose">
+                  <div class="pagination-mobile">
+                    <span class="pagination-mobile-pages">Страниц:</span>
+                    <a class="page-previous color_pagination_border" href="#"><</a>
+                    <a class="page-current" href="#">24</a>
+                    <a class="page-next color_pagination_border" href="#">></a>
+                  </div>
+                  <div class="about-topic">
+                    <h4 class="topic-section-title">Раздел:</h4>
+                    <p class="topic-section">Коляски</p>
+                    <p class="topic-section">Электроколяски</p>
+                  </div>
+                  <div class="topic-statistics">
+                    <div class="statistics-item">
+                      <p>Ответов:</p>
+                      <span>51</span>
+                    </div>
+                    <div class="statistics-item">
+                      <p>Просм.:</p>
+                      <span>1970</span>
+                    </div>
+                    <div class="statistics-item">
+                      <p>Рейт.:</p>
+                      <span>3</span>
+                    </div>
+                  </div>
+                  <div class="last-comment">
+                    <p>Автор:</p>
+                    <span>Sunshine</span>
+                    <span>11 авг. 2017 13:21</span>
+                  </div>
+                  <div class="last-comment">
+                    <p>Ответил:</p>
+                    <span><a class="answer-link" href="#">areopag<br>18 апр. 2019 11:29</a></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="forum-topic">
+                <div class="forum-topic-name">
+                  <span>
+                    <a href="index.php?id=6373" class="table_link_item">Доставка посылок на дом</a>
+                  </span>
+                  <span id="topic_6373" class="forum_topic_toggle">
+                    <span class="icon-disclose" style="display: block" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-topic_close"></use></svg>
+                    </span>
+                    <span class="icon-disclose" style="display: none" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-topic_open"></use></svg>
+                    </span>
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="pagination-desktop">
+            <span class="pagination-item">Страницы:</span>
+            <a class="pagination-item pagination-item_active color_pagination_active" href="#">1</a>
+            <a class="pagination-item color_pagination" href="#">2</a>
+            <a class="pagination-item color_pagination" href="#">3</a>
+            <a class="pagination-item color_pagination" href="#">4</a>
+            <a class="pagination-item color_pagination" href="#">5</a>
+            <a class="pagination-item color_pagination" href="#">6</a>
+            <a class="pagination-item color_pagination" href="#">7</a>
+            <a class="pagination-item color_pagination" href="#">8</a>
+            <a class="pagination-item color_pagination" href="#">9</a>
+            <a class="pagination-item color_pagination" href="#">10</a>
+            <a class="pagination-item color_pagination" href="#">></a>
+            <a class="pagination-item color_pagination" href="#">>></a>
+            <a class="pagination-item">Всего: 13</a>
+          </div>
+
+          <div class="pagination-mobile forum-sections-pagination-mobile">
+            <a class="page-previous color_pagination_border" href="#"><</a>
+            <a class="page-current" href="#">1/13</a>
+            <a class="page-next color_pagination_border" href="#">></a>
+            <form class="form-pagination" action="index.html" method="post">
+              <input class="page-enter" type="text" name="page">
+              <button class="page-last color_pagination_border" type="submit">>></button>
+            </form>
+          </div>
+
+          <div class="form-select-section-wrapper">
+            <a class="btn-white btn-white-section btn-white-section-bottom" href="#">
+              <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_answer"></use></svg>Hовая тема</span>
+            </a>
+
+            <div class="form-select-section">
+              <form class="form-sections" method='get' name='jumpbox' action='index.php'
+                     onSubmit="if(document.jumpbox.item.value == -1){return false;}">
+                <span>Перейти <span class="proceed-text">в раздел форума</span>:</span>
+                <select name='item' class='form_field'>
+                <option value='-1'>Выберите форум</option>
+                <option value='-1'>&nbsp;</option>
+                <option value='-1'>* * * Закон и право * * *</option>
+                <option value='49'>Установление инвалидности и реабилитация</option>
+                <option value='50'>Пенсионное обеспечение</option>
+                <option value='51'>Социальное обслуживание</option>
+                <option value='62'>Жилищное право</option>
+                <option value='16'>Прочее законодательство</option>
+                <option value='53'>Правоприменительная и судебная практика</option>
+                <option value='74'>Инвалидность, полученная на военной службе</option>
+                <option value='68'>Страны</option>
+                <option value='-1'>&nbsp;</option>
+                <option value='-1'>* * * Общество * * *</option>
+                <option value='24'>Общественные организации и движения инвалидов</option>
+                <option value='79'>Официальные мероприятия</option>
+                <option value='17'>СМИ</option>
+                <option value='7'>Взаимоотношения в обществе</option>
+                <option value='1'>Личные взаимоотношения</option>
+                <option value='-1'>&nbsp;</option>
+                <option value='-1'>* * * Доступная среда * * *</option>
+                <option value='70'>Регионы России</option>
+                <option value='71'>Москва</option>
+                <option value='78'>Страны</option>
+                <option value='73'>Оборудование и техническое обеспечение</option>
+                <option value='72'>Законодательство и общие вопросы</option>
+                <option value='-1'>&nbsp;</option>
+                <option value='-1'>* * * Образование и работа * * *</option>
+                <option value='15'>Образование</option>
+                <option value='14'>Работа</option>
+                <option value='-1'>&nbsp;</option>
+                <option value='-1'>* * * Инва-обеспечение * * *</option>
+                <option value='20'>Компьютеры и софт</option>
+                <option value='29'>Протезы</option>
+                <option value='21'>Все остальное</option>
+                <option value='-1'>&nbsp;</option>
+                <option value='-1'>* * * Коляски * * *</option>
+                <option value='63'>Электроколяски</option>
+                <option value='65'>Коляски с ручным приводом</option>
+                <option value='66'>Коляски специального назначения и общие вопросы</option>
+                <option value='80'>Скутеры</option>
+                <option value='-1'>&nbsp;</option>
+                <option value='-1'>* * * Авто * * *</option>
+                <option value='76'>Технический раздел</option>
+                <option value='77'>Информационно-правовой раздел</option>
+                <option value='-1'>&nbsp;</option>
+                <option value='-1'>* * * Учреждения * * *</option>
+                <option value='4'>Санатории</option>
+                <option value='55'>Научно-исследовательские институты, больницы, поликлиники</option>
+                <option value='56'>Реабилитационные центры</option>
+                <option value='57'>Дома инвалидов и пр.</option>
+                <option value='-1'>&nbsp;</option>
+                <option value='-1'>* * * Здоровье * * *</option>
+                <option value='58'>Травмы</option>
+                <option value='59'>Заболевания</option>
+                <option value='60'>Адаптация при травмах и заболеваниях</option>
+                <option value='61'>Аппаратное и медикаментозное лечение</option>
+                <option value='13'>Прочие вопросы здоровья</option>
+                <option value='-1'>&nbsp;</option>
+                <option value='-1'>* * * Встречи и общение * * *</option>
+                <option value='8'>Поиск</option>
+                <option value='39'>Лечились, учились, служили, отдыхали</option>
+                <option value='35'>Санкт-Петербург</option>
+                <option value='34'>Москва и Подмосковье</option>
+                <option value='38'>Города России</option>
+                <option value='37'>Другие страны</option>
+                <option value='-1'>&nbsp;</option>
+                <option value='-1'>* * * Досуг * * *</option>
+                <option value='69'>Культурные мероприятия</option>
+                <option value='2'>Путешествия</option>
+                <option value='6'>Спорт</option>
+                <option value='11' selected=selected>Разное</option>
+                <option value='-1'>&nbsp;</option>
+                <option value='-1'>* * * YouTube про инвалидов * * *</option>
+                <option value='40'>Официальное</option>
+                <option value='41'>Техника и медицина</option>
+                <option value='42'>Обучение</option>
+                <option value='43'>Судьбы</option>
+                <option value='44'>Неформальное видео</option>
+                <option value='45'>Разное видео</option>
+                <option value='-1'>&nbsp;</option>
+                <option value='-1'>* * * Наш Портал * * *</option>
+                <option value='25'>Статьи</option>
+                <option value='30'>Вы были с нами</option>
+                <option value='33'>Disability.ru</option>
+                <option value='12'>О портале</option>
+                <option value='-1'>&nbsp;</option>
+                <option value='-1'>* * * Архив * * *</option>
+                <option value='9'>Творчество</option>
+                <option value='10'>Увлечения</option>
+                <option value='26'>Поздравления</option>
+                <option value='27'>Интервью</option>
+                <option value='22'>Странности любви</option>
+                <option value='23'>Мысли о жизни</option>
+                <option value='-1'>&nbsp;</option>
+              </select>
+              </form>
+              <a class="btn-white btn-forum-sections" href="edit_forum.php?type=fn">
+                <svg class="icon-svg icon-svg-btn color_icons"><use
+                    xlink:href="../site/icons/id_icons.svg#icon-page_moved"></use></svg> Перейти
+              </a>
+            </div>
+          </div>
+
+          <strong class="moderator">Модерируют</strong>: <a href='../member/info_id.php?id=3'>Эльмир</a>
         </div>
       </div>
       <div class="banner2-3 banner3" aria-label="Реклама" role="complementary">
@@ -904,13 +1034,7 @@
 
 <script src="../site/js/js-redesign.js"></script>
 <script src="../site/js/svgxuse.js"></script>
-
-<script>
-  function drop(name) {
-    if(document.getElementById(name).style.display=='none') document.getElementById(name).style.display='block';
-    else document.getElementById(name).style.display='none';
-  }
-</script>
+<script src="js/forum.js"></script>
 
 </body>
 </html>
