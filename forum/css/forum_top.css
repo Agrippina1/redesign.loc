@@ -104,6 +104,7 @@ th {
 .form-select-section-wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
   margin-bottom: 10px;
 }
 .form-select-section {
@@ -123,10 +124,123 @@ th {
   text-align: center;
 }
 
+/*Блок тема*/
+
+.rating {
+  font-family: "Verdana", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.comment-block-wrapper {
+  background: #00297c;
+  padding-top: 2px;
+}
+.comment-block {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-bottom: 2px solid #00297c;
+}
+.comment-block:nth-child(odd) {
+  background: #d9e2e3;
+}
+.comment-block:nth-child(even) {
+  background: #c8d6da;
+}
+.author-comment-wrapper {
+  display: flex;
+}
+.author-comment {
+  height: 150px;
+  margin-right: 30px;
+}
+.photo-author-comment {
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.author-comment-nic,
+.date-comment {
+  display: block;
+  width: 150px;
+  font-family: "Verdana", "Helvetica", "Arial", sans-serif;
+  line-height: 26px;
+  text-align: center;
+}
+.author-comment-nic {
+  font-size: 16px;
+  font-weight: bold;
+}
+.date-comment {
+  font-size: 12px;
+}
+.name-topic {
+  font-family: "Verdana", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  border-bottom: 1px solid #00297c;
+  width: 100%;
+  height: 40px;
+}
+.comment-topic-wrapper {
+  margin-left: 180px;
+  margin-top: -95px;
+}
+.quote-author {
+  font-family: "Tahoma", "Helvetica", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+}
+.quote-block {
+  padding: 4px 15px;
+  background: #e3e3e3;
+  border-top: 1px solid #b5bfa7;
+  border-bottom: 1px solid #b5bfa7;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+.topic-text {
+  font-family: "Times New Roman", "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: justify;
+  border-bottom: 1px solid #00297c;
+  padding-bottom: 30px;
+}
+.admin-line {
+  font-family: "Tahoma", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 15px;
+}
+input[type="checkbox"] + label {
+  display: inline;
+}
+.whom-answer {
+  display: block;
+}
+.btn-topic {
+  margin: 30px auto 40px;
+}
+.btn-admin-bottom {
+  display: block;
+  margin-bottom: 20px;
+}
+.icon-svg-flud-topic,
+.icon-svg-delete-topic {
+  display: none;
+}
+
 @media (max-width: 1023px) {
   .form-select-section-wrapper {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .form-select-section {
     display: block;
@@ -147,6 +261,83 @@ th {
     width: 100%;
     margin-top: 10px;
   }
+
+  /*Блок тема*/
+
+  .rating-top {
+    display: none;
+  }
+  .pagination-mobile-topic-top {
+    margin-top: 30px;
+  }
+  .comment-block-wrapper .comment-block {
+    background: #d9e2e3;
+    padding: 0;
+  }
+  .author-comment-wrapper {
+    background: #c8d6da;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  .author-comment {
+    display: flex;
+    min-width: 220px;
+    height: 55px;
+    border-right: 1px solid #00297c;
+    padding-right: 30px;
+  }
+  .autor-date {
+    margin: auto;
+  }
+  .photo-author-comment {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  .author-comment-nic {
+    font-size: 18px;
+  }
+  .date-comment {
+    font-size: 14px;
+  }
+  .name-topic {
+    height: auto;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin: auto;
+  }
+  .comment-topic-wrapper {
+    padding: 0 20px 15px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .quote-author {
+    font-size: 18px;
+  }
+  .topic-text {
+    padding-bottom: 10px;
+  }
+  .admin-line input[type="checkbox"] + label:after {
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    top: -4px;
+  }
+  input[type="checkbox"] + label {
+    padding-left: 40px;
+  }
+  .moderator-block {
+    margin-bottom: 30px;
+  }
+  .select-topic {
+    padding: 0;
+  }
+  .rating {
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -166,6 +357,7 @@ th {
     justify-content: space-between;
     padding-left: 10px;
     margin-bottom: 20px;
+    margin-top: 30px;
   }
   .btn-white {
     display: block;
@@ -232,9 +424,9 @@ th {
     align-self: center;
   }
   .pagination-mobile {
-    text-align: right;
+    text-align: center;
     padding-top: 15px;
-    margin: 0;
+    margin-bottom: 20px;
   }
   .pagination-mobile-pages,
   .topic-section-title,
@@ -309,6 +501,80 @@ th {
     display: inline-block;
     margin-left: 10px;
     margin-bottom: 15px;
+  }
+
+  /*Блок тема*/
+
+  .pagination-mobile-topic {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .author-comment-wrapper {
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .name-topic {
+    width: calc(100% - 20px);
+    text-align: center;
+    order: -1;
+    border-bottom: 1px solid #00297c;
+    padding: 10px 0;
+  }
+  .author-comment {
+    border-right: none;
+    background: #d9e2e3;
+    padding: 10px 10px 15px;
+    margin-right: 0;
+  }
+  .autor-date {
+    margin: 0;
+  }
+  .comment-topic-wrapper {
+    padding: 0 10px;
+  }
+  .quote-block {
+    margin-left: 0;
+  }
+  .quote-author {
+    text-align: left;
+  }
+  .topic-text {
+    line-height: 26px;
+    text-align: left;
+  }
+  .admin-line {
+    min-height: 50px;
+    margin-top: 0;
+  }
+  .btn-admin-line {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 0;
+  }
+  .admin-line-topic {
+   display: none;
+  }
+  .icon-svg-flud-topic,
+  .icon-svg-delete-topic,
+  .icon-svg-edit-topic {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+  }
+  .btn-white-topic {
+    margin-left: 10px;
+  }
+  .btn-topic {
+    width: 300px;
+  }
+  .moderator-block {
+    margin-bottom: 0;
+  }
+  .btn-admin-bottom {
+    display: block;
+    margin-bottom: 10px;
   }
 }
 

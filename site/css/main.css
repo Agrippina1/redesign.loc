@@ -23,7 +23,7 @@ body {
   color: #000000;
   margin: 0;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   margin: 0;
 }
 img {
@@ -474,7 +474,6 @@ select::-ms-expand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 670px;
   margin-bottom: 27px;
@@ -1379,7 +1378,6 @@ input[type="radio"] + label::after {
   .group-checkbox-radio-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
         justify-content: space-around;
   }
   .form-template input[type="checkbox"] + label,
