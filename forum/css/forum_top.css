@@ -18,7 +18,11 @@ td {
   text-decoration: underline;
 }
 .law-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -102,21 +106,31 @@ th {
   display: none;
 }
 .form-select-section-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 20px;
   margin-bottom: 10px;
 }
 .form-select-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .btn-forum-sections {
   margin: 3px 0 0 10px;
 }
 .form-sections {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
 }
 .btn-white-section-bottom {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   margin-bottom: 0;
 }
@@ -138,8 +152,8 @@ th {
   padding-top: 2px;
 }
 .comment-block {
-  display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   padding: 20px;
   border-bottom: 2px solid #00297c;
 }
@@ -150,6 +164,8 @@ th {
   background: #c8d6da;
 }
 .author-comment-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .author-comment {
@@ -280,6 +296,8 @@ input[type="checkbox"] + label {
     margin-bottom: 20px;
   }
   .author-comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     min-width: 220px;
     height: 55px;
@@ -354,6 +372,8 @@ input[type="checkbox"] + label {
     display: block;
   }
   .law-search {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-left: 10px;
     margin-bottom: 20px;
@@ -392,7 +412,11 @@ input[type="checkbox"] + label {
     background: #c8d6da;
   }
   .forum-topic-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     font-size: 20px;
     border: 1px solid #00297c;
@@ -410,6 +434,8 @@ input[type="checkbox"] + label {
   }
   .forum_topic_toggle {
     line-height: 0;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
   }
   .forum-topic-disclose {
@@ -417,10 +443,13 @@ input[type="checkbox"] + label {
     font-size: 18px;
     background: #efefef;
     border-radius: 5px;
+    -webkit-box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
   }
   .forum-topic-name span:first-child {
     width: 85%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
   }
   .pagination-mobile {
@@ -445,7 +474,11 @@ input[type="checkbox"] + label {
     padding-left: 50px;
   }
   .topic-statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 0 auto;
   }
@@ -472,6 +505,7 @@ input[type="checkbox"] + label {
   .btn_in_item {
     background: #efefef;
     border: 1px solid #0020c8;
+    -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
     margin: 30px auto;
   }
@@ -492,6 +526,7 @@ input[type="checkbox"] + label {
     margin: 0 10px;
   }
   .answer-link {
+    -webkit-text-decoration: underline dashed;
     text-decoration: underline dashed;
   }
   .btn-forum-sections {
@@ -510,6 +545,9 @@ input[type="checkbox"] + label {
     margin-bottom: 40px;
   }
   .author-comment-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding: 0;
     margin-bottom: 0;
@@ -517,6 +555,8 @@ input[type="checkbox"] + label {
   .name-topic {
     width: calc(100% - 20px);
     text-align: center;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
     order: -1;
     border-bottom: 1px solid #00297c;
     padding: 10px 0;
@@ -553,7 +593,7 @@ input[type="checkbox"] + label {
     margin-left: 0;
   }
   .admin-line-topic {
-   display: none;
+    display: none;
   }
   .icon-svg-flud-topic,
   .icon-svg-delete-topic,
