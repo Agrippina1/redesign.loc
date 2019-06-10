@@ -173,12 +173,13 @@ th {
   margin-right: 30px;
 }
 .photo-author-comment {
+  display: block;
   width: 150px;
   height: 100px;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: contain;
 }
 .author-comment-nic,
 .date-comment {
@@ -193,6 +194,7 @@ th {
   font-weight: bold;
 }
 .date-comment {
+  font-weight: normal;
   font-size: 12px;
 }
 .name-topic {

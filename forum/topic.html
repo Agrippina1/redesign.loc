@@ -384,22 +384,24 @@
       </div>
     </div>
     <div class="content-left">
-      <div class="breadcrumbs color_link_hover">
-        <h1 class="color_link_hover">
-          <a class="breadcrumbs-item" href="https://www.disability.ru" aria-label="Disability.ru">
-            <svg class="icon-svg icon-svg-breadcrumbs color_icons"><use
-                xlink:href="../site/icons/id_icons.svg#icon-navigator"></use></svg>
-          </a>
-          <a name="navigator" class="breadcrumbs-item" href="#">/ Товары и услуги</a>
-        </h1>
-      </div>
-      <div class="banner2-3 banner2" aria-label="Реклама" role="complementary">
-        <img src="../site/pics/banner_2.png" width="730" height="90" alt="Реклама">
-      </div>
+
+
 
       <!--Основной контент-->
 
       <div class="main-content color_content_fon color_main_content" aria-label="содержание" role="main">
+        <div class="breadcrumbs color_link_hover">
+          <h1 class="color_link_hover">
+            <a class="breadcrumbs-item" href="https://www.disability.ru" aria-label="Disability.ru">
+              <svg class="icon-svg icon-svg-breadcrumbs color_icons"><use
+                      xlink:href="../site/icons/id_icons.svg#icon-navigator"></use></svg>
+            </a>
+            <a name="navigator" class="breadcrumbs-item" href="#">/ Товары и услуги</a>
+          </h1>
+        </div>
+        <div class="banner2-3 banner2" aria-label="Реклама" role="complementary">
+          <img src="../site/pics/banner_2.png" width="730" height="90" alt="Реклама">
+        </div>
         <a name="content"></a>
         <div class="m-c-w">
 
@@ -505,7 +507,7 @@
             <span>Оценить: <a href="#">[+]</a> <a href="#">[-]</a></span>
           </div>
 
-          <div class="pagination-desktop">
+          <div class="pagination-desktop" aria-label="страницы" role="navigation">
             <span class="pagination-item">Страницы:</span>
             <a class="pagination-item pagination-item_active color_pagination_active" href="#">1</a>
             <a class="pagination-item color_pagination" href="#">2</a>
@@ -532,24 +534,38 @@
           <div class="comment-block-wrapper">
             <div class="comment-block">
               <div class="author-comment-wrapper">
-                <div class="author-comment">
-                  <p style="background-image: url('../forum/photo/image-1.png')" class="photo-author-comment"></p>
+                <h5 class="author-comment">
+                  <span style="background-image: url('../forum/photo/image-1.png')" class="photo-author-comment"></span>
                   <div class="autor-date">
-                    <h4 class="author-comment-nic">Weter</h4>
+                    <span class="author-comment-nic">Weter</span>
                     <span class="date-comment">29 авг. 2018 19:04</span>
                   </div>
-                </div>
-                <h5 class="name-topic">Помогите, коляска сломалась!</h5>
+                </h5>
+                <strong class="name-topic">Помогите, коляска сломалась!</strong>
+
               </div>
               <div class="comment-topic-wrapper">
                 <div class="comment-topic">
-                  <p class="quote-block">
-                    <span class="quote-author"><strong>Molishna:</strong><br>Вероятно от редкого использования. Надо
-                      менять.</span>
+                  <div class="topic-text" aria-label="текст">
+                    <p class="quote-block" aria-label="цитата">
+                    <span class="quote-author"><strong>Molishna:</strong>
+                      <br>Вероятно от редкого использования. Надо менять.</span>
                   </p>
-                  <p class="topic-text">лучше конечно поменять сразу обе. Но, в виду того, что "транспорт" работает редко, нужен ли такой шик? Брать тяговые для электротранспорта, конечно было бы здорово, но стоит ли игра свеч и переплачивать.
-                    Квалификации техника думаю хватит, что б подобрать аналог, тех, что стояли там, если не найдёт "родной" (родные)или как их ещё называют заводской (те, что ставит производитель).
-                    Можно сказать, Вам повезло, в нек. плане, обошлись заменой аккума.</p>
+                  лучше конечно поменять сразу обе. <br>
+                    Но, в виду того, что "транспорт" <br>
+                  <p class="quote-block" aria-label="цитата">
+                    <span class="quote-author"><strong>Molishna2:</strong>
+                      <br>еще Вероятно от редкого использования. Надо менять.</span>
+                  </p>
+                  работает редко, нужен ли такой шик?<br>
+                  Брать тяговые для электротранспорта, конечно было бы здорово, <br>
+                  <p class="quote-block" aria-label="цитата">
+                    <span class="quote-author"><strong>Molishna3:</strong>
+                      <br>еще Вероятно от редкого использования. Надо менять.
+                  но стоит ли игра свеч и переплачивать.</span>
+                  </p>
+                    <br>Квалификации техника думаю хватит, что б подобрать аналог, тех, что стояли там, если не найдёт "родной" (родные)или как их ещё называют заводской (те, что ставит производитель).
+                      <br>Можно сказать, Вам повезло, в нек. плане, обошлись заменой аккума.</div>
                 </div>
                 <div class="admin-line">
                   <a class="btn-admin-line" href="#">
@@ -583,23 +599,27 @@
                 </div>
               </div>
             </div>
-
+            
             <div class="comment-block">
               <div class="author-comment-wrapper">
-                <div class="author-comment">
-                  <p style="background-image: url('../forum/photo/image-2.jpg')" class="photo-author-comment"></p>
+                <h5 class="author-comment">
+                <div >
+                  <span style="background-image: url('../forum/photo/image-2.jpg')" class="photo-author-comment"></span>
                   <div class="autor-date">
-                    <h4 class="author-comment-nic">Pony</h4>
+                    <span class="author-comment-nic">Pony</span>
                     <span class="date-comment">28 апр. 2019 8:19</span>
                   </div>
                 </div>
-                <h5 class="name-topic">Помогите, коляска сломалась!</h5>
+                </h5>
+                <strong class="name-topic">Помогите, коляска сломалась!</strong>
+
               </div>
               <div class="comment-topic-wrapper">
                 <div class="comment-topic">
-                  <p class="topic-text"><span class="whom-answer">Ответ для Molishna:</span>1. Невыключение из гнезда на пульте не влияет на возникновение неисправности.
-                    2. 90% - умер аккумулятор, 10% - умер контроллер
-                    3. Неплохо было бы снять короткое видео на телефон , что там происходит с пультом. Как правило, всяческими миганиями системы самодиагностики колясок сигнализируют о типе неисправности. Выложите видео куда-нибудь и ссылку сюда.</p>
+                  <div class="topic-text" aria-label="текст"><span class="whom-answer">Ответ для Molishna:</span>
+                    <br>1. Невыключение из гнезда на пульте не влияет на возникновение неисправности.
+                    <br>2. 90% - умер аккумулятор, 10% - умер контроллер
+                    <br>3. Неплохо было бы снять короткое видео на телефон , что там происходит с пультом. Как правило, всяческими миганиями системы самодиагностики колясок сигнализируют о типе неисправности. Выложите видео куда-нибудь и ссылку сюда.</div>
                 </div>
                 <div class="admin-line">
                   <a class="btn-admin-line" href="#">
@@ -635,7 +655,7 @@
             </div>
           </div>
 
-          <div class="pagination-desktop">
+          <div class="pagination-desktop" aria-label="страницы" role="navigation">
             <span class="pagination-item">Страницы:</span>
             <a class="pagination-item pagination-item_active color_pagination_active" href="#">1</a>
             <a class="pagination-item color_pagination" href="#">2</a>

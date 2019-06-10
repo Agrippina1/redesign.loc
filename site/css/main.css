@@ -614,6 +614,7 @@ input[type="radio"] + label::after {
 .btn-wrapper-guest {
   text-align: left;
   margin-left: 20px;
+  margin-bottom: 20px;
 }
 .btn-white {
   font-size: 16px;
@@ -627,6 +628,7 @@ input[type="radio"] + label::after {
   margin-bottom: 10px;
 }
 .content-block-title {
+  font-size: 16px;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -639,6 +641,7 @@ input[type="radio"] + label::after {
 .content-block-views {
   font-size: 12px;
   margin-top: 5px;
+  font-weight: normal;
 }
 .icon-breadcrumbs {
   display: block;
@@ -1241,6 +1244,9 @@ input[type="radio"] + label::after {
   .content-block {
     font-size: 17px;
     line-height: 26px;
+  }
+  .content-block-title {
+    font-size: 18px;
   }
   .content-block-text {
     font-size: 18px;
