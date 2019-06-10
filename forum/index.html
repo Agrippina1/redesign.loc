@@ -384,22 +384,23 @@
       </div>
     </div>
     <div class="content-left">
-      <div class="breadcrumbs color_link_hover">
-        <h1 class="color_link_hover">
-          <a class="breadcrumbs-item" href="https://www.disability.ru" aria-label="Disability.ru">
-            <svg class="icon-svg icon-svg-breadcrumbs color_icons"><use
-                xlink:href="../site/icons/id_icons.svg#icon-navigator"></use></svg>
-          </a>
-          <a name="navigator" class="breadcrumbs-item" href="#">/ Форум</a>
-        </h1>
-      </div>
-      <div class="banner2-3 banner2" aria-label="Реклама" role="complementary">
-        <img src="../site/pics/banner_2.png" width="730" height="90" alt="Реклама">
-      </div>
 
       <!--Основной контент-->
 
       <div class="main-content color_content_fon color_main_content" aria-label="содержание" role="main">
+        <div class="breadcrumbs color_link_hover">
+          <h1 class="color_link_hover">
+            <a class="breadcrumbs-item" href="https://www.disability.ru" aria-label="Disability.ru">
+              <svg class="icon-svg icon-svg-breadcrumbs color_icons"><use
+                      xlink:href="../site/icons/id_icons.svg#icon-navigator"></use></svg>
+            </a>
+            <a name="navigator" class="breadcrumbs-item" href="#">/ Форум</a>
+          </h1>
+        </div>
+        <div class="banner2-3 banner2" aria-label="Реклама" role="complementary">
+          <img src="../site/pics/banner_2.png" width="730" height="90" alt="Реклама">
+        </div>
+
         <a name="content"></a>
         <div class="m-c-w">
 
@@ -427,12 +428,12 @@
                       <input class="form-field-template" id="formfirst-field" type="text" name="login">
                       <div class="search-help">
                         <br><i><b>инвалид человек</b></i> находит строки, содержащие по меньшей мере одно из этих слов.
-                        <br><i><b>&quot;инвалид человек&quot;</b></i> ... <i>инвалид человек как и все люди</i>, но не <i>инвалид тоже человек</i>.
+                        <br><i><b>&quot;инвалид человек&quot;</b></i> ... <i>инвалид человек как и все люди</i>, но не <i>инвалид тоже человек.</i>
                         <br><i><b>+инвалид +человек</b></i> ... оба слова.
-                        <br><i><b>+инвалид человек</b></i> ... слово <i>инвалид</i>, но ранг текста выше, если он также содержит слово <i>человек</i>.
-                        <br><i><b>+инвалид -человек</b></i> ... слово <i>инвалид</i>, но не <i>человек</i>.
+                        <br><i><b>+инвалид человек</b></i> ... слово <i>инвалид</i>, но ранг текста выше, если он также содержит слово <i>человек.</i>
+                        <br><i><b>+инвалид -человек</b></i> ... слово <i>инвалид</i>, но не <i>человек.</i>
                         <br><i><b>+инвалид +(&gt;спортсмен &lt;лодырь)</b></i> ... <i>инвалид</i> и <i>спортсмен</i>,
-                        или <i>инвалид</i> и <i>лодырь</i> (в любом порядке), но ранг <i>инвалид спортсмен</i> выше, чем <i>инвалид лодырь</i>.
+                        или <i>инвалид</i> и <i>лодырь</i> (в любом порядке), но ранг <i>инвалид спортсмен</i> выше, чем <i>инвалид лодырь.</i>
                         <br><i><b>инвалид*</b></i> ... <i>инвалид</i>, <i>инвалиды</i>, <i>инвалидная</i>, <i>инвалидов</i> и т.д..
                       </div>
                     </div>
@@ -1059,7 +1060,7 @@
               </div>
             </form>
 
-            <h1 class="forum-top-title">Топ форума</h1>
+            <h4 class="forum-top-title">Топ форума</h4>
 
             <div class="forum-mobile-topics">
 
@@ -1071,9 +1072,15 @@
                         xlink:href="../site/icons/id_icons.svg#icon-page_top"></use></svg></span>
                     <a href="index.php?id=6373" class="table_link_item">Первичное протезирование</a>
                   </span>
-                  <span class="icon-disclose">
-                    <svg class="icon-svg color_icons icon-topic"><use
-                        xlink:href="../site/icons/id_icons.svg#icon-topic_close"></use></svg>
+                  <span id="topic_6374" class="forum_topic_toggle">
+                    <span class="icon-disclose" style="display: block" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-topic_close"></use></svg>
+                    </span>
+                    <span class="icon-disclose" style="display: none" role="button">
+                      <svg class="icon-svg color_icons icon-topic"><use
+                          xlink:href="../site/icons/id_icons.svg#icon-topic_open"></use></svg>
+                    </span>
                   </span>
                 </div>
               </div>
@@ -1138,8 +1145,7 @@
                   </div>
                   <div class="last-comment">
                     <p>Ответил:</p>
-                    <span>Mordvinenok</span>
-                    <span>22 май 2019 00:01</span>
+                    <span><a class="answer-link" href="#">Mordvinenok<br>22 май 2019 00:01</a></span>
                   </div>
                 </div>
               </div>
@@ -1147,9 +1153,6 @@
               <div class="forum-topic">
                 <div class="forum-topic-name">
                   <span>
-                    <span title="прикрепленная тема">
-                    <svg class="icon-svg color_icons icon-attached"><use
-                        xlink:href="../site/icons/id_icons.svg#icon-page_top"></use></svg></span>
                     <a href="index.php?id=6373" class="table_link_item">Как живется инвалиду-колясочнику в Канаде.</a>
                   </span>
                   <span class="icon-disclose">
@@ -1162,9 +1165,6 @@
               <div class="forum-topic">
                 <div class="forum-topic-name">
                   <span>
-                    <span title="прикрепленная тема">
-                    <svg class="icon-svg color_icons icon-attached"><use
-                        xlink:href="../site/icons/id_icons.svg#icon-page_top"></use></svg></span>
                     <a href="index.php?id=6373" class="table_link_item">Кто пользуется такой подушкой ROHO</a>
                   </span>
                   <span class="icon-disclose">
@@ -1177,9 +1177,6 @@
               <div class="forum-topic">
                 <div class="forum-topic-name">
                   <span>
-                    <span title="прикрепленная тема">
-                    <svg class="icon-svg color_icons icon-attached"><use
-                        xlink:href="../site/icons/id_icons.svg#icon-page_top"></use></svg></span>
                     <a href="index.php?id=6373" class="table_link_item">Замена свинцово-кислотных аккумуляторов на
                       литиевые.</a>
                   </span>
