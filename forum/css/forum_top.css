@@ -455,9 +455,9 @@ input[type="checkbox"] + label {
     align-self: center;
   }
   .pagination-mobile {
-    text-align: center;
+    text-align: right;
     padding-top: 15px;
-    margin-bottom: 20px;
+    margin: 0 5px 20px 0;
   }
   .pagination-mobile-pages,
   .topic-section-title,
@@ -469,7 +469,8 @@ input[type="checkbox"] + label {
     margin-right: 10px;
   }
   .about-topic {
-    padding-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .topic-section {
     line-height: 25px;
@@ -486,7 +487,7 @@ input[type="checkbox"] + label {
   }
   .statistics-item {
     text-align: center;
-    padding: 10px;
+    padding: 10px 15px;
   }
   .statistics-item p {
     font-weight: bold;
@@ -495,7 +496,7 @@ input[type="checkbox"] + label {
     line-height: 25px;
   }
   .last-comment {
-    padding: 0 10px 15px;
+    padding: 0 15px 15px;
   }
   .last-comment p {
     line-height: 25px;
@@ -528,8 +529,8 @@ input[type="checkbox"] + label {
     margin: 0 10px;
   }
   .answer-link {
-    -webkit-text-decoration: underline dashed;
-    text-decoration: underline dashed;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
   }
   .btn-forum-sections {
     display: none;
