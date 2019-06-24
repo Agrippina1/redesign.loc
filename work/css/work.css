@@ -1,0 +1,176 @@
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.content-block {
+  font-size: 16px;
+}
+.work-text {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+.work {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin: 30px auto 20px;
+}
+h5 {
+  margin-bottom: 10px;
+}
+.content-block ul {
+  list-style: square;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+.content-block li {
+  font-weight: bold;
+}
+.show {
+  line-height: 26px;
+  text-align: justify;
+}
+.show span {
+  margin-right: 15px;
+}
+.author {
+  margin-bottom: 20px;
+}
+.show-text {
+  margin-top: 20px;
+}
+.block_views,
+.block_data {
+  font-size: 10px;
+}
+.block_data {
+  margin-top: 20px;
+}
+.block_views {
+  text-align: right;
+}
+.btn-request {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+}
+.admin-request-text {
+  font-weight: bold;
+}
+.vacancy-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.vacancy-info {
+  width: 80%;
+}
+.vacancy-name {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #c9c9c9;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.vacancy-info-add {
+  font-size: 15px;
+}
+.vacancy-info-add span:first-child {
+  display: inline-block;
+  width: 190px;
+  margin-right: 15px;
+}
+.vacancy-payment {
+  font-size: 20px;
+  font-weight: bold;
+  color: #727170;
+  align-self: center;
+}
+.vacancy-info-add b {
+  margin-right: 7px;
+}
+.admin-line-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.btn-admin-line {
+  font-weight: bold;
+}
+.vacancy-data {
+  margin-top: 0;
+}
+
+
+@media (max-width: 1023px) {
+  .content-block {
+    font-size: 18px;
+  }
+  .content-block li {
+    line-height: 40px;
+    font-weight: normal;
+  }
+  .work {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .show {
+    line-height: 30px;
+  }
+  .show-info {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  h5 {
+    text-align: center;
+  }
+  .work {
+    margin-bottom: 5px;
+  }
+  .work span:first-child {
+    margin-bottom: 15px;
+  }
+  .show {
+    text-align: left;
+  }
+  .vacancy-info-wrapper {
+    flex-direction: column;
+  }
+  .vacancy-info {
+    width: 100%;
+  }
+  .vacancy-name {
+    text-align: center;
+  }
+  .vacancy-info-add {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .vacancy-info-add span:first-child {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .vacancy-payment {
+    font-size: 24px;
+  }
+  .vacancy-read {
+    display: none;
+  }
+  .btn-admin-line {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .pagination-mobile-bottom {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
