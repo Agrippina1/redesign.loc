@@ -43,7 +43,7 @@ h4, .online-text {
   padding: 5px 10px 6px 10px;
 }
 strong {
-  display: inline-block;
+  display: block;
 }
 
 @media (max-width: 1023px) {
@@ -82,12 +82,15 @@ strong {
     display: none;
   }
   .info_item_new {
-    width: 190px;
+    width: 220px;
     border: none;
     margin: auto;
   }
   .info_item_new-text {
     font-size: 18px;
     padding: 0;
+  }
+  strong {
+    display: inline-block;
   }
 }
