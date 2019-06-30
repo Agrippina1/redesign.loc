@@ -82,11 +82,12 @@ strong {
     display: none;
   }
   .info_item_new {
-    width: 238px;
+    width: 190px;
     border: none;
     margin: auto;
   }
   .info_item_new-text {
+    font-size: 18px;
     padding: 0;
   }
 }
