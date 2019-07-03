@@ -1,0 +1,51 @@
+h4 {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.list-users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.another_wrapper_user {
+  width: 298px;
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+  background: #f8f8f8;
+  margin: 10px;
+}
+.member_block_user {
+  display: flex;
+}
+.info_item-user-text {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 5px 10px 6px 10px;
+}
+strong {
+  display: block;
+}
+.photo {
+  padding: 5px;
+}
+.photo img {
+  display: block;
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
+}
+.woman {
+  background: #fbe0ff;
+}
+.man {
+  background: #dae2ff;
+}
+.info_item-user {
+  align-self: center;
+  width: 190px;
+}
