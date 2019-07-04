@@ -8,7 +8,7 @@
   padding-top: 2px;
 }
 .author-comment-wrapper {
-  border-bottom: 1px solid #a0a0a0;
+  border-bottom: 1px solid #00297c;
   padding-bottom: 10px;
 }
 .answer-block:nth-child(odd) {
@@ -26,12 +26,13 @@
 }
 .photo-author-comment {
   display: block;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: contain;
+  background-size: cover;
+  border-radius: 5px;
 }
 .author-comment-nic,
 .date-comment {
@@ -59,10 +60,10 @@
 .comment-text {
   font-size: 16px;
   padding-bottom: 10px;
+  padding-left: 25px;
 }
 .answer {
   border-top: 1px solid #a0a0a0;
-  border-bottom: 1px solid #a0a0a0;
   padding: 10px;
 }
 .answer-text {
@@ -96,5 +97,11 @@
   .btn-white {
     margin-right: 10px;
     margin-top: 20px;
+  }
+  .comment-text {
+    padding-left: 0;
+  }
+  .answer {
+    padding-left: 0;
   }
 }
