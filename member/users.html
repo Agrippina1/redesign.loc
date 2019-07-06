@@ -19,14 +19,14 @@
   <link rel="stylesheet" href="../site/css/icon.css">
   <link rel="stylesheet" href="../site/skins/blue/css/colors.css">
   <link rel="stylesheet" href="../site/skins/blue/css/svg.css">
-  <link rel="stylesheet" href="css/story.css">
+  <link rel="stylesheet" href="css/users.css">
 
 </head>
 <body>
 <div class="container color_link_hover">
   <div class="visually-hidden">
     <ul aria-label="Disability.ru" role="directory">
-      <li><a href='#menu_items' accesskey='r'>Разделы</a></li>
+      <li><a href="#menu_items" accesskey='r'>Разделы</a></li>
       <li><a href='#menu_users' accesskey='m'>Пользователям</a></li>
       <li><a href='#navigator' accesskey='n'>Навигатор</a></li>
       <li><a href='#content' accesskey='s'>Содержание</a></li>
@@ -393,9 +393,9 @@
           <h1 class="color_link_hover">
             <a class="breadcrumbs-item" href="https://www.disability.ru" aria-label="Disability.ru">
               <svg class="icon-svg icon-svg-breadcrumbs color_icons"><use
-                      xlink:href="../site/icons/id_icons.svg#icon-navigator"></use></svg>
+                xlink:href="../site/icons/id_icons.svg#icon-navigator"></use></svg>
             </a>
-            <a name="navigator" class="breadcrumbs-item" href="#">/ Статьи</a>
+            <a name="navigator" class="breadcrumbs-item" href="#">/ Пользователи</a>
           </h1>
         </div>
         <div class="banner2-3 banner2" aria-label="Реклама" role="complementary">
@@ -404,38 +404,102 @@
 
         <a name="content"></a>
         <div class="m-c-w">
-          <h4 class="content-title">Статьи</h4>
+
           <div class="content-block">
-            <div class="story-main">
-              <ul class="section-item">
-                <li>
-                  <a href="#">Взаимоотношения в обществе (118)</a>
-                </li>
-                <li>
-                  <a href="#">Медицина (56)</a>
-                </li>
-                <li>
-                  <a href="#">Работа и Досуг (72)</a>
-                </li>
-                <li>
-                  <a href="#">Техника для инвалидов (50)</a>
-                </li>
-              </ul>
-              <a class="btn_in_item" href="#">
-                <svg class="icon-svg icon-svg-btn color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-page_answer"></use></svg> Добавить статьи
-              </a>
-              <a class="section-links story-links-edit" href="">
-                <svg class="icon-svg icon-svg-edit color_icons"><use
-                    xlink:href="../site/icons/id_icons.svg#icon-page_edit"></use>
-                </svg>
-                <span class="story-edit">Редактировать мои статьи</span>
-              </a>
-              <div class="story-regulation">
-                <a class="section-links section-links-regulation" href="#">Руководство по размещению статей</a>
-                <a class="section-links section-links-regulation" href="#">Какие статьи мы принимаем</a>
+            <h4>Параметры поиска</h4>
+
+            <form class="form-template" action="index.html" method="post">
+              <div class="form-group-template-wrapper">
+                <div class="form-group-template">
+                  <label class="form-label-template font-form-template" for="formfirst-field">Ник:</label>
+                  <input class="form-field-template" id="formfirst-field" type="text" name="login" value="">
+                </div>
+                <div class="form-group-template">
+                  <label class="form-label-template font-form-template" for="formsecond-field">Настоящее имя:</label>
+                  <input class="form-field-template" id="formsecond-field" type="text" name="login" value="">
+                </div>
               </div>
-            </div>
+              <div class="selects-template-wrapper">
+                <div class="select-group-template">
+                  <p class="font-form-template">Пол:</p>
+                  <select name="teme">
+                    <option value="">Не важно</option>
+                    <option value="">Мужской</option>
+                    <option value="">Женский</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group-template-wrapper">
+                <div class="form-group-template">
+                  <label class="form-label-template font-form-template" for="formfirst-field">Город:</label>
+                  <input class="form-field-template" id="formthird-field" type="text" name="login" value="">
+                </div>
+                <div class="form-group-template">
+                  <label class="form-label-template font-form-template" for="formsecond-field">Страна:</label>
+                  <input class="form-field-template" id="formfourth-field" type="text" name="login" value="">
+                </div>
+              </div>
+              <div class="btn-wrapper">
+                <input class="btn-template btn_main_fon" type="submit" name="button" value="Найти">
+              </div>
+            </form>
+
+            <ul class="list-users">
+              <li class="another_wrapper_user man">
+                <a href="info_id.php?id=21765" class="member_block_user">
+                  <div class="photo">
+                    <img src="https://www.disability.ru/member/picture_fb.php?pic=21765&ver=b" width=140" height="140" alt="">
+                  </div>
+                  <div class="info_item-user">
+                    <p class="info_item-user-text"><strong>Valsav</strong>
+                      <span>Валентин<br>Москва, Россия</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="another_wrapper_user man">
+                <a href="info_id.php?id=113448" class="member_block_user">
+                  <div class="photo">
+                    <img src="https://www.disability.ru/member/photo/photo_fb.jpg" width=140" height="140" alt="фото нет">
+                  </div>
+                  <div class="info_item-user">
+                    <p class="info_item-user-text"><strong>alexsg</strong>
+                      <span>Алексей<br>Сыктывкар, Россия</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="another_wrapper_user woman">
+                <a href="info_id.php?id=23816" class="member_block_user">
+                  <div class="photo">
+                    <img src="https://www.disability.ru/member/picture_fb.php?pic=23816&ver=b" width=140" height="140" alt="">
+                  </div>
+                  <div class="info_item-user">
+                    <p class="info_item-user-text"><strong>koroleva</strong>
+                      <span>Альбина<br>Уфа, Россия</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="another_wrapper_user woman">
+                <a href="info_id.php?id=95121" class="member_block_user">
+                  <div class="photo">
+                    <img src="https://www.disability.ru/member/photo/photo_fb.jpg" width=140" height="140" alt="фото нет">
+                  </div>
+                  <div class="info_item-user">
+                    <p class="info_item-user-text"><strong>natalya</strong>
+                      <span>Наталья<br>Кемерово, Россия</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
           </div>
+
         </div>
       </div>
       <div class="banner2-3 banner3" aria-label="Реклама" role="complementary">

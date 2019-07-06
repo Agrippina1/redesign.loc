@@ -1,0 +1,110 @@
+.btn-white {
+  display: block;
+  text-align: right;
+  margin-bottom: 10px;
+}
+.comment-block-wrapper {
+  background: #00297c;
+  padding-top: 2px;
+}
+.author-comment-wrapper {
+  border-bottom: 1px solid #00297c;
+  padding-bottom: 10px;
+}
+.answer-block:nth-child(odd) {
+  background: #c8d6da;
+}
+.answer-block:nth-child(even) {
+  background: #d9e2e3;
+}
+.answer-block {
+  border-bottom: 2px solid #00297c;
+  padding: 10px 20px 0;
+}
+.author-comment {
+  display: flex;
+}
+.photo-author-comment {
+  display: block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 5px;
+}
+.author-comment-nic,
+.date-comment {
+  display: block;
+  width: 150px;
+  line-height: 26px;
+  text-align: center;
+}
+.author-comment-nic {
+  font-size: 16px;
+  font-weight: bold;
+}
+.date-comment,
+.date-answer {
+  font-size: 12px;
+  font-weight: normal;
+}
+.comment-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 15px;
+}
+.comment-text {
+  font-size: 16px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+}
+.answer {
+  border-top: 1px solid #a0a0a0;
+  padding: 10px;
+}
+.answer-text {
+  font-size: 16px;
+}
+.admin-line {
+  padding: 5px;
+}
+
+@media (max-width: 1023px) {
+  .photo-author-comment {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 5px;
+  }
+  .content-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    padding: 0;
+  }
+  h4 {
+    font-size: 20px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  .answer-block {
+    padding: 10px 10px 0;
+  }
+  .btn-white {
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  .comment-text {
+    padding-left: 0;
+  }
+  .answer {
+    padding-left: 0;
+  }
+}
