@@ -1,0 +1,269 @@
+h4 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.bookmarks-mail {
+  margin-bottom: 1px;
+  margin-left: 10px;
+}
+.bookmarks-mail-item {
+  display: inline-block;
+  margin-right: 9px;
+}
+.bookmark {
+  background: #efefef;
+  box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 15px 15px 0 0;
+  padding: 17px 15px 4px 20px;
+}
+.icon-svg-bookmarks-mail {
+  width: 24px;
+  height: 24px;
+  padding-right: 9px;
+}
+h5 {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+  vertical-align: super;
+}
+.active {
+  font-weight: bold;
+  background: #f8f8f8;
+  box-shadow: 0 -2px 1px  rgba(0, 0, 0, 0.15);
+  padding-top: 25px;
+}
+.active p {
+  padding-bottom: 10px;
+}
+.active > .icon-svg-bookmarks-mail {
+  padding-bottom: 8px;
+}
+.active > h5 {
+  font-weight: bold;
+  vertical-align: text-bottom;
+  padding-bottom: 10px;
+}
+.content-block {
+  border-radius: 5px;
+  padding: 16px 0 1px;
+}
+.cap-mail {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin-top: 9px;
+  margin-bottom: 30px;
+}
+.statistics-mail {
+  display: flex;
+  flex-direction: column;
+}
+.btn_in_item {
+  text-align: center;
+  text-transform: none;
+  margin: 0;
+}
+.all-content .icon-svg-btn {
+  margin-top: 0;
+}
+.letters-block {
+  background: #00147c;
+  border-radius: 7px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.letter:nth-child(odd) {
+  background: #d9e2e3;
+}
+.letter:nth-child(even) {
+  background: #c8d6da;
+}
+.letter {
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+  margin-bottom: 1px;
+}
+.letter-snippet {
+  display: flex;
+  margin-right: 20px;
+}
+.form-template {
+  margin: 0;
+}
+.group-checkbox {
+  margin-top: 6px;
+  margin-right: 6px;
+}
+input[type="checkbox"] + label::after {
+  top: -3px;
+}
+.icon-svg-letter {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+}
+.letter-author {
+  align-self: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 125px;
+}
+.letter-text {
+  display: flex;
+  flex-grow: 1;
+  width: 0;
+}
+.letter-theme {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.letter-piece {
+  color: #606060;
+}
+.date-letter {
+  width: 160px;
+  padding-left: 10px;
+}
+.editing-mail {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.deletion-mail label {
+  font-size: 16px;
+  line-height: 19px;
+}
+.admin-line-text {
+  color: #3b3b3b;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.editing-mail input[type="checkbox"] + label::after {
+  top: 0;
+}
+
+
+@media (max-width: 1023px) {
+  .date-letter {
+    text-align: center;
+  }
+  .admin-line-text {
+    display: inline-block;
+  }
+  .form-template input[type="checkbox"] + label {
+    margin-bottom: 0;
+  }
+  .editing-mail .group-checkbox {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    padding: 0;
+  }
+  .bookmarks-mail {
+    margin-bottom: 2px;
+  }
+  .bookmarks-mail h5 {
+    display: none;
+  }
+  .bookmark {
+    padding: 24px 21px 4px 23px;
+  }
+  .active {
+    padding-top: 36px;
+  }
+  .icon-svg-bookmarks-mail {
+    width: 32px;
+    height: 32px;
+    padding-right: 0;
+  }
+  .active .icon-svg-bookmarks-mail {
+    padding-bottom: 8px;
+  }
+  .letter {
+    flex-direction: column;
+  }
+  .cap-mail {
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .statistics-mail {
+    flex-direction: row;
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+  .statistics-mail span {
+    margin-right: 15px;
+  }
+  .btn_in_item {
+    width: 300px;
+    margin: auto;
+  }
+  .pagination-mobile {
+    margin-bottom: 30px;
+  }
+  .letter-snippet {
+    align-self: flex-start;
+    margin: 10px 0;
+  }
+  .letter-theme {
+    max-height: 3em;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    white-space: normal;
+  }
+  .letter-text {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .letter-author {
+    font-size: 18px;
+    width: 200px;
+  }
+  .form-template input[type="checkbox"] + label {
+    margin-bottom: 28px;
+  }
+  .form-template input[type="checkbox"] + label::after {
+    top: -27px;
+  }
+  .date-letter {
+    font-size: 13px;
+    line-height: 16px;
+    text-align: right;
+    align-self: flex-end;
+    margin-bottom: 7px;
+  }
+  .editing-mail {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .editing-mail input[type="checkbox"] + label::after {
+    top: -1px;
+  }
+  .btn-admin-line {
+    align-self: flex-end;
+  }
+  .admin-line-text {
+    font-size: 14px;
+  }
+}

@@ -161,14 +161,12 @@ select {
     float: none;
     width: 95%;
     height: 12rem;
-    margin-right: 0;
-    margin: auto;
-    margin-bottom: 10px;
+    margin: auto auto 10px;
   }
   .content-subtitle {
     margin-top: 5px;
     margin-bottom: 20px;
-  }
+}
   .content-block-text {
     text-align: justify;
   }
