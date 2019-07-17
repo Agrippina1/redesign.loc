@@ -157,7 +157,7 @@ th {
 .comment-block {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  padding: 20px;
+  padding: 10px;
   border-bottom: 2px solid #00297c;
 }
 .comment-block:nth-child(odd) {
@@ -177,23 +177,26 @@ th {
 }
 .photo-author-comment {
   display: block;
-  width: 150px;
-  height: 100px;
+  width: 200px;
+  height: 130px;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
+  margin-bottom: 10px;
+}
+.author-date {
+  min-width: 200px;
 }
 .author-comment-nic,
 .date-comment {
   display: block;
-  width: 150px;
   font-family: "Verdana", "Helvetica", "Arial", sans-serif;
   line-height: 26px;
   text-align: center;
 }
 .author-comment-nic {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
 }
 .date-comment {
@@ -203,15 +206,17 @@ th {
 .name-topic {
   font-family: "Verdana", "Helvetica", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 22px;
   font-weight: bold;
   border-bottom: 1px solid #00297c;
   width: 100%;
-  height: 40px;
+  height: 30px;
+  padding-bottom: 17px;
 }
 .comment-topic-wrapper {
-  margin-left: 180px;
-  margin-top: -95px;
+  padding-right: 5px;
+  padding-top: 10px;
+  margin-left: 235px;
+  margin-top: -90px;
 }
 .quote-author {
   font-family: "Tahoma", "Helvetica", "Arial", sans-serif;
@@ -305,12 +310,13 @@ input[type="checkbox"] + label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-width: 220px;
     height: 55px;
     border-right: 1px solid #00297c;
-    padding-right: 30px;
   }
-  .autor-date {
+  .author-date {
+    min-width: 150px;
+    max-width: 240px;
+    padding-right: 10px;
     margin: auto;
   }
   .photo-author-comment {
@@ -318,10 +324,10 @@ input[type="checkbox"] + label {
     height: 50px;
     background-size: cover;
     border-radius: 6px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .author-comment-nic {
-    font-size: 18px;
+    font-size: 16px;
   }
   .date-comment {
     font-size: 14px;
@@ -341,6 +347,9 @@ input[type="checkbox"] + label {
     font-size: 18px;
   }
   .topic-text {
+    font-family: "Verdana", "Helvetica", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
     padding-bottom: 10px;
   }
   .admin-line input[type="checkbox"] + label:after {
@@ -571,10 +580,13 @@ input[type="checkbox"] + label {
   .author-comment {
     border-right: none;
     background: #d9e2e3;
-    padding: 10px 10px 15px;
+    padding: 10px 0 15px 10px;
     margin-right: 0;
   }
-  .autor-date {
+  .photo-author-comment {
+    margin-right: 15px;
+  }
+  .author-date {
     margin: 0;
   }
   .comment-topic-wrapper {
