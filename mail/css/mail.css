@@ -130,6 +130,7 @@ input[type="checkbox"] + label::after {
 }
 .letter-piece {
   color: #606060;
+  padding-left: 7px;
 }
 .date-letter {
   width: 160px;
@@ -155,6 +156,9 @@ input[type="checkbox"] + label::after {
 
 
 @media (max-width: 1023px) {
+  .btn_in_item {
+    align-self: center;
+  }
   .date-letter {
     text-align: center;
   }
