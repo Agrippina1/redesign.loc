@@ -14,9 +14,6 @@ table {
 td {
   padding: 5px 10px;
 }
-.law-search {
-  margin-bottom: 20px;
-}
 .law {
   text-decoration: underline;
 }
@@ -27,8 +24,8 @@ td {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
-
 .form-group-template {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -60,7 +57,7 @@ td {
   border-bottom: 1px solid #cfcfcf;
   padding: 5px 15px;
   margin-bottom: 7px;
-}
+ }
 .table-search td:nth-child(1) {
   text-align: right;
   vertical-align: top;
