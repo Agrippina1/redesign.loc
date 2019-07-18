@@ -64,6 +64,7 @@
 .btn-admin-complain {
   display: block;
   text-align: right;
+  padding-right: 10px;
   margin-bottom: 20px;
 }
 .btn_in_item {
