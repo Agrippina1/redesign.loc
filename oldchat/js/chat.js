@@ -23,22 +23,19 @@ $(document).ready(function() {
         } else overlay.fadeOut(300);
 
         $(div_id).toggleClass('modal_is_open');
-        $("html,body").animate({scrollTop: $("#sticky").offset().top}, "slow");
+        $("html,body").animate({scrollTop: $("#say_footer").offset().top}, "slow");
     });
 
-    $( window ).resize(function() {
-        if ($(window).width() > 1023) {
-            $('.modal_is_open').removeClass('modal_is_open');
-            $(modal).css('display', 'block');
-            overlay.fadeOut(0);
-            // console.log("<--> " + $(window).width());
-        }
-        else {
-            $(modal).css('display', 'none');
-            overlay.fadeOut(0);
-            // console.log("-><- " + $(window).width());
-        }
+    setInterval(function() {
+        $("#text_in_chat").append("<p class='chat-line'>" + Date() + "</p>");
+        $("html,body").animate({scrollTop: $("#text_end").offset().top}, "slow");
+    }, 5000);
 
-    });
 });
 
+function sayToAll() {
+    $("#text_in_chat").append("<p class='chat-line'><b>Наш текст:</b> " + $("#field-text").val() + "</p>");
+    document.forms['chat_say'].text.value = '';
+    document.forms['chat_say'].text.focus();
+    $("html,body").animate({scrollTop: $("#text_end").offset().top}, "slow");
+}

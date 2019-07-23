@@ -10,10 +10,11 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-  <link rel="manifest" href="../favicon/site.webmanifest">
+  <!--<link rel="manifest" href="../favicon/site.webmanifest">-->
   <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#008000">
   <meta name="msapplication-TileColor" content="#008000">
   <meta name="theme-color" content="#ffffff">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 
   <link rel="stylesheet" href="css/chat.css">
   <link rel="stylesheet" href="css/icon.css">
@@ -93,17 +94,21 @@
       <path d="M19.419 16.090c-0.346 0.67-0.262 1.514 0.265 2.079 0.21 0.226 0.476 0.395 0.768 0.49 0.355 0.115 0.636 0.395 0.751 0.75 0.238 0.725 0.909 1.24 1.7 1.24 0.004 0 0.009 0 0.013-0h-0.001c0.476 0.002 0.955-0.18 1.315-0.54l5.128-5.128c0.694-0.694 0.725-1.832 0.069-2.537-0.206-0.221-0.464-0.389-0.755-0.486l-0.013-0.004c-0.357-0.118-0.632-0.393-0.749-0.742l-0.002-0.008c-0.101-0.304-0.269-0.563-0.489-0.768l-0.001-0.001c-0.565-0.526-1.41-0.61-2.080-0.265l-5.608-5.609c0.345-0.67 0.261-1.514-0.265-2.080-0.206-0.22-0.464-0.389-0.755-0.485l-0.013-0.004c-0.357-0.118-0.633-0.394-0.75-0.743l-0.002-0.008c-0.101-0.304-0.269-0.562-0.489-0.767l-0.001-0.001c-0.704-0.656-1.842-0.626-2.536 0.068l-5.129 5.129c-0.694 0.694-0.725 1.832-0.068 2.537 0.21 0.226 0.476 0.395 0.768 0.49 0.355 0.114 0.636 0.395 0.751 0.75 0.238 0.726 0.909 1.241 1.701 1.241 0.004 0 0.008 0 0.012-0h-0.001c0.294 0 0.59-0.070 0.857-0.207l1.578 1.578-14.638 14.638c-0.348 0.349-0.564 0.832-0.564 1.364s0.215 1.015 0.564 1.364l-0-0c0.376 0.376 0.87 0.564 1.364 0.564s0.989-0.188 1.365-0.564l14.639-14.639 1.302 1.303zM28.759 13.066c0.326 0.35 0.305 0.92-0.046 1.27l-5.128 5.128c-0.351 0.351-0.92 0.372-1.27 0.046-0.11-0.101-0.194-0.229-0.242-0.374l-0.002-0.006c-0.059-0.18-0.134-0.336-0.227-0.48l0.005 0.008 6.058-6.058c0.146 0.093 0.304 0.168 0.471 0.222 0.151 0.050 0.279 0.134 0.38 0.243l0.001 0.001zM26.796 11.102c0.11 0.102 0.194 0.23 0.242 0.375l0.002 0.006c0.054 0.168 0.13 0.326 0.222 0.472l-6.058 6.058c-0.135-0.088-0.291-0.163-0.456-0.218l-0.015-0.004c-0.151-0.050-0.28-0.134-0.381-0.243l-0.001-0.001c-0.325-0.35-0.305-0.919 0.046-1.27l5.129-5.128c0.171-0.172 0.408-0.278 0.67-0.278h0c0.218 0 0.434 0.077 0.6 0.231zM10.39 7.585c-0.325-0.35-0.305-0.92 0.046-1.27l5.128-5.129c0.171-0.171 0.408-0.277 0.67-0.277 0 0 0 0 0 0h-0c0.003-0 0.006-0 0.009-0 0.39 0 0.72 0.254 0.834 0.606l0.002 0.006c0.054 0.168 0.13 0.326 0.222 0.472l-6.059 6.057c-0.136-0.088-0.292-0.163-0.457-0.218l-0.015-0.004c-0.151-0.050-0.279-0.134-0.379-0.243l-0.001-0.001zM12.353 9.548c-0.11-0.101-0.193-0.229-0.241-0.374l-0.002-0.006c-0.059-0.18-0.134-0.336-0.227-0.48l0.005 0.008 6.058-6.058c0.145 0.092 0.303 0.168 0.47 0.222 0.151 0.049 0.28 0.133 0.381 0.242l0.001 0.001c0.326 0.35 0.305 0.92-0.046 1.27l-5.128 5.13c-0.351 0.35-0.921 0.37-1.27 0.045zM19.148 5.268l5.484 5.485-4.629 4.63-5.485-5.485 4.63-4.63zM2.833 28.781c-0.181 0.167-0.424 0.27-0.691 0.27-0.562 0-1.018-0.456-1.018-1.018 0-0.267 0.102-0.509 0.27-0.691l-0.001 0.001 14.639-14.64 1.439 1.44-14.64 14.637zM31.815 29.6c0-0 0-0.001 0-0.001 0-0.104-0.035-0.2-0.094-0.277l0.001 0.001-1.856-2.423v-1.108c0-0.252-0.204-0.456-0.456-0.456v0h-12.77c-0.251 0.001-0.455 0.204-0.455 0.456 0 0 0 0 0 0v0 1.108l-1.856 2.424c-0.058 0.076-0.093 0.172-0.093 0.276 0 0.001 0 0.002 0 0.002v-0 1.943c0 0.252 0.203 0.456 0.455 0.456h16.669c0.252 0 0.456-0.204 0.456-0.456v0l-0.001-1.943zM17.097 26.247h11.857v0.35h-11.857v-0.35zM16.866 27.51h12.319l1.251 1.635h-14.821l1.25-1.635zM15.147 31.088v-1.031h15.757v1.030h-15.757z"></path>
       <path d="M22.663 10.988c0.082 0.083 0.196 0.134 0.323 0.134s0.24-0.051 0.322-0.134l0-0c0.083-0.083 0.134-0.197 0.134-0.322s-0.051-0.24-0.134-0.322l-3.752-3.751c-0.083-0.083-0.197-0.134-0.323-0.134-0.252 0-0.456 0.204-0.456 0.456 0 0.126 0.051 0.24 0.134 0.322v0l3.752 3.751z"></path>
     </symbol>
+    <symbol id="icon-say" viewBox="0 0 32 32">
+      <title>Сказать</title>
+      <path d="M31.989 15.991l-14.584-15.991v9.579h-1.694c-4.197 0-8.142 1.634-11.11 4.602s-4.602 6.913-4.602 11.11v6.709l2.799-3.067c3.744-4.102 9.058-6.475 14.607-6.529v9.578zM1.875 27.179v-1.888c0-3.696 1.439-7.171 4.053-9.784s6.088-4.053 9.784-4.053h3.569v-6.615l10.171 11.152-10.171 11.153v-6.615h-1.682c-5.919 0-11.611 2.416-15.723 6.65z"></path>
+    </symbol>
   </defs>
 </svg>
 
 <div class="container color_link_hover">
   <div id="sticky" class="sticky-element">
-    <div class="sticky-anchor"></div>
     <div class="sticky-content">
       <div class="logo-header color_main_fon color_accent header">
         <a href="#menu_main" class="main-nav__toggle modal_open" role="button">
           <svg class="icon-svg color_icons icon-menu_item"><use xlink:href="#icon-chaters"></use></svg>
           Открыть меню</a>
+        <span class="number-user">54</span>
         <div class="logo-link-wrapper">
           <a href="index.html" class="logo-img" title="Disability.ru">
             <picture>
@@ -114,472 +119,395 @@
             </picture>
           </a>
         </div>
-        <!--<button class="mail-input " type="button">-->
-        <!--<svg class="icon-svg color_icons icon-mail_bw"><use xlink:href="../site/icons/id_icons.svg#icon-mail_bw"></use></svg>-->
-        <!--Войти в почту</button>-->
-        <!--<a href="#menu_user" class="nav-user__toggle modal_open" type="button">-->
-        <!--<svg class="icon-svg color_icons icon-menu_user"><use xlink:href="../site/icons/id_icons.svg#icon-menu_user"></use></svg>-->
-        <!--Открыть меню</a>-->
-        <div class="input-user">
-          <a href="#menu_enter" class="input-links modal_open" role="button">
-            <div class="input-only">
-              <span class="link-input">Войти</span>
-              <span class="link-registration">Регистрация</span>
-            </div>
-            <svg class="icon-svg color_icons icon-login"><use xlink:href="../site/icons/id_icons.svg#icon-login"></use></svg>
+
+        <div class="input-settings">
+          <a href="#menu_settings" class="input-links modal_open" role="button">
+            <svg class="icon-svg color_icons icon-login"><use xlink:href="#icon-settings"></use></svg>
           </a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="all-content">
-    <div class="content-right">
-      <div class="content-right-wrapper">
-        <div class="nav-wrapper">
-          <div id="menu_main" class="main-nav nav-block color_border color_menu_fon modal-main-show modal_div">
-            <div class="main-nav-wrapper" aria-label="Разделы" role="navigation">
-              <a name="menu_items"></a><h3 id="group_menu_main" class="menu-title color_main_fon color_accent nav_border">Разделы</h3>
-              <ul class="main-nav-items nav" role="menu" aria-labelledby="group_menu_main">
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-news_bw"></use></svg>
-                    <span class="nav_item-caption">Новости</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-story_bw"></use></svg>
-                    <span class="nav_item-caption">Статьи</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-links_bw"></use></svg>
-                    <span class="nav_item-caption">Ссылки</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-org_bw"></use></svg>
-                    <span class="nav_item-caption">Организации</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-work_bw"></use></svg>
-                    <span class="nav_item-caption">Биржа труда</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-shopping_bw"></use></svg>
-                    <span class="nav_item-caption">Товары-услуги</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-agency_bw"></use></svg>
-                    <span class="nav_item-caption">Знакомства</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-blog_bw"></use></svg>
-                    <span class="nav_item-caption">Дневники</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-forum_color"></use></svg>
-                    <span class="nav_item-caption nav-active">Форум</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-chat_bw"></use></svg>
-                    <span class="nav_item-caption">Чат</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-humor_bw"></use></svg>
-                    <span class="nav_item-caption">Юмор</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-guest_bw"></use></svg>
-                    <span class="nav_item-caption">Гостевая книга</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-partners_bw"></use></svg>
-                    <span class="nav_item-caption">Наши партнеры</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-map_bw"></use></svg>
-                    <span class="nav_item-caption">Карта портала</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-faq_bw"></use></svg>
-                    <span class="nav_item-caption">Вопрос-ответ</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-write_adm_bw"></use></svg>
-                    <span class="nav_item-caption mail-admin">Написать админу</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div id="menu_user" class="nav-user nav-block color_border color_menu_fon modal-user-show modal_div">
-            <div class="nav-user-wrapper" aria-label="Пользователям" role="navigation">
-              <a name="menu_users"></a><h3 id="group_menu_user" class="menu-title color_main_fon color_accent nav_border">Пользователям</h3>
-              <a href="#" class="user-name color_font">NicUserUnick</a>
-              <ul class="nav" role="menu" aria-labelledby="group_menu_user">
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-mail_bw"></use></svg>
-                    <span class="nav_item-caption">Почта</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-wall_bw"></use></svg>
-                    <span class="nav_item-caption">Отзывы</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-search_bw"></use></svg>
-                    <span class="nav_item-caption">Пользователи</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-dr_bw"></use></svg>
-                    <span class="nav_item-caption">Дни рождения</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-online_bw"></use></svg>
-                    <span class="nav_item-caption">На портале</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-show_new_bw"></use></svg>
-                    <span class="nav_item-caption">Новые</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-edit_bw"></use></svg>
-                    <span class="nav_item-caption">Настройки</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-rules_bw"></use></svg>
-                    <span class="nav_item-caption">Соглашение</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-politika_konf_bw"></use></svg>
-                    <span class="nav_item-caption">Политика</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-exit_bw"></use></svg>
-                    <span class="nav_item-caption">Выход</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="decor"></div>
-            <div class="nav-admin-wrapper" aria-label="Администрация" role="navigation">
-              <a name="menu_admin"></a><h3 id="group_menu_admin" class="menu-title color_main_fon color_accent nav_border">Администрация</h3>
-              <ul class="nav" role="menu" aria-labelledby="group_menu_admin">
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-marker"></use></svg>
-                    <span class="nav_item-caption">Новые данные</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-marker"></use></svg>
-                    <span class="nav_item-caption">Почта админа</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-marker"></use></svg>
-                    <span class="nav_item-caption">Юзеры</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-marker"></use></svg>
-                    <span class="nav_item-caption">Online</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-marker"></use></svg>
-                    <span class="nav_item-caption">Модераторы</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-marker"></use></svg>
-                    <span class="nav_item-caption">Новости</span>
-                  </a>
-                </li>
-                <li class="main-nav_item" role="menuitem">
-                  <a class="nav_item" href="#">
-                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-marker"></use></svg>
-                    <span class="nav_item-caption">Реклама</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="modal-content">
-          <div id="menu_enter" class="nav-block registration-block color_border color_menu_fon modal-content-show modal_div">
-            <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
-              Закрыть</button>
-            <div class="registration-wrapper" aria-label="Вход/регистрация" role="navigation">
-              <div class="menu-title-wrap">
-                <a name="menu_registration"></a><h3 class="menu-title color_main_fon color_accent nav_border">Пользователям</h3>
+    <div class="nav-wrapper">
+      <div id="menu_main" class="chat-online nav-block color_border color_menu_fon modal-main-show modal_div">
+        <div class="chat-online-wrapper" aria-label="Разделы" role="navigation">
+          <a name="menu_items"></a>
+          <h3 id="group_menu_main" class="menu-title color_main_fon color_accent">Сейчас в чате</h3>
+          <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
+            Закрыть</button>
+          <ul class="chat-online-items nav" role="menu" aria-labelledby="group_menu_main">
+            <li class="chat-online-item" role="menuitem">
+              <div class="user-online">
+                <a href="#" class="user-online">
+                  <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
+                </a>
+                <a href="#">
+                  <span class="nick-chatter">витаминка01234567890</span>
+                </a>
               </div>
-              <div class="registration">
-                <p class="registration-title">
-                  <svg class="icon-svg icon-svg-menu icon-svg-registration color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-register_bw"></use></svg>
-                  <span class="registration-text">Регистрация</span>
-                </p>
-                <form class="form-registration" action="index.html" method="post">
-                  <div class="form-registration-wrapper">
-                    <div class="form-group-wrapper">
-                      <div class="form-group">
-                        <label class="form-label" for="login-field">Логин:</label>
-                        <input class="form-field" id="login-field" type="text" name="login" required>
-                      </div>
-                      <div class="form-group">
-                        <label class="form-label" for="password-field">Пароль:</label>
-                        <input class="form-field" id="password-field" type="password" name="password-field" required>
-                      </div>
-                      <div class="form-group-checkbox">
-                        <div class="form-group form-group-blind">
-                          <input id="blind-field" type="checkbox" name="blind">
-                          <label for="blind-field">Для незрячих</label>
-                        </div>
-                        <div class="form-group">
-                          <input id="memorize-field" type="checkbox" name="memorize">
-                          <label for="memorize-field">Запомнить</label>
-                        </div>
-                      </div>
-                    </div>
+              <div class="user-online">
+                <a href="#menu_complain" class="modal_open" role="button">
+                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
+                    xlink:href="#icon-complain"></use></svg>
+                </a>
+                <a href="#">
+                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="chat-online-item" role="menuitem">
+              <div class="user-online">
+                <a href="#" class="user-online">
+                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
+                </a>
+                <a href="#">
+                  <span class="nick-chatter">Валидол</span>
+                </a>
+              </div>
+              <div class="user-online">
+                <a href="#menu_complain" class="modal_open" role="button">
+                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
+                    xlink:href="#icon-complain"></use></svg>
+                </a>
+                <a href="#">
+                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="chat-online-item" role="menuitem">
+              <div class="user-online">
+                <a href="#" class="user-online">
+                  <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
+                </a>
+                <a href="#">
+                  <span class="nick-chatter">Радуга</span>
+                </a>
+              </div>
+              <div class="user-online">
+                <a href="#menu_complain" class="modal_open" role="button">
+                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
+                    xlink:href="#icon-complain"></use></svg>
+                </a>
+                <a href="#">
+                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="chat-online-item" role="menuitem">
+              <div class="user-online">
+                <a href="#" class="user-online">
+                  <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
+                </a>
+                <a href="#">
+                  <span class="nick-chatter">Amber</span>
+                </a>
+              </div>
+              <div class="user-online">
+                <a href="#menu_complain" class="modal_open" role="button">
+                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
+                    xlink:href="#icon-complain"></use></svg>
+                </a>
+                <a href="#">
+                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="chat-online-item" role="menuitem">
+              <div class="user-online">
+                <a href="#" class="user-online">
+                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
+                </a>
+                <a href="#">
+                  <span class="nick-chatter">bizon</span>
+                </a>
+              </div>
+              <div class="user-online">
+                <a href="#menu_complain" class="modal_open" role="button">
+                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
+                    xlink:href="#icon-complain"></use></svg>
+                </a>
+                <a href="#">
+                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="chat-online-item" role="menuitem">
+              <div class="user-online">
+                <a href="#" class="user-online">
+                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
+                </a>
+                <a href="#">
+                  <span class="nick-chatter">Wishmaster</span>
+                </a>
+              </div>
+              <div class="user-online">
+                <a href="#menu_complain" class="modal_open" role="button">
+                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
+                    xlink:href="#icon-complain"></use></svg>
+                </a>
+                <a href="#">
+                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="chat-online-item" role="menuitem">
+              <div class="user-online">
+                <a href="#" class="user-online">
+                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
+                </a>
+                <a href="#">
+                  <span class="nick-chatter">Вальтер</span>
+                </a>
+              </div>
+              <div class="user-online">
+                <a href="#menu_complain" class="modal_open" role="button">
+                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
+                    xlink:href="#icon-complain"></use></svg>
+                </a>
+                <a href="#">
+                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="chat-online-item" role="menuitem">
+              <div class="user-online">
+                <a href="#" class="user-online">
+                  <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
+                </a>
+                <a href="#">
+                  <span class="nick-chatter">MadamPerdu</span>
+                </a>
+              </div>
+              <div class="user-online">
+                <a href="#menu_complain" class="modal_open" role="button">
+                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
+                    xlink:href="#icon-complain"></use></svg>
+                </a>
+                <a href="#">
+                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
+                </a>
+              </div>
+            </li>
+            <li class="chat-online-item" role="menuitem">
+              <div class="user-online">
+                <a href="#" class="user-online">
+                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
+                </a>
+                <a href="#">
+                  <span class="nick-chatter">Crow</span>
+                </a>
+              </div>
+              <div class="user-online">
+                <a href="#menu_complain" class="modal_open" role="button">
+                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
+                    xlink:href="#icon-complain"></use></svg>
+                </a>
+                <a href="#">
+                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="modal-content">
+      <div id="menu_settings"
+           class="nav-block registration-block registration-block-settings color_menu_fon modal-content-show modal_div">
+        <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
+          Закрыть</button>
+        <div class="registration-wrapper" aria-label="Вход/регистрация" role="navigation">
+          <div class="menu-title-wrap">
+            <a name="menu_registration"></a><h3 class="menu-title color_main_fon color_accent nav_border">Настройки
+            цвета
+          </h3>
+          </div>
+          <div class="registration">
+            <form class="form-registration" action="index.html" method="post">
+              <div class="form-group-wrapper">
+                <div class="selects-template-wrapper">
+                  <div class="select-group-template">
+                    <p class="font-form-template">Ник:</p>
+                    <select name="theme">
+                      <option value="">Хмурое небо</option>
+                      <option value="">Чисто золотой</option>
+                      <option value="">Платиновый</option>
+                    </select>
                   </div>
-                  <div class="btn-wrapper">
-                    <input class="btn btn-registration color_main_fon color_accent header" type="submit" name="button" value="Войти">
+                  <div class="select-group-template">
+                    <p class="font-form-template">Текст:</p>
+                    <select name="theme">
+                      <option value="">Мурена</option>
+                      <option value="">Чисто золотой</option>
+                      <option value="">Платиновый</option>
+                    </select>
                   </div>
-                </form>
-                <div class="registration-links">
-                  <a class="main-nav_item registration-link" href="#">Вспомнить пароль</a>
-                  <a class="main-nav_item registration-link" href="#">Соглашение</a>
-                  <a class="main-nav_item registration-link" href="#">Политика</a>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="nav-block-wrapper">
-          <div class="nav-block color_border color_menu_fon" aria-label="Поиск" role="complementary">
-            <a name="menu_search"></a><h3 class="menu-title color_main_fon color_accent nav_border">Поиск на портале</h3>
-            <form class="form" action="index.html" method="post">
-              <div class="form-group form-search">
-                <input class="form-field" id="search-field" type="text" name="search-name">
-                <label for="search-field"></label>
-              </div>
               <div class="btn-wrapper">
-                <input class="btn color_main_fon color_accent header" type="submit" name="button" value="Поиск">
+                <input class="btn btn-registration" type="submit" name="button" value="Войти">
               </div>
             </form>
           </div>
-          <div class="nav-block color_border color_menu_fon" aria-label="Статистика" role="complementary">
-            <a name="menu_statistic"></a><h3 class="menu-title color_main_fon color_accent nav_border">Статистика</h3>
-            <p class="statistics">Друзей <span>8963</span></p>
-            <p class="statistics-online">Сейчас на портале</p>
-            <p class="statistics">Друзей <span>32</span></p>
-            <p class="statistics">В чате <span>9</span></p>
-            <p class="statistics">Гостей <span>36</span></p>
-          </div>
         </div>
-
-      </div>
-      <div class="qr-code" aria-label="Счетчики" role="contentinfo">
-        <script type="text/javascript">
-            document.write("<img class='qr-code-img' src='https://chart.googleapis.com/chart?cht=qr&chs=150x150&choe=UTF-8&chl="+location.href+"' title='QR Barcode - адрес страницы для мобильных устройств' alt='QR Barcode - адрес страницы для мобильных устройств'>");
-        </script>
-        <img class="qr-code-img" src="../site/pics/barcode.png" width="89" height="122" alt="Статистика">
       </div>
     </div>
-    <div class="content-left">
 
+  <div class="modal-content">
+    <div id="menu_complain" class="nav-block registration-block color_menu_fon modal-content-show modal_div">
+      <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
+        Закрыть</button>
+      <div class="registration-wrapper" aria-label="Вход/регистрация" role="navigation">
+        <div class="menu-title-wrap">
+          <a name="menu_registration"></a><h3 class="menu-title color_main_fon color_accent nav_border">Пожаловаться
+        </h3>
+        </div>
+        <div class="registration">
+          <form class="form-registration" action="index.html" method="post">
+            <div class="message">
+              <label class="font-form-template" for="message-template-field">Укажите причину:</label>
+              <textarea class="message-field-template" id="message-template-field" name="message-template" rows="4">Они все какашки :( неотзывчивые.</textarea>
+              <span class="input-refinement">Лог чата за 10 минут будет отправлен автоматически</span>
+            </div>
+            <div class="btn-wrapper">
+              <input class="btn btn-registration btn-chat-complain" type="submit" name="button" value="Отправить">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
       <!--Основной контент-->
       <div id="say_footer">
         <!--Форма ввода текста-->
+        <footer class="footer-content">
+          <div class="footer-wrap color_main_fon color_accent footer"></div>
+          <form action="#" name="chat_say" onsubmit="sayToAll();">
+            <div class="footer-text">
+              <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-smiles"></use></svg>
 
+              <input class="input-message" id="field-text" type="text" name="text" maxlength="255" autocomplete="off" value="Всем привет!">
+              <label for="field-text"></label>
+              <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-private"></use></svg>
+            </div>
+          </form>
+        </footer>
       </div>
 
-      <div class="main-content color_content_fon color_main_content" aria-label="содержание" role="main">
-        <div class="breadcrumbs color_link_hover">
-          <h1 class="color_link_hover">
-            <a class="breadcrumbs-item" href="https://www.disability.ru" aria-label="Disability.ru">
-              <svg class="icon-svg icon-svg-breadcrumbs color_icons"><use
-                      xlink:href="../site/icons/id_icons.svg#icon-navigator"></use></svg>
-            </a>
-            <a name="navigator" class="breadcrumbs-item" href="#">/ Товары и услуги</a>
-          </h1>
-        </div>
-
-        <a name="content"></a>
-        <div class="m-c-w">
-          <div id="text_in_chat">
-            <font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, это люди как люди, зачем они это делают, у них столько же мозгов сколько у этой вороны?</font><br>
-            <font color='#000000'><b>Валидол:</b></font> <font color='#000000' >Радуга, и обезьянки есть такие. есть одно видео.</font><br>
-            <font color='#aa0000'><b>Радуга:</b></font> <font color='#0000aa' >Валидол, я не очень то вникаю в орнитологию<img src='https://www.disability.ru/oldchat/pics/smiley1.gif' width=15 height=15 border=0 alt='смех'></font><br>
-            <font color='#000000' size='-1'>в чат входит Amber 21:51:15</font><br>
-            <font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >здрасти!</font><br>
-            <font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, хоть чем то они должны от неё отличаться</font><br>
-            <font color='#000077'><b>bizon:</b></font> <font color='#000000' >Amber, привет</font><br>
-            <font color='#aa0000'><b>Радуга:</b></font> <font color='#0000aa' >Amber, привет)</font><br>
-            <font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Amber, привет Женя )</font><br>
-            <font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >витаминка, привет!<img src='https://www.disability.ru/oldchat/pics/new_33.gif' width=37 height=15 border=0 alt='обниманцы'></font><br>
-            <font color='#000000'><b>Валидол:</b></font> <font color='#000000' >витаминка, зачем ты кормишь кормом кошек и собачек? разве ты незнаешь что это небезопасная пища для них...</font><br>
-            <font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >Радуга, bizon, приветы))</font><br>
-            <font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, они же с-ка ЛЮДИ</font><br>
-            <font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, Лёша х-ню не городи ничем не прикрытую уже</font><br>
-            <font color='#005500'><b>Вальтер:</b></font> <font color='#009900' >Amber,  <img src='https://www.disability.ru/oldchat/pics/new_33.gif' width=37 height=15 border=0 alt='обниманцы'> <img src='https://www.disability.ru/oldchat/pics/hlop.gif' width=38 height=15 border=0 alt='ладушка'></font><br>
-            <font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >Вальтер, привет!</font><br>
-            <font color='#0000aa'><b>Wishmaster:</b></font> <font color='#000077' >Amber, привет</font><br>
-            <font color='#000000'><b>Валидол:</b></font> <font color='#000000' >витаминка, Оксана. пища для кошек и собак это - гмо и гмо самых низких качеств. туда добавляют химию.. этого ты надеюсь небудешь отрицать.. тебе лень готовить..</font><br>
-            <font color='#aa0000'><b>Радуга:</b></font> <font color='#0000aa' >Валидол, корм же разных классов бывает, с разными ингридиентами</font><br>
-            <font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >Wishmaster, привет, Вов</font><br>
-            <font color='#000000' size='-1'>MadamPerdu теряет связь с чатом 21:55:09</font><br>
-            <font color='#0000aa'><b>Wishmaster:</b></font> <font color='#000077' >а я люблю гмо</font><br>
-            <font color='#aa0000'><b>Радуга:</b></font> <font color='#0000aa' >Валидол, я для своих премиум класса покупаю</font><br>
-            <font color='#0000aa'><b>Wishmaster:</b></font> <font color='#000077' >хлебом не корми, дай гмо на ночь</font><br>
-            <font color='#000000' size='-1'>из чата выходит bizon 21:55:28</font><br>
-            <font color='#000000'><b>Валидол:</b></font> <font color='#000000' >Радуга, я незнаю какие нужны доказательства что доказать что любой корм для животныз это химия полюбому.</font><br>
-            <font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, решил красивым быть? )) ну-ну, я понаблюдаю, давай )</font><br>
-            <font color='#aa0000'><b>Радуга:</b></font> <font color='#0000aa' >Валидол, так счас мясо и курица тоже химия)) а мы их едим<img src='https://www.disability.ru/oldchat/pics/wht.gif' width=15 height=16 border=0 alt='сомнение'></font><br>
-            <font color='#000000'><b>Валидол:</b></font> <font color='#000000' >витаминка, красота тут нипричём. ты ругаешь других, себя оправдываешь</font><br>
-            <font color='#005566'><b>Crow:</b></font> <font color='#444444' >Валидол, да норм, он не резкий был.. его где-то раздисперсило по пути</font><br>
-            <font color='#000000' size='-1'>в чат возвращается Радуга 21:59:10</font><br>
-            <font color='#000000'><b>Валидол:</b></font> <font color='#000000' >витаминка, Радуга, кошки на корм как наркоманы на наркотик. вы этого незамечали? ну же..<img src='https://www.disability.ru/oldchat/pics/1112202173.gif' width=24 height=24 border=0 alt='никогда'></font><br>
-            <font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, ты чё довязался ко мне? думаешь твоё тплохо из за моего хорошо? ) давай договоримся на вечный игнор, ок? взаимно? уважим друг друга?</font><br>
-            <font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >Валидол, так если по чуть-чуть кормить, и ты нариком станешь))</font><br>
-            <font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, по рукам?</font><br>
-            <font color='#000000'><b>Валидол:</b></font> <font color='#000000' >Amber, дело в том что посде корма - животные другую пищу перестают воспринимать <img src='https://www.disability.ru/oldchat/pics/fiona_01.gif' width=61 height=35 border=0 alt='собака'></font><br>
-            <font color='#005566'><b>Crow:</b></font> <font color='#444444' >Вальтер, блин, я тебя с Валидолом перепутал</font><br>
-            <font color='#000000' size='-1'>в чат входит brother 22:01:24</font><br>
-            <font color='#005500'><b>Вальтер:</b></font> <font color='#009900' >Wishmaster, молодец</font><br>
-            <font color='#000000'><b>Валидол:</b></font> <font color='#000000' >витаминка, мне непонятен твой гнев. иначе это неназвать. но ты поступай как ъхочешь. я игнорить никого несобираюсь..</font><br>
-            <font color='#005500'><b>Вальтер:</b></font> <font color='#009900' >Crow, в смысле?</font><br>
-            <font color='#0000aa'><b>Wishmaster:</b></font> <font color='#000077' >Вальтер, в чем?)</font><br>
-            <font color='#000000'><b>brother:</b></font> <font color='#000000' >Здесьте мордасте</font><br>
-            <font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >Валидол, ну не знаю у меня кот ел всё)) лиш бы кормили, а вкусненькое, типа вискаса желейного, не очень то и уважал</font><br>
-            <font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >brother, привет</font><br>
-            <font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, значит по рукам. уважаю мужские поступки.</font><br>
-            <font color='#005566'><b>Crow:</b></font> <font color='#444444' >Вальтер, в списке, не туда жамкнул</font><br>
-            <font color='#0000aa'><b>Wishmaster:</b></font> <font color='#000077' >brother, привет</font><br>
-            <font color='#005500'><b>Вальтер:</b></font> <font color='#009900' >Wishmaster, Amber, в гмо</font><br>
-          </div>
-      </div>
+  <div class="main-content color_content_fon color_main_content" aria-label="содержание" role="main">
+    <a name="content"></a>
+    <div class="m-c-w">
+      <div id="text_in_chat"  class="chat-text">
+        <p class="chat-line"><font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, это
+          люди как люди,
+          зачем они это делают, у них столько же мозгов сколько у этой вороны зачем они это делают, у них столько
+          же мозгов сколько у этой вороны зачем они это делают, у них столько же мозгов сколько у этой вороны?</font></p>
+        <p class="chat-line"><font color='#000000'><b>Валидол:</b></font> <font color='#000000' >Радуга, и обезьянки
+          есть такие. есть одно видео.</font></p>
+        <p class="chat-line"><font color='#aa0000'><b>Радуга:</b></font> <font color='#0000aa' >Валидол, я не очень
+        то вникаю в орнитологию<img src='https://www.disability.ru/oldchat/pics/smiley1.gif' width=15 height=15
+                                    border=0 alt='смех'></font></p>
+        <p class="chat-line"><font color='#000000' size='-1'>в чат входит Amber 21:51:15</font></p>
+        <p class="chat-line"><font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >здрасти!</font></p>
+        <p class="chat-line"><font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, хоть чем
+          то они должны от неё отличаться</font></p>
+        <p class="chat-line"><font color='#000077'><b>bizon:</b></font> <font color='#000000' >Amber,
+          привет</font></p>
+        <p class="chat-line"><font color='#aa0000'><b>Радуга:</b></font> <font color='#0000aa' >Amber,
+          привет)</font></p>
+        <p class="chat-line"><font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Amber, привет Женя
+          )</font></p>
+        <p class="chat-line"><font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >витаминка, привет!<img
+          src='https://www.disability.ru/oldchat/pics/new_33.gif' width=37 height=15 border=0 alt='обниманцы'></font></p>
+        <p class="chat-line"><font color='#000000'><b>Валидол:</b></font> <font color='#000000' >витаминка, зачем ты
+          кормишь кормом кошек и собачек? разве ты незнаешь что это небезопасная пища для них...</font></p>
+        <p class="chat-line"><font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >Радуга, bizon,
+          приветы))</font></p>
+        <p class="chat-line"><font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, они же
+          с-ка ЛЮДИ</font></p>
+        <p class="chat-line"><font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, Лёша х-ню
+          не городи ничем не прикрытую уже</font></p>
+        <p class="chat-line"><font color='#005500'><b>Вальтер:</b></font> <font color='#009900' >Amber,  <img
+        src='https://www.disability.ru/oldchat/pics/new_33.gif' width=37 height=15 border=0 alt='обниманцы'> <img
+          src='https://www.disability.ru/oldchat/pics/hlop.gif' width=38 height=15 border=0 alt='ладушка'></font></p>
+        <p class="chat-line"><font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >Вальтер,
+          привет!</font></p>
+        <p class="chat-line"><font color='#0000aa'><b>Wishmaster:</b></font> <font color='#000077' >Amber,
+          привет</font></p>
+        <p class="chat-line"><font color='#000000'><b>Валидол:</b></font> <font color='#000000' >витаминка, Оксана.
+        пища для кошек и собак это - гмо и гмо самых низких качеств. туда добавляют химию.. этого ты надеюсь небудешь
+          отрицать.. тебе лень готовить..</font></p>
+        <p class="chat-line"><font color='#aa0000'><b>Радуга:</b></font> <font color='#0000aa' >Валидол, корм же
+          разных классов бывает, с разными ингридиентами</font></p>
+        <p class="chat-line"><font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >Wishmaster, привет,
+          Вов</font></p>
+        <p class="chat-line"><font color='#000000' size='-1'>MadamPerdu теряет связь с чатом 21:55:09</font></p>
+        <p class="chat-line"><font color='#0000aa'><b>Wishmaster:</b></font> <font color='#000077' >а я люблю
+          гмо</font></p>
+        <p class="chat-line"><font color='#aa0000'><b>Радуга:</b></font> <font color='#0000aa' >Валидол, я для своих
+          премиум класса покупаю</font></p>
+        <p class="chat-line"><font color='#0000aa'><b>Wishmaster:</b></font> <font color='#000077' >хлебом не корми,
+          дай гмо на ночь</font></p>
+        <p class="chat-line"><font color='#000000' size='-1'>из чата выходит bizon 21:55:28</font></p>
+        <p class="chat-line"><font color='#000000'><b>Валидол:</b></font> <font color='#000000' >Радуга, я незнаю
+          какие нужны доказательства что доказать что любой корм для животныз это химия полюбому.</font></p>
+        <p class="chat-line"><font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, решил
+          красивым быть? )) ну-ну, я понаблюдаю, давай )</font></p>
+        <p class="chat-line"><font color='#aa0000'><b>Радуга:</b></font> <font color='#0000aa' >Валидол, так счас
+        мясо и курица тоже химия)) а мы их едим<img src='https://www.disability.ru/oldchat/pics/wht.gif' width=15
+                                                    height=16 border=0 alt='сомнение'></font></p>
+        <p class="chat-line"><font color='#000000'><b>Валидол:</b></font> <font color='#000000' >витаминка, красота
+          тут нипричём. ты ругаешь других, себя оправдываешь</font></p>
+        <p class="chat-line"><font color='#005566'><b>Crow:</b></font> <font color='#444444' >Валидол, да норм, он не
+          резкий был.. его где-то раздисперсило по пути</font></p>
+        <p class="chat-line"><font color='#000000' size='-1'>в чат возвращается Радуга 21:59:10</font></p>
+        <p class="chat-line"><font color='#000000'><b>Валидол:</b></font> <font color='#000000' >витаминка, Радуга,
+        кошки на корм как наркоманы на наркотик. вы этого незамечали? ну же..<img
+            src='https://www.disability.ru/oldchat/pics/1112202173.gif' width=24 height=24 border=0 alt='никогда'></font></p>
+        <p class="chat-line"><font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, ты чё
+        довязался ко мне? думаешь твоё тплохо из за моего хорошо? ) давай договоримся на вечный игнор, ок? взаимно?
+          уважим друг друга?</font></p>
+        <p class="chat-line"><font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >Валидол, так если по
+          чуть-чуть кормить, и ты нариком станешь))</font></p>
+        <p class="chat-line"><font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, по
+          рукам?</font></p>
+        <p class="chat-line"><font color='#000000'><b>Валидол:</b></font> <font color='#000000' >Amber, дело в том
+        что посде корма - животные другую пищу перестают воспринимать <img
+            src='https://www.disability.ru/oldchat/pics/fiona_01.gif' width=61 height=35 border=0 alt='собака'></font></p>
+        <p class="chat-line"><font color='#005566'><b>Crow:</b></font> <font color='#444444' >Вальтер, блин, я тебя с
+          Валидолом перепутал</font></p>
+        <p class="chat-line"><font color='#000000' size='-1'>в чат входит brother 22:01:24</font></p>
+        <p class="chat-line"><font color='#005500'><b>Вальтер:</b></font> <font color='#009900' >Wishmaster,
+          молодец</font></p>
+        <p class="chat-line"><font color='#000000'><b>Валидол:</b></font> <font color='#000000' >витаминка, мне
+        непонятен твой гнев. иначе это неназвать. но ты поступай как ъхочешь. я игнорить никого несобираюсь.
+          .</font></p>
+        <p class="chat-line"><font color='#005500'><b>Вальтер:</b></font> <font color='#009900' >Crow, в
+          смысле?</font></p>
+        <p class="chat-line"><font color='#0000aa'><b>Wishmaster:</b></font> <font color='#000077' >Вальтер, в
+          чем?)</font></p>
+        <p class="chat-line"><font color='#000000'><b>brother:</b></font> <font color='#000000' >Здесьте
+          мордасте</font></p>
+        <p class="chat-line"><font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >Валидол, ну не знаю у
+          меня кот ел всё)) лиш бы кормили, а вкусненькое, типа вискаса желейного, не очень то и уважал</font></p>
+        <p class="chat-line"><font color='#aa0000'><b>Amber:</b></font> <font color='#770000' >brother,
+          привет</font></p>
+        <p class="chat-line"><font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, значит по
+          рукам. уважаю мужские поступки.</font></p>
+        <p class="chat-line"><font color='#005566'><b>Crow:</b></font> <font color='#444444' >Вальтер, в списке, не
+          туда жамкнул</font></p>
+        <p class="chat-line"><font color='#0000aa'><b>Wishmaster:</b></font> <font color='#000077' >brother,
+          привет</font></p>
+        <p class="chat-line"><font color='#005500'><b>Вальтер:</b></font> <font color='#009900' >Wishmaster, Amber, в
+          гмо</font></p>
       </div>
 
     </div>
+    <div id="text_end"></div>
   </div>
 
-  <footer class="footer-content">
-    <div class="footer-top color_main_fon color_accent footer">
-      <p class="copyright">Copyright &copy; 2002</p>
-    </div>
-    <a name="menu_alt"></a><div class="nav-footer color_menu_fon" aria-label="Дополнительное меню" role="complementary">
-    <ul class="nav-footer_items">
-      <li class="nav-footer_item">
-        <a href="#">Новости</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Статьи</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Ссылки</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Организации</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Биржа труда</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Товары-услуги</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Знакомства</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Дневники</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Форум</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Чат</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Юмор</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Гостевая книга</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Наши партнеры</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Карта портала</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Вопрос-ответ</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Написать админу</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Соглашение</a>
-      </li>
-      <li class="nav-footer_item">
-        <a href="#">Политика</a>
-      </li>
-    </ul>
-  </div>
-  </footer>
 </div>
 <div id="overlay" class="modal-overlay menu-overlay"></div>
 
