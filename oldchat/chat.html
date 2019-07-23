@@ -380,12 +380,15 @@
         <!--Форма ввода текста-->
         <footer class="footer-content">
           <div class="footer-wrap color_main_fon color_accent footer"></div>
-          <div class="footer-text">
-            <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-smiles"></use></svg>
-            <input class="input-message" id="field-text" type="text" name="hello" value="Всем привет!">
-            <label for="field-text"></label>
-            <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-private"></use></svg>
-          </div>
+          <form action="#" name="chat_say" onsubmit="sayToAll();">
+            <div class="footer-text">
+              <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-smiles"></use></svg>
+
+              <input class="input-message" id="field-text" type="text" name="text" maxlength="255" autocomplete="off" value="Всем привет!">
+              <label for="field-text"></label>
+              <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-private"></use></svg>
+            </div>
+          </form>
         </footer>
       </div>
 
@@ -496,7 +499,9 @@
         <p class="chat-line"><font color='#005500'><b>Вальтер:</b></font> <font color='#009900' >Wishmaster, Amber, в
           гмо</font></p>
       </div>
+
     </div>
+    <div id="text_end"></div>
   </div>
 
 </div>

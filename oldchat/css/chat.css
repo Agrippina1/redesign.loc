@@ -214,7 +214,7 @@ a {
 }
 .main-nav__toggle {
   left: 20px;
-  top: 15px;
+  top: 20px;
 }
 .number-user {
   position: absolute;
@@ -636,6 +636,9 @@ select::-ms-expand {
   .nav-wrapper {
     top: 84px;
   }
+  .main-nav__toggle {
+    top: 10px;
+  }
   .registration-block {
     min-width: 400px;
     top: 85px;
@@ -658,7 +661,7 @@ select::-ms-expand {
   }
   .main-nav__toggle {
     left: 10px;
-    top: 9px;
+    top: 10px;
   }
   .number-user {
     left: 43px;
