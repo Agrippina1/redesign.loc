@@ -23,19 +23,42 @@ $(document).ready(function() {
         } else overlay.fadeOut(300);
 
         $(div_id).toggleClass('modal_is_open');
-        $("html,body").animate({scrollTop: $("#say_footer").offset().top}, "slow");
+        // $("html,body").animate({scrollTop: $("#say_footer").offset().top}, "slow");
     });
+
+    function scrollChatText() {
+        $("html,body").animate({scrollTop: $("#text_end").offset().top}, "slow");
+    }
+    $('.nick-chatter, .chat-line>font>b').click(function (e) {
+        e.preventDefault();
+        document.forms['form_say'].text.value = $(this).text() + ', ' + document.forms['form_say'].text.value;
+        document.forms['form_say'].text.focus();
+        $('.modal_is_open').removeClass('modal_is_open');
+        $(modal).css('display', 'none');
+        overlay.fadeOut(300);
+    })
 
     setInterval(function() {
         $("#text_in_chat").append("<p class='chat-line'>" + Date() + "</p>");
-        $("html,body").animate({scrollTop: $("#text_end").offset().top}, "slow");
+        scrollChatText();
     }, 5000);
 
-});
+    $("#form_say").submit(function (e) {
+        e.preventDefault();
 
-function sayToAll() {
-    $("#text_in_chat").append("<p class='chat-line'><b>Наш текст:</b> " + $("#field-text").val() + "</p>");
-    document.forms['chat_say'].text.value = '';
-    document.forms['chat_say'].text.focus();
-    $("html,body").animate({scrollTop: $("#text_end").offset().top}, "slow");
-}
+        $("#text_in_chat").append("<p class='chat-line'><b>Наш текст:</b> " + $("#field-text").val() + "</p>");
+        document.forms['form_say'].text.value = '';
+        document.forms['form_say'].text.focus();
+        scrollChatText()
+
+        // var form_data = $(this).serialize(); // Собираем все данные из формы
+        // $.ajax({
+        //     type: "POST", // Метод отправки
+        //     url: "", // Путь до php
+        //     data: form_data,
+        //     success: function () {
+        //         // Код в этом блоке выполняется при успешной отправке сообщения
+        //     }
+        // });
+    });
+});
