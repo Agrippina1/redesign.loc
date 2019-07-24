@@ -127,7 +127,8 @@ a {
 }
 .chat-online-items {
   position: relative;
-  height: 55vh;
+  min-height: 10vh;
+  max-height: 55vh;
   overflow-y: auto;
   background-repeat: no-repeat;
   background-position: top right;
