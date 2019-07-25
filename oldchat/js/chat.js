@@ -26,6 +26,14 @@ $(document).ready(function() {
         // $("html,body").animate({scrollTop: $("#say_footer").offset().top}, "slow");
     });
 
+
+    //=== Chat ===
+    function randColor() {
+        return '#' + Math.floor(Math.random()*16777215).toString(16)
+    }
+    function showCountChaters() {
+        $('.number-user').text($('.nick-chatter').length);
+    }
     function scrollChatText() {
         $("html,body").animate({scrollTop: $("#text_end").offset().top}, "slow");
     }
@@ -39,8 +47,9 @@ $(document).ready(function() {
     })
 
     setInterval(function() {
-        $("#text_in_chat").append("<p class='chat-line'>" + Date() + "</p>");
+        $("#text_in_chat").append("<p class='chat-line' style='color: " + randColor() + "'>" + Date() + "</p>");
         scrollChatText();
+        showCountChaters();
     }, 5000);
 
     $("#form_say").submit(function (e) {
