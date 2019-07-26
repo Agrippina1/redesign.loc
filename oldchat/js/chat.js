@@ -35,7 +35,7 @@ $(document).ready(function() {
         $('.number-user').text($('.nick-chatter').length);
     }
     function scrollChatText() {
-        $("html,body").animate({scrollTop: $("#text_end").offset().top}, "slow");
+        $("html,body").animate({scrollTop: $("#text_end").offset().top}, 2000);
     }
     $('.nick-chatter, .chat-line>font>b').click(function (e) {
         e.preventDefault();
@@ -45,21 +45,29 @@ $(document).ready(function() {
         $(modal).css('display', 'none');
         overlay.fadeOut(300);
     })
+    var text_buffer = '';
+
+    function newTextInChat() {
+        $("#text_in_chat").append(text_buffer + "<p class='chat-line' style='color: " + randColor() + "'>" + Date() + "</p>");
+        text_buffer = '';
+        scrollChatText() ;
+    }
 
     setInterval(function() {
-        $("#text_in_chat").append("<p class='chat-line' style='color: " + randColor() + "'>" + Date() + "</p>");
-        scrollChatText();
+        if ($('.number-user').text() == '') scrollChatText();
+        if ((($(window).scrollTop() + $(window).height() - $('#text_end').offset().top ) + 300) > 0) newTextInChat();
+        else text_buffer = text_buffer + "<p class='chat-line' style='color: " + randColor() + "'>..... " + Date() + "</p>";
         showCountChaters();
     }, 5000);
 
     $("#form_say").submit(function (e) {
         e.preventDefault();
 
-        $("#text_in_chat").append("<p class='chat-line'><b>Наш текст:</b> " + $("#field-text").val() + "</p>");
+        text_buffer = text_buffer + "<p class='chat-line'><b>Наш текст:</b> " + $("#field-text").val() + "</p>";
         document.forms['form_say'].text.value = '';
         document.forms['form_say'].text.focus();
-        scrollChatText()
-
+        // scrollChatText()
+        newTextInChat();
         // var form_data = $(this).serialize(); // Собираем все данные из формы
         // $.ajax({
         //     type: "POST", // Метод отправки
