@@ -139,7 +139,7 @@
           <ul class="chat-online-items nav" role="menu" aria-labelledby="group_menu_main">
             <li class="chat-online-item" role="menuitem">
               <div class="user-online">
-                <a href="#" class="user-online">
+                <a href="#menu_info" class="user-online modal_open" role="button">
                   <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
                 </a>
                 <a href="#">
@@ -943,7 +943,7 @@
            class="nav-block registration-block registration-block-settings color_menu_fon modal-content-show modal_div">
         <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
           Закрыть</button>
-        <div class="registration-wrapper" aria-label="Вход/регистрация" role="navigation">
+        <div class="registration-wrapper" aria-label="Настройки цвета текста" role="navigation">
           <div class="menu-title-wrap">
             <a name="menu_registration"></a><h3 class="menu-title color_main_fon color_accent nav_border">Настройки
             цвета
@@ -984,7 +984,7 @@
     <div id="menu_complain" class="nav-block registration-block color_menu_fon modal-content-show modal_div">
       <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
         Закрыть</button>
-      <div class="registration-wrapper" aria-label="Вход/регистрация" role="navigation">
+      <div class="registration-wrapper" aria-label="Пожаловаться на пользователя" role="navigation">
         <div class="menu-title-wrap">
           <a name="menu_registration"></a><h3 class="menu-title color_main_fon color_accent nav_border">Пожаловаться
         </h3>
@@ -1005,9 +1005,77 @@
     </div>
   </div>
 
+  <div class="modal-content">
+    <div id="menu_info"
+         class="info-user-block color_menu_fon modal-content-show modal_div">
+      <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
+        Закрыть</button>
+      <div class="registration-wrapper" aria-label="Информация о пользователе" role="navigation">
+        <div class="menu-title-wrap">
+          <a name="menu_registration"></a>
+          <h3 class="menu-title color_main_fon color_accent nav_border">Витаминка1234567890</h3>
+        </div>
+        <div class="user-block-text">
+          <section class="image">
+            <img src='https://www.disability.ru/agency/photo/13367.jpg?ver=1556902096' border='1' alt='фото 1'>
+          </section>
+          <section class="about-person">
+            <div class="wrapper-block">
+              <div class="block-small">
+                <h5 class="title color_font">Имя</h5>
+                <p class="about-person-text">Татьяна</p>
+              </div>
+              <div class="block-small">
+                <h5 class="title color_font">Откуда</h5>
+                <p class="about-person-text">Санкт-Петербург, Россия</p>
+              </div>
+              <div class="block-small">
+                <h5 class="title color_font">Возраст</h5>
+                <p class="about-person-text">40</p>
+              </div>
+              <div class="block-small">
+                <h5 class="title color_font">Дата рождения</h5>
+                <p class="about-person-text">19&nbsp;июль&nbsp;1978</p>
+              </div>
+            </div>
+            <div class="about-me">
+              <h5 class="title color_font">Обо мне</h5>
+              <p class="about-person-text" aria-label="текст">Увлекаюсь компьютером, музыкой, фильмами. Люблю посещать самые разные
+                общественные места: клубы<br>
+                и кафе, кинотеатры, а также театры, проводить время на свежем воздухе... Костыли присутствуют, эксплуатирую их на улице:) </p>
+            </div>
+            <a class="btn-white" href="#">
+              <svg class="icon-chat icon-chat-btn color_icons"><use
+                xlink:href="../site/icons/id_icons.svg#icon-page_answer"></use></svg> Написать письмо
+            </a>
+            <div class="admin-line-chat">
+              <a class="btn-white btn-white-admin" href="#">
+                <svg class="icon-chat icon-chat-btn color_icons"><use
+                  xlink:href="../site/icons/id_icons.svg#icon-page_top"></use></svg> <span
+                class="btn-admin-chat">Правило</span>
+              </a>
+              <a class="btn-white btn-white-admin" href="#">
+                <svg class="icon-chat icon-chat-btn color_icons"><use
+                  xlink:href="../site/icons/id_icons.svg#icon-page_moved"></use></svg> <span
+                class="btn-admin-chat">Выкинуть</span>
+              </a>
+              <a class="btn-white btn-white-admin" href="#">
+                <svg class="icon-chat icon-chat-btn color_icons"><use
+                  xlink:href="../site/icons/id_icons.svg#icon-page_bad"></use></svg> <span
+                class="btn-admin-chat">Забанить</span>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
       <!--Основной контент-->
       <div id="say_footer">
         <!--Форма ввода текста-->
+
+        <div id="new_message" class="new-text-count">Новых сообщений: <span id="new_text_count">0</span></div>
         <footer class="footer-content">
           <div class="footer-wrap color_main_fon color_accent footer"></div>
           <form id="form_say">
