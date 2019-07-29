@@ -219,10 +219,9 @@ a {
   left: 20px;
   top: 20px;
 }
-.number-user {
+.number-user,
+.new-text-count {
   position: absolute;
-  left: 60px;
-  top: 5px;
   font-size: 16px;
   line-height: 17px;
   color: #ffffff;
@@ -231,6 +230,20 @@ a {
   border: 1px solid #ffffff;
   border-radius: 10px;
   padding: 1px 8px;
+}
+.number-user {
+  left: 60px;
+  top: 5px;
+}
+.new-text-count {
+  position: fixed;
+  display: none;
+  right: 10px;
+  bottom: 65px;
+  z-index: 4;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  padding: 5px 15px;
 }
 .main-nav__toggle .icon-menu_item,
 .nav-user__toggle .icon-menu_user,
@@ -315,13 +328,12 @@ a {
 .register-icon {
   margin-right: 10px;
 }
-.registration-block {
+.registration-block,
+.info-user-block {
   position: absolute;
   display: none;
-  min-width: 600px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  top: calc(50vh - 190px);
   background: #efefef;
   border: 1px solid #000000;
   box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25),
@@ -329,8 +341,21 @@ a {
   border-radius: 5px;
   margin: auto;
 }
+.registration-block {
+  min-width: 600px;
+  top: calc(50vh - 175px);
+}
 .registration-block-settings {
   min-width: 300px;
+}
+.info-user-block {
+  top: 84px;
+  width: 600px;
+}
+.user-block-text {
+  max-height: calc(100vh - 155px);
+  overflow-y: auto;
+  padding: 10px;
 }
 .icon-svg-registration {
   padding-bottom: 4px;
@@ -638,6 +663,86 @@ select::-ms-expand {
   margin-right: 5px;
 }
 
+/*О пользователе*/
+
+.image {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.about-person {
+  margin-left: 10px;
+}
+.wrapper-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.block-small {
+  position: relative;
+  width: 50%;
+  margin-bottom: 10px;
+}
+.title {
+  display: block;
+  width: 150px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+.block-small p {
+  padding-top: 16px;
+  padding-left: 40px;
+  margin: 0;
+}
+.about-person-text {
+  font-size: 16px;
+}
+.about-person p::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 5px;
+  background: #e2e2e2;
+  top: 27px;
+  left: 0;
+}
+.about-person p::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: #e2e2e2;
+  top: 27px;
+  left: 200px;
+}
+.about-me {
+  position: relative;
+  margin-bottom: 20px;
+}
+.about-me p {
+  padding-top: 16px;
+  padding-left: 40px;
+}
+.about-me p::after {
+  width: 322px;
+}
+.btn-white {
+  display: block;
+  color: #000000;
+  text-align: right;
+  margin-right: 10px;
+}
+.icon-chat-btn {
+  vertical-align: middle;
+}
+.admin-line-chat {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
 @media (max-width: 1023px) {
   .input-settings {
     top: 11px;
@@ -654,17 +759,42 @@ select::-ms-expand {
   .nick-chatter {
     padding-left: 8px;
   }
+  .registration {
+    margin-top: 10px;
+  }
   .registration-block {
     min-width: 400px;
-    /*top: 85px;*/
+    top: calc(50vh - 135px);
+  }
+  .font-form-template {
+    font-size: 17px;
+  }
+  .message-field-template {
+    font-size: 17px;
   }
   .registration-block-settings {
     min-width: 300px;
+  }
+  .message {
+    padding: 5px 15px 0;
+  }
+  .btn-wrapper {
+    margin-bottom: 10px;
+  }
+  .btn {
+    margin-top: 5px;
+  }
+  .info-user-block {
+    top: 65px;
+  }
+  .user-block-text {
+    max-height: calc(100vh - 135px);
   }
   .footer-text {
     padding: 10px 0;
   }
   .chat-text {
+    font-size: 18px;
     line-height: 22px;
     margin-top: 65px;
   }
@@ -702,7 +832,14 @@ select::-ms-expand {
   }
   .registration-block {
     min-width: 300px;
-    /*top: 70px;*/
+    top: calc(50vh - 125px);
+  }
+  .info-user-block {
+    width: calc(100vw - 4px);
+    top: 50px;
+  }
+  .user-block-text {
+    max-height: calc(100vh - 115px);
   }
   .icon-svg-text {
     width: 24px;
@@ -714,6 +851,7 @@ select::-ms-expand {
     padding-bottom: 5px;
   }
   .chat-text {
+    font-size: 19px;
     line-height: 24px;
     padding: 0;
     margin-top: 45px;
@@ -730,5 +868,50 @@ select::-ms-expand {
   .btn-say {
     margin-left: 2px;
     margin-right: 2px;
+  }
+  .new-text-count {
+    bottom: 56px;
+    font-size: 14px;
+    padding: 3px 10px;
+  }
+
+  /*О пользователе*/
+
+  .about-person {
+    margin-left: 5px;
+  }
+  .wrapper-block {
+    flex-direction: column;
+    align-content: center;
+  }
+  .block-small {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .block-small p {
+    line-height: 22px;
+    padding-left: 20px;
+  }
+  .about-person p::before {
+    width: 140px;
+  }
+  .about-person p::after {
+    width: 145px;
+    left: 140px;
+  }
+  .about-me p {
+    padding-left: 20px;
+  }
+  .admin-line-chat {
+    margin-right: 0;
+  }
+  .btn-white {
+    margin-right: 0;
+  }
+  .btn-admin-chat {
+    display: none;
+  }
+  .btn-white-admin {
+    margin-left: 50px;
   }
 }
