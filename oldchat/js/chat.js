@@ -37,11 +37,6 @@ $(document).ready(function() {
     function showCountChaters() {
         $('.number-user').text($('.nick-chatter').length);
     }
-// <ul>
-// <li class="smile" smile=":ля:"><img src='https://www.disability.ru/oldchat/pics/36.gif' width=33 height=15 border=0 alt='ля ля ля'></li>
-// <li class="smile" smile=":ь:"><img src='https://www.disability.ru/oldchat/pics/599.gif' width=33 height=19 border=0 alt='дразнилка'></li>
-// <li class="smile" smile=":))"><img src='https://www.disability.ru/oldchat/pics/smiley1.gif' width=15 height=15 border=0 alt='смех'></li>
-// </ul>
     $('.smile').click(function (e) {
         e.preventDefault();
         var smile = $(this).attr('smile');
