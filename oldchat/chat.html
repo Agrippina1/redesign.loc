@@ -1006,8 +1006,7 @@
   </div>
 
   <div class="modal-content">
-    <div id="menu_info"
-         class="info-user-block color_menu_fon modal-content-show modal_div">
+    <div id="menu_info" class="info-user-block color_menu_fon modal-content-show modal_div">
       <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
         Закрыть</button>
       <div class="registration-wrapper" aria-label="Информация о пользователе" role="navigation">
@@ -1071,6 +1070,22 @@
     </div>
   </div>
 
+  <div class="modal-content">
+    <div id="menu_smiles" class="info-user-block color_menu_fon modal-content-show modal_div">
+      <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
+        Закрыть</button>
+      <div class="registration-wrapper" aria-label="Информация о пользователе" role="navigation">
+        <div class="menu-title-wrap">
+          <a name="menu_registration"></a>
+          <h3 class="menu-title color_main_fon color_accent nav_border">Смайлики</h3>
+        </div>
+        <div class="smiles-list">
+          1234567890
+        </div>
+      </div>
+    </div>
+  </div>
+
       <!--Основной контент-->
       <div id="say_footer">
         <!--Форма ввода текста-->
@@ -1080,7 +1095,7 @@
           <div class="footer-wrap color_main_fon color_accent footer"></div>
           <form id="form_say">
             <div class="footer-text">
-              <button class="btn-say">
+              <button href="#menu_smiles" class="btn-say modal_open">
                 <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-smiles"></use></svg>
               </button>
 
