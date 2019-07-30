@@ -1,0 +1,138 @@
+.chat-content {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.list-title-wrapper {
+  display: flex;
+  min-width: 200px;
+  justify-content: space-between;
+  background: #c8d6da;
+  border: 1px solid #00297c;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.list-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.chat_online_toggle {
+  align-self: center;
+  padding-top: 6px;
+}
+.icon-online-chat {
+  width: 24px;
+  height: 24px;
+}
+.online-items {
+  display: block;
+  min-width: 200px;
+  min-height: 50px;
+  font-size: 17px;
+  background: #d9e2e3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px 15px;
+}
+.left-content {
+  padding-right: 15px;
+}
+.main-chat-text {
+  font-size: 17px;
+  text-align: justify;
+  max-height: 9em;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+a.btn-admin-line {
+  display: block;
+  font-size: 15px;
+  color: #00297c;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+a.btn-input-chat {
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+.admin-contacts {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+a.link-contact {
+  color: #00297c;
+  text-decoration: underline;
+}
+.link-chat {
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.icon-input-chat {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.info-chat {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    padding: 0;
+  }
+  .right-content {
+    margin-bottom: 20px;
+  }
+  .content-title {
+    margin-bottom: 25px;
+  }
+  .chat-content {
+    flex-direction: column;
+  }
+  .list-title-wrapper,
+  .online-items {
+    max-width: 400px;
+    margin: auto;
+  }
+  .online-items {
+    display: none;
+  }
+  .list-title {
+    align-self: center;
+    padding-left: 10px;
+  }
+  .online-item {
+    padding-left: 40px;
+  }
+
+  .left-content {
+    padding-right: 0;
+  }
+  .btn-input-chat {
+    margin-bottom: 40px;
+  }
+  .admin-contacts {
+    font-size: 17px;
+  }
+  .info-chat {
+    font-size: 17px;
+  }
+  .info-chat p {
+    margin-bottom: 10px;
+  }
+}

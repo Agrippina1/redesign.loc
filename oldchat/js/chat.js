@@ -28,15 +28,29 @@ $(document).ready(function() {
 
 
     //=== Chat ===
+    var text_buffer = '';
+    var text_count = 0;
+
     function randColor() {
         return '#' + Math.floor(Math.random()*16777215).toString(16)
     }
     function showCountChaters() {
         $('.number-user').text($('.nick-chatter').length);
     }
+// <ul>
+// <li class="smile" smile=":ля:"><img src='https://www.disability.ru/oldchat/pics/36.gif' width=33 height=15 border=0 alt='ля ля ля'></li>
+// <li class="smile" smile=":ь:"><img src='https://www.disability.ru/oldchat/pics/599.gif' width=33 height=19 border=0 alt='дразнилка'></li>
+// <li class="smile" smile=":))"><img src='https://www.disability.ru/oldchat/pics/smiley1.gif' width=15 height=15 border=0 alt='смех'></li>
+// </ul>
+    $('.smile').click(function (e) {
+        e.preventDefault();
+        var smile = $(this).attr('smile');
+        document.forms['form_say'].text.value = document.forms['form_say'].text.value + smile;
+    });
     function scrollChatText() {
         $("html,body").animate({scrollTop: $("#text_end").offset().top}, 2000);
     }
+
     $('.nick-chatter, .chat-line>font>b').click(function (e) {
         e.preventDefault();
         document.forms['form_say'].text.value = $(this).text() + ', ' + document.forms['form_say'].text.value;
@@ -44,19 +58,42 @@ $(document).ready(function() {
         $('.modal_is_open').removeClass('modal_is_open');
         $(modal).css('display', 'none');
         overlay.fadeOut(300);
-    })
-    var text_buffer = '';
+    });
+
+    $('#new_message').click( function() {
+        newTextInChat();
+    });
+
+    function showCountNewText(mode = false) {
+        var mode_show_cout_info = 'none';
+        if (mode) {
+            mode_show_cout_info = 'block';
+            text_count++;
+            $('#new_text_count').text(text_count);
+        }
+        else {
+            $('#new_text_count').text('0');
+            mode_show_cout_info = 'none';
+            text_buffer = '';
+            text_count = 0;
+        }
+        $('#new_message').css('display', mode_show_cout_info);
+    }
 
     function newTextInChat() {
         $("#text_in_chat").append(text_buffer + "<p class='chat-line' style='color: " + randColor() + "'>" + Date() + "</p>");
-        text_buffer = '';
+        showCountNewText(false);
         scrollChatText() ;
     }
 
-    setInterval(function() {
-        if ($('.number-user').text() == '') scrollChatText();
+    setInterval( function() {
+        if ($('.number-user').text() === '') scrollChatText();
         if ((($(window).scrollTop() + $(window).height() - $('#text_end').offset().top ) + 300) > 0) newTextInChat();
-        else text_buffer = text_buffer + "<p class='chat-line' style='color: " + randColor() + "'>..... " + Date() + "</p>";
+        else {
+            text_buffer = text_buffer + "<p class='chat-line' style='color: " + randColor() + "'>..... " + Date() + "</p>";
+            showCountNewText(true);
+        }
+        // console.log('new:', text_count);
         showCountChaters();
     }, 5000);
 
