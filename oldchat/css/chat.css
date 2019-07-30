@@ -352,7 +352,8 @@ a {
   top: 84px;
   width: 600px;
 }
-.user-block-text {
+.user-block-text,
+.smiles-list {
   max-height: calc(100vh - 155px);
   overflow-y: auto;
   padding: 10px;
@@ -742,6 +743,8 @@ select::-ms-expand {
   justify-content: space-around;
   margin: 20px;
 }
+/*Смайлики*/
+
 
 @media (max-width: 1023px) {
   .input-settings {
