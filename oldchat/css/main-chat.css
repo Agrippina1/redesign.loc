@@ -25,6 +25,7 @@
   height: 24px;
 }
 .online-items {
+  display: block;
   min-width: 200px;
   min-height: 50px;
   font-size: 17px;
@@ -51,16 +52,16 @@
   -ms-hyphens: auto;
   hyphens: auto;
 }
-.btn-admin-line {
+a.btn-admin-line {
   display: block;
   font-size: 15px;
-  color: #00297c !important;
+  color: #00297c;
   text-align: right;
   margin-top: 10px;
   margin-bottom: 50px;
 }
-.btn-input-chat {
-  color: #ffffff !important;
+a.btn-input-chat {
+  color: #ffffff;
   margin-bottom: 60px;
 }
 .admin-contacts {
@@ -68,8 +69,8 @@
   text-align: center;
   margin-bottom: 30px;
 }
-.link-contact {
-  color: #00297c !important;
+a.link-contact {
+  color: #00297c;
   text-decoration: underline;
 }
 .link-chat {
@@ -108,6 +109,9 @@
     max-width: 400px;
     margin: auto;
   }
+  .online-items {
+    display: none;
+  }
   .list-title {
     align-self: center;
     padding-left: 10px;
@@ -115,6 +119,7 @@
   .online-item {
     padding-left: 40px;
   }
+
   .left-content {
     padding-right: 0;
   }
