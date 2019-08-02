@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
     open_modal.click( function(event) {
         event.preventDefault();
-        var div_id = $(this).attr('href');
+        var div_id = $(this).attr('data-modal-id');
         $(modal).css('display', 'none');
 
         if (!$(div_id).hasClass('modal_is_open')) {
