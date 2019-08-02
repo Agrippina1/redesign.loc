@@ -1,0 +1,26 @@
+﻿/* preview style examples */
+body {
+	background-color: #F8F8F8;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size:12px; 
+	line-height: 1.5;
+}
+blockquote.bb_quote {
+    border: #d0d0d0 1px solid;
+    background-color: #f6f6f6;
+    padding: 5px;
+    margin: 1em 0 0 .75em;
+}
+div.bb_quote_author {
+    border: #d0d0d0 1px solid;
+    border-width: 1px 2px 2px 1px;
+    margin-top: -1.2em;
+    background-color: #f6f6f6;
+    width: 150px;
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: center;
+}
+div.bb_quote_author:after {
+    content: " пишет:";
+}

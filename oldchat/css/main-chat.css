@@ -4,7 +4,8 @@
 }
 .list-title-wrapper {
   display: flex;
-  min-width: 200px;
+  min-width: 220px;
+  max-width: 220px;
   justify-content: space-between;
   background: #c8d6da;
   border: 1px solid #00297c;
@@ -34,7 +35,7 @@
   padding: 10px 15px;
 }
 .left-content {
-  padding-right: 15px;
+  padding-right: 25px;
 }
 .main-chat-text {
   font-size: 17px;
@@ -52,17 +53,23 @@
   -ms-hyphens: auto;
   hyphens: auto;
 }
+.btn-wrapper {
+  margin: auto;
+  margin-top: 50px;
+}
 a.btn-admin-line {
   display: block;
   font-size: 15px;
   color: #00297c;
   text-align: right;
   margin-top: 10px;
-  margin-bottom: 50px;
 }
 a.btn-input-chat {
   color: #ffffff;
   margin-bottom: 60px;
+}
+a.btn-input-chat:hover {
+  color: #ffffff;
 }
 .admin-contacts {
   font-size: 15px;
@@ -119,7 +126,6 @@ a.link-contact {
   .online-item {
     padding-left: 40px;
   }
-
   .left-content {
     padding-right: 0;
   }

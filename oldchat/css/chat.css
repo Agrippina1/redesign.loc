@@ -352,8 +352,7 @@ a {
   top: 84px;
   width: 600px;
 }
-.user-block-text,
-.smiles-list {
+.user-block-text {
   max-height: calc(100vh - 155px);
   overflow-y: auto;
   padding: 10px;
@@ -745,6 +744,21 @@ select::-ms-expand {
 }
 /*Смайлики*/
 
+.smiles-list {
+  max-height: calc(100vh - 213px);
+  overflow-y: auto;
+  padding: 10px;
+}
+.smiles-list-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.smile {
+  padding: 10px;
+  margin: 10px;
+}
 
 @media (max-width: 1023px) {
   .input-settings {
@@ -800,6 +814,9 @@ select::-ms-expand {
     font-size: 18px;
     line-height: 22px;
     margin-top: 65px;
+  }
+  .smiles-list {
+    max-height: calc(100vh - 193px);
   }
 }
 
@@ -916,5 +933,8 @@ select::-ms-expand {
   }
   .btn-white-admin {
     margin-left: 50px;
+  }
+  .smiles-list {
+    max-height: calc(100vh - 170px);
   }
 }
