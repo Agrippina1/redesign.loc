@@ -146,3 +146,21 @@
 .dotclear .markItUpEditor {
 	background-image:url(images/bg-editor-wiki.png);
 }
+
+@media (max-width: 1023px) {
+  .markItUpEditor,
+  .markItUpFooter {
+    width: calc(100% - 20px);
+  }
+  .markItUp {
+    width: 100%;
+		margin-left: -5px;
+  }
+  .markItUpEditor {
+    height: 150px;
+  }
+  .edit-block-buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
