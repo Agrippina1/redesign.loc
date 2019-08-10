@@ -90,7 +90,7 @@ $(document).ready(function() {
         }
         // console.log('new:', text_count);
         showCountChaters();
-    }, 5000);
+    }, 15000);
 
     $("#form_say").submit(function (e) {
         e.preventDefault();
