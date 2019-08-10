@@ -1,0 +1,15 @@
+.table_design {
+  display: table;
+}
+.row-header {
+  display: table-header-group;
+}
+.row {
+  display: table-row-group;
+}
+.cell {
+  display: table-cell;
+  border: 1px solid #00147c;
+  padding: 5px;
+}
+
