@@ -105,23 +105,23 @@
   <div id="sticky" class="sticky-element">
     <div class="sticky-content">
       <div class="logo-header color_main_fon color_accent header">
-        <a href="#menu_main" data-modal-id="#menu_main" class="main-nav__toggle modal_open" role="button">
+        <a href="#menu_main" data-modal-id="#menu_main" class="main-nav__toggle modal_open" role="button" aria-label="Сейчас в чате" title="Сейчас в чате">
           <svg class="icon-svg color_icons icon-menu_item"><use xlink:href="#icon-chaters"></use></svg>
-          Открыть меню</a>
+        </a>
         <span class="number-user"></span>
         <div class="logo-link-wrapper">
-          <a href="index.html" class="logo-img" title="Disability.ru">
+          <a href="index.html" class="logo-img" title="Выход">
             <picture>
               <source media="(min-width: 1024px)" srcset="../site/skins/blue/pics/svg/logo.svg">
               <source media="(min-width: 768px)" srcset="../site/skins/blue/pics/svg/logo_tablet.svg">
               <source media="(max-width: 767px)" srcset="../site/skins/blue/pics/svg/logo_mobile.svg">
-              <img class="logo-img" src="../site/skins/blue/pics/svg/logo.svg" alt="Логотип">
+              <img class="logo-img" src="../site/skins/blue/pics/svg/logo.svg" alt="Выход">
             </picture>
           </a>
         </div>
 
         <div class="input-settings">
-          <a href="#menu_settings" data-modal-id="#menu_settings" class="input-links modal_open" role="button">
+          <a href="#menu_settings" data-modal-id="#menu_settings" class="input-links modal_open" role="button" aria-label="Настройки" title="Настройки">
             <svg class="icon-svg color_icons icon-login"><use xlink:href="#icon-settings"></use></svg>
           </a>
         </div>
@@ -131,34 +131,32 @@
 
     <div class="nav-wrapper">
       <div id="menu_main" class="chat-online nav-block color_border color_menu_fon modal-main-show modal_div">
-        <div class="chat-online-wrapper" aria-label="Разделы" role="navigation">
+        <div class="chat-online-wrapper">
           <a name="menu_items"></a>
           <h3 id="group_menu_main" class="menu-title color_main_fon color_accent">Сейчас в чате</h3>
           <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
             Закрыть</button>
-          <ul class="chat-online-items nav" role="menu" aria-labelledby="group_menu_main">
-            <li class="chat-online-item" role="menuitem">
+          <ul class="chat-online-items nav" role="list">
+            <li class="chat-online-item" role="listitem">
               <div class="user-online">
-                <a href="#menu_info" data-modal-id="#menu_info" class="user-online modal_open" role="button">
+                <a href="#menu_info" role="button" data-modal-id="#menu_info" class="user-online modal_open" aria-label="Женщина" title="Женщина">
                   <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
                 </a>
-                <a href="#">
-                  <span class="nick-chatter">витаминка01234567890</span>
-                </a>
+                <a href="#" class="nick-chatter">витаминка</a>
               </div>
               <div class="user-online">
-                <a href="#menu_complain" data-modal-id="#menu_complain" class="modal_open" role="button">
+                <a href="#menu_complain" data-modal-id="#menu_complain" class="modal_open" role="button" aria-label="Пожаловаться" title="Пожаловаться">
                   <svg class="icon-chat color_icons icon-chat-user modal_open"><use
                     xlink:href="#icon-complain"></use></svg>
                 </a>
-                <a href="#">
+                <a href="#" role="button" aria-label="Отправить в игнор" title="Отправить в игнор">
                   <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
                 </a>
               </div>
             </li>
-            <li class="chat-online-item" role="menuitem">
+            <li class="chat-online-item" >
               <div class="user-online">
-                <a href="#" class="user-online">
+                <a href="#" class="user-online" role="button" aria-label="Мужчина" title="Мужчина">
                   <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
                 </a>
                 <a href="#">
@@ -166,16 +164,16 @@
                 </a>
               </div>
               <div class="user-online">
-                <a href="#menu_complain" data-modal-id="#menu_complain" class="modal_open" role="button">
+                <a href="#menu_complain" data-modal-id="#menu_complain" class="modal_open" role="button" aria-label="Пожаловаться" title="Пожаловаться">
                   <svg class="icon-chat color_icons icon-chat-user modal_open"><use
                     xlink:href="#icon-complain"></use></svg>
                 </a>
-                <a href="#">
+                <a href="#" aria-label="Отправить в игнор" title="Отправить в игнор">
                   <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
                 </a>
               </div>
             </li>
-            <li class="chat-online-item" role="menuitem">
+            <li class="chat-online-item" >
               <div class="user-online">
                 <a href="#" class="user-online">
                   <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
@@ -194,7 +192,7 @@
                 </a>
               </div>
             </li>
-            <li class="chat-online-item" role="menuitem">
+            <li class="chat-online-item" >
               <div class="user-online">
                 <a href="#" class="user-online">
                   <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
@@ -213,7 +211,7 @@
                 </a>
               </div>
             </li>
-            <li class="chat-online-item" role="menuitem">
+            <li class="chat-online-item" >
               <div class="user-online">
                 <a href="#" class="user-online">
                   <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
@@ -232,7 +230,7 @@
                 </a>
               </div>
             </li>
-            <li class="chat-online-item" role="menuitem">
+            <li class="chat-online-item" >
               <div class="user-online">
                 <a href="#" class="user-online">
                   <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
@@ -251,7 +249,7 @@
                 </a>
               </div>
             </li>
-            <li class="chat-online-item" role="menuitem">
+            <li class="chat-online-item" >
               <div class="user-online">
                 <a href="#" class="user-online">
                   <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
@@ -270,7 +268,7 @@
                 </a>
               </div>
             </li>
-            <li class="chat-online-item" role="menuitem">
+            <li class="chat-online-item" >
               <div class="user-online">
                 <a href="#" class="user-online">
                   <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
@@ -289,651 +287,7 @@
                 </a>
               </div>
             </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" data-modal-id="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                    xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                    xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                    xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                    xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                    xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">MadamPerdu</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li><li class="chat-online-item" role="menuitem">
-            <div class="user-online">
-              <a href="#" class="user-online">
-                <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
-              </a>
-              <a href="#">
-                <span class="nick-chatter">MadamPerdu</span>
-              </a>
-            </div>
-            <div class="user-online">
-              <a href="#menu_complain" class="modal_open" role="button">
-                <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                        xlink:href="#icon-complain"></use></svg>
-              </a>
-              <a href="#">
-                <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-              </a>
-            </div>
-          </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">витаминка01234567890</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Валидол</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Радуга</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Amber</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">bizon</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Wishmaster</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Вальтер</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">MadamPerdu</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Валидол</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Радуга</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Amber</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">bizon</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Wishmaster</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Вальтер</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-woman"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">MadamPerdu</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
-            <li class="chat-online-item" role="menuitem">
-              <div class="user-online">
-                <a href="#" class="user-online">
-                  <svg class="icon-chat color_icons"><use xlink:href="#icon-man"></use></svg>
-                </a>
-                <a href="#">
-                  <span class="nick-chatter">Crow</span>
-                </a>
-              </div>
-              <div class="user-online">
-                <a href="#menu_complain" class="modal_open" role="button">
-                  <svg class="icon-chat color_icons icon-chat-user modal_open"><use
-                          xlink:href="#icon-complain"></use></svg>
-                </a>
-                <a href="#">
-                  <svg class="icon-chat color_icons icon-chat-user"><use xlink:href="#icon-ignore_cw"></use></svg>
-                </a>
-              </div>
-            </li>
+
           </ul>
         </div>
       </div>
@@ -941,14 +295,15 @@
     <div class="modal-content">
       <div id="menu_settings"
            class="nav-block registration-block registration-block-settings color_menu_fon modal-content-show modal_div">
-        <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
-          Закрыть</button>
-        <div class="registration-wrapper" aria-label="Настройки цвета текста" role="navigation">
+
+        <div class="registration-wrapper">
           <div class="menu-title-wrap">
             <a name="menu_registration"></a><h3 class="menu-title color_main_fon color_accent nav_border">Настройки
             цвета
           </h3>
           </div>
+          <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
+            Закрыть</button>
           <div class="registration">
             <form class="form-registration" action="index.html" method="post">
               <div class="form-group-wrapper">
@@ -972,7 +327,7 @@
                 </div>
               </div>
               <div class="btn-wrapper">
-                <input class="btn btn-registration" type="submit" name="button" value="Войти">
+                <input class="btn btn-registration" type="submit" name="button" value="Применить">
               </div>
             </form>
           </div>
@@ -982,13 +337,13 @@
 
   <div class="modal-content">
     <div id="menu_complain" class="nav-block registration-block color_menu_fon modal-content-show modal_div">
-      <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
-        Закрыть</button>
-      <div class="registration-wrapper" aria-label="Пожаловаться на пользователя" role="navigation">
+      <div class="registration-wrapper">
         <div class="menu-title-wrap">
           <a name="menu_registration"></a><h3 class="menu-title color_main_fon color_accent nav_border">Пожаловаться
         </h3>
         </div>
+        <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
+          Закрыть</button>
         <div class="registration">
           <form class="form-registration" action="index.html" method="post">
             <div class="message">
@@ -1007,13 +362,13 @@
 
   <div class="modal-content">
     <div id="menu_info" class="info-user-block color_menu_fon modal-content-show modal_div">
-      <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
-        Закрыть</button>
-      <div class="registration-wrapper" aria-label="Информация о пользователе" role="navigation">
+      <div class="registration-wrapper">
         <div class="menu-title-wrap">
           <a name="menu_registration"></a>
-          <h3 class="menu-title color_main_fon color_accent nav_border">Витаминка1234567890</h3>
+          <h3 class="menu-title color_main_fon color_accent nav_border">Витаминка</h3>
         </div>
+        <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
+          Закрыть</button>
         <div class="user-block-text">
           <section class="image">
             <img src='https://www.disability.ru/agency/photo/13367.jpg?ver=1556902096' border='1' alt='фото 1'>
@@ -1074,7 +429,7 @@
     <div id="menu_smiles" class="info-user-block color_menu_fon modal-content-show modal_div">
       <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
         Закрыть</button>
-      <div class="registration-wrapper" aria-label="Информация о пользователе" role="navigation">
+      <div class="registration-wrapper" role="navigation">
         <div class="menu-title-wrap">
           <a name="menu_registration"></a>
           <h3 class="menu-title color_main_fon color_accent nav_border">Смайлики</h3>
@@ -1188,37 +543,13 @@
   </div>
 
       <!--Основной контент-->
-      <div id="say_footer">
-        <!--Форма ввода текста-->
 
-        <div id="new_message" class="new-text-count">Новых сообщений: <span id="new_text_count">0</span></div>
-        <footer class="footer-content">
-          <div class="footer-wrap color_main_fon color_accent footer"></div>
-          <form id="form_say">
-            <div class="footer-text">
-              <button data-modal-id="#menu_smiles" class="btn-say modal_open">
-                <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-smiles"></use></svg>
-              </button>
-
-              <input class="input-message" id="field-text" type="text" name="text" maxlength="255"
-                     autocomplete="off" autocorrect=off value="Всем привет!">
-              <label for="field-text"></label>
-              <button class="btn-say" type="submit">
-                <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-say"></use></svg>
-              </button>
-              <button class="btn-say">
-                <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-private"></use></svg>
-              </button>
-            </div>
-          </form>
-        </footer>
-      </div>
 
   <div class="main-content color_content_fon color_main_content" aria-label="содержание" role="main">
     <a name="content"></a>
     <div class="m-c-w">
       <div id="text_in_chat"  class="chat-text">
-        <p class="chat-line"><font color='#000000'><b>витаминка:</b></font> <font color='#aa0099' >Валидол, это
+        <p class="chat-line"><font color='#000000'><b role="link">витаминка:</b></font> <font color='#aa0099' >Валидол, это
           люди как люди,
           зачем они это делают, у них столько же мозгов сколько у этой вороны зачем они это делают, у них столько
           же мозгов сколько у этой вороны зачем они это делают, у них столько же мозгов сколько у этой вороны?</font></p>
@@ -1325,6 +656,30 @@
     <div id="text_end"></div>
   </div>
 
+  <div id="say_footer">
+    <!--Форма ввода текста-->
+    <div id="new_message" class="new-text-count" style="display: none;">Новых сообщений: <span id="new_text_count">0</span></div>
+    <footer class="footer-content" aria-label="Панель ввода текста" role="contentinfo">
+      <div class="footer-wrap color_main_fon color_accent footer"></div>
+      <form id="form_say">
+        <div class="footer-text">
+          <button data-modal-id="#menu_smiles" class="btn-say modal_open" aria-label="Смайлики" title="Смайлики">
+            <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-smiles"></use></svg>
+          </button>
+
+          <input class="input-message" id="field-text" type="text" name="text" maxlength="255"
+                 autocomplete="off" autocorrect=off aria-label="Введите текст" value="Всем привет!">
+          <label for="field-text"></label>
+          <button class="btn-say" type="submit" aria-label="Сказать" title="Сказать">
+            <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-say"></use></svg>
+          </button>
+          <button class="btn-say" aria-label="Приват" title="Приват">
+            <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-private"></use></svg>
+          </button>
+        </div>
+      </form>
+    </footer>
+  </div>
 </div>
 <div id="overlay" class="modal-overlay menu-overlay"></div>
 
