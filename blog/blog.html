@@ -413,7 +413,8 @@
           <div class="content-block">
             <div id="bbab" style="text-align: right;">
               <a href="#" onclick="return DelBlog('4969');" class="add_link">
-                <img src="pics/blog_del.png" width="16" height="16" border="0" alt="удалить дневник" title="удалить дневник">
+                <svg
+                  class="icon-svg icon-svg-blog color_icons"><use xlink:href="svg/id_icons.svg#icon-blog_del"></use></svg>
               </a>
             </div>
             <div class="author-blog-header">
@@ -453,20 +454,30 @@
                 </ul>
               </div>
             </div>
-            <div>
-                <span class="post_two" id="bscr">
-                  <a href="#" onclick="return Subscr('4969','yes');" class="add_link">
-                    <img src="pics/s_p.png" width="16" height="16" border="0" alt=""> добавить в подписку
-                  </a>
-                </span>
-              <span></span>
+            <div class="add-description">
+              <span class="post_two" id="bscr">
+                <a href="#" onclick="return Subscr('4969','yes');" class="add_link">
+                  <svg class="icon-svg icon-svg-blog color_icons"><use
+                    xlink:href="svg/id_icons.svg#icon-s_p"></use></svg> Добавить в подписку
+                </a>
+              </span>
             </div>
             <!--<a href="#" class="add-subscription">Добавить в подписку</a>-->
             <div class="blog-post-wrapper">
               <div class="blog-post">
-                <h5 class="post-title"><a href="#">Помогите разобраться с планшетом</a></h5>
+                <div  class="post-title-wrapper">
+                  <a href="#">
+                    <h4 class="post-title">Помогите разобраться с планшетом</h4>
+                  </a>
+                  <a href="#" onclick="return DelAns('458729');" class="add_link">
+                    <svg
+                      class="icon-svg icon-svg-blog color_icons"><use
+                      xlink:href="svg/id_icons.svg#icon-answer_del"></use></svg>
+                  </a>
+                </div>
                 <a href="#" class="post-data">
                   <span>13 май 2019 22:01</span>
+                  <span>::.</span>
                   <span>Прочие средства связи</span>
                 </a>
                 <div class="post-text" aria-label="текст">всем привет ситуация в следующем: есть планшет, в нем есть симка, но написано,
@@ -491,7 +502,9 @@
                     </div>
                     <span id="baa_458729" class="icon-delete">
                       <a href="#" onclick="return DelAns('458729');" class="add_link">
-                        <img src="pics/answer_del.png" width="16" height="16" border="0" alt="удалить" title="удалить">
+                        <svg
+                          class="icon-svg icon-svg-blog color_icons"><use
+                          xlink:href="svg/id_icons.svg#icon-answer_del"></use></svg>
                       </a>
                     </span>
                   </h6>
@@ -519,7 +532,9 @@
                     </div>
                     <span id="baa_458729" class="icon-delete">
                       <a href="#" onclick="return DelAns('458729');" class="add_link">
-                        <img src="pics/answer_del.png" width="16" height="16" border="0" alt="удалить" title="удалить">
+                        <svg
+                          class="icon-svg icon-svg-blog color_icons"><use
+                          xlink:href="svg/id_icons.svg#icon-answer_del"></use></svg>
                       </a>
                     </span>
                   </h5>
@@ -717,21 +732,30 @@
                           <span class="end_line" id="end_42392">
                             <span id="post_ba_42392" style="display: none;">
                               <a href="#" onclick="return ShowAnswer(42392,0,'write');" class="add_link">
-                                <img src="pics/answer_all.png" width="16" height="16" border="0" alt=""> Читать ответы
+                                <svg
+                                  class="icon-svg icon-svg-blog color_icons"><use
+                                  xlink:href="svg/id_icons.svg#icon-answer_all"></use></svg> Читать ответы
                               </a>
                             </span>
-                            <span id="post_bf_42392" style="">
+                            <span id="post_bf_42392">
                               <a href="#" onclick="return ShowForm({id:42392});" class="add_link">
-                                <img src="pics/answer_new.png" width="16" height="16" border="0" alt="">&nbsp;Ответить
+                                <svg
+                                  class="icon-svg icon-svg-blog color_icons"><use
+                                  xlink:href="svg/id_icons.svg#icon-answer_new"></use></svg> Ответить
                               </a>
                             </span>
                           </span>
                           <div class="comment_info">
                             <span id="post_bac_42392" style="display: none">
-                            <img src="pics/answer_all.png" width="16" height="16" border="0" alt="">&nbsp;Ответы&nbsp;отключены
+                            <svg
+                              class="icon-svg icon-svg-blog color_icons"><use
+                              xlink:href="svg/id_icons.svg#icon-answer_all"></use></svg> Ответы&nbsp;отключены
                             </span>
                             <span id="post_bсс_42392" style="display: none">
-                              <img src="pics/answer_new.png" width="16" height="16" border="0" alt="">&nbsp;Комментирование&nbsp;отключено
+                              <svg
+                                class="icon-svg icon-svg-blog color_icons"><use
+                                xlink:href="svg/id_icons.svg#icon-answer_new"></use></svg>
+                              Комментирование&nbsp;отключено
                             </span>
                         </div>
                         </div>
@@ -739,12 +763,16 @@
                           <span id="post_rfbtn_42392" style="">
                             <span class="post_rbtn_42392">
                               <a href="#" onclick="return RollPost('42392');">
-                                <img src="pics/up.png" width="16" height="16" border="0" alt="свернуть" title="свернуть">
+                                <svg
+                                  class="icon-svg icon-svg-blog color_icons"><use
+                                  xlink:href="svg/id_icons.svg#icon-up"></use></svg>
                               </a>
                             </span>
                             <span class="post_rbtn_42392" style="display: none">
                               <a href="#" onclick="return RollPost('42392');">
-                                <img src="pics/down.png" width="16" height="16" border="0" alt="развернуть" title="развернуть">
+                                <svg
+                                  class="icon-svg icon-svg-blog color_icons"><use
+                                  xlink:href="svg/id_icons.svg#icon-down"></use></svg>
                               </a>
                             </span>
                           </span>
@@ -752,16 +780,22 @@
                             <span id="ratpost_42392">3</span>&nbsp;
                             <span id="rbp_42392">
                               <a href="#" onclick="return RatingPost('42392','good');">
-                                <img src="https://www.disability.ru/blog/pics/plus.gif" width="16" height="12" border="0" alt="плюс" title="плюс">
+                                <svg
+                                  class="icon-svg icon-svg-blog color_icons"><use
+                                  xlink:href="svg/id_icons.svg#icon-plus"></use></svg>
                               </a>
                               <a href="#" onclick="return RatingPost('42392','bad');">
-                                <img src="https://www.disability.ru/blog/pics/minus.gif" width="16" height="12" border="0" alt="минус" title="минус">
+                                <svg
+                                  class="icon-svg icon-svg-blog color_icons"><use
+                                  xlink:href="svg/id_icons.svg#icon-minus"></use></svg>
                               </a>
                             </span>
                              ответов: <span id="kolans_42392" style="margin-right: 5px">7</span>
                             <span id="ans_subp_42392" style="position: relative; top: 2px;">
                                <a href="#" onclick="return Subans('42392','yes');">
-                                 <img src="pics/com_u.png" width="16" height="16" border="0" alt="не сообщать об ответах" title="не сообщать об ответах">
+                                 <svg
+                                   class="icon-svg icon-svg-blog color_icons"><use
+                                   xlink:href="svg/id_icons.svg#icon-com_u"></use></svg>
                                </a>
                              </span>
                              просмотров: <span id="kolsee_42392" style="margin-right: 5px">67</span>

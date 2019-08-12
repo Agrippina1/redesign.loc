@@ -1,3 +1,42 @@
+.bookmarks-online {
+  margin-bottom: 50px;
+}
+.bookmarks-wrap {
+  width: 291px;
+  margin: auto;
+}
+.bookmark {
+  display: inline-block;
+  width: 137px;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: bottom;
+  background: #c1c1c1;
+  border-radius: 15px 15px 0 0;
+  box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  padding: 6px 0;
+  margin-right: 6px;
+}
+.bookmark-decor {
+  display: block;
+  width: 700px;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  margin: auto;
+}
+.active {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  box-shadow: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #e0e0e0;
+}
+
 h4, .online-text {
   font-size: 16px;
   text-align: center;
@@ -60,6 +99,34 @@ strong {
 }
 
 @media (max-width: 767px) {
+  .bookmark-decor {
+    display: none;
+  }
+  .bookmarks-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  .bookmark {
+    width: 240px;
+    border-radius: 0;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin: auto;
+  }
+  .pages-online {
+    border-radius: 15px 15px 0 0;
+  }
+  .chat-online {
+    border-radius: 0 0 15px 15px;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.25);
+  }
+  .active {
+    width: 300px;
+    border-radius: 15px 0;
+    box-shadow: none;
+  }
+
   .another_wrapper_new {
     width: 298px;
     border: 1px solid #c3c3c3;
