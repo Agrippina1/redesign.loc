@@ -20,8 +20,17 @@
 .author-blog-info {
   font-weight: normal;
 }
+.icon-svg-blog {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
 .link-name {
   text-align: center;
+}
+.post-title-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 .blog-name {
   display: -webkit-box;
@@ -67,9 +76,6 @@
   display: table-cell;
   text-align: right;
   padding-left: 5px;
-}
-.add-subscription {
-  font-weight: bold;
 }
 .blog-post-wrapper {
   border: 6px solid #f2f2f2;
@@ -174,6 +180,10 @@ a.post-data {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+.end_line span,
+.comment_info span {
+  margin-left: 10px;
 }
 .add_link {
   font-size: 14px;
