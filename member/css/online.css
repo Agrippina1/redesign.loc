@@ -1,42 +1,46 @@
 .bookmarks-online {
-  margin-bottom: 50px;
+  text-align: center;
 }
-.bookmarks-wrap {
-  width: 291px;
-  margin: auto;
+.bookmarks-online-item {
+  display: inline-block;
+  margin-right: 9px;
 }
 .bookmark {
-  display: inline-block;
-  width: 137px;
-  font-size: 18px;
-  text-align: center;
-  vertical-align: bottom;
-  background: #c1c1c1;
+  background: #efefef;
+  box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.15);
   border-radius: 15px 15px 0 0;
-  box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  padding: 6px 0;
-  margin-right: 6px;
+  padding: 17px 15px 4px 20px;
 }
-.bookmark-decor {
-  display: block;
-  width: 700px;
-  height: 10px;
-  background: #e0e0e0;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  margin: auto;
+.icon-svg-bookmarks-online {
+  width: 24px;
+  height: 24px;
+  padding-right: 9px;
+}
+h5 {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+  vertical-align: super;
 }
 .active {
-  font-size: 20px;
-  line-height: 24px;
   font-weight: bold;
-  box-shadow: none;
-  padding-top: 10px;
+  background: #f8f8f8;
+  box-shadow: 0 -2px 1px  rgba(0, 0, 0, 0.15);
+  padding-top: 25px;
+}
+.active > .icon-svg-bookmarks-online {
+  padding-bottom: 8px;
+}
+.active > h5 {
+  font-weight: bold;
+  vertical-align: text-bottom;
   padding-bottom: 10px;
-  background: #e0e0e0;
 }
 
+.content-block {
+  border-radius: 5px;
+}
 h4, .online-text {
   font-size: 16px;
   text-align: center;
@@ -99,32 +103,28 @@ strong {
 }
 
 @media (max-width: 767px) {
-  .bookmark-decor {
+  .main-content {
+    padding: 0;
+  }
+  .bookmarks-online {
+    margin-bottom: 2px;
+  }
+  .bookmarks-online h5 {
     display: none;
   }
-  .bookmarks-wrap {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-  }
   .bookmark {
-    width: 240px;
-    border-radius: 0;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    margin: auto;
-  }
-  .pages-online {
-    border-radius: 15px 15px 0 0;
-  }
-  .chat-online {
-    border-radius: 0 0 15px 15px;
-    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.25);
+    padding: 24px 21px 4px 23px;
   }
   .active {
-    width: 300px;
-    border-radius: 15px 0;
-    box-shadow: none;
+    padding-top: 36px;
+  }
+  .icon-svg-bookmarks-online {
+    width: 32px;
+    height: 32px;
+    padding-right: 0;
+  }
+  .active .icon-svg-bookmarks-online {
+    padding-bottom: 8px;
   }
 
   .another_wrapper_new {
