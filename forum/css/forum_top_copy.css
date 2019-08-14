@@ -1,17 +1,99 @@
 .table_design {
   display: table;
+  margin-bottom: 15px;
 }
 .row-header {
   display: table-header-group;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  background: #00147c;
 }
 .row {
   display: table-row-group;
 }
 .cell {
   display: table-cell;
-  border: 1px solid #00147c;
+  vertical-align: middle;
   padding: 5px;
 }
+.section,
+.table-header-item {
+  display: none;
+}
+.main-content {
+  font-size: 16px;
+}
+.law {
+  text-decoration: underline;
+}
+.law-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.form-group-template {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.select-group-template {
+  margin-bottom: 15px;
+}
+.group-radio {
+  display: inline-block;
+  margin-right: 20px;
+}
+.forum-search {
+  text-align: right;
+  cursor: pointer;
+}
+.form_button {
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+.btn_in_item {
+  text-align: center;
+  margin: 15px 0;
+}
+.block_content {
+  background: #f8f8f8;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 5px 15px;
+  margin-bottom: 7px;
+}
+.forum-table-top .cell:not(:nth-child(2)) {
+  text-align: center;
+}
+.table_link_name {
+  font-weight: bold;
+}
+.line_link_in a {
+  font-size: 14px;
+  text-decoration: underline;
+}
+.icon-attached {
+  width: 16px;
+  height: 16px;
+}
+.forum-table-section .row-header:first-child {
+  width: 70%;
+}
+.forum-table-section .cell:not(:first-child) {
+  text-align: center;
+}
+.forum-section-title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 
 @media (max-width: 767px) {
   .main-content {
@@ -25,22 +107,27 @@
     display: block;
     border: none;
   }
+  .table_design .cell {
+    border: none;
+  }
   .row-header {
     display: none;
   }
   .row {
     display: flex;
     flex-wrap: wrap;
-    background: #efefef;
     border-bottom: 1px solid #000;
   }
   .table_line_0 {
     width: 100%;
     order: -1;
-    background: #d9e2e3;
   }
   .table_line_center_0 {
     width: 100%;
+  }
+  .section,
+  .table-header-item {
+    display: block;
   }
   .table_line_center {
     width: 30%;
@@ -50,5 +137,15 @@
     width: 100%;
     text-align: center;
     text-decoration: underline;
+  }
+  .forum-topic:nth-child(odd) {
+    background: #d9e2e3;
+  }
+  .forum-topic:nth-child(even) {
+    background: #c8d6da;
+  }
+
+  .forum-table-section {
+    display: none;
   }
 }
