@@ -311,7 +311,7 @@ a.post-data {
     padding: 16px 5px;
   }
   .author-blog-header {
-    display: block;
+    flex-direction: column-reverse;
   }
   .author-blog {
     margin: 0 auto 20px;
