@@ -1,5 +1,6 @@
 .table_design {
   display: table;
+  width: 100%;
   margin-bottom: 15px;
 }
 .row-header {
