@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>adaptive</title>
+</head>
+<body>
+<style type="text/css">
+    table {
+        border-collapse: collapse;
+    }
+
+    thead th {
+        background-color: lightpink;
+    }
+
+    tbody th {
+        background-color: lightgreen;
+    }
+
+    th, td {
+        border: 1px solid;
+    }
+
+    .narrow-th {
+        font-weight: bold;
+        background-color: yellow;
+    }
+
+    @media only screen and (max-width: 600px) {
+        table {
+            display: block;
+            border-bottom: 1px solid;
+        }
+
+        caption, tr, tbody {
+            display: block;
+        }
+
+        thead {
+            position: absolute;
+            left: -10000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        td, th {
+            border-bottom: 0;
+            padding: 4px 8px;
+            display: block;
+        }
+
+        th {
+            text-align: left;
+        }
+    }
+    @media only screen and (min-width: 601px) {
+        .narrow-th {
+            display: none;
+        }
+
+    }
+</style>
+<table role="grid">
+    <caption>мои хобби</caption>
+    <thead role="presentation">
+    <tr role="row">
+        <th role="columnheader">
+            название
+        </th>
+        <th role="columnheader">
+            описание
+        </th>
+        <th role="columnheader">
+            дополнительная инфа
+        </th>
+    </tr>
+    </thead>
+    <tbody role="presentation">
+    <tr role="row">
+        <th role="rowheader">
+            <span aria-hidden="true" class="narrow-th">название: </span>футбол
+        </th>
+        <td role="gridcell">
+            <span aria-hidden="true" class="narrow-th">описание: </span>командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) большее количество раз, чем команда соперника..
+        </td>
+        <td role="gridcell">
+            <span aria-hidden="true" class="narrow-th">дополнительная инфа: </span><a href="https://en.wikipedia.org/wiki/Association_football">Wikipedia</a>
+        </td>
+    </tr>
+    <tr role="row">
+        <th role="rowheader"><span class="ttt"></span>
+            <span aria-hidden="true" class="narrow-th">название: </span>танцы
+        </th>
+        <td role="gridcell">
+            <span aria-hidden="true" class="narrow-th">описание: </span>ритмичные, выразительные телодвижения, обычно выстраиваемые в определённую композицию и исполняемые с музыкальным сопровождением.
+        </td>
+        <td role="gridcell">
+            <span aria-hidden="true" class="narrow-th">дополнительная инфа: </span><a href="https://en.wikipedia.org/wiki/Dance">Wikipedia</a>
+        </td>
+    </tr>
+    <tr role="row">
+        <th role="rowheader">
+            <span aria-hidden="true" class="narrow-th">название: </span>садоводство
+        </th>
+        <td role="gridcell">
+            <span aria-hidden="true" class="narrow-th">описание: </span>Одним из направлений декоративного садоводства является комнатное садоводство — выращивание декоративных растений в домашних условиях.
+        </td>
+        <td role="gridcell">
+            <span aria-hidden="true" class="narrow-th">дополнительная инфа: </span><a href="https://en.wikipedia.org/wiki/Gardening">Wikipedia</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
