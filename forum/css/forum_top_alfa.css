@@ -4,17 +4,17 @@
   margin-bottom: 15px;
 }
 .row-header {
-  display: table-row;
+  /*display: table-header-group;*/
   color: #ffffff;
   font-weight: bold;
   text-align: center;
   background: #00147c;
 }
 .row {
-  display: table-row;
+  /*display: table-row-group;*/
 }
 .cell {
-  display: table-cell;
+  /*display: table-cell;*/
   vertical-align: middle;
   padding: 5px;
 }

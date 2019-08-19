@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grid</title>
+</head>
+<body>
+<style type="text/css">
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(50px, 1fr));
+        background-color: #4b4b4b;
+        max-width: 800px;
+    }
+
+    .row {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(50px, 1fr));
+    }
+
+    div:nth-child(4) { grid-row-start: 2; }
+    div:nth-child(5) { grid-row-start: 3; }
+
+    .box {
+        margin: 1px;
+        background-color: #ffffff;
+    }
+</style>
+
+<div class="wrapper" role="grid">
+    <div class="row" role="row">
+        <div class="box" role="columnheader">Наименование</div>
+        <div class="box" role="columnheader">Цена</div>
+        <div class="box" role="columnheader">Количество</div>
+    </div>
+    <!-- Table Row -->
+    <div class="row" role="row">
+        <div class="box" role="gridcell">Мячик</div>
+        <div class="box" role="gridcell">Он бесценен</div>
+        <div class="box" role="gridcell">Одна штука</div>
+    </div>
+
+    <!-- Table Row -->
+    <div class="row" role="row">
+        <div class="box" role="gridcell">Гуталин</div>
+        <div class="box" role="gridcell">Сколько не жалко</div>
+        <div class="box" role="gridcell">Завались</div>
+    </div>
+</div>
+</body>
+</html>
