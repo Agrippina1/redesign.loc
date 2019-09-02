@@ -108,7 +108,7 @@
         <a href="#menu_main" data-modal-id="#menu_main" class="main-nav__toggle modal_open" role="button" aria-label="Сейчас в чате" title="Сейчас в чате">
           <svg class="icon-svg color_icons icon-menu_item"><use xlink:href="#icon-chaters"></use></svg>
         </a>
-        <span class="number-user"></span>
+        <span class="number-user" role="marquee"></span>
         <div class="logo-link-wrapper">
           <a href="index.html" class="logo-img" title="Выход">
             <picture>
@@ -427,13 +427,14 @@
 
   <div class="modal-content">
     <div id="menu_smiles" class="info-user-block color_menu_fon modal-content-show modal_div">
-      <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
-        Закрыть</button>
-      <div class="registration-wrapper" role="navigation">
+
+      <div class="registration-wrapper">
         <div class="menu-title-wrap">
           <a name="menu_registration"></a>
           <h3 class="menu-title color_main_fon color_accent nav_border">Смайлики</h3>
         </div>
+        <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
+        Закрыть</button>
         <div class="smiles-list">
           <ul class="smiles-list-block">
             <li class="smile" smile=":ля:"><img src='https://www.disability.ru/oldchat/pics/36.gif' width=57 height=48
@@ -659,11 +660,11 @@
   <div id="say_footer">
     <!--Форма ввода текста-->
     <div id="new_message" class="new-text-count" style="display: none;">Новых сообщений: <span id="new_text_count">0</span></div>
-    <footer class="footer-content" aria-label="Панель ввода текста" role="contentinfo">
+    <div class="footer-content" aria-label="Панель ввода текста" role="main">
       <div class="footer-wrap color_main_fon color_accent footer"></div>
       <form id="form_say">
         <div class="footer-text">
-          <button data-modal-id="#menu_smiles" class="btn-say modal_open" aria-label="Смайлики" title="Смайлики">
+          <button data-modal-id="#menu_smiles" type="button" class="btn-say modal_open" aria-label="Смайлики" title="Смайлики">
             <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-smiles"></use></svg>
           </button>
 
@@ -673,12 +674,12 @@
           <button class="btn-say" type="submit" aria-label="Сказать" title="Сказать">
             <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-say"></use></svg>
           </button>
-          <button class="btn-say" aria-label="Приват" title="Приват">
+          <button class="btn-say" type="button" aria-label="Приват" title="Приват">
             <svg class="icon-svg-text icon-chat"><use xlink:href="#icon-private"></use></svg>
           </button>
         </div>
       </form>
-    </footer>
+    </div>
   </div>
 </div>
 <div id="overlay" class="modal-overlay menu-overlay"></div>
