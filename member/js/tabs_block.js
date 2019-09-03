@@ -1,18 +1,21 @@
 $(document).ready(function() {
+    $('#my_tabs>li>.bookmark').attr({
+        "aria-selected": false,
+        "aria-expanded": false
+    });
+
     $('.bookmark').click(function (event) {
         var id = $(this).attr('id');
         $('.tabs_block_js').css('display', 'none');
 
-        // $('.bookmarks-online-item').attr('tabindex', '-1');
-        // $('.bookmarks-online-item > this').attr('ggg', '999');
-
-        $('.bookmark').removeClass('active');
-        $('.bookmark').attr('aria-selected', 'false');
-        $('.bookmark').attr('aria-expanded', 'false');
-        $('#'+id).addClass('active');
-        $('#'+id).attr('aria-selected', 'true');
-        $('#'+id).attr('aria-expanded', 'true');
-
+        $('.bookmark').removeClass('active').attr({
+            "aria-selected": false,
+            "aria-expanded": false
+        });
+        $('#'+id).addClass('active').attr({
+            "aria-selected": true,
+            "aria-expanded": true,
+        });
 
         $('#tab_info_'+id).slideToggle();
     })

@@ -406,21 +406,27 @@
         <div class="m-c-w">
 
           <h4 class="content-title">Дни рождения</h4>
-          <ul class="bookmarks-dr">
-            <li class="bookmarks-dr-item">
-              <a href="#" id="yesterday" class="bookmark yesterday">
+          <ul class="bookmarks-dr" role="tablist">
+            <li class="bookmarks-dr-item"
+                role="presentation" aria-controls="tab_info_yesterday">
+              <a href="#" id="yesterday" class="bookmark yesterday"
+                 aria-expanded="false" aria-selected="false">
                 <h5>Вчера</h5>
               </a>
             </li>
-            <li class="bookmarks-dr-item">
-              <a href="#" id="today" class="bookmark today active">
+            <li class="bookmarks-dr-item"
+                role="presentation" aria-controls="tab_info_today">
+              <a href="#" id="today" class="bookmark today active"
+                 aria-selected="true" aria-expanded="true">
                 <svg class="icon-svg icon-svg-bookmarks-dr color_icons"><use
                   xlink:href="../site/icons/id_icons.svg#icon-dr_color"></use></svg>
                 <h5>Сегодня</h5>
               </a>
             </li>
-            <li class="bookmarks-dr-item">
-              <a href="#" id="tomorrow" class="bookmark tomorrow">
+            <li class="bookmarks-dr-item"
+                role="presentation" aria-controls="tab_info_tomorrow">
+              <a href="#" id="tomorrow" class="bookmark tomorrow"
+                 aria-expanded="false" aria-selected="false">
                 <h5>Завтра</h5>
               </a>
             </li>
@@ -428,7 +434,9 @@
 
           <div class="content-block">
             <div class="container-dr">
-              <div id="tab_info_yesterday" class="tabs_block_js" style="display: none">
+              <div id="tab_info_yesterday" class="tabs_block_js"
+                   role="tabpanel" aria-labelledby="yesterday" aria-live="polite"
+                   style="display: none">
                 <ul class="list-dr">
                   <li class="another_wrapper_new woman">
                     <a href="info_id.php?id=29723" class="member_block_new">
@@ -511,7 +519,9 @@
                 </ul>
               </div>
 
-              <div id="tab_info_today" class="tabs_block_js">
+              <div id="tab_info_today" class="tabs_block_js"
+                   role="tabpanel" aria-labelledby="today" aria-live="polite"
+                   style="display: block">
                 <ul class="list-dr">
                   <li class="another_wrapper_new man">
                     <a href="info_id.php?id=104953" class="member_block_new">
@@ -609,7 +619,9 @@
                 </ul>
               </div>
 
-              <div id="tab_info_tomorrow" class="tabs_block_js" style="display: none">
+              <div id="tab_info_tomorrow" class="tabs_block_js"
+                   role="tabpanel" aria-labelledby="tomorrow" aria-live="polite"
+                   style="display: none">
                 <ul class="list-dr">
                   <li class="another_wrapper_new woman">
                     <a href="info_id.php?id=29723" class="member_block_new">
