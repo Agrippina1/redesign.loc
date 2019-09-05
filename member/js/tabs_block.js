@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    // $('#my_tabs').attr('role', 'tablist');
+    // $('#my_tabs>li').attr({
+    //     "role": "presentation",
+    //     "aria-controls": "tab_info_" + $('#my_tabs>li').children('.bookmark').index()
+    // });
+
     $('#my_tabs>li>.bookmark').attr({
         "aria-selected": false,
         "aria-expanded": false
