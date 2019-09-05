@@ -19,8 +19,7 @@
   <link rel="stylesheet" href="../site/css/icon.css">
   <link rel="stylesheet" href="../site/skins/blue/css/colors.css">
   <link rel="stylesheet" href="../site/skins/blue/css/svg.css">
-  <link type="text/css" href="../site/moduls/jquery/css/smoothness/jquery-ui-1.8.custom.css" rel="Stylesheet" />
-
+  <link rel="stylesheet" href="../site/moduls/jquery/css/jquery-ui.css">
 
 </head>
 <body>
@@ -395,7 +394,7 @@
               <svg class="icon-svg icon-svg-breadcrumbs color_icons"><use
                       xlink:href="../site/icons/id_icons.svg#icon-navigator"></use></svg>
             </a>
-            <a name="navigator" class="breadcrumbs-item" href="#">/ Знакомства</a>
+            <a name="navigator" class="breadcrumbs-item" href="#">/ Дневники</a>
           </h1>
         </div>
         <div class="banner2-3 banner2" aria-label="Реклама" role="complementary">
@@ -404,14 +403,11 @@
 
         <a name="content"></a>
         <div class="m-c-w">
+          <h4 class="content-title">Дневники</h4>
+          <index><br><br><br>
+            <div align="right" style = "padding-bottom: 5px"><a href="https://www.youtube.com/watch?v=zVp698QUEng" class="add_link" target="_blank"><img src="pics/question_grey.png" title="руководство пользователя" alt="руководство пользователя" border="0" height="18" width="17"></a></div>
 
-          <div aria-label="содержание" role="main" style="padding-top: 18px; padding-bottom: 15px;">
-            <h4 class="content-title">Дневники</h4>
-
-            <index><br><br><br>
-              <div align="right" style = "padding-bottom: 5px"><a href="https://www.youtube.com/watch?v=zVp698QUEng" class="add_link" target="_blank"><img src="pics/question_grey.png" title="руководство пользователя" alt="руководство пользователя" border="0" height="18" width="17"></a></div>
-
-              <div id="tabs" role="tabpanel">
+            <div id="tabs">
                 <span style="float:right; text-align:right; padding-top: 8px; padding-right: 5px;">
                   <form id='form_post' name='form_post' style='display: none'>
                     <select name='categoria' class='form_field' id='categoria' onChange='ChgFullctg();'>
@@ -427,18 +423,16 @@
                   </form>
                 </span>
 
-                <ul role="tablist">
-                  <li role="presentation"><a href="topb.html" role="tab"><span>Топ</span></a></li>
-                  <li role="presentation"><a href="topb.php?type=new" role="tab"><span>Новые</span></a></li>
-                  <li role="presentation"><a href="topb.php?type=ans" role="tab"><span>Обсуждаемые</span></a></li>
-                  <li role="presentation"><a href="top.php?type=tla" role="tab" ><span>Статистика</span></a></li>
-                  <li role="presentation"><a href="top.php?type=mys" role="tab"><span>Моя подписка</span></a></li>
-                  <li role="presentation"><a href="top.php?type=myb&sort=ans" role="tab" ><span>Мой дневник</span></a></li>
-                </ul>
-              </div>
-            </index>
-          </div>
-
+              <ul>
+                <li><a href="topb.html"><span>Топ</span></a></li>
+                <li><a href="top.php?type=tla"><span>Новые</span></a></li>
+                <li><a href="top.php?type=tla"><span>Обсуждаемые</span></a></li>
+                <li><a href="top.php?type=tla"><span>Статистика</span></a></li>
+                <li><a href="top.php?type=mys"><span>Моя подписка</span></a></li>
+                <li><a href="top.php?type=myb&sort=ans"><span>Мой дневник</span></a></li>
+              </ul>
+            </div>
+          </index>
 
         </div>
       </div>
@@ -512,12 +506,10 @@
   </div>
   </footer>
 </div>
-<div id="overlay" class="modal-overlay menu-overlay"></div>
-
-<script type="text/javascript" src="../site/moduls/jquery/jquery-ui.js"></script>
-<script src="js/blog.js"></script>
-<script src="../site/js/js-redesign.js"></script>
-<script src="../site/js/svgxuse.js"></script>
+<script type="text/javascript" src="../site/moduls/jquery/jquery-ui14.js"></script>
+<script type="text/javascript"  src="js/blog.js"></script>
+<script type="text/javascript" src="../site/js/js-redesign.js"></script>
+<script type="text/javascript" src="../site/js/svgxuse.js"></script>
 
 </body>
 </html>

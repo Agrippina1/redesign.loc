@@ -5,7 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-<div id="ui-tabs-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom"><div align="center" style="text-transform: uppercase; font-weight: bold; text-shadow:2px 2px 1px #DDDDDD; padding-top: 5px;">Дневники - Топ лучших</div><style type="text/css">
+<div id="ui-tabs-1">
+    <div align="center"
+         style="text-transform: uppercase;
+         font-weight: bold;
+         text-shadow:2px 2px 1px #DDDDDD;
+         padding-top: 5px;">Дневники - Топ лучших</div><style type="text/css">
     <!--
     .tblog_design {
         margin-top: 5px;
@@ -102,12 +107,14 @@
         color: #212221;
     }
 
-    ol {
-        counter-reset:li; /* Инициализируем счетчик */
-    }
-    ol > li:before.top_li {
-        counter-increment: li; /* Увеличение счетчика на 1 */
-    }
+    /*ol {*/
+    /*    counter-reset: li; !* Инициализируем счетчик *!*/
+    /*    list-style-type: none;*/
+    /*}*/
+    /*ol>li::before {*/
+    /*    counter-increment: li; !* Увеличение счетчика на 1 *!*/
+    /*    content: counter(li);*/
+    /*}*/
     -->
 </style>
 

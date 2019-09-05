@@ -10,7 +10,7 @@
   background: #efefef;
   box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.15);
   border-radius: 15px 15px 0 0;
-  padding: 17px 15px 4px 20px;
+  padding: 17px 15px 3px 20px;
 }
 .active {
   font-weight: bold;
@@ -23,7 +23,7 @@
   height: 24px;
   padding-right: 9px;
 }
-h5 {
+.tab-name {
   display: inline-block;
   font-size: 16px;
   line-height: 19px;
@@ -34,7 +34,7 @@ h5 {
 .active > .icon-svg-bookmarks-dr {
   padding-bottom: 5px;
 }
-.active > h5 {
+.active > .tab-name {
   font-weight: bold;
   vertical-align: text-bottom;
   padding-bottom: 10px;
@@ -110,7 +110,7 @@ strong {
   .bookmark {
     padding: 16px 16px  4px;
   }
-  h5 {
+  .tab-name {
     font-size: 18px;
   }
   .active {

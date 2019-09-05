@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Дневники</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="../site/css/normalize.css">
@@ -19,14 +19,15 @@
   <link rel="stylesheet" href="../site/css/icon.css">
   <link rel="stylesheet" href="../site/skins/blue/css/colors.css">
   <link rel="stylesheet" href="../site/skins/blue/css/svg.css">
-  <link rel="stylesheet" href="css/dr.css">
+  <link rel="stylesheet" href="../site/moduls/jquery/css/jquery-ui.css">
+
 
 </head>
 <body>
 <div class="container color_link_hover">
   <div class="visually-hidden">
     <ul aria-label="Disability.ru" role="directory">
-      <li><a href="#menu_items" accesskey='r'>Разделы</a></li>
+      <li><a href='#menu_items' accesskey='r'>Разделы</a></li>
       <li><a href='#menu_users' accesskey='m'>Пользователям</a></li>
       <li><a href='#navigator' accesskey='n'>Навигатор</a></li>
       <li><a href='#content' accesskey='s'>Содержание</a></li>
@@ -43,7 +44,7 @@
           <svg class="icon-svg color_icons icon-menu_item"><use xlink:href="../site/icons/id_icons.svg#icon-menu_item"></use></svg>
           Открыть меню</a>
         <div class="logo-link-wrapper">
-          <a href="index.html" class="logo-img" title="Disability.ru">
+          <a href="index2.html" class="logo-img" title="Disability.ru">
             <picture>
               <source media="(min-width: 1024px)" srcset="../site/skins/blue/pics/svg/logo.svg">
               <source media="(min-width: 768px)" srcset="../site/skins/blue/pics/svg/logo_tablet.svg">
@@ -314,7 +315,7 @@
                   <svg class="icon-svg icon-svg-menu icon-svg-registration color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-register_bw"></use></svg>
                   <span class="registration-text">Регистрация</span>
                 </p>
-                <form class="form-registration" action="index.html" method="post">
+                <form class="form-registration" action="index2.html" method="post">
                   <div class="form-registration-wrapper">
                     <div class="form-group-wrapper">
                       <div class="form-group">
@@ -353,7 +354,7 @@
         <div class="nav-block-wrapper">
           <div class="nav-block color_border color_menu_fon" aria-label="Поиск" role="complementary">
             <a name="menu_search"></a><h3 class="menu-title color_main_fon color_accent nav_border">Поиск на портале</h3>
-            <form class="form" action="index.html" method="post">
+            <form class="form" action="index2.html" method="post">
               <div class="form-group form-search">
                 <input class="form-field" id="search-field" type="text" name="search-name">
                 <label for="search-field"></label>
@@ -385,17 +386,16 @@
     </div>
     <div class="content-left">
 
-
       <!--Основной контент-->
 
-      <div class="main-content color_content_fon color_main_content" aria-label="содержание" role="main">
+      <div class="main-content color_content_fon color_main_content" aria-label="содержание">
         <div class="breadcrumbs color_link_hover">
           <h1 class="color_link_hover">
             <a class="breadcrumbs-item" href="https://www.disability.ru" aria-label="Disability.ru">
               <svg class="icon-svg icon-svg-breadcrumbs color_icons"><use
-                xlink:href="../site/icons/id_icons.svg#icon-navigator"></use></svg>
+                      xlink:href="../site/icons/id_icons.svg#icon-navigator"></use></svg>
             </a>
-            <a name="navigator" class="breadcrumbs-item" href="#">/ Дни рождения</a>
+            <a name="navigator" class="breadcrumbs-item" href="#">/ Дневники</a>
           </h1>
         </div>
         <div class="banner2-3 banner2" aria-label="Реклама" role="complementary">
@@ -405,306 +405,41 @@
         <a name="content"></a>
         <div class="m-c-w">
 
-          <h4 class="content-title">Дни рождения</h4>
-          <ul class="bookmarks-dr" role="tablist">
-            <li class="bookmarks-dr-item"
-                role="presentation" aria-controls="tab_info_yesterday">
-              <a href="#" id="yesterday" class="bookmark yesterday"
-                 aria-expanded="false" aria-selected="false">
-                  <span class="tab-name">Вчера</span>
-              </a>
-            </li>
-            <li class="bookmarks-dr-item"
-                role="presentation" aria-controls="tab_info_today">
-              <a href="#" id="today" class="bookmark today active"
-                 aria-selected="true" aria-expanded="true">
-                <svg class="icon-svg icon-svg-bookmarks-dr color_icons"><use
-                  xlink:href="../site/icons/id_icons.svg#icon-dr_color"></use></svg>
-                <span class="tab-name">Сегодня</span>
-              </a>
-            </li>
-            <li class="bookmarks-dr-item"
-                role="presentation" aria-controls="tab_info_tomorrow">
-              <a href="#" id="tomorrow" class="bookmark tomorrow"
-                 aria-expanded="false" aria-selected="false">
-                  <span class="tab-name">Завтра</span>
-              </a>
-            </li>
-          </ul>
+          <div aria-label="содержание" role="main" style="padding-top: 18px; padding-bottom: 15px;">
+            <h4 class="content-title">Дневники</h4>
 
-          <div class="content-block">
-            <div class="container-dr">
-              <div id="tab_info_yesterday" class="tabs_block_js"
-                   role="tabpanel" aria-labelledby="yesterday" aria-live="polite"
-                   style="display: none">
-                <ul class="list-dr">
-                  <li class="another_wrapper_new woman">
-                    <a href="info_id.php?id=29723" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=29723&ver=b" width=140" height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>Oxana</strong>
-                          <span>Оксана<br>Киев, Украина</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
+            <index><br><br><br>
+              <div align="right" style = "padding-bottom: 5px"><a href="https://www.youtube.com/watch?v=zVp698QUEng" class="add_link" target="_blank"><img src="pics/question_grey.png" title="руководство пользователя" alt="руководство пользователя" border="0" height="18" width="17"></a></div>
 
-                  <li class="another_wrapper_new man">
-                    <a href="info_id.php?id=21765" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=21765&ver=b" width=140" height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>Valsav</strong>
-                          <span>Валентин<br>Москва, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
+              <div id="tabs" role="tabpanel">
+                <span style="float:right; text-align:right; padding-top: 8px; padding-right: 5px;">
+                  <form id='form_post' name='form_post' style='display: none'>
+                    <select name='categoria' class='form_field' id='categoria' onChange='ChgFullctg();'>
+                      <option value='-1' style='margin-bottom: 10px;'>=== Все категории ===</option>
+                      <option value='0' style='background-color: #F3F3F3; font-weight: bold;'>Дом</option>
+                      <option value='123'>&nbsp; &nbsp; &nbsp;Архитектура - 132</option>
+                      <option value='117'>&nbsp; &nbsp; &nbsp;Бытовая техника - 45</option>
+                      <option value='0' style='background-color: #F3F3F3; font-weight: bold;'>Интернет</option>
+                      <option value='128'>&nbsp; &nbsp; &nbsp;Web-программирование - 31</option>
+                      <option value='63'>&nbsp; &nbsp; &nbsp;Коллекции ссылок - 67</option>
+                      <option value='adm' style='background-color: #FFF0F0; font-weight: bolder; margin-top: 10px;'>=== Редактировать ===</option>
+                    </select>
+                  </form>
+                </span>
 
-                  <li class="another_wrapper_new man">
-                    <a href="info_id.php?id=113448" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/photo/photo_fb.jpg" width=140" height="140" alt="фото нет">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>alexsg</strong>
-                          <span>Алексей<br>Сыктывкар, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="another_wrapper_new woman">
-                    <a href="info_id.php?id=23816" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=23816&ver=b" width=140" height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>koroleva</strong>
-                          <span>Альбина<br>Уфа, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="another_wrapper_new woman">
-                    <a href="info_id.php?id=95121" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/photo/photo_fb.jpg" width=140" height="140" alt="фото нет">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>natalya</strong>
-                          <span>Наталья<br>Кемерово, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="another_wrapper_new man">
-                    <a href="info_id.php?id=3261" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=3261&ver=b" width=140" height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>tester</strong>
-                          <span>Павел Лапин<br>Мурманск, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
+                <ul role="tablist">
+                  <li role="presentation"><a href="topb.html" role="tab"><span>Топ</span></a></li>
+                  <li role="presentation"><a href="topb.php?type=new" role="tab"><span>Новые</span></a></li>
+                  <li role="presentation"><a href="topb.php?type=ans" role="tab"><span>Обсуждаемые</span></a></li>
+                  <li role="presentation"><a href="top.php?type=tla" role="tab" ><span>Статистика</span></a></li>
+                  <li role="presentation"><a href="top.php?type=mys" role="tab"><span>Моя подписка</span></a></li>
+                  <li role="presentation"><a href="top.php?type=myb&sort=ans" role="tab" ><span>Мой дневник</span></a></li>
                 </ul>
               </div>
-
-              <div id="tab_info_today" class="tabs_block_js"
-                   role="tabpanel" aria-labelledby="today" aria-live="polite"
-                   style="display: block">
-                <ul class="list-dr">
-                  <li class="another_wrapper_new man">
-                    <a href="info_id.php?id=104953" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=104953&ver=b" width=140" height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>tookool</strong>
-                          <span>иван<br>Барнаул, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="another_wrapper_new man">
-                    <a href="info_id.php?id=32826" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=32826&ver=b" width=140" height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>Бен</strong>
-                          <span>Валерий<br>Ногинск, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="another_wrapper_new woman">
-                    <a href="info_id.php?id=92446" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=92446&ver=b" width=140"
-                             height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>Гелена</strong>
-                          <span>Татьяна<br>Казань, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="another_wrapper_new woman">
-                    <a href="info_id.php?id=98319" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=98319&ver=b" width=140" height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>Принцеска</strong>
-                          <span>Елена<br>Чебоксары, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="another_wrapper_new man">
-                    <a href="info_id.php?id=107933" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=107933&ver=b" width=140" height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>Татаринбарин</strong>
-                          <span>Рамиль<br>Самара, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="another_wrapper_new man">
-                    <a href="info_id.php?id=3" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=3&ver=b" width=140" height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>Эльмир</strong>
-                          <span>Эльмир<br>Сочи, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="another_wrapper_new man">
-                    <a href="info_id.php?id=113248" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/photo/photo_fb.jpg" width=140"
-                             height="140" alt="фото нет">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>снв</strong>
-                          <span>николай<br>курган, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                </ul>
-              </div>
-
-              <div id="tab_info_tomorrow" class="tabs_block_js"
-                   role="tabpanel" aria-labelledby="tomorrow" aria-live="polite"
-                   style="display: none">
-                <ul class="list-dr">
-                  <li class="another_wrapper_new woman">
-                    <a href="info_id.php?id=29723" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=29723&ver=b" width=140" height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>Oxana</strong>
-                          <span>Оксана<br>Киев, Украина</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="another_wrapper_new woman">
-                    <a href="info_id.php?id=98319" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=98319&ver=b" width=140" height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>Принцеска</strong>
-                          <span>Елена<br>Чебоксары, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="another_wrapper_new man">
-                    <a href="info_id.php?id=107933" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=107933&ver=b" width=140" height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>Татаринбарин</strong>
-                          <span>Рамиль<br>Самара, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="another_wrapper_new woman">
-                    <a href="info_id.php?id=23816" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=23816&ver=b" width=140" height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>koroleva</strong>
-                          <span>Альбина<br>Уфа, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="another_wrapper_new man">
-                    <a href="info_id.php?id=108556" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=108556&ver=b" width=140" height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>Nikatin</strong>
-                          <span>Никита<br>Иваново, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="another_wrapper_new man">
-                    <a href="info_id.php?id=3523" class="member_block_new">
-                      <div class="photo">
-                        <img src="https://www.disability.ru/member/picture_fb.php?pic=3523&ver=b" width=140" height="140" alt="">
-                      </div>
-                      <div class="info_item-dr">
-                        <p class="info_item-dr-text"><strong>Wishmaster</strong>
-                          <span>Владимир<br>Кимры, Россия</span>
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-
-                </ul>
-              </div>
-            </div>
+            </index>
           </div>
+
+
         </div>
       </div>
       <div class="banner2-3 banner3" aria-label="Реклама" role="complementary">
@@ -779,9 +514,10 @@
 </div>
 <div id="overlay" class="modal-overlay menu-overlay"></div>
 
-<script type="text/javascript" src="../site/js/js-redesign.js"></script>
-<script type="text/javascript" src="../site/js/svgxuse.js"></script>
-<script type="text/javascript" src="js/tabs_block.js"></script>
+<script type="text/javascript" src="../site/moduls/jquery/jquery-ui2.min.js"></script>
+<script src="js/blog.js"></script>
+<script src="../site/js/js-redesign.js"></script>
+<script src="../site/js/svgxuse.js"></script>
 
 </body>
 </html>
