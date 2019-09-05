@@ -225,9 +225,7 @@ th {
   background: #e3e3e3;
   border-top: 1px solid #b5bfa7;
   border-bottom: 1px solid #b5bfa7;
-  margin-left: 50px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin: 10px 0 10px 50px;
 }
 .topic-text {
   font-family: "Times New Roman", "Helvetica", "Arial", sans-serif;

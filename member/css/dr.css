@@ -23,7 +23,7 @@
   height: 24px;
   padding-right: 9px;
 }
-h5 {
+.tab-name {
   display: inline-block;
   font-size: 16px;
   line-height: 19px;
@@ -34,7 +34,7 @@ h5 {
 .active > .icon-svg-bookmarks-dr {
   padding-bottom: 5px;
 }
-.active > h5 {
+.active > .tab-name {
   font-weight: bold;
   vertical-align: text-bottom;
   padding-bottom: 10px;
@@ -110,7 +110,7 @@ strong {
   .bookmark {
     padding: 16px 16px  4px;
   }
-  h5 {
+  .tab-name {
     font-size: 18px;
   }
   .active {
