@@ -1,3 +1,8 @@
+.forum-mobile-select,
+.forum-top-title,
+.btn-new-theme {
+  display: none;
+}
 .table_design {
   display: table;
   width: 100%;
@@ -24,7 +29,7 @@
   vertical-align: middle;
   padding: 5px;
 }
-.section,
+.section-item,
 .table-header-item {
   display: none;
 }
@@ -84,6 +89,9 @@
 .table_link_name {
   font-weight: bold;
 }
+.forum_topic_toggle {
+  display: none;
+}
 .line_link_in a {
   font-size: 14px;
   text-decoration: underline;
@@ -109,6 +117,37 @@
   .main-content {
     padding: 0;
   }
+  .law-search {
+    padding-left: 10px;
+    margin-top: 30px;
+  }
+  .form_search {
+    margin-right: 20px;
+  }
+  .btn-white {
+    display: block;
+    font-size: 18px;
+  }
+  .icon-svg-loupe {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+  }
+  .forum-mobile-select,
+  .forum-top-title,
+  .btn-new-theme {
+    display: block;
+  }
+  .forum-mobile-select {
+    padding: 10px;
+  }
+  .forum-top-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 18px;
+  }
   .forum-top-desktop {
     margin-top: 40px;
   }
@@ -117,7 +156,9 @@
     display: block;
     border: none;
   }
-  .row-header {
+  .row-header,
+  .gap,
+  .forum-section-title {
     display: none;
   }
   .row {
@@ -135,34 +176,79 @@
     border-radius: 5px;
   }
   .table_line_center_0 {
+    position: relative;
     width: 100%;
     background: #efefef;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-    padding-top: 10px;
+    padding-top: 50px;
+    margin-bottom: 30px;
   }
-  .section,
+  .line_link_in {
+    vertical-align: super;
+  }
+  .line_link_in a {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+  .forum_topic_toggle {
+    display: block;
+  }
+  .section-item,
   .table-header-item {
     display: block;
     font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 18px;
     font-weight: bold;
   }
   .table-header-item {
     font-size: 18px;
   }
   .table_line_center {
+    position: relative;
     width: 30%;
     font-family: "Arial", "Helvetica", sans-serif;
     text-align: center;
+  }
+  .table-header-item-answers::before {
+    content: "Ответов:";
+  }
+  .table-header-item-views::before {
+    content: "Просм.:";
+  }
+  .table-header-item-rating::before {
+    content: "Рейт.:";
+  }
+  .table-header-item-replied::before {
+    content: "Ответил:";
+  }
+  .section-item::before {
+    content: "Раздел:";
+  }
+  .table-header-item-answers::before,
+  .table-header-item-views::before,
+  .table-header-item-rating::before,
+  .table-header-item-replied::before,
+  .section-item::before {
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .section-item::before {
+    top: 30px;
   }
   .cell .section-name {
     text-align: left;
   }
   .table_line_center-nic {
+    position: relative;
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 25px;
   }
   .nic-name,
   .small {
@@ -187,5 +273,9 @@
   .icon-topic {
     width: 32px;
     height: 32px;
+  }
+  .btn-new-theme,
+  .btn-forum-desktop {
+    margin: 30px auto;
   }
 }
