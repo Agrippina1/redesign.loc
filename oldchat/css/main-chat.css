@@ -34,6 +34,10 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   padding: 10px 15px;
 }
+.online-nochtrs {
+  min-height: 15px;
+  text-align: center;
+}
 .left-content {
   padding-right: 25px;
 }
