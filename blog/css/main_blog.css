@@ -138,7 +138,7 @@ a.autor_last {
     padding: .2em .2em 0;
   }
   .ui-tab {
-    width: 145px;
+    width: 32%;
   }
   .gorizont_pic {
     display: block;
@@ -177,3 +177,11 @@ a.autor_last {
     margin-top: 8px;
   }
 }
+
+@media (max-width: 500px) {
+  .ui-tab {
+    width: 47%;
+  }
+}
+
+
