@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="text-transform: uppercase; font-weight: bold; text-shadow:2px 2px 1px #DDDDDD; padding-top: 5px;" align="center">Моя подписка - Новые посты</div><style type="text/css">
+    <!--
+    .tblog_design {
+        margin-top: 5px;
+        background-color: #8F8F8F;
+        border : 1px solid #9F9F9F;
+    }
+    .tblog_head_center {
+        color: #F7F7F7;
+        font-family: Tahoma, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        text-align: center;
+        text-transform: lowercase;
+    }
+    .tblog_line_0 {
+        background-color: #EFEFEF;
+        padding-left: 5px;
+    }
+    .tblog_line_1 {
+        background-color: #E8E8E8;
+        padding-left: 5px;
+    }
+    .tblog_line_center_0 {
+        background-color: #EFEFEF;
+        padding-left: 5px;
+        text-align: center;
+        padding-right: 5px;
+    }
+    .tblog_line_center_1 {
+        background-color: #E8E8E8;
+        padding-left: 5px;
+        text-align: center;
+    }
+    .small{
+        color: #000000;
+        font-size: 0.8em;
+        text-decoration: none;
+    }
+    a.link_top_head{
+        color: #F7F7F7;
+    }
+    .pointer {
+        cursor: pointer;
+        font-weight : bold;
+    }
+    -->
+</style>
+<table class="tblog_design" role="grid" width="100%" cellspacing="0" cellpadding="2" border="0">
+    <tbody><tr role="row">
+        <th class="tblog_head_center" role="columnheader">Автор</th>
+        <th class="tblog_head_center" role="columnheader" width="35%"><a href="#" onclick="return ShowTop('mys','new','0');" class="link_top_head" title="Новые посты">Последний пост</a></th>
+        <th class="tblog_head_center" role="columnheader" width="45%">Название дневника</th>
+        <th class="tblog_head_center" role="columnheader"><a href="#" onclick="return ShowTop('mys','col','0');" class="link_top_head" title="Активные">Пост.</a></th>
+        <th class="tblog_head_center" role="columnheader"><a href="#" onclick="return ShowTop('mys','ans','0');" class="link_top_head" title="Обсуждаемые">Ответ.</a></th>
+        <th class="tblog_head_center" role="columnheader"><a href="#" onclick="return ShowTop('mys','pop','0');" class="link_top_head" title="Популярные">Рейт.</a></th>
+        <th class="tblog_head_center" role="columnheader"><a href="#" onclick="return ShowTop('mys','lov','0');" class="link_top_head" title="Подписные">Подпис.</a></th>
+    </tr>
+    <tr role="row">
+        <td class="tblog_line_center_0" role="gridcell"><a href="blog.php?id_blog=42" class="table_link_item" target="_blank"><img src="https://www.disability.ru/member/picture.php?pic=14410" alt="" width="50" vspace="1" hspace="1" height="50" border="1"><br>
+            Raptor<br></a></td>
+        <td class="tblog_line_center_0" role="gridcell"><a href="blog.php?id_blog=42" class="table_link_item" target="_blank">Братство</a><br><span class="small">26&nbsp;июль&nbsp;2019 10:13</span></td>
+        <td class="tblog_line_0" role="gridcell"><a href="blog.php?id_blog=42" class="table_link_name" target="_blank">Все и обо всем.</a><br><span class="small"></span></td>
+        <td class="tblog_line_center_0" role="gridcell">428</td>
+        <td class="tblog_line_center_0" role="gridcell"><span id="kolbb_42">1198</span></td>
+        <td class="tblog_line_center_0" role="gridcell">1540</td>
+        <td class="tblog_line_center_0" role="gridcell">12</td>
+    </tr>
+    <tr role="row">
+        <td class="tblog_line_center_1" role="gridcell"><a href="blog.php?id_blog=4061" class="table_link_item" target="_blank"><img src="https://www.disability.ru/member/picture.php?pic=21052" alt="" width="50" vspace="1" hspace="1" height="38" border="1"><br>
+            лорик<br></a></td>
+        <td class="tblog_line_center_1" role="gridcell"><a href="blog.php?id_blog=4061" class="table_link_item" target="_blank">Если мы будем выгонять всех, кто нам не нравится - с кем же мы останемся?</a><br><span class="small">05&nbsp;апр.&nbsp;2019 13:42</span></td>
+        <td class="tblog_line_1" role="gridcell"><a href="blog.php?id_blog=4061" class="table_link_name" target="_blank">****</a><br><span class="small">Задумалась</span></td>
+        <td class="tblog_line_center_1" role="gridcell">17</td>
+        <td class="tblog_line_center_1" role="gridcell"><span id="kolbb_4061">1624</span></td>
+        <td class="tblog_line_center_1" role="gridcell">145</td>
+        <td class="tblog_line_center_1" role="gridcell">2</td>
+    </tr>
+    <tr role="row">
+        <td class="tblog_line_center_0" role="gridcell"><a href="blog.php?id_blog=3871" class="table_link_item" target="_blank"><img src="https://www.disability.ru/member/picture.php?pic=90376" alt="" width="37" vspace="1" hspace="1" height="50" border="1"><br>
+            Molishna<br></a></td>
+        <td class="tblog_line_center_0" role="gridcell"><a href="blog.php?id_blog=3871" class="table_link_item" target="_blank">Как мы в оленя врезались.</a><br><span class="small">23&nbsp;янв.&nbsp;2018 20:01</span></td>
+        <td class="tblog_line_0" role="gridcell"><a href="blog.php?id_blog=3871" class="table_link_name" target="_blank">Ma France</a><br><span class="small"></span></td>
+        <td class="tblog_line_center_0" role="gridcell">34</td>
+        <td class="tblog_line_center_0" role="gridcell"><span id="kolbb_3871">1082</span></td>
+        <td class="tblog_line_center_0" role="gridcell">339</td>
+        <td class="tblog_line_center_0" role="gridcell">16</td>
+    </tr>
+    <tr role="row">
+        <td class="tblog_line_center_1" role="gridcell"><a href="blog.php?id_blog=4959" class="table_link_item" target="_blank"><img src="https://www.disability.ru/member/picture.php?pic=3" alt="" width="37" vspace="1" hspace="1" height="50" border="1"><br>
+            Эльмир<br></a></td>
+        <td class="tblog_line_center_1" role="gridcell"><a href="blog.php?id_blog=4959" class="table_link_item" target="_blank"><span title="голосование" aria-label="голосование"><img src="pics/poll.png" alt="" width="16" height="16"></span> Тридцать четвёртый</a><br><span class="small">01&nbsp;март&nbsp;2018 19:55</span></td>
+        <td class="tblog_line_1" role="gridcell"><a href="blog.php?id_blog=4959" class="table_link_name" target="_blank">test</a><br><span class="small">проверка</span></td>
+        <td class="tblog_line_center_1" role="gridcell">9</td>
+        <td class="tblog_line_center_1" role="gridcell"><span id="kolbb_4959">137</span></td>
+        <td class="tblog_line_center_1" role="gridcell">4</td>
+        <td class="tblog_line_center_1" role="gridcell">2</td>
+    </tr>
+    <tr role="row">
+        <td class="tblog_line_center_0" role="gridcell"><a href="blog.php?id_blog=4018" class="table_link_item" target="_blank"><img src="https://www.disability.ru/member/picture.php?pic=94442" alt="" width="50" vspace="1" hspace="1" height="20" border="1"><br>
+            KoderKun<br></a></td>
+        <td class="tblog_line_center_0" role="gridcell"><a href="blog.php?id_blog=4018" class="table_link_item" target="_blank">No Man’s Sky</a><br><span class="small">18&nbsp;март&nbsp;2017 02:08</span></td>
+        <td class="tblog_line_0" role="gridcell"><a href="blog.php?id_blog=4018" class="table_link_name" target="_blank">Взгляд молчаливого гика</a><br><span class="small">Мир глазами гика-интроверта</span></td>
+        <td class="tblog_line_center_0" role="gridcell">29</td>
+        <td class="tblog_line_center_0" role="gridcell"><span id="kolbb_4018">647</span></td>
+        <td class="tblog_line_center_0" role="gridcell">164</td>
+        <td class="tblog_line_center_0" role="gridcell">6</td>
+    </tr>
+
+
+    </tbody></table>
+
+</body>
+</html>
