@@ -137,8 +137,8 @@ a.autor_last {
     margin-right: -0.18em;
     padding: .2em .2em 0;
   }
-  .ui-tab {
-    width: 32%;
+  .ui-tab a{
+    width: 80%;
   }
   .gorizont_pic {
     display: block;
