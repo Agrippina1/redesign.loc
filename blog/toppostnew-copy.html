@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  </head>
+  <body>
+    <div id="ui-tabs-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
+      <div class="title-blog-top">Новое в подписке - Новые посты</div>
+  
+      <table class="table-blog" role="grid">
+        <tbody>
+          <tr role="row" class="row-header-blog">
+            <th class="tblog_head_center bcell" role="columnheader">Автор</th>
+            <th class="tblog_head_center bcell" role="columnheader" width="35%"><a href="#" onclick="return 
+            ShowTop('scr','new','0');" class="link_top_head" title="Новые посты">Последний пост</a></th>
+            <th class="tblog_head_center bcell" role="columnheader" width="45%">Название дневника</th>
+            <th class="tblog_head_center bcell" role="columnheader"><a href="#" onclick="return ShowTop('scr','col','0');"
+                                                                  class="link_top_head" title="Активные">Пост.</a></th>
+            <th class="tblog_head_center bcell" role="columnheader"><a href="#" onclick="return ShowTop('scr','ans','0');"
+                                                                  class="link_top_head" title="Обсуждаемые">Ответ.</a></th>
+            <th class="tblog_head_center bcell" role="columnheader"><a href="#" onclick="return ShowTop('scr','pop','0');"
+                                                                  class="link_top_head" title="Популярные">Рейт.</a></th>
+            <th class="tblog_head_center bcell" role="columnheader"><a href="#" onclick="return ShowTop('scr','lov','0');"
+                                                                  class="link_top_head" title="Подписные">Подпис.</a></th>
+          </tr>
+          <tr role="row" class="row-blog">
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=4959" class="table_link_item" target="_blank"><img src="https://www.disability.ru/member/picture.php?pic=3" width="37" height="50" hspace="1" vspace="1" border="1" alt=""><br>
+                Эльмир<br></a></td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=4959" class="table_link_item" target="_blank"><span title="голосование" aria-label="голосование"><img src="pics/poll.png" width="16" height="16" alt=""></span> Тридцать четвёртый</a><br><span class="small">01&nbsp;март&nbsp;2018 19:55</span></td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=4959" class="table_link_name" target="_blank">
+              test</a><br><span class="small">проверка</span></td>
+            <td class="bcell" role="gridcell">9</td>
+            <td class="bcell" role="gridcell"><span id="kolbb_4959">137</span></td>
+            <td class="bcell" role="gridcell">4</td>
+            <td class="bcell" role="gridcell">2</td>
+          </tr>
+          <tr role="row" class="row-blog">
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=4018" class="table_link_item" target="_blank"><img src="https://www.disability.ru/member/picture.php?pic=94442" width="50" height="20" hspace="1" vspace="1" border="1" alt=""><br>
+                KoderKun<br></a></td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=4018" class="table_link_item" target="_blank">No Man’s Sky</a><br><span class="small">18&nbsp;март&nbsp;2017 02:08</span></td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=4018" class="table_link_name"
+                                             target="_blank">Взгляд молчаливого гика</a><br><span class="small">Мир глазами гика-интроверта</span></td>
+            <td class="bcell" role="gridcell">29</td>
+            <td class="bcell" role="gridcell"><span id="kolbb_4018">647</span></td>
+            <td class="bcell" role="gridcell">164</td>
+            <td class="bcell" role="gridcell">6</td>
+          </tr>
+          <tr role="row" class="row-blog">
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=4273" class="table_link_item" target="_blank"><img src="https://www.disability.ru/member/picture.php?pic=43610" width="50" height="31" hspace="1" vspace="1" border="1" alt=""><br>
+                Рыбкая<br></a></td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=4273" class="table_link_item" target="_blank">Как отучиться ковырять в носу))</a><br><span class="small">15&nbsp;нояб.&nbsp;2016 16:36</span></td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=4273" class="table_link_name" target="_blank">
+              Саморазвитие</a><br><span class="small">Как быть сильной,ну хоть чуть чуть)</span></td>
+            <td class="bcell" role="gridcell">10</td>
+            <td class="bcell" role="gridcell"><span id="kolbb_4273">127</span></td>
+            <td class="bcell" role="gridcell">27</td>
+            <td class="bcell" role="gridcell">1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!--Мобильная версия-->
+
+    <div class="blog-mobile">
+      <div class="row-blog" role="row">
+        <div class="bcell blog-photo" role="gridcell">
+          <a href="blog.php?id_blog=4959" class="table_link_item" target="_blank">
+            <img src="https://www.disability.ru/member/picture_fb.php?pic=3&ver=b" alt=""><br>
+            Эльмир<br></a>
+        </div>
+        <div class="bcell">
+          <span class="last-post-title">Последний пост:</span>
+          <span class="blog-date">01&nbsp;март&nbsp;2018 19:55</span>
+        </div>
+        <div class="bcell last-post" role="gridcell">
+          <a href="blog.php?id_blog=4959" class="table_link_item" target="_blank">
+              <span title="голосование" aria-label="голосование">
+                <img src="pics/poll.png" width="16" height="16" alt="">
+              </span>Тридцать четвёртый Москва встретила ласково, первые денечки сентября порадовали меня)
+          </a><br>
+        </div>
+        <div class="bcell name-blog" role="gridcell">
+          <span class="last-post-title">Название дневника:</span>
+          <a href="blog.php?id_blog=4959" class="table_link_name" target="_blank">test Стихи, которые хочется
+            перечитывать</a><br>
+          <span class="small">проверка И вот первое, чем мне хотелось поделиться - это цитаты... Не простые, а с юмором, но от этого они не теряют актуальности, наоборот, по0моему, больше заставляют задуматься, да ещё дарят "в нагрузку" хорошее настроение...</span>
+        </div>
+        <div class="block-stat">
+          <span class="post-stat" role="gridcell">
+            <p>Постов:</p>
+            <p>9</p>
+          </span>
+          <span class="post-stat" role="gridcell">
+            <span id="kolbb_4959">
+              <p>Ответов:</p>
+              <p>137</p>
+            </span>
+          </span>
+          <span class="post-stat" role="gridcell">
+            <p>Рейтинг:</p>
+            <p>4</p>
+          </span>
+          <span class="post-stat" role="gridcell">
+            <p>Подписок:</p>
+            <p>2</p>
+          </span>
+        </div>
+      </div>
+
+      <div class="row-blog" role="row">
+        <div class="bcell blog-photo" role="gridcell">
+          <a href="blog.php?id_blog=4959" class="table_link_item" target="_blank">
+            <img src="https://www.disability.ru/member/picture_fb.php?pic=94442&ver=b" alt=""><br>
+            KoderKun<br></a>
+        </div>
+        <div class=" bcell last-post-title">
+          <span>Последний пост:</span>
+          <span class="blog-date">18&nbsp;март&nbsp;2017 02:08</span>
+        </div>
+        <div class="bcell last-post" role="gridcell">
+          <a href="blog.php?id_blog=4959" class="table_link_item" target="_blank">
+              <span title="голосование" aria-label="голосование">
+                <img src="pics/poll.png" width="16" height="16" alt="">
+              </span>No Man’s Sky
+          </a><br>
+        </div>
+        <div class="bcell name-blog" role="gridcell">
+          <span>Название дневника:</span>
+          <a href="blog.php?id_blog=4959" class="table_link_name" target="_blank">Взгляд молчаливого гика</a><br>
+          <span class="small">Мир глазами гика-интроверта</span>
+        </div>
+        <div class="block-stat">
+          <span class="post-stat" role="gridcell">
+            <p>Постов:</p>
+            <p>29</p>
+          </span>
+          <span class="post-stat" role="gridcell">
+            <span id="kolbb_4959">
+              <p>Ответов:</p>
+              <p>647</p>
+            </span>
+          </span>
+          <span class="post-stat" role="gridcell">
+            <p>Рейтинг:</p>
+            <p>164</p>
+          </span>
+          <span class="post-stat" role="gridcell">
+            <p>Подписок:</p>
+            <p>6</p>
+          </span>
+        </div>
+      </div>
+
+      <div class="row-blog" role="row">
+        <div class="bcell blog-photo" role="gridcell">
+          <a href="blog.php?id_blog=4959" class="table_link_item" target="_blank">
+            <img src="https://www.disability.ru/member/picture_fb.php?pic=43610&ver=b" alt=""><br>
+            Рыбкая<br></a>
+        </div>
+        <div class=" bcell last-post-title">
+          <span>Последний пост:</span>
+          <span class="blog-date">15&nbsp;нояб.&nbsp;2016 16:36</span>
+        </div>
+        <div class="bcell last-post" role="gridcell">
+          <a href="blog.php?id_blog=4959" class="table_link_item" target="_blank">
+              <span title="голосование" aria-label="голосование">
+                <img src="pics/poll.png" width="16" height="16" alt="">
+              </span>Как отучиться ковырять в носу))
+          </a><br>
+        </div>
+        <div class="bcell name-blog" role="gridcell">
+          <span>Название дневника:</span>
+          <a href="blog.php?id_blog=4959" class="table_link_name" target="_blank">Саморазвитие</a><br>
+          <span class="small">Как быть сильной,ну хоть чуть чуть)</span>
+        </div>
+        <div class="block-stat">
+          <span class="post-stat" role="gridcell">
+            <p>Постов:</p>
+            <p>10</p>
+          </span>
+          <span class="post-stat" role="gridcell">
+            <span id="kolbb_4959">
+              <p>Ответов:</p>
+              <p>127</p>
+            </span>
+          </span>
+          <span class="post-stat" role="gridcell">
+            <p>Рейтинг:</p>
+            <p>27</p>
+          </span>
+          <span class="post-stat" role="gridcell">
+            <p>Подписок:</p>
+            <p>1</p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

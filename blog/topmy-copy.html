@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  </head>
+  <body>
+    <div id="ui-tabs-6" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
+      <div class="title-blog-top">Ответы на мои посты - Обсуждаемые</div>
+      <table class="table-blog my-blog-answer" role="grid">
+        <tbody>
+          <tr role="row" class="row-header-blog">
+            <th class="tblog_head_center bcell" role="columnheader"><a href="#" onclick="return ShowTop('myb','new','0');"
+                                                                  class="link_top_head" title="Новые посты">Пост</a></th>
+            <th class="tblog_head_center bcell" role="columnheader">Название дневника</th>
+            <th class="tblog_head_center bcell" role="columnheader"><a href="#" onclick="return ShowTop('myb','pop','0');"
+                                                                  class="link_top_head" title="Популярные">Рейт.</a></th>
+            <th class="tblog_head_center bcell" role="columnheader"><a href="#" onclick="return ShowTop('myb','ans','0');"
+                                                                  class="link_top_head" title="Обсуждаемые">Ответил</a><a></a></th>
+            <th class="tblog_head_center bcell" role="columnheader"><a href="#" onclick="return ShowTop('myb','col','0');"
+                                                                  class="link_top_head" title="Активные">Всего</a></th>
+          </tr>
+          <tr role="row" class="row-blog">
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=5119&amp;post=42223&amp;tla=y" class="table_link_item" target="_blank" title="читать пост">GROSU. Трилогия "Дико Любила Вову</a><br><span class="small">15&nbsp;апр.&nbsp;2019 23:12</span></td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=5119&amp;post=42223&amp;tla=y"
+                                             class="table_link_name" target="_blank" title="открыть дневник">Всячина</a><br><span class="small">о самом разном, что не вошло в другие дневники</span></td>
+            <td class="bcell" role="gridcell">4</td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=5119&amp;post=42223&amp;tla=y" class="table_link_item" target="_blank" title="к последнему ответу"></a><a href="blog.php?id_blog=5119&amp;post=42223&amp;tla=y" class="table_link_item" target="_blank" title="к последнему ответу">загадка<br><span class="small">17&nbsp;апр.&nbsp;2019 17:43</span></a></td>
+            <td class="bcell" role="gridcell"><span id="kolbb_5119">9</span></td>
+          </tr>
+          <tr role="row" class="row-blog">
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=5089&amp;post=40193&amp;tla=y" class="table_link_item" target="_blank" title="читать пост">Северные соседи</a><br><span class="small">16&nbsp;июнь&nbsp;2018 22:21</span></td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=5089&amp;post=40193&amp;tla=y" class="table_link_name" target="_blank" title="открыть дневник">Мурманск</a><br><span class="small">про город,  природу,  Кольский полуостров и наших северных соседей</span></td>
+            <td class="bcell" role="gridcell">11</td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=5089&amp;post=40193&amp;tla=y" class="table_link_item" target="_blank" title="к последнему ответу"></a><a href="blog.php?id_blog=5089&amp;post=40193&amp;tla=y" class="table_link_item" target="_blank" title="к последнему ответу">Китти<br><span class="small">20&nbsp;июнь&nbsp;2018 22:42</span></a></td>
+            <td class="bcell" role="gridcell"><span id="kolbb_5089">18</span></td>
+          </tr>
+          <tr role="row" class="row-blog">
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=3947&amp;post=31334&amp;tla=y" class="table_link_item" target="_blank" title="читать пост">ТОП лучших постов</a><br><span class="small">03&nbsp;окт.&nbsp;2015 17:11</span></td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=3947&amp;post=31334&amp;tla=y" class="table_link_name" target="_blank" title="открыть дневник">Дневник разработчика</a><br><span class="small">Новости и обсуждение портала</span></td>
+            <td class="bcell" role="gridcell">10</td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=3947&amp;post=31334&amp;tla=y" class="table_link_item" target="_blank" title="к последнему ответу"></a><a href="blog.php?id_blog=3947&amp;post=31334&amp;tla=y" class="table_link_item" target="_blank" title="к последнему ответу">Эльмир<br><span class="small">06&nbsp;дек.&nbsp;2015 11:54</span></a></td>
+            <td class="bcell" role="gridcell"><span id="kolbb_3947">147</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+    <div class="title-blog-top">Мои дневники</div>
+      <table class="table-blog my-blogs" role="grid">
+        <tbody>
+          <tr role="row" class="row-header-blog">
+            <th class="tblog_head_center" role="columnheader">Название дневника</th>
+            <th class="tblog_head_center" role="columnheader">Пост.</th>
+            <th class="tblog_head_center" role="columnheader">Ответ.</th>
+            <th class="tblog_head_center" role="columnheader">Рейт.</th>
+            <th class="tblog_head_center" role="columnheader">Подпис.</th>
+            <th class="tblog_head_center" role="columnheader">Последний пост</th>
+          </tr>
+          <tr role="row" class="row-blog">
+            <td class="bcell" role="gridcell"><a href="../blog/blog.php?id_blog=5119" class="table_link_name">Всячина</a><br><span class="small">о самом разном, что не вошло в другие дневники</span></td>
+            <td class="bcell" role="gridcell">12</td>
+            <td class="bcell" role="gridcell"><span id="kolbb_5119">144</span></td>
+            <td class="bcell" role="gridcell">68</td>
+            <td class="bcell" role="gridcell">3</td>
+            <td class="bcell" role="gridcell"><a href="../blog/blog.php?id_blog=5119&amp;post=42223&amp;tla=y" class="table_link_item">GROSU. Трилогия "Дико Любила Вову</a><br><span class="small">15&nbsp;апр.&nbsp;2019 23:12</span></td>
+          </tr>
+          <tr role="row" class="row-blog">
+            <td class="bcell" role="gridcell"><a href="../blog/blog.php?id_blog=3947" class="table_link_name">Дневник разработчика</a><br><span class="small">Новости и обсуждение портала</span></td>
+            <td class="bcell" role="gridcell">33</td>
+            <td class="bcell" role="gridcell"><span id="kolbb_3947">7898</span></td>
+            <td class="bcell" role="gridcell">348</td>
+            <td class="bcell" role="gridcell">37</td>
+            <td class="bcell" role="gridcell"><a href="../blog/blog.php?id_blog=3947&amp;post=41442&amp;tla=y" class="table_link_item">Новогодний Конкурс</a><br><span class="small">09&nbsp;дек.&nbsp;2018 19:42</span></td>
+          </tr>
+          <tr role="row" class="row-blog">
+            <td class="bcell" role="gridcell"><a href="../blog/blog.php?id_blog=5089" class="table_link_name">Мурманск</a><br><span class="small">про город,  природу,  Кольский полуостров и наших северных соседей</span></td>
+            <td class="bcell" role="gridcell">6</td>
+            <td class="bcell" role="gridcell"><span id="kolbb_5089">85</span></td>
+            <td class="bcell" role="gridcell">61</td>
+            <td class="bcell" role="gridcell">2</td>
+            <td class="bcell" role="gridcell"><a href="../blog/blog.php?id_blog=5089&amp;post=40770&amp;tla=y" class="table_link_item">Полярное братство. Над небом Мурманска</a><br><span class="small">07&nbsp;сен.&nbsp;2018 17:46</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p align="right" style="padding-right: 5px;"><span class="pointer" onclick="$('#new_blog').show();">создать новый дневник</span></p>
+    <div id="new_blog" style="display: none">
+        <div align="center" id="new_blog_form">
+            <form action="save_blog.php" method="post" id="form_blog">
+                <table border="0" cellpadding="2" cellspacing="2">
+                    <tbody>
+                    <tr>
+                        <td class="form_cont"><b>Название дневника:</b><br>
+                            <input type="text" name="blog_subj" size="100" maxlength="100" class="form_field">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form_cont"><b>Описание, чему посвящен дневник:</b><br>
+                            <input type="text" name="blog_about" size="100" maxlength="250" class="form_field">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form_cont"><div align="center"><input type="submit" value="Сохранить" class="form_button" onclick="$('#new_blog_form').hide('slow');"></div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
