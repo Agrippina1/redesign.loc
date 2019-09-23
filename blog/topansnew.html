@@ -1,99 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
-<body>
-<div id="ui-tabs-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom"><div align="center" style="text-transform: uppercase; font-weight: bold; text-shadow:2px 2px 1px #DDDDDD; padding-top: 5px;">Новое в ответах - к постам</div><style type="text/css">
-    <!--
-    .tblog_design {
-        margin-top: 5px;
-        background-color: #8F8F8F;
-        border : 1px solid #9F9F9F;
+  </head>
+  <body>
+  <style>
+    @media (max-width: 767px) {
+      .ui-tabs .ui-tabs-panel {
+        padding: 0;
+      }
     }
-    .tblog_head_center {
-        color: #F7F7F7;
-        font-family: Tahoma, Helvetica, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 13px;
-        text-align: center;
-        text-transform: lowercase;
-    }
-    .tblog_line_0 {
-        background-color: #EFEFEF;
-        padding-left: 5px;
-    }
-    .tblog_line_1 {
-        background-color: #E8E8E8;
-        padding-left: 5px;
-    }
-    .tblog_line_center_0 {
-        background-color: #EFEFEF;
-        padding-left: 5px;
-        text-align: center;
-        padding-right: 5px;
-    }
-    .tblog_line_center_1 {
-        background-color: #E8E8E8;
-        padding-left: 5px;
-        text-align: center;
-    }
-    .small{
-        color: #000000;
-        font-size: 0.8em;
-        text-decoration: none;
-    }
-    a.link_top_head{
-        color: #F7F7F7;
-    }
-    .pointer {
-        cursor: pointer;
-        font-weight : bold;
-    }
-    -->
-</style>
-    <table width="100%" border="0" cellspacing="0" cellpadding="2" class="tblog_design" role="grid">
-        <tbody><tr role="row">
-            <th class="tblog_head_center" role="columnheader">Автор</th>
-            <th class="tblog_head_center" role="columnheader" width="35%"><a href="#" onclick="return ShowTop('com','new','0');" class="link_top_head" title="Новые посты">Пост</a></th>
-            <th class="tblog_head_center" role="columnheader" width="45%">Название дневника</th>
-            <th class="tblog_head_center" role="columnheader"><a href="#" onclick="return ShowTop('com','pop','0');" class="link_top_head" title="Популярные">Рейт.</a></th>
-            <th class="tblog_head_center" role="columnheader"><a href="#" onclick="return ShowTop('com','see','0');" class="link_top_head" title="Читаемое">Просм.</a></th>
-            <th class="tblog_head_center" role="columnheader"><a href="#" onclick="return ShowTop('com','ans','0');" class="link_top_head" title="Обсуждаемые">Ответил</a><a></a></th>
-            <th class="tblog_head_center" role="columnheader"><a href="#" onclick="return ShowTop('com','col','0');" class="link_top_head" title="Активные">Всего</a></th>
-        </tr>
-        <tr role="row">
-            <td class="tblog_line_center_0" role="gridcell"><a href="blog.php?id_blog=3678&amp;post=38435" class="table_link_item" target="_blank" title="читать пост"><img src="https://www.disability.ru/member/picture.php?pic=60735" width="37" height="50" hspace="1" vspace="1" border="1" alt=""><br>
+  </style>
+      <div class="title-blog-top">Новое в ответах - к постам</div>
+      <table class="table-blog" role="grid">
+        <tbody>
+          <tr role="row" class="row-header-blog">
+            <th class="tblog_head_center bcell" role="columnheader">Автор</th>
+            <th class="tblog_head_center bcell" role="columnheader" width="35%"><a href="#" onclick="return
+            ShowTop('com','new','0');" class="link_top_head" title="Новые посты">Пост</a></th>
+            <th class="tblog_head_center bcell" role="columnheader" width="45%">Название дневника</th>
+            <th class="tblog_head_center bcell" role="columnheader"><a href="#" onclick="return ShowTop('com','pop','0');"
+                                                                  class="link_top_head" title="Популярные">Рейт.</a></th>
+            <th class="tblog_head_center bcell" role="columnheader"><a href="#" onclick="return ShowTop('com','see','0');"
+                                                                  class="link_top_head" title="Читаемое">Просм.</a></th>
+            <th class="tblog_head_center bcell" role="columnheader"><a href="#" onclick="return ShowTop('com','ans','0');"
+                                                                  class="link_top_head" title="Обсуждаемые">Ответил</a><a></a></th>
+            <th class="tblog_head_center bcell" role="columnheader"><a href="#" onclick="return ShowTop('com','col','0');"
+                                                                    class="link_top_head" title="Активные">Всего</a></th>
+          </tr>
+          <tr role="row" class="row-blog">
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=3678&amp;post=38435" class="table_link_item" target="_blank" title="читать пост"><img src="https://www.disability.ru/member/picture.php?pic=60735" width="37" height="50" hspace="1" vspace="1" border="1" alt=""><br>
                 tolstyak<br></a></td>
-            <td class="tblog_line_center_0" role="gridcell"><a href="blog.php?id_blog=3678&amp;post=38435" class="table_link_item" target="_blank" title="читать пост">Жило было Нечто</a><br><span class="small">13&nbsp;нояб.&nbsp;2017 19:10</span></td>
-            <td class="tblog_line_0" role="gridcell"><a href="blog.php?id_blog=3678" class="table_link_name" target="_blank" title="открыть дневник">Разное</a><br><span class="small">Всё что заинтересовало</span></td>
-            <td class="tblog_line_center_0" role="gridcell">4</td>
-            <td class="tblog_line_center_0" role="gridcell">79</td>
-            <td class="tblog_line_center_0" role="gridcell"><a href="blog.php?id_blog=3678&amp;post=38435&amp;tla=y" class="table_link_item" target="_blank" title="к последнему ответу">tolstyak<br><span class="small">14&nbsp;нояб.&nbsp;2017 17:14</span></a></td>
-            <td class="tblog_line_center_0" role="gridcell"><span id="kolbb_3678">9</span></td>
-        </tr>
-        <tr role="row">
-            <td class="tblog_line_center_1" role="gridcell"><a href="blog.php?id_blog=3164&amp;post=33504" class="table_link_item" target="_blank" title="читать пост"><img src="https://www.disability.ru/member/picture.php?pic=81901" width="50" height="32" hspace="1" vspace="1" border="1" alt=""><br>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=3678&amp;post=38435" class="table_link_item" target="_blank" title="читать пост">Жило было Нечто</a><br><span class="small">13&nbsp;нояб.&nbsp;2017 19:10</span></td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=3678" class="table_link_name" target="_blank"
+                                             title="открыть дневник">Разное</a><br><span class="small">Всё что заинтересовало</span></td>
+            <td class="bcell" role="gridcell">4</td>
+            <td class="bcell" role="gridcell">79</td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=3678&amp;post=38435&amp;tla=y" class="table_link_item" target="_blank" title="к последнему ответу">tolstyak<br><span class="small">14&nbsp;нояб.&nbsp;2017 17:14</span></a></td>
+            <td class="bcell" role="gridcell"><span id="kolbb_3678">9</span></td>
+          </tr>
+          <tr role="row" class="row-blog">
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=3164&amp;post=33504" class="table_link_item" target="_blank" title="читать пост"><img src="https://www.disability.ru/member/picture.php?pic=81901" width="50" height="32" hspace="1" vspace="1" border="1" alt=""><br>
                 Okist<br></a></td>
-            <td class="tblog_line_center_1" role="gridcell"><a href="blog.php?id_blog=3164&amp;post=33504" class="table_link_item" target="_blank" title="читать пост">Чем заменить Adobe Flash Player?</a><br><span class="small">24&nbsp;март&nbsp;2016 23:26</span></td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=3164&amp;post=33504" class="table_link_item" target="_blank" title="читать пост">Чем заменить Adobe Flash Player?</a><br><span class="small">24&nbsp;март&nbsp;2016 23:26</span></td>
             <td class="tblog_line_1" role="gridcell"><a href="blog.php?id_blog=3164" class="table_link_name" target="_blank" title="открыть дневник">Кино привезли</a><br><span class="small"></span></td>
-            <td class="tblog_line_center_1" role="gridcell">1</td>
-            <td class="tblog_line_center_1" role="gridcell">153</td>
-            <td class="tblog_line_center_1" role="gridcell"><a href="blog.php?id_blog=3164&amp;post=33504&amp;tla=y" class="table_link_item" target="_blank" title="к последнему ответу">загадка<br><span class="small">25&nbsp;март&nbsp;2016 18:08</span></a></td>
-            <td class="tblog_line_center_1" role="gridcell"><span id="kolbb_3164">35</span></td>
-        </tr>
-        <tr role="row">
-            <td class="tblog_line_center_0" role="gridcell"><a href="blog.php?id_blog=2461&amp;post=29616" class="table_link_item" target="_blank" title="читать пост"><img src="https://www.disability.ru/member/picture.php?pic=61532" width="50" height="50" hspace="1" vspace="1" border="1" alt=""><br>
+            <td class="bcell" role="gridcell">1</td>
+            <td class="bcell" role="gridcell">153</td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=3164&amp;post=33504&amp;tla=y" class="table_link_item" target="_blank" title="к последнему ответу">загадка<br><span class="small">25&nbsp;март&nbsp;2016 18:08</span></a></td>
+            <td class="bcell" role="gridcell"><span id="kolbb_3164">35</span></td>
+          </tr>
+          <tr role="row" class="row-blog">
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=2461&amp;post=29616" class="table_link_item" target="_blank" title="читать пост"><img src="https://www.disability.ru/member/picture.php?pic=61532" width="50" height="50" hspace="1" vspace="1" border="1" alt=""><br>
                 Ekaterina<br></a></td>
-            <td class="tblog_line_center_0" role="gridcell"><a href="blog.php?id_blog=2461&amp;post=29616" class="table_link_item" target="_blank" title="читать пост">просто так ))</a><br><span class="small">02&nbsp;июнь&nbsp;2015 05:53</span></td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=2461&amp;post=29616" class="table_link_item" target="_blank" title="читать пост">просто так ))</a><br><span class="small">02&nbsp;июнь&nbsp;2015 05:53</span></td>
             <td class="tblog_line_0" role="gridcell"><a href="blog.php?id_blog=2461" class="table_link_name" target="_blank" title="открыть дневник">отношения</a><br><span class="small">Вопрос</span></td>
-            <td class="tblog_line_center_0" role="gridcell">7</td>
-            <td class="tblog_line_center_0" role="gridcell">0</td>
-            <td class="tblog_line_center_0" role="gridcell"><a href="blog.php?id_blog=2461&amp;post=29616&amp;tla=y" class="table_link_item" target="_blank" title="к последнему ответу">Ekaterina<br><span class="small">03&nbsp;июнь&nbsp;2015 04:04</span></a></td>
-            <td class="tblog_line_center_0" role="gridcell"><span id="kolbb_2461">8</span></td>
-        </tr>
-        </tbody></table>
-</div>
-</body>
+            <td class="bcell" role="gridcell">7</td>
+            <td class="bcell" role="gridcell">0</td>
+            <td class="bcell" role="gridcell"><a href="blog.php?id_blog=2461&amp;post=29616&amp;tla=y" class="table_link_item" target="_blank" title="к последнему ответу">Ekaterina<br><span class="small">03&nbsp;июнь&nbsp;2015 04:04</span></a></td>
+            <td class="bcell" role="gridcell"><span id="kolbb_2461">8</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+    <!--Мобильная версия-->
+
+    <div class="blog-mobile">
+      <div class="row-blog" role="row">
+        <div class="bcell bcell-author" role="gridcell">
+          <a href="blog.php?id_blog=4959" class="blog-author" target="_blank">
+            <img class="blog-author-img" src="https://www.disability.ru/member/picture_fb.php?pic=60735&ver=b" alt="">
+            <div class="blog-author-date">
+              <span class="author-nic">tolstyak</span>
+              <span class="date-post">13&nbsp;нояб.&nbsp;2017 19:10</span>
+            </div>
+          </a>
+        </div>
+        <div class="bcell last-post" role="gridcell">
+          <a href="blog.php?id_blog=4959" class="table_link_item" target="_blank">
+              <span title="голосование" aria-label="голосование">
+                <img src="pics/poll.png" width="16" height="16" alt="">
+              </span>Жило было Нечто
+          </a><br>
+        </div>
+        <div class="bcell name-blog" role="gridcell">
+          <span class="last-post-title">Дневник:</span>
+          <a href="blog.php?id_blog=4959" class="blog-link-name" target="_blank">Разное</a><br>
+          <span class="small">Все что заинтересовало</span>
+          <span class="last-post-title last-answer-post">Ответил:</span>
+          <a href="#" class="blog-author" role="gridcell">
+            <div class="blog-author-answer">
+              <span class="author-nic">tolstyak</span><br>
+              <span class="date-post">14 нояб. 2017 17:14</span>
+            </div>
+          </a>
+        </div>
+        <div class="block-stat">
+          <span class="post-stat" role="gridcell">
+            <p>Рейтинг:</p>
+            <p>4</p>
+          </span>
+          <span class="post-stat" role="gridcell">
+            <span id="kolbb_4959">
+              <p>Просмотров:</p>
+              <p>79</p>
+            </span>
+          </span>
+          <span class="post-stat" role="gridcell">
+            <p>Всего:</p>
+            <p>9</p>
+          </span>
+        </div>
+      </div>
+
+      <div class="row-blog" role="row">
+        <div class="bcell bcell-author" role="gridcell">
+          <a href="blog.php?id_blog=4959" class="blog-author" target="_blank">
+            <img class="blog-author-img" src="https://www.disability.ru/member/picture_fb.php?pic=81901&ver=b" alt="">
+            <div class="blog-author-date">
+              <span class="author-nic">Okist</span>
+              <span class="date-post">24 март 2016 23:26</span>
+            </div>
+          </a>
+        </div>
+        <div class="bcell last-post" role="gridcell">
+          <a href="blog.php?id_blog=4959" class="table_link_item" target="_blank">
+              <span title="голосование" aria-label="голосование">
+                <img src="pics/poll.png" width="16" height="16" alt="">
+              </span>Чем заменить Adobe Flash Player?
+          </a><br>
+        </div>
+        <div class="bcell name-blog" role="gridcell">
+          <span class="last-post-title">Дневник:</span>
+          <a href="blog.php?id_blog=4959" class="blog-link-name" target="_blank">Кино привезли</a><br>
+          <span class="small"></span>
+          <span class="last-post-title last-answer-post">Ответил:</span>
+          <a href="#" class="blog-author" role="gridcell">
+            <div class="blog-author-answer">
+              <span class="author-nic">загадка</span><br>
+              <span class="date-post">25 март 2016 18:08</span>
+            </div>
+          </a>
+        </div>
+        <div class="block-stat">
+          <span class="post-stat" role="gridcell">
+            <p>Рейтинг:</p>
+            <p>1</p>
+          </span>
+          <span class="post-stat" role="gridcell">
+            <span id="kolbb_4959">
+              <p>Просмотров:</p>
+              <p>153</p>
+            </span>
+          </span>
+          <span class="post-stat" role="gridcell">
+            <p>Всего:</p>
+            <p>35</p>
+          </span>
+        </div>
+      </div>
+
+      <div class="row-blog" role="row">
+        <div class="bcell bcell-author" role="gridcell">
+          <a href="blog.php?id_blog=4959" class="blog-author" target="_blank">
+            <img class="blog-author-img" src="https://www.disability.ru/member/picture_fb.php?pic=61532&ver=b" alt="">
+            <div class="blog-author-date">
+              <span class="author-nic">Ekaterina</span>
+              <span class="date-post">02 июнь 2015 05:53</span>
+            </div>
+          </a>
+        </div>
+        <div class="bcell last-post" role="gridcell">
+          <a href="blog.php?id_blog=4959" class="table_link_item" target="_blank">
+              <span title="голосование" aria-label="голосование">
+                <img src="pics/poll.png" width="16" height="16" alt="">
+              </span>просто так ))
+          </a><br>
+        </div>
+        <div class="bcell name-blog" role="gridcell">
+          <span class="last-post-title">Дневник:</span>
+          <a href="blog.php?id_blog=4959" class="blog-link-name" target="_blank">отношения</a><br>
+          <span class="small">Вопрос</span>
+          <span class="last-post-title last-answer-post">Ответил:</span>
+          <a href="#" class="blog-author last-answer" role="gridcell">
+            <div class="blog-author-answer">
+              <span class="author-nic">Ekaterina</span><br>
+              <span class="date-post">03 июнь 2015 04:04</span>
+            </div>
+          </a>
+        </div>
+        <div class="block-stat">
+          <span class="post-stat" role="gridcell">
+            <p>Рейтинг:</p>
+            <p>7</p>
+          </span>
+          <span class="post-stat" role="gridcell">
+            <span id="kolbb_4959">
+              <p>Просмотров:</p>
+              <p>0</p>
+            </span>
+          </span>
+          <span class="post-stat" role="gridcell">
+            <p>Всего:</p>
+            <p>9</p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>

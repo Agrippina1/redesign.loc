@@ -5,121 +5,48 @@
     <title>Title</title>
 </head>
 <body>
-<div style="text-transform: uppercase; font-weight: bold; text-shadow:2px 2px 1px #DDDDDD; padding-top: 5px;" align="center">Дневники - Обсуждаемые</div><div class="topsort_ans" aria-label="страницы" role="navigation" align="right"><div class="line_link">Страницы: <b>1</b>
-    <a href="#" onclick="return ShowTopbPage('ans',2,'','0');">2</a> <a href="#" onclick="return ShowTopbPage('ans',3,'','0');">3</a> <a href="#" onclick="return ShowTopbPage('ans',4,'','0');">4</a> <a href="#" onclick="return ShowTopbPage('ans',5,'','0');">5</a> <a href="#" onclick="return ShowTopbPage('ans',6,'','0');">6</a> <a href="#" onclick="return ShowTopbPage('ans',7,'','0');">7</a> <a href="#" onclick="return ShowTopbPage('ans',8,'','0');">8</a> <a href="#" onclick="return ShowTopbPage('ans',9,'','0');">9</a> <a href="#" onclick="return ShowTopbPage('ans',10,'','0');">10</a> <a href="#" onclick="return ShowTopbPage('ans',11,'','0');" title="Далее">&gt;</a> <a href="#" onclick="return ShowTopbPage('ans',681,'','0');" title="В конец">&gt;&gt;</a> Всего: 681</div>
-</div><style type="text/css">
-    <!--
-    .tblog_design {
-        margin-top: 5px;
-        background-color: #8F8F8F;
-        border : 1px solid #9F9F9F;
-    }
-    .tblog_head_center {
-        color: #F7F7F7;
-        font-family: Tahoma, Helvetica, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 13px;
-        text-align: center;
-        text-transform: lowercase;
-    }
-    .tblog_line_0 {
-        background-color: #EFEFEF;
-        padding-left: 5px;
-    }
-    .tblog_line_1 {
-        background-color: #E8E8E8;
-        padding-left: 5px;
-    }
-    .tblog_line_center_0 {
-        background-color: #EFEFEF;
-        padding-left: 5px;
-        text-align: center;
-        padding-right: 5px;
-    }
-    .tblog_line_center_1 {
-        background-color: #E8E8E8;
-        padding-left: 5px;
-        text-align: center;
-    }
-    .small{
-        color: #000000;
-        font-size: 0.8em;
-    }
-    a.link_top{
-        color: #161b38;
-        text-decoration: none;
-    }
-    a:hover.link_top{
-        color: #4447c5;
-    }
-    a.autor_last {
-        text-decoration: none;
-    }
-    .pointer {
-        cursor: pointer;
-        font-weight : bold;
-    }
-    .gorizont_pic {
-        float: left;
-        margin-right: 1.25rem;
-        width: 13rem;
-        height: 6.25rem;
-        overflow: hidden;
-        background-position: 50% 50%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border: 1px solid #000000;
-    }
+<div class="title-blog-top">Дневники - Обсуждаемые</div>
+<div class="pagination-desktop" aria-label="страницы" role="navigation">
+    <span class="pagination-item">Страницы:</span>
+    <a class="pagination-item pagination-item_active color_pagination_active" href="#">1</a>
+    <a class="pagination-item color_pagination" href="#">2</a>
+    <a class="pagination-item color_pagination" href="#">3</a>
+    <a class="pagination-item color_pagination" href="#">4</a>
+    <a class="pagination-item color_pagination" href="#">5</a>
+    <a class="pagination-item color_pagination" href="#">6</a>
+    <a class="pagination-item color_pagination" href="#">7</a>
+    <a class="pagination-item color_pagination" href="#">8</a>
+    <a class="pagination-item color_pagination" href="#">9</a>
+    <a class="pagination-item color_pagination" href="#">10</a>
+    <a class="pagination-item color_pagination" href="#">></a>
+    <a class="pagination-item color_pagination" href="#">>></a>
+    <a class="pagination-item">Всего: 13</a>
+</div>
 
-    .top_title {
-        margin: 0px;
-        padding: 0px;
-        font: 1.733em ProximaNovaLight,Helvetica,Arial,sans-serif;
-    }
-    .top_message {
-        margin: 1em 0px 0px;
-        font-size: 1em;
-        line-height: 1.4;
-        color: #000000;
-    }
-    .top_message_pic {
-        min-height: 6.5rem;
-    }
-    .top_block {
-        margin: 0px 1em 0px 0px;
-        padding: 0.5em 1em 1.5em 0px;
-        border-bottom: 1px solid #DAE3E6;
-        color: #242F33;
-    }
-    .top_li {
-        font-size: 0.875rem;
-        color: #a0a39e;
-    }
-    .top_autor {
-        font-size: 0.7rem;
-        color: #50534e;
-    }
-    .top_data {
-        font-size: 0.7rem;
-        color: #212221;
-    }
+<div class="pagination-mobile">
+    <a class="page-previous color_pagination_border" href="#"><</a>
+    <a class="page-current" href="#">1/13</a>
+    <a class="page-next color_pagination_border" href="#">></a>
+    <form class="form-pagination" action="index.html" method="post">
+        <input class="page-enter" type="text" name="page">
+        <button class="page-last color_pagination_border" type="submit">>></button>
+    </form>
+</div>
 
-    /*ol {*/
-    /*    counter-reset:li; !* Инициализируем счетчик *!*/
-    /*}*/
-    /*ol > li:before.top_li {*/
-    /*    counter-increment: li; !* Увеличение счетчика на 1 *!*/
-    /*}*/
-    -->
-</style>
-
-<ol role="list" style="margin-top: 0em;list-style-type: none;">
+<ol role="list" class="list-top-blogs list-top-blogs-ul">
     <li class="top_li" role="listitem">
         <div class="top_block"><div class="top_message top_message_pic">
             <div class="top_data"></div><h3 class="top_title"><a class="link_top" href="blog.php?id_blog=4916&amp;post=43087" target="_blank"><span id="img_43087"><span style="background-image: url(https://b.radikal.ru/b33/1909/24/12c21f3319f8.jpg);" class="gorizont_pic"></span></span>С днем рождения, Руслан!</a></h3>
             <div class="top_autor"><a class="autor_last" target="_blank" href="blog.php?id_blog=4916&amp;post=43087&amp;tla=y" title="последний ответ: domosed 14&nbsp;сен.&nbsp;2019 11:24">Taiwana 💬12<br>ответил: domosed 14&nbsp;сен.&nbsp;2019 11:24</a></div>
 
-            С днем рождения, мой дорогой Друг! Знаю, ты скептически относишься к своему ДР - не мешай мне праздновать твой День! Ты удивительный человек, я так благодарна судьбе, что мы с тобой столько лет вместе, столько уже пережили вместе - я в тебе никогда не сомневаюсь. И наша мечта осуществится, дорогой! Руслан, обнимаю тебя!
+            <span class="blog-top-text">С днем рождения, мой дорогой Друг! Знаю, ты скептически относишься к своему
+                ДР - не мешай мне праздновать твой День! Ты удивительный человек, я так благодарна судьбе, что мы с
+                тобой столько лет вместе, столько уже пережили вместе - я в тебе никогда не сомневаюсь. И наша мечта осуществится, дорогой! Руслан, обнимаю тебя!</span>
+            <a class="btn-admin-line" href="#">
+                <svg class="icon-svg icon-svg-edit color_icons"><use
+                  xlink:href="../site/icons/id_icons.svg#icon-loupe"></use></svg>
+                <span class="story-read">Прочитать</span>
+            </a>
         </div>
         </div>
     </li>
@@ -127,9 +54,15 @@
         <div class="top_block"><div class="top_message">
             <div class="top_data"></div><h3 class="top_title"><a class="link_top" href="blog.php?id_blog=4983&amp;post=43084" target="_blank">А вы верите в теорию о двух половинках?</a></h3>
             <div class="top_autor"><a class="autor_last" target="_blank" href="blog.php?id_blog=4983&amp;post=43084&amp;tla=y" title="последний ответ: Ariya 13&nbsp;сен.&nbsp;2019 19:51">Патрина 💬17<br>ответил: Ariya 13&nbsp;сен.&nbsp;2019 19:51</a></div>
-            Доброго дня. Давно уже ничего не писала в дневник, и как-то опасаюсь, потому что слишком много людей, которые норовят залезть в душу в грязных ботинках, но всё же, захотела обсудить с вами один вопрос.
+            <span class="blog-top-text">Доброго дня. Давно уже ничего не писала в дневник, и как-то опасаюсь, потому что слишком много людей, которые норовят залезть в душу в грязных ботинках, но всё же, захотела обсудить с вами один вопрос.
 
-            В 2011 году я познакомилась на этом портале с мужчиной, он из другого города, мы жили вместе год, потом расстались, но всё равно то он приезжал ко мне, то я к нему. На  <sub>→</sub>
+            В 2011 году я познакомилась на этом портале с мужчиной, он из другого города, мы жили вместе год, потом
+                расстались, но всё равно то он приезжал ко мне, то я к нему. На</span>
+            <a class="btn-admin-line" href="#">
+                <svg class="icon-svg icon-svg-edit color_icons"><use
+                  xlink:href="../site/icons/id_icons.svg#icon-loupe"></use></svg>
+                <span class="story-read">Прочитать</span>
+            </a>
         </div>
         </div>
     </li>
@@ -137,18 +70,47 @@
         <div class="top_block"><div class="top_message top_message_pic">
             <div class="top_data"></div><h3 class="top_title"><a class="link_top" href="blog.php?id_blog=5426&amp;post=43079" target="_blank"><span id="img_43079"><span style="background-image: url(https://i89.fastpic.ru/big/2019/0910/53/d994a5e678c97b13496ff95fe2a3a553.jpg);" class="gorizont_pic"></span></span>Глоток Тебя и Осени...</a></h3>
             <div class="top_autor"><a class="autor_last" target="_blank" href="blog.php?id_blog=5426&amp;post=43079&amp;tla=y" title="последний ответ: Тень 13&nbsp;сен.&nbsp;2019 14:13">Тень 💬3<br>ответил: Тень 13&nbsp;сен.&nbsp;2019 14:13</a></div>
-            ФРАЗА ДНЯ
+            <span class="blog-top-text">ФРАЗА ДНЯ
             Есть минуты, когда не нужны слова — это время проведенное с Тобой…
             *     *     *
             Мне хочется совсем немного…
 
-            На минутку сентябрь…вечер… красивый закат… запах желтеющих листьев и две кружки горячего, ароматного чая… и мы на террасе домика за городом… где нет больше никого, мы потерялись во  <sub>→</sub>
+            На минутку сентябрь…вечер… красивый закат… запах желтеющих листьев и две кружки горячего, ароматного чая…
+                и мы на террасе домика за городом… где нет больше никого, мы потерялись во</span>
+            <a class="btn-admin-line" href="#">
+                <svg class="icon-svg icon-svg-edit color_icons"><use
+                  xlink:href="../site/icons/id_icons.svg#icon-loupe"></use></svg>
+                <span class="story-read">Прочитать</span>
+            </a>
         </div>
         </div>
     </li>
 </ol>
-<div class="topsort_ans" aria-label="страницы" role="navigation" align="right"><div class="line_link">Страницы: <b>1</b>
-    <a href="#" onclick="return ShowTopbPage('ans',2,'','0');">2</a> <a href="#" onclick="return ShowTopbPage('ans',3,'','0');">3</a> <a href="#" onclick="return ShowTopbPage('ans',4,'','0');">4</a> <a href="#" onclick="return ShowTopbPage('ans',5,'','0');">5</a> <a href="#" onclick="return ShowTopbPage('ans',6,'','0');">6</a> <a href="#" onclick="return ShowTopbPage('ans',7,'','0');">7</a> <a href="#" onclick="return ShowTopbPage('ans',8,'','0');">8</a> <a href="#" onclick="return ShowTopbPage('ans',9,'','0');">9</a> <a href="#" onclick="return ShowTopbPage('ans',10,'','0');">10</a> <a href="#" onclick="return ShowTopbPage('ans',11,'','0');" title="Далее">&gt;</a> <a href="#" onclick="return ShowTopbPage('ans',681,'','0');" title="В конец">&gt;&gt;</a> Всего: 681</div>
+<div class="pagination-desktop" aria-label="страницы" role="navigation">
+    <span class="pagination-item">Страницы:</span>
+    <a class="pagination-item pagination-item_active color_pagination_active" href="#">1</a>
+    <a class="pagination-item color_pagination" href="#">2</a>
+    <a class="pagination-item color_pagination" href="#">3</a>
+    <a class="pagination-item color_pagination" href="#">4</a>
+    <a class="pagination-item color_pagination" href="#">5</a>
+    <a class="pagination-item color_pagination" href="#">6</a>
+    <a class="pagination-item color_pagination" href="#">7</a>
+    <a class="pagination-item color_pagination" href="#">8</a>
+    <a class="pagination-item color_pagination" href="#">9</a>
+    <a class="pagination-item color_pagination" href="#">10</a>
+    <a class="pagination-item color_pagination" href="#">></a>
+    <a class="pagination-item color_pagination" href="#">>></a>
+    <a class="pagination-item">Всего: 13</a>
+</div>
+
+<div class="pagination-mobile">
+    <a class="page-previous color_pagination_border" href="#"><</a>
+    <a class="page-current" href="#">1/13</a>
+    <a class="page-next color_pagination_border" href="#">></a>
+    <form class="form-pagination" action="index.html" method="post">
+        <input class="page-enter" type="text" name="page">
+        <button class="page-last color_pagination_border" type="submit">>></button>
+    </form>
 </div>
 </body>
 </html>
