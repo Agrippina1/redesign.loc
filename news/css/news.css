@@ -1,0 +1,30 @@
+.news-title {
+  display: block;
+  text-align: center;
+}
+.news-left {
+  float: left;
+  padding-right: 15px;
+}
+.news-right {
+  float: right;
+  padding-left: 15px;
+}
+.color_font {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .news-right,
+  .news-left {
+    float: none;
+    padding: 0;
+  }
+  .news-img {
+    width: 100vw;
+  }
+  .news-text {
+    display: block;
+    text-align: justify;
+  }
+}
