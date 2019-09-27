@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../site/css/normalize.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="../favicon/site.webmanifest">
+  <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#008000">
+  <meta name="msapplication-TileColor" content="#008000">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="../site/css/main.css">
+  <link rel="stylesheet" href="../site/css/icon.css">
+  <link rel="stylesheet" href="../site/skins/blue/css/colors.css">
+  <link rel="stylesheet" href="../site/skins/blue/css/svg.css">
+  <link rel="stylesheet" href="../site/moduls/jquery/css/jquery-ui.css">
+  <link rel="stylesheet" href="css/news.css">
+
+</head>
+<body>
+<div class="container color_link_hover">
+  <div class="visually-hidden">
+    <ul aria-label="Disability.ru" role="directory">
+      <li><a href='#menu_items' accesskey='r'>Разделы</a></li>
+      <li><a href='#menu_users' accesskey='m'>Пользователям</a></li>
+      <li><a href='#navigator' accesskey='n'>Навигатор</a></li>
+      <li><a href='#content' accesskey='s'>Содержание</a></li>
+    </ul>
+  </div>
+  <div class="banner1" aria-label="Реклама" role="complementary">
+    <img src="../site/pics/banner_1.png" alt="Реклама">
+  </div>
+  <div id="sticky" class="sticky-element">
+    <div class="sticky-anchor"></div>
+    <div class="sticky-content">
+      <div class="logo-header color_main_fon color_accent header">
+        <a href="#menu_main" class="main-nav__toggle modal_open" role="button">
+          <svg class="icon-svg color_icons icon-menu_item"><use xlink:href="../site/icons/id_icons.svg#icon-menu_item"></use></svg>
+          Открыть меню</a>
+        <div class="logo-link-wrapper">
+          <a href="index.html" class="logo-img" title="Disability.ru">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="../site/skins/blue/pics/svg/logo.svg">
+              <source media="(min-width: 768px)" srcset="../site/skins/blue/pics/svg/logo_tablet.svg">
+              <source media="(max-width: 767px)" srcset="../site/skins/blue/pics/svg/logo_mobile.svg">
+              <img class="logo-img" src="../site/skins/blue/pics/svg/logo.svg" alt="Логотип">
+            </picture>
+          </a>
+        </div>
+        <!--<button class="mail-input " type="button">-->
+        <!--<svg class="icon-svg color_icons icon-mail_bw"><use xlink:href="../site/icons/id_icons.svg#icon-mail_bw"></use></svg>-->
+        <!--Войти в почту</button>-->
+        <!--<a href="#menu_user" class="nav-user__toggle modal_open" type="button">-->
+        <!--<svg class="icon-svg color_icons icon-menu_user"><use xlink:href="../site/icons/id_icons.svg#icon-menu_user"></use></svg>-->
+        <!--Открыть меню</a>-->
+        <div class="input-user">
+          <a href="#menu_enter" class="input-links modal_open" role="button">
+            <div class="input-only">
+              <span class="link-input">Войти</span>
+              <span class="link-registration">Регистрация</span>
+            </div>
+            <svg class="icon-svg color_icons icon-login"><use xlink:href="../site/icons/id_icons.svg#icon-login"></use></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="all-content">
+    <div class="content-right">
+      <div class="content-right-wrapper">
+        <div class="banner4" aria-label="Реклама" role="complementary">
+          <img src="../site/pics/banner_4.png" width="160" height="160" alt="Реклама">
+        </div>
+        <div class="nav-wrapper">
+          <div id="menu_main" class="main-nav nav-block color_border color_menu_fon modal-main-show modal_div">
+            <div class="main-nav-wrapper" aria-label="Разделы" role="navigation">
+              <a name="menu_items"></a><h3 id="group_menu_main" class="menu-title color_main_fon color_accent nav_border">Разделы</h3>
+              <ul class="main-nav-items nav" role="menu" aria-labelledby="group_menu_main">
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-news_bw"></use></svg>
+                    <span class="nav_item-caption">Новости</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-story_bw"></use></svg>
+                    <span class="nav_item-caption">Статьи</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-links_bw"></use></svg>
+                    <span class="nav_item-caption">Ссылки</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-org_bw"></use></svg>
+                    <span class="nav_item-caption">Организации</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-work_bw"></use></svg>
+                    <span class="nav_item-caption">Биржа труда</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-shopping_bw"></use></svg>
+                    <span class="nav_item-caption">Товары-услуги</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-agency_bw"></use></svg>
+                    <span class="nav_item-caption">Знакомства</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-blog_bw"></use></svg>
+                    <span class="nav_item-caption">Дневники</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-forum_color"></use></svg>
+                    <span class="nav_item-caption nav-active">Форум</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-chat_bw"></use></svg>
+                    <span class="nav_item-caption">Чат</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-humor_bw"></use></svg>
+                    <span class="nav_item-caption">Юмор</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-guest_bw"></use></svg>
+                    <span class="nav_item-caption">Гостевая книга</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-partners_bw"></use></svg>
+                    <span class="nav_item-caption">Наши партнеры</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-map_bw"></use></svg>
+                    <span class="nav_item-caption">Карта портала</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-faq_bw"></use></svg>
+                    <span class="nav_item-caption">Вопрос-ответ</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-write_adm_bw"></use></svg>
+                    <span class="nav_item-caption mail-admin">Написать админу</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="banner5" aria-label="Реклама" role="complementary">
+            <img src="../site/pics/banner_5.png" width="160" height="160" alt="Реклама">
+          </div>
+          <div id="menu_user" class="nav-user nav-block color_border color_menu_fon modal-user-show modal_div">
+            <div class="nav-user-wrapper" aria-label="Пользователям" role="navigation">
+              <a name="menu_users"></a><h3 id="group_menu_user" class="menu-title color_main_fon color_accent nav_border">Пользователям</h3>
+              <a href="#" class="user-name color_font">NicUserUnick</a>
+              <ul class="nav" role="menu" aria-labelledby="group_menu_user">
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-mail_bw"></use></svg>
+                    <span class="nav_item-caption">Почта</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-wall_bw"></use></svg>
+                    <span class="nav_item-caption">Отзывы</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-search_bw"></use></svg>
+                    <span class="nav_item-caption">Пользователи</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-dr_bw"></use></svg>
+                    <span class="nav_item-caption">Дни рождения</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-online_bw"></use></svg>
+                    <span class="nav_item-caption">На портале</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-show_new_bw"></use></svg>
+                    <span class="nav_item-caption">Новые</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-edit_bw"></use></svg>
+                    <span class="nav_item-caption">Настройки</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-rules_bw"></use></svg>
+                    <span class="nav_item-caption">Соглашение</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-politika_konf_bw"></use></svg>
+                    <span class="nav_item-caption">Политика</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-exit_bw"></use></svg>
+                    <span class="nav_item-caption">Выход</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="decor"></div>
+            <div class="nav-admin-wrapper" aria-label="Администрация" role="navigation">
+              <a name="menu_admin"></a><h3 id="group_menu_admin" class="menu-title color_main_fon color_accent nav_border">Администрация</h3>
+              <ul class="nav" role="menu" aria-labelledby="group_menu_admin">
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-marker"></use></svg>
+                    <span class="nav_item-caption">Новые данные</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-marker"></use></svg>
+                    <span class="nav_item-caption">Почта админа</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-marker"></use></svg>
+                    <span class="nav_item-caption">Юзеры</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-marker"></use></svg>
+                    <span class="nav_item-caption">Online</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-marker"></use></svg>
+                    <span class="nav_item-caption">Модераторы</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-marker"></use></svg>
+                    <span class="nav_item-caption">Новости</span>
+                  </a>
+                </li>
+                <li class="main-nav_item" role="menuitem">
+                  <a class="nav_item" href="#">
+                    <svg class="icon-svg icon-svg-menu color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-marker"></use></svg>
+                    <span class="nav_item-caption">Реклама</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-content">
+          <div id="menu_enter" class="nav-block registration-block color_border color_menu_fon modal-content-show modal_div">
+            <button class="popup-close modal-content-close modal_close" type="button" title="Закрыть">
+              Закрыть</button>
+            <div class="registration-wrapper" aria-label="Вход/регистрация" role="navigation">
+              <div class="menu-title-wrap">
+                <a name="menu_registration"></a><h3 class="menu-title color_main_fon color_accent nav_border">Пользователям</h3>
+              </div>
+              <div class="registration">
+                <p class="registration-title">
+                  <svg class="icon-svg icon-svg-menu icon-svg-registration color_icons"><use xlink:href="../site/icons/id_icons.svg#icon-register_bw"></use></svg>
+                  <span class="registration-text">Регистрация</span>
+                </p>
+                <form class="form-registration" action="index.html" method="post">
+                  <div class="form-registration-wrapper">
+                    <div class="form-group-wrapper">
+                      <div class="form-group">
+                        <label class="form-label" for="login-field">Логин:</label>
+                        <input class="form-field" id="login-field" type="text" name="login" required>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label" for="password-field">Пароль:</label>
+                        <input class="form-field" id="password-field" type="password" name="password-field" required>
+                      </div>
+                      <div class="form-group-checkbox">
+                        <div class="form-group form-group-blind">
+                          <input id="blind-field" type="checkbox" name="blind">
+                          <label for="blind-field">Для незрячих</label>
+                        </div>
+                        <div class="form-group">
+                          <input id="memorize-field" type="checkbox" name="memorize">
+                          <label for="memorize-field">Запомнить</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-wrapper">
+                    <input class="btn btn-registration color_main_fon color_accent header" type="submit" name="button" value="Войти">
+                  </div>
+                </form>
+                <div class="registration-links">
+                  <a class="main-nav_item registration-link" href="#">Вспомнить пароль</a>
+                  <a class="main-nav_item registration-link" href="#">Соглашение</a>
+                  <a class="main-nav_item registration-link" href="#">Политика</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-block-wrapper">
+          <div class="nav-block color_border color_menu_fon" aria-label="Поиск" role="complementary">
+            <a name="menu_search"></a><h3 class="menu-title color_main_fon color_accent nav_border">Поиск на портале</h3>
+            <form class="form" action="index.html" method="post">
+              <div class="form-group form-search">
+                <input class="form-field" id="search-field" type="text" name="search-name">
+                <label for="search-field"></label>
+              </div>
+              <div class="btn-wrapper">
+                <input class="btn color_main_fon color_accent header" type="submit" name="button" value="Поиск">
+              </div>
+            </form>
+          </div>
+          <div class="nav-block color_border color_menu_fon" aria-label="Статистика" role="complementary">
+            <a name="menu_statistic"></a><h3 class="menu-title color_main_fon color_accent nav_border">Статистика</h3>
+            <p class="statistics">Друзей <span>8963</span></p>
+            <p class="statistics-online">Сейчас на портале</p>
+            <p class="statistics">Друзей <span>32</span></p>
+            <p class="statistics">В чате <span>9</span></p>
+            <p class="statistics">Гостей <span>36</span></p>
+          </div>
+        </div>
+        <div class="banner6" aria-label="реклама" role="complementary">
+          <img src="../site/pics/banner_6.png" width="160" height="600" alt="Реклама">
+        </div>
+      </div>
+      <div class="qr-code" aria-label="Счетчики" role="contentinfo">
+        <script type="text/javascript">
+            document.write("<img class='qr-code-img' src='https://chart.googleapis.com/chart?cht=qr&chs=150x150&choe=UTF-8&chl="+location.href+"' title='QR Barcode - адрес страницы для мобильных устройств' alt='QR Barcode - адрес страницы для мобильных устройств'>");
+        </script>
+        <img class="qr-code-img" src="../site/pics/barcode.png" width="89" height="122" alt="Статистика">
+      </div>
+    </div>
+    <div class="content-left">
+
+      <!--Основной контент-->
+
+      <div class="main-content color_content_fon color_main_content" aria-label="содержание" role="main">
+        <div class="breadcrumbs color_link_hover">
+          <h1 class="color_link_hover">
+            <a class="breadcrumbs-item" href="https://www.disability.ru" aria-label="Disability.ru">
+              <svg class="icon-svg icon-svg-breadcrumbs color_icons"><use
+                xlink:href="../site/icons/id_icons.svg#icon-navigator"></use></svg>
+            </a>
+            <a name="navigator" class="breadcrumbs-item" href="#">/ информация о пользователе tester</a>
+          </h1>
+        </div>
+        <div class="banner2-3 banner2" aria-label="Реклама" role="complementary">
+          <img src="../site/pics/banner_2.png" width="730" height="90" alt="Реклама">
+        </div>
+
+        <a name="content"></a>
+        <div class="m-c-w">
+          <index><div class='block_content'><br><div align='center'><img src='https://www.disability.ru/member/photo/3261.jpg?ver=1569351977' width='500' height='375' hspace='5' vspace='5' border='0' alt='фото пользователя tester'>
+          </div>
+            <a name='info_top'></a><table width='95%' align='center' border='0' cellspacing='2' cellpadding='2' align='center'>
+              <tr>
+                <td align='right' valign='top' nowrap><strong>Ник:</strong></td>
+                <td>tester</td>
+              </tr>
+              <tr>
+                <td align='right' valign='top' nowrap><strong>Имя:</strong></td>
+                <td>Павел Лапин</td>
+              </tr>
+              <tr>
+                <td align='right' valign='top' nowrap><strong>Пол:</strong></td>
+                <td>Мужской</td>
+              </tr>
+              <tr>
+                <td align='right' valign='top' nowrap><strong>Город:</strong></td>
+                <td><a href='https://www.moscowindex.ru/rus/?s=%CC%F3%F0%EC%E0%ED%F1%EA' target='_blank'>Мурманск</a>
+                  <div style='font-size: 10px;'><i>по геолокации</i><br><b>Город:</b> Мурманск<br><b>Регион:</b> Мурманская область<br><b>Страна:</b> Россия</div></td>
+              </tr>
+              <tr>
+                <td align='right' valign='top' nowrap><strong>Страна:</strong></td>
+                <td>Россия</td>
+              </tr>
+              <tbody id='info_content' style='display: none;'><tr>
+              <td align='right' valign='top' nowrap><strong>Возраст:</strong></td>
+              <td>48</td>
+            </tr>
+            <tr>
+              <td align='right' valign='top' nowrap><strong>Дата рождения:</strong></td>
+              <td>-&nbsp;-&nbsp;1971</td>
+            </tr>
+            <tr>
+              <td align='right' valign='top' nowrap><strong>О себе:</strong></td>
+              <td><a href='http://www.disability.ru/forum/index.php?id=3862'>Павел Лапин</a>, Инв. 1-й гр., миопатия.<br />
+                Программист, специалист по альтернативному доступу, креативен и позитивен. Во время работы разговариваю с программным кодом. Политические взгляды - самодержавие. Не приемлю нарушения закона РФ и общечеловеческих норм.<br />
+                Чертовски обаятелен, беспощадно нежен и ласково жесток, скромен(по четным числам). <br />
+                <br />
+                Ценю свое и ваше время, поэтому в переписку с целью «познакомимся» не вступаю.<br />
+                <br />
+                Консультирую исключительно по вопросам работы и администрирования портала.</td>
+            </tr>
+            <tr>
+              <td align='right' valign='top' nowrap><strong>Тип чата:</strong></td>
+              <td>обычный чат</td>
+            </tr><tr> <td align='right' valign='top' nowrap><strong>Email:</strong></td> <td>www@www.ru</td></tr><tr> <td align='right' valign='top' nowrap><strong>Host:</strong></td> <td><a href='http://ipgeobase.ru/?address=178.65.218.213' target='_blank'>pppoe.178-65-218-213.dynamic.avangarddsl.ru</a> <a href='https://apps.db.ripe.net/db-web-ui/#/query?bflag&searchtext=178.65.218.213&source=RIPE#resultsSection' title='данные по RIPE' target='_blank' style='text-decoration: none'>&#8658;</a></td></tr> <td align='right' valign='top' nowrap><strong>RegHost:</strong></td> <td><a href='http://ipgeobase.ru/?address=77-245-197-002.polarnet.ru' target='_blank'>77-245-197-002.polarnet.ru</a> <a href='https://apps.db.ripe.net/db-web-ui/#/query?bflag&searchtext=77-245-197-002.polarnet.ru&source=RIPE#resultsSection' title='данные по RIPE' target='_blank' style='text-decoration: none'>&#8658;</a></td></tr> <td align='right' valign='top' nowrap><strong>Примечание:</strong></td> <td>тест 26.01.2018 23:57 Эльмир </td></tr></tbody> <tr>
+              <td align='right' valign='top' nowrap><strong>Статус:</strong></td>
+              <td>пользователь - разработчик - админ</td>
+            </tr>
+              <tbody id='info_stat' style='display: none;'> <tr>
+                <td align='right' valign='top'>Оценка&nbsp;тем&nbsp;форума:</td>  <td >4</td>
+              </tr>
+              <tr>
+                <td align='right' valign='top'>Сообщения/флуд:</td>  <td >392 / 0</td>
+              </tr>
+              <tr>
+                <td align='right' valign='top'><strong>Рейтинг форума:</strong></td>  <td>396.00</td>
+              </tr>
+              <tr>
+                <td align='right' valign='top'>Оценка&nbsp;дневников:</td>  <td >477</td>
+              </tr>
+              <tr>
+                <td align='right' valign='top'>Дневников/Подпис.:</td>  <td >3 / 42</td>
+              </tr>
+              <tr>
+                <td align='right' valign='top'>Постов/Ответов:</td>  <td >51 / 8127</td>
+              </tr>
+              <tr>
+                <td align='right' valign='top'><strong>Рейтинг&nbsp;дневников:</strong></td>  <td >2385.35</td>
+              </tr>
+              <tr>
+                <td align='right' valign='top'><strong>Статей:</strong></td>  <td >0</td>
+              </tr>
+              </tbody>
+              <tr>
+                <td align='right' valign='top'><strong>Популярность:</strong></td>  <td >2826.35</td>
+              </tr>
+              <td align='right' valign='top'><strong>Уважение:</strong></td>  <td valign='top'>+74 / -29</td>
+              </tr>
+              <tr>
+                <td align='right' valign='top' nowrap><strong>Дата регистрации:</strong></td>
+                <td>24&nbsp;янв.&nbsp;2006 11:50</td>
+              </tr>
+              <tr>
+                <td align='right' valign='top' nowrap><strong>Последний визит:</strong></td>
+                <td>24&nbsp;сен.&nbsp;2019 22:06<br><br></td>
+              </tr>
+              <tr>
+                <td colspan='2' align='center'><img src='https://www.disability.ru/site/pics/info-card.png' width='16' height='16'> <a href='#info_top' onClick="dropinfo()" style='font-weight:bold; font-style: italic; cursor: help;'>развернуть и показать всю информацию о tester</a></td>
+              </tr>
+              </tbody></table>
+            <p align='right' style='font-weight: bold;'>
+              <img src='https://www.disability.ru/site/skins/red/pics/mail_new.gif' border='0' alt=''>
+              <a href='../mail/write_adtous.php?id=3261'>написать письмо</a>
+            </p>
+            <p align='right' style='font-weight: bold;'>
+              <img src='https://www.disability.ru/site/skins/red/pics/edit.gif' width='16' height='16' border='0' alt=''>
+              <a href='https://www.disability.ru/member/edit.php?nick=tester'>редактировать данные</a>
+            </p>
+          </div>
+            <div class='block_content'>
+              <div align='center'>
+                <h3 onClick="drop_pop('moder_block')"  style='cursor: pointer;'>Модерирование</h3>
+                <div id='moder_block'>
+                  <form name='plan' action='../member/save_ban.php' method='post' class='form_nbr' onSubmit="plan.Submit.disabled='true'">
+                    <table cellspacing='2' cellpadding='2' border='0'>
+                      <tr>
+                        <td class='form_subj'>Период</td>
+                        <td class='form_cont'>
+                          <select name='ban_time' class='form_field'>
+                          <option value='-2' selected>на исправление</option>
+                          <option value='-1'>на всегда</option>
+                          <option value='360'>6 часов</option>
+                          <option value='720'>12 часов</option>
+                          <option value='1440'>1 день</option>
+                          <option value='4320'>3 дня</option>
+                          <option value='7200'>5 дней</option>
+                          <option value='10080'>1 неделя</option>
+                          <option value='14400'>10 дней</option>
+                          <option value='20160'>2 недели</option>
+                          <option value='30240'>3 недели</option>
+                          <option value='40320'>4 недели</option>
+                          <option value='0'>разбанить</option>
+                          <option value='wall'>отключить отзывы</option>
+                          <option value='destroy'>удалить регистрацию</option>
+                        </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class='form_subj'>Причина</td>
+                        <td class='form_cont'><input type='text' name='ban_text' value="" size='50' maxlength='180'  class='form_field'></td>
+                      </tr>
+                      <input type='hidden' name='id_user' value="3261"><tr>
+                      <td class='form_subj'></td>
+                      <td class='form_cont'><input name='Submit' type='submit' value='Выполнить' onClick="plan.Submit.value=' Ждите! '" class='form_button'></td>
+                    </tr>
+                    </table>
+                  </form>
+                  <h4>
+                    <a href='search_virt.php?id=3261&days=0' target='_blank'>
+                      <img src='https://www.disability.ru/site/skins/red/pics/look.gif' width='16' height='16' border='0' alt=''>
+                      Поиск виртуалов</a>
+                    <span style='margin-left: 4em;'></span>
+                    <a href='enter_log.php?id=3261' target='_blank'>
+                      <img src='https://www.disability.ru/site/skins/red/pics/log-enter.png' width='16' height='16' border='0' alt=''>
+                      Лог входов</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <style type="text/css">
+              <!--
+              .tblog_design {
+                margin-top: 5px;
+                background-color: #8F8F8F;
+                border : 1px solid #9F9F9F;
+              }
+              .tblog_head_center {
+                color: #F7F7F7;
+                font-family: Tahoma, Helvetica, Arial, sans-serif;
+                font-weight: bold;
+                font-size: 13px;
+                text-align: center;
+                text-transform: lowercase;
+              }
+              .tblog_line_0 {
+                background-color: #EFEFEF;
+                padding-left: 5px;
+              }
+              .tblog_line_1 {
+                background-color: #E8E8E8;
+                padding-left: 5px;
+              }
+              .tblog_line_center_0 {
+                background-color: #EFEFEF;
+                padding-left: 5px;
+                text-align: center;
+                padding-right: 5px;
+              }
+              .tblog_line_center_1 {
+                background-color: #E8E8E8;
+                padding-left: 5px;
+                text-align: center;
+              }
+              -->
+            </style>
+            <h3 align='center'>Дневники</h3>
+            <table width="100%" border='0' cellspacing='0' cellpadding='2' class='tblog_design'>
+              <tr>
+                <th class="tblog_head_center">Название дневника</th>
+                <th class="tblog_head_center">Пост.</th>
+                <th class="tblog_head_center">Ответ.</th>
+                <th class="tblog_head_center">Рейт.</th>
+                <th class="tblog_head_center">Подпис.</th>
+                <th class="tblog_head_center">Последний пост</th>
+              </tr>
+              <tr>
+                <td class="tblog_line_0"><a href="../blog/blog.php?id_blog=5119" class="table_link_name">Всячина</a><br /><span class='small'>о самом разном, что не вошло в другие дневники</span></td>
+                <td class="tblog_line_center_0">12</td>
+                <td class="tblog_line_center_0"><span id="kolbb_5119">144</span></td>
+                <td class="tblog_line_center_0">68</td>
+                <td class="tblog_line_center_0">3</td>
+                <td class="tblog_line_center_0"><a href="../blog/blog.php?id_blog=5119" class='table_link_item'>GROSU. Трилогия "Дико Любила Вову</a><br /><span class='small'>15&nbsp;апр.&nbsp;2019 23:12</span></td>
+              </tr>
+              <tr>
+                <td class="tblog_line_1"><a href="../blog/blog.php?id_blog=3947" class="table_link_name">Дневник разработчика</a><br /><span class='small'>Новости и обсуждение портала</span></td>
+                <td class="tblog_line_center_1">33</td>
+                <td class="tblog_line_center_1"><span id="kolbb_3947">7898</span></td>
+                <td class="tblog_line_center_1">348</td>
+                <td class="tblog_line_center_1">37</td>
+                <td class="tblog_line_center_1"><a href="../blog/blog.php?id_blog=3947" class='table_link_item'>Новогодний Конкурс</a><br /><span class='small'>09&nbsp;дек.&nbsp;2018 19:42</span></td>
+              </tr>
+              <tr>
+                <td class="tblog_line_0"><a href="../blog/blog.php?id_blog=5089" class="table_link_name">Мурманск</a><br /><span class='small'>про город,  природу,  Кольский полуостров и наших северных соседей</span></td>
+                <td class="tblog_line_center_0">6</td>
+                <td class="tblog_line_center_0"><span id="kolbb_5089">85</span></td>
+                <td class="tblog_line_center_0">61</td>
+                <td class="tblog_line_center_0">2</td>
+                <td class="tblog_line_center_0"><a href="../blog/blog.php?id_blog=5089" class='table_link_item'>Полярное братство. Над небом Мурманска</a><br /><span class='small'>07&nbsp;сен.&nbsp;2018 17:46</span></td>
+              </tr>
+            </table>
+            <div class='block_content'><h3 align='center'>Отзывы</h3><p align='right' style='font-weight: bold;'><img src='https://www.disability.ru/site/skins/red/pics/answer.gif' border='0' alt='' /> <a href='../wall/write.php?id=3261'>добавить отзыв</a></p>
+              <table width="100%" border='0' cellspacing='1' cellpadding='2' class='table_design'>
+                <tr><td></td></tr>
+                <tr>
+                  <td width="150" rowspan="2"  class="table_line_center_0" valign="top"><img src='https://www.disability.ru/wall/picture.php?pic=29723&ver=1569351977' width='70' height='70' hspace='1' vspace='1' border='1' alt='' /><br>
+                    <br></td>
+                  <td width="90%" nowrap class="table_line_0"><a href='../member/info_id.php?id=29723' target='_blank' class='table_link_name'>Oxana</a> <span class="block_data">01&nbsp;янв.&nbsp;2019 14:28</span></td>
+                </tr>
+                <tr>
+                  <td  class="table_line_0" valign="top" style="word-break: break-all;"><br>Мурманским самые  добрые пожелания в Новом году! <br />
+                    Как говорит о.Андрей Ткачев - желаем то, что человеку нужно! И полезно! И на славу! <br><br> <div align='right' style='border-top: 1px solid #BBBBBB;'><a href='../wall/answer.php?id=301966' class='text_link_menu' style='font-size: 11px;'><img src='https://www.disability.ru/site/skins/red/pics/answer.gif' width='16' height='16' border='0' alt='' />ответить</a>&nbsp; &nbsp;<a href='../wall/delete.php?id=301966' class='text_link_menu' style='font-size: 11px;'><img src='https://www.disability.ru/site/skins/red/pics/delete.gif' width='16' height='16' border='0' alt='' />удалить</a>
+                    </div></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                  <td width="150" rowspan="2"  class="table_line_center_1" valign="top"><img src='https://www.disability.ru/wall/picture.php?pic=40089&ver=1569351977' width='46' height='70' hspace='1' vspace='1' border='1' alt='' /><br>
+                    <br></td>
+                  <td width="90%" nowrap class="table_line_1"><a href='../member/info_id.php?id=40089' target='_blank' class='table_link_name'>Branvin</a> <span class="block_data">19&nbsp;нояб.&nbsp;2018 13:44</span></td>
+                </tr>
+                <tr>
+                  <td  class="table_line_1" valign="top" style="word-break: break-all;"><br>Прелесть какая удивлённая <img src='../oldchat/pics/smiley1.gif' width=15 height=15 border=0 alt='смех'> <br><br> <div align='right' style='border-top: 1px solid #BBBBBB;'><a href='../wall/answer.php?id=301433' class='text_link_menu' style='font-size: 11px;'><img src='https://www.disability.ru/site/skins/red/pics/answer.gif' width='16' height='16' border='0' alt='' />ответить</a>&nbsp; &nbsp;<a href='../wall/delete.php?id=301433' class='text_link_menu' style='font-size: 11px;'><img src='https://www.disability.ru/site/skins/red/pics/delete.gif' width='16' height='16' border='0' alt='' />удалить</a>
+                  </div></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                  <td width="150" rowspan="2"  class="table_line_center_0" valign="top"><br></td>
+                  <td width="90%" nowrap class="table_line_0"><a href='../member/info_id.php?id=2457' target='_blank' class='table_link_name'>Stich</a> <span class="block_data">15&nbsp;нояб.&nbsp;2018 01:30</span></td>
+                </tr>
+                <tr>
+                  <td  class="table_line_0" valign="top" style="word-break: break-all;"><br>Очки на линзы сменил? <img src='https://www.disability.ru/oldchat/pics/44.gif' width=15 height=15 border=0 alt='очкарик'> <br><br> <div align='right' style='border-top: 1px solid #BBBBBB;'><a href='../wall/answer.php?id=301344' class='text_link_menu' style='font-size: 11px;'><img src='https://www.disability.ru/site/skins/red/pics/answer.gif' width='16' height='16' border='0' alt='' />ответить</a>&nbsp; &nbsp;<a href='../wall/delete.php?id=301344' class='text_link_menu' style='font-size: 11px;'><img src='https://www.disability.ru/site/skins/red/pics/delete.gif' width='16' height='16' border='0' alt='' />удалить</a>
+                  </div></td>
+                </tr>
+              </table>
+              <div class='line_link'>Страницы: <b>1</b>
+                <a href='../member/info_id.php?id=3261&page=2'>2</a>
+                <a href='../member/info_id.php?id=3261&page=3'>3</a>
+              </div>
+              <p align='right' style='font-weight: bold;'><img src='https://www.disability.ru/site/skins/red/pics/answer.gif' border='0' alt='' /> <a href='../wall/write.php?id=3261'>добавить отзыв</a></p>
+              <br></div></index>
+        </div>
+      </div>
+      <div class="banner2-3 banner3" aria-label="Реклама" role="complementary">
+        <img src="../site/pics/banner_3.png" alt="Реклама">
+      </div>
+    </div>
+  </div>
+  <footer class="footer-content">
+    <div class="footer-top color_main_fon color_accent footer">
+      <p class="copyright">Copyright &copy; 2002</p>
+    </div>
+    <a name="menu_alt"></a><div class="nav-footer color_menu_fon" aria-label="Дополнительное меню" role="complementary">
+    <ul class="nav-footer_items">
+      <li class="nav-footer_item">
+        <a href="#">Новости</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Статьи</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Ссылки</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Организации</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Биржа труда</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Товары-услуги</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Знакомства</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Дневники</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Форум</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Чат</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Юмор</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Гостевая книга</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Наши партнеры</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Карта портала</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Вопрос-ответ</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Написать админу</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Соглашение</a>
+      </li>
+      <li class="nav-footer_item">
+        <a href="#">Политика</a>
+      </li>
+    </ul>
+  </div>
+  </footer>
+</div>
+<script type="text/javascript" src="../site/js/js-redesign.js"></script>
+<script type="text/javascript" src="../site/js/svgxuse.js"></script>
+<script type="text/javascript" src="js/info_id.js"></script>
+</body>
+</html>
