@@ -244,20 +244,10 @@
     font-family: "Arial", "Helvetica", sans-serif;
   }
   .row-blog {
-    border-radius: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 10px;
-  }
-  .row-blog {
-    border-radius: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
   }
   .bcell {
     text-align: justify;
-    padding: 10px 0;
   }
   .bcell-author {
     border-bottom: 1px solid #9f9f9f;
@@ -289,12 +279,19 @@
   .blog-link-name {
     font-weight: bold;
     text-align: justify;
+    align-self: center;
+  }
+  .row-blog-wrapper {
+    background: #efefef;
+    border-radius: 5px;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.25);
+    padding: 5px;
   }
   .last-post-title {
     display: block;
     font-size: 14px;
     line-height: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   .last-answer-post {
     margin-top: 15px;
@@ -306,6 +303,9 @@
   .last-post {
     font-size: 18px;
     line-height: 23px;
+  }
+  .table_link_item {
+    text-decoration: underline;
   }
   .small {
     font-size: 14px;
@@ -320,12 +320,10 @@
     -webkit-box-orient: vertical;
     word-wrap: break-word;
     word-break: break-word;
-    margin-top: 5px;
+    padding-bottom: 10px;
   }
   .name-blog {
     border-bottom: 1px solid #9f9f9f;
-    padding-bottom: 15px;
-    padding-top: 5px;
   }
   .block-stat {
     display: flex;
@@ -336,5 +334,22 @@
   }
   .post-stat {
     margin: 0 10px;
+  }
+  .blog-link-name-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: #dedede;
+    border: 1px solid #787878;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .info-id_toggle {
+    line-height: 0;
+    align-self: center;
+    padding-left: 10px;
+  }
+  .icon-info-id {
+    width: 32px;
+    height: 32px;
   }
 }
