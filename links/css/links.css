@@ -1,0 +1,45 @@
+.links-main {
+  text-align: center;
+  margin: 30px 0;
+}
+.section-items {
+  width: 340px;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.admin-line-wrapper {
+  margin-top: 5px;
+}
+.btn-wrapper-links {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1023px) {
+  .section-items {
+    width: 380px;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-block-title {
+    text-align: center;
+  }
+  .content-block-text {
+    text-align: justify;
+  }
+  .section-items {
+    width: 280px;
+    line-height: 26px;
+    text-align: center;
+  }
+  .section-items li {
+    margin-bottom: 15px;
+  }
+}

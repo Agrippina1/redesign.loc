@@ -1,0 +1,59 @@
+.section-items {
+  font-size: 16px;
+}
+.section-items li {
+  margin-bottom: 7px;
+}
+.icon-svg-org {
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+.btn-white-org {
+  margin-bottom: 20px;
+}
+
+.content-block {
+  font-size: 16px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.show {
+  line-height: 26px;
+  text-align: justify;
+}
+.content-title {
+  line-height: 30px;
+}
+.show-org-info {
+  margin-bottom: 10px;
+}
+.block_views {
+  font-size: 10px;
+  margin: 15px 0;
+}
+.btn-admin-line {
+  font-weight: bold;
+}
+
+@media (max-width: 1023px) {
+  .content-block {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .section-items li {
+    margin-bottom: 10px;
+  }
+  .show-org-info {
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-items {
+    line-height: 24px;
+  }
+  .section-items li {
+    margin-bottom: 12px;
+  }
+}
